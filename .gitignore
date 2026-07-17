@@ -1,0 +1,7 @@
+extracted/
+tools/venv/
+__pycache__/
+*.pyc
+
+# ROM stays local only — never push copyrighted game data
+*.nds
