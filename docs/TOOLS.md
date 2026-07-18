@@ -95,14 +95,53 @@ python3 collect_french_contexts.py > french_contexts.txt
 The `CANDIDATES` list at the top of the file controls which files get
 scanned — edit it to narrow/widen scope.
 
-## Not yet built
+## Format-analysis probes (`.STR` indexing — resolved)
 
-- A real slot-by-slot extractor for `.pkb`/`.pkh` pairs that outputs
-  `(id, sub_index, decoded_text)` for every entry, auto-detecting SJIS vs.
-  custom-encoding per entry.
-- A `.STR` extractor (once the indexing mechanism is confirmed).
-- A reinsertion tool that writes edited/translated strings back into a
-  `.pkb`/`.STR` file (and `.pkh` offset table, if any offsets shift) and
-  repacks the whole ROM via `ndspy`'s `NintendoDSRom` write support.
-- Anything for testing in an emulator (no emulator installed in this
-  environment yet; testing has been code/byte-level only so far).
+- `analyze_str_dat.py` / `analyze_str_dat2.py` — probe `item.dat`/`unitbase.dat`
+  for an offset or index column into their `.STR`. Found none.
+- `find_offset_table.py` — **decisive**: searches all extracted files for
+  `item.STR`'s offset sequence in any encoding; found nowhere ⇒ ordinal index,
+  resizing safe. See `docs/FORMAT_NOTES.md` → `.STR` section.
+- `verify_str_align.py` — confirms every `.STR` string is 32-byte aligned and
+  classifies JP vs FR (item/unitbase are 100% untranslated Japanese). Re-run
+  after any `.STR` edit to check the four safe-editing invariants still hold.
+
+## French encoding derivation (`ie3_codec.py` — solved)
+
+- `ie3_codec.py` — **the codec**. `decode_text(bytes)` / `encode_text(str)`
+  for the custom single-byte FR encoding, with `<XX>` control-token round-trip
+  and house-style folding of unsupported chars. Has a round-trip self-test
+  (`python3 ie3_codec.py`). Import this everywhere; don't re-derive the table.
+- `evet_extract.py` — slot→chunk parser + JP/FR/ascii/ctrl classifier for a
+  `.pkb`/`.pkh` pair (library `parse_evet(name)` + CLI summary).
+- `derive_encoding.py` / `derive_encoding2.py` — how the table was derived
+  (high-byte context tally over clean FR chunks). Kept for provenance.
+
+## Text extraction & reinsertion (`.pkb`/`.pkh`)
+
+- `evet_slots.py` — **byte-exact slot model** (`load_slots`, `Slot`). Proven to
+  round-trip all evet+mcht slots (`python3 evet_slots.py evet` reports 0
+  failures). Editing conserves each slot's budget span, so the `.pkh` never
+  needs changing. This is the foundation the dump/reinsert tools sit on.
+- `evet_dump.py` — dump translatable text to an editable JSON:
+  `python3 evet_dump.py evet [--jp-only] [-o out.json]`. Each entry has a
+  read-only `src` (Japanese to translate, or current French) and an editable
+  `fr` field. The leading box/speaker control byte is preserved automatically.
+- `evet_reinsert.py` — apply the edited JSON back into a **new** `.pkb`
+  (original untouched): `python3 evet_reinsert.py trans.json --out evet_new.pkb`.
+  Encodes each edited `fr`, re-fits it within the slot's budget, and refuses to
+  write if any edit overflows (unless `--allow-overflow`). Reports house-style
+  folds. A no-op reinsert reproduces the original `.pkb` byte-for-byte.
+
+Workflow: `evet_dump.py` → edit `fr` fields → `evet_reinsert.py` → (repack ROM
+via ndspy — see below) → test in emulator.
+
+## Still to build
+
+- `.STR` dump/reinsert tools (mechanism is understood — ordinal index, resize
+  freely under the four invariants; item/unitbase are fully untranslated).
+- Whole-ROM repack: write edited `.pkb`/`.STR` back into the `.nds` via
+  `ndspy`'s `NintendoDSRom` save support.
+- Emulator testing (none installed yet) — needed to validate the encoding
+  hypothesis (esp. lowercase-only accents / folded uppercase) and that in-slot
+  sub-string reflow renders correctly, before bulk reinsertion.

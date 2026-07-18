@@ -128,62 +128,80 @@ menu), not just one string. Each sub-string looks like:
   single-byte scheme — text encoding must be auto-detected per entry (SJIS
   vs. custom single-byte) when extracting/reinserting.
 
-## Custom single-byte French character encoding — UNSOLVED
+## Custom single-byte French character encoding — SOLVED (2026-07-18)
 
-The already-translated French text does **not** use standard CP1252/Latin-1.
-Confirmed example: byte `0xC9` renders as `ù` (not `É` as in CP1252), byte
-`0xB1` renders as `à` (not `±`). No table file has been found in the ROM or
-repo — it must be derived empirically or from the font.
+Derived empirically from cleanly `.pkh`-bounded evet French chunks (11,264)
+and cross-checked against mcht (465) — both genuine dialogue archives use the
+**identical** accented-letter set, and decoding all 11,264 evet French chunks
+leaves **zero** unmapped high bytes (only sub-`0x20` inline control codes
+remain, which are correctly opaque). Implemented in `tools/ie3_codec.py`
+(`decode_text` / `encode_text`, with a round-trip self-test). Tools used to
+derive it: `evet_extract.py` (slot→chunk parser + JP/FR/ascii/ctrl
+classifier), `derive_encoding.py`, `derive_encoding2.py`.
 
-### Attempts so far (`tools/collect_french_contexts.py`)
+### Confirmed byte → character table
 
-1. **First attempt**: scanned every extracted file for high-byte (≥0x80)
-   character contexts. Result: dominated by noise from large binary formats
-   (`.nsbmd` models with `BMD0` chunks, MIDI-style `.ssar`/sound sequence
-   data with `trk ` chunks). Fixed by restricting to a curated list of
-   known/suspected text files.
-2. **Second attempt**: restricted to `.STR` files and `.pkb` files under
-   `data_iz/script/` and `data_iz/pic2d/cmd/`. Result: still dominated by
-   noise — turned out to be **leftover untranslated Shift-JIS Japanese**
-   still present in these same (partially-translated) files. Byte `0x82`
-   (the single most common SJIS lead byte, covering all hiragana) topped
-   the frequency table at ~294k hits.
-3. **Third attempt**: added an SJIS-pair exclusion filter (skip any byte
-   position that's part of a valid SJIS lead/trail pair decoding to
-   kana/kanji) before tallying high-byte contexts. Improved but **still
-   noisy** — files like `mch.pkb`, `act.pkb`, `mrobj.pkb` are mostly script
-   *bytecode*, not text, so raw regex-over-whole-file still picks up binary
-   opcode/parameter bytes that coincidentally look text-ish (e.g. a repeating
-   `0xFF ×8 + "SSD"` pattern that is clearly a binary chunk marker, not
-   French text).
+Base: bytes `0x20..0x7E` are **standard ASCII**; `0x0A` is newline. The
+custom accented letters (single byte each):
 
-### Recommended next approach
+| byte | char | byte | char | byte | char |
+|------|------|------|------|------|------|
+| 0xB1 | à    | 0xBA | é    | 0xC0 | ï    |
+| 0xB3 | â    | 0xBB | ê    | 0xC5 | ô    |
+| 0xB8 | ç    | 0xBF | î    | 0xC9 | ù    |
+| 0xB9 | è    | 0xCB | û    |      |      |
 
-Don't regex over whole files. Instead:
+All eleven are **lowercase** accented letters (e.g. `0xC9`ù appears in
+"Où veux-tu aller?" — capital O + lowercase ù, not an all-caps "OÙ").
 
-1. Extend the `.pkh`-record parser proven in `tools/inspect_pkh2.py` into a
-   full slot walker for `evet.pkh`/`evet.pkb` (and ideally `mcht`, `help`,
-   the other confirmed *text* pairs — **not** the bytecode-only `eve`/`mch`/
-   `act`/`mr`/`mrobj` files, which shouldn't be scanned for prose at all).
-2. Within each slot, parse using the `[00 00 00][text][00]` sub-string
-   structure documented above, so only genuine bounded text content is
-   collected — this avoids both binary-bytecode noise and stale
-   leftover-bytes-past-the-terminator noise.
-3. Re-run the high-byte context collection only on that cleanly-extracted
-   text. French has a small closed set of accented characters (à â ä ç é è
-   ê ë î ï ô ö ù û ü œ æ + uppercase + « » ' etc.), so with clean context a
-   human (or the assistant, using French vocabulary knowledge) should be
-   able to assign each byte value fairly quickly — e.g. "d{XX}j{YY}" in a
-   greeting context is almost certainly "déjà".
-4. Cross-check candidate mappings against `data_iz/font/FONT12.NFTR` (and
-   `FONT8.NFTR`) — NFTR is "Nitro Font Resource"; it has a CMAP block that
-   maps byte/character codes to glyph indices. It won't tell you *which*
-   letter a glyph is (that requires rendering the bitmap), but it will tell
-   you whether a given byte value is even a valid/mapped character code at
-   all, which helps rule out control codes vs. real characters. Not yet
-   attempted — `ndspy` doesn't have a built-in NFTR parser, would need to be
-   written from the NFTR binary spec (documented in various DS romhacking
-   community references).
+Two-byte **full-width SJIS symbols** embedded in French text (lead `0x81`):
+`0x81 0x8B` = `°`, `0x81 0x99` = `☆`, `0x81 0xF4` = `♪`, `0x81 0x63` = `…`.
+Preserve these verbatim.
+
+### What this translation does NOT use (house style)
+
+Across 11,729 real French chunks **no uppercase accented letters appear at
+all** — every accent byte is lowercase. Sentence-initial capitals are written
+**unaccented** ("A cette époque", "Equipe"), and the rarer accents (ë ö ü œ æ)
+and
+guillemets « » do not appear — the translators used ASCII `oe`/`ae`/straight
+quotes. The font (`FONT12.NFTR`) very likely *has* glyphs for these, but no
+byte assignment is confirmed for them, so `ie3_codec.encode_text` folds them
+to house-style ASCII (recording each fold) rather than guessing a byte. If a
+future need arises for real É/È/À/œ bytes, parse the NFTR CMAP to recover the
+full glyph table (not yet done).
+
+### Control codes (preserve verbatim, never translate)
+
+- **Position-0 byte of every sub-string** = an opaque box/speaker/style
+  control code. Observed values are all multiples of 4 (`0x80,0x84,…,0xD4`,
+  and ASCII ones like `<` `d` `,` `4` `(`).
+- **Inline** standalone low bytes `0x04, 0x10, 0x14, 0x18, 0x1C` = in-text
+  control codes (text speed/pause/color, unconfirmed exact meaning). Keep as
+  opaque bytes.
+
+### Historical note (why naive scans failed — see also the skill)
+
+Byte `0xC9` is `ù` (u-grave) and `0xB1` is `à` — NOT CP1252 (`É`/`±`). Prior
+whole-file frequency scans drowned in SJIS-leftover and bytecode noise; the
+fix was restricting to `.pkh`-bounded, null-terminated, FR-classified chunks
+of the *text* archives (evet/mcht) only, never the bytecode files
+(eve/mch/act/mr/mrobj) or the tile-data menu `.pkb`s (mbd_c/tcd_c), both of
+which produce all-high-byte false positives.
+
+### How it was finally solved (the approach that worked)
+
+The three earlier failed attempts (`tools/collect_french_contexts.py` — kept
+for reference) all regex'd over whole files and drowned in noise: `.nsbmd`
+model/`.ssar` sound chunks, then leftover SJIS Japanese (byte `0x82` topped
+at ~294k hits), then bytecode opcode bytes from `mch`/`act`/`mrobj`. The fix
+that worked: **don't scan whole files** — parse `.pkh`-bounded slots, split
+into null-terminated sub-strings, classify each (JP / FR / ascii / ctrl by
+double-byte-SJIS coverage), and tally high bytes **only** in FR chunks of the
+real text archives (evet, mcht). With that clean signal every accented byte
+was read straight off the surrounding French word (`exp<BA>rience` → é, etc.)
+and the whole table fell out in one pass. `FONT12.NFTR` CMAP cross-checking
+was noted as a fallback but proved unnecessary for the letters actually used.
 
 ## `.STR` flat string pool format
 
@@ -209,31 +227,50 @@ inspection, not yet scripted into a standalone tool):
   wouldn't need furigana, but need to confirm the renderer doesn't choke on
   their absence).
 
-**Not yet determined**: how entries in a `.STR` file are looked up/indexed
-by the game. `item.dat` exists alongside `item.STR` and is presumed to hold
-structured records (price, stats, sprite ID, etc.) that likely also
-reference the description text somehow — need to check whether that
-reference is a byte offset into `item.STR` (in which case resizing a string
-would require also patching `item.dat`'s offset table) or a simple
-sequential index (in which case the game may just count null terminators at
-load time, and resizing is safe as long as string *order* and *count* is
-preserved). This directly determines how safely `item.STR`/`unitbase.STR`
-can be edited — **investigate before touching either file**.
+**RESOLVED (2026-07-18): lookup is by ORDINAL INDEX, not byte offset —
+resizing is safe.** Investigated with `tools/analyze_str_dat.py`,
+`analyze_str_dat2.py`, and the decisive `tools/find_offset_table.py`:
+
+- `item.dat` (45,056 B) is dense bit/byte-packed binary (0xAD filler),
+  **not** a clean fixed-record table. It contains **zero** plaintext u32
+  byte-offsets into `item.STR` (raw u32 match count = 0), and no monotonic
+  offset/index column at any tested record size. `unitbase.dat` likewise has
+  no structured offset column (its scattered u16/u32 "matches" are dense-
+  binary coincidences).
+- Decisive check: `find_offset_table.py` computed `item.STR`'s exact
+  string-start offset sequence and searched **all 1,987 extracted files**
+  for it as consecutive u32/u16 raw offsets, as `offset>>5` block indices,
+  and as u16 length-deltas. **No offset/length table exists anywhere in the
+  extraction.** Hardcoding 822 offsets as code immediates is implausible, so
+  the loader necessarily locates the Nth string by counting null terminators
+  at load time — i.e. ordinal indexing.
+
+**Editing rule (safe):** a `.STR` file may be freely re-translated, resizing
+strings up or down, **provided** you preserve: (1) the total string count,
+(2) the string order, (3) one `0x00` terminator per string, and (4) 32-byte
+alignment of each string's start (re-pad with `0x00` up to the next 0x20
+boundary after each terminator). Do **not** add or remove strings. Note:
+`item.STR` and `unitbase.STR` are currently **100% untranslated Japanese
+SJIS** (verified by `tools/verify_str_align.py` — 822/822 and 2374/2374
+strings classify as SJIS, 0 already-French, all 32-byte aligned), so every
+entry is fair game.
 
 ## Open questions / TODO
 
+- [x] ~~Derive the custom single-byte→character encoding table.~~ **SOLVED
+      2026-07-18** — see the encoding section above / `tools/ie3_codec.py`.
+- [x] ~~Determine `.STR` file indexing mechanism.~~ **SOLVED 2026-07-18** —
+      ordinal index, resizing safe (see `.STR` section above).
+- [x] ~~Confirm the `.pkh`/`.pkb` format generalizes beyond evet.~~ **mcht
+      confirmed** — `evet_extract.parse_evet("mcht")` parses cleanly and its
+      465 French chunks use the identical encoding. (`help.pkb` is tiny/mostly
+      non-text; the bytecode siblings eve/mch/act/mr/mrobj are not prose.)
 - [ ] Determine meaning of `.pkh` header fields at `0x14` (u16) and `0x18`/
-      `0x1C` (u32×2) — currently unexplained.
-- [ ] Determine meaning of the single-byte control codes seen at the start
-      of `.pkb` sub-strings (`<`, `,`, `4`, `(`, `0x04`, etc.) — control
-      codes vs. literal characters.
-- [ ] Confirm whether `eve.pkb` bytecode really does reference `evet.pkb`
-      text by the ID field (record field 1) rather than a raw offset —
-      would need to disassemble a snippet of `eve.pkb` around a known
-      dialogue trigger.
-- [ ] Derive the full custom single-byte→character encoding table (see
-      "Recommended next approach" above).
-- [ ] Determine `.STR` file indexing mechanism (see previous section).
-- [ ] Repeat the `.pkh`/`.pkb` structural analysis for `mcht.pkb`/`.pkh`
-      and `help.pkb`/`.pkh` to confirm the format generalizes (currently
-      only verified against `evet.pkh`/`evet.pkb`).
+      `0x1C` (u32×2) — currently unexplained. (Not needed for text editing.)
+- [ ] Confirm whether `eve.pkb` bytecode references `evet.pkb` text by the ID
+      field vs. within-slot sub-string index — matters for how safely
+      sub-strings inside one slot can be reflowed/resized during reinsertion.
+      Would need to disassemble `eve.pkb` around a known dialogue trigger.
+- [ ] Exact meaning of inline control codes (leading box code per sub-string;
+      inline `0x04/0x10/0x14/0x18/0x1C`). Preserved verbatim regardless, but
+      knowing them would help validate reinsertion in an emulator.

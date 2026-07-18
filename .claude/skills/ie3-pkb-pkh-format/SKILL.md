@@ -67,12 +67,18 @@ detect which per sub-string, don't assume one encoding for a whole file.
   starting template rather than re-deriving struct offsets from scratch.
   `inspect_pkh2.py` in particular shows how to read records and cross-check
   them against real `.pkb` bytes.
-- No full slot-by-slot extractor/reinsertion tool exists yet (as of this
-  writing) — see `docs/TOOLS.md` "Not yet built" for what's still needed.
-  If you're building one, structure it as: parse `.pkh` records → for each,
-  read `pkb[offset:offset+budget]` → split into sub-strings on the
-  `[00 00 00]...[00]` pattern → decode each (auto-detect SJIS vs. custom
-  encoding) → emit `(id, sub_index, decoded_text)`.
+- **The extractor/reinserter now exist — use them, don't rewrite.**
+  `tools/evet_slots.py` is the byte-exact slot model (`load_slots`, `Slot`);
+  it round-trips all evet+mcht slots losslessly and conserves each slot's
+  budget span, so the `.pkh` never needs editing. `tools/evet_dump.py` dumps
+  translatable text to editable JSON; `tools/evet_reinsert.py` writes edited
+  JSON back into a new `.pkb`, budget-checked (a no-op reinsert reproduces the
+  original byte-for-byte). Text decode/encode is `tools/ie3_codec.py`.
+  Key facts the model relies on (verified): a slot owns exactly `budget` bytes
+  at `off` — the gap to the next record is `0x04 0xFF…` inter-slot filler, NOT
+  the slot's; every sub-string's first byte is a box/speaker **control code**
+  (always a multiple of 4) preserved automatically; the interior zero-padding
+  is the slack an over-long translation grows into.
 - Only `eve`/`evet` has been structurally verified. `mch`/`mcht`, `help`,
   `act`, `mr`, `mrobj` are presumed to follow the same `.pkb`/`.pkh` pattern
   (same magic string format) but this has **not** been individually

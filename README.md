@@ -15,11 +15,12 @@ Scope: personal copy, personal/learning use. Not for redistribution.
 | Extract ROM filesystem | ✅ done |
 | Locate remaining Japanese text | ✅ done |
 | Reverse-engineer `.pkb`/`.pkh` script-text format | ✅ done (see [`docs/FORMAT_NOTES.md`](docs/FORMAT_NOTES.md)) |
-| Reverse-engineer custom French character encoding | 🔶 in progress, blocked — see "Known blockers" below |
-| Reverse-engineer `.STR` flat string pool format | ⬜ not started |
-| Build extraction script (dump text + IDs to editable file) | ⬜ not started |
-| Build reinsertion script (write translations back into ROM) | ⬜ not started |
-| Repack + test in emulator | ⬜ not started |
+| Reverse-engineer custom French character encoding | ✅ done — `tools/ie3_codec.py` (see [`docs/FORMAT_NOTES.md`](docs/FORMAT_NOTES.md)) |
+| Reverse-engineer `.STR` flat string pool format | ✅ done — ordinal index, resizing safe (see [`docs/FORMAT_NOTES.md`](docs/FORMAT_NOTES.md)) |
+| Build extraction script (dump text + IDs to editable file) | ✅ done for `.pkb` — `tools/evet_dump.py` (`.STR` dumper still TODO) |
+| Build reinsertion script (write translations back into `.pkb`) | ✅ done for `.pkb` — `tools/evet_reinsert.py`, budget-checked, byte-exact round-trip (`.STR` + whole-ROM repack still TODO) |
+| Repack ROM + test in emulator | ⬜ not started (no emulator yet) |
+| Draft French for the 15,756 `evet` Japanese chunks | ⬜ awaiting translator (Phil) — extraction is ready |
 
 ## Quickstart
 
@@ -45,23 +46,24 @@ for method and caveats). Ranked by volume:
 1. **`data_iz/script/evet.pkb`** — 22,672 runs. Main event/story dialogue text. The big one.
 2. **`data_iz/logic/unitbase.STR`** — 3,144 runs. Player roster names/stats.
 3. **`data_iz/logic/item.STR`** — 509 runs. Item descriptions.
-4. Smaller gaps: `data_iz/script/blogpost.dat`, a few menu `.pkb` files
-   (`data_iz/pic2d/cmd/mbd_c.pkb`, `tcd_c.pkb`), `_overlay9_0004.bin`.
+4. Smaller gap: `data_iz/script/blogpost.dat`, `_overlay9_0004.bin`.
 
-`.SAD` sound files also show up in the scan but are false positives — binary
-audio data coincidentally matching Shift-JIS byte patterns, not real text.
+`.SAD` sound files show up in the scan but are false positives (binary audio
+matching Shift-JIS by coincidence). So do the menu `.pkb`s
+(`data_iz/pic2d/cmd/mbd_c.pkb`, `tcd_c.pkb`) — those are **tile/graphics data**
+(repeating `0x77`/`0x7C`/`0xFF` patterns), not text; ignore them.
 
-## Known blockers
+## Status of the former blockers (both resolved)
 
-**Custom character encoding not yet solved.** The existing French text does
-not use standard Latin-1/CP1252 — e.g. byte `0xC9` renders as `ù`, not `É`.
-We need the full byte→character table before new French text can be written
-back safely. Two attempts documented in `docs/FORMAT_NOTES.md`; both were too
-noisy because several `.pkb` files (`mch.pkb`, `act.pkb`, `mrobj.pkb`, etc.)
-are mostly script bytecode, not text, and pollute a naive whole-file scan.
-**Next step**: restrict the context-collection scan to properly
-`.pkh`-bounded, null-terminated string slots only (the parsing approach
-proven in `tools/inspect_pkh2.py`), not raw regex over whole files.
+- **Custom character encoding — SOLVED.** The 11 lowercase accented letters
+  (`0xC9`ù, `0xB1`à, …) plus `0x81`-lead symbols were derived from cleanly
+  `.pkh`-bounded French chunks and implemented in `tools/ie3_codec.py`.
+- **`.STR` indexing — SOLVED.** Ordinal index (no offset table exists
+  anywhere), so `.STR` strings can be resized freely under four invariants.
+
+Extraction + reinsertion for `.pkb` dialogue is built and byte-exact
+(`tools/evet_dump.py` / `tools/evet_reinsert.py`). Remaining work: `.STR`
+dump/reinsert tools, whole-ROM repack via `ndspy`, and emulator validation.
 
 See [`docs/FORMAT_NOTES.md`](docs/FORMAT_NOTES.md) for full technical detail
 and [`docs/TOOLS.md`](docs/TOOLS.md) for what each script does.

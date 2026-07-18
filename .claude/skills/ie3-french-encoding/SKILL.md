@@ -5,12 +5,24 @@ description: Use when deriving, applying, or reasoning about the custom single-b
 
 # IE3 Custom French Character Encoding
 
-The existing French patch text does **not** use standard Latin-1/CP1252.
-Confirmed example: byte `0xC9` renders as `ù` (CP1252 would say `É`), byte
-`0xB1` renders as `à` (CP1252 would say `±`). No table file has been found
-in the ROM or repo. **This encoding is not fully solved yet** — treat any
-mapping you derive as a hypothesis to verify (e.g. in an emulator), not a
-known fact, until confirmed.
+**SOLVED 2026-07-18.** Use `tools/ie3_codec.py` (`decode_text` /
+`encode_text`) — don't re-derive. The full confirmed table lives in
+`docs/FORMAT_NOTES.md` ("Custom single-byte French character encoding —
+SOLVED"). The rest of this skill explains the pitfalls of the earlier failed
+attempts, kept because they're useful if this ever needs re-deriving (e.g.
+for another Level-5 ROM).
+
+The existing French patch text does **not** use standard Latin-1/CP1252
+(byte `0xC9` = `ù`, not CP1252 `É`; `0xB1` = `à`, not `±`). The confirmed
+single-byte accents (all **lowercase**) are: `0xB1`à `0xB3`â `0xB8`ç `0xB9`è
+`0xBA`é `0xBB`ê `0xBF`î `0xC0`ï `0xC5`ô `0xC9`ù `0xCB`û; plus `0x81`-lead
+full-width symbols `°☆♪…`. ASCII `0x20-0x7E` is itself. Uppercase accented
+letters and the rarer accents/ligatures/guillemets have **no confirmed byte**
+— the shipped translation folds them to ASCII house-style, and so does
+`encode_text`. Still
+worth an **emulator spot-check** before bulk reinsertion (no emulator set up
+yet), but the table itself is corpus-confirmed (11,264 evet + 465 mcht FR
+chunks, zero unmapped letters).
 
 Untranslated entries are separate: they use standard 2-byte Shift-JIS, not
 this custom scheme. Always detect per-string which encoding applies (see

@@ -31,39 +31,41 @@ dialogue.
   presumably don't need this, but **unconfirmed** whether the renderer
   tolerates its absence gracefully — test in an emulator before assuming.
 
-## What's NOT yet confirmed — investigate before editing
+## Indexing mechanism — RESOLVED: ordinal index, resizing is safe
 
-**How entries get looked up.** `item.STR` has a same-named sibling
-`item.dat` presumed to hold structured records (price, stats, sprite ID,
-...) that likely reference the description text somehow. This matters a
-lot for editing safety:
+Confirmed 2026-07-18 (`tools/analyze_str_dat.py`, `analyze_str_dat2.py`,
+`find_offset_table.py`; see `docs/FORMAT_NOTES.md` for the full write-up).
+The game looks entries up by **ordinal index** (Nth string), **not** by byte
+offset:
 
-- If the reference is a **byte offset** into `item.STR`, resizing any
-  string requires also patching every downstream offset in `item.dat` (and
-  anything else that references entries after the one you resized).
-- If the reference is a **sequential index** (e.g. the game just counts
-  null terminators at load time to find the Nth entry), then resizing is
-  safe as long as string **count and order** are preserved — you can freely
-  change length.
+- `item.dat`/`unitbase.dat` contain no plaintext offset table into their
+  `.STR` (raw u32 offset matches in `item.dat` = 0; no monotonic offset/
+  index column at any record size).
+- `find_offset_table.py` searched **all 1,987 extracted files** for
+  `item.STR`'s exact offset sequence (as raw u32/u16 offsets, `offset>>5`
+  block indices, and length deltas) and found it **nowhere** — so there is
+  no offset table for the loader to read; it must count null terminators at
+  load time.
 
-**Do not assume either answer — check `item.dat`'s structure first**
-(dump it, look for plausible offset-sized integers that land on `item.STR`'s
-32-byte-aligned boundaries, or for small sequential integers that look like
-indices instead). The same question applies to `unitbase.STR` and its
-likely sibling `.dat`/logic table, and to the other `.STR` files. No script
-exists yet for this — see `docs/FORMAT_NOTES.md` → "`.STR` flat string pool
-format" and the open-questions list for the current state, and update that
-doc (not just this skill) once resolved.
+**Safe editing rule:** you may re-translate and freely resize strings
+(longer or shorter) as long as you preserve all four invariants:
+1. total **string count** unchanged (don't add/remove strings),
+2. string **order** unchanged,
+3. exactly one `0x00` **terminator** per string,
+4. each string's start stays **32-byte aligned** (pad with `0x00` up to the
+   next 0x20 boundary after each terminator).
+
+Do not rely on staying within the original block span — that's unnecessary
+now; full resizing is safe under the four invariants above.
 
 ## Practical guidance
 
-- Given the indexing question is open, the **safest first edits** are ones
-  where you keep the replacement string the same byte length or shorter
-  than the original within its 32-byte-aligned block span (i.e. it still
-  fits in the same number of 0x20 blocks) — this sidesteps the whole
-  offset-relocation question regardless of which lookup mechanism turns out
-  to be true, at the cost of being more space-constrained than necessary.
-- `unitbase.STR` (player roster, 3,144 leftover Japanese runs per the last
-  scan) is a much bigger and more repetitive dataset than `item.STR` — a
-  good candidate to fully solve the indexing question on first, since
-  getting it wrong at that scale is costly to redo.
+- `item.STR` (822 strings) and `unitbase.STR` (2,374 strings) are currently
+  **100% untranslated Japanese SJIS** (verified by
+  `tools/verify_str_align.py` — every string classifies as SJIS, none are
+  already French, all are 32-byte aligned). So every entry is available to
+  translate; there's no partial-translation state to work around.
+- `unitbase.STR` (player roster) is large and repetitive — a good first
+  bulk target once the extraction/reinsertion tooling exists.
+- Always re-run `verify_str_align.py` after any edit to confirm the four
+  invariants still hold before repacking.
