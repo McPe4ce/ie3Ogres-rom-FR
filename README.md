@@ -65,8 +65,10 @@ Extraction + reinsertion for `.pkb` dialogue is built and byte-exact
 (`tools/evet_dump.py` / `tools/evet_reinsert.py`). Remaining work: `.STR`
 dump/reinsert tools, whole-ROM repack via `ndspy`, and emulator validation.
 
-See [`docs/FORMAT_NOTES.md`](docs/FORMAT_NOTES.md) for full technical detail
-and [`docs/TOOLS.md`](docs/TOOLS.md) for what each script does.
+New to this / want the intuition first? Read
+[`docs/HOW_IT_WORKS.md`](docs/HOW_IT_WORKS.md) — a plain-language explainer with
+diagrams. Then [`docs/FORMAT_NOTES.md`](docs/FORMAT_NOTES.md) for full technical
+detail and [`docs/TOOLS.md`](docs/TOOLS.md) for what each script does.
 
 ## Claude Code skills
 
