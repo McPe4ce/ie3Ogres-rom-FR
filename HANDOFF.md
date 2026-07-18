@@ -74,3 +74,44 @@ One-shot probes kept for provenance (not routine use): `analyze_str_dat*.py`,
 - The `.nds` ROM is a personal copy — **never commit it** (`.gitignore` covers
   `*.nds`). `extracted/` and `tools/venv/` are gitignored too; regenerate.
 - Keep `docs/FORMAT_NOTES.md` as the source of truth; the skills point to it.
+
+## Continuing on another machine
+
+All code, docs, and skills are on GitHub (`origin/main`). Three things are
+**not** in git — two regenerate themselves, only the ROM must be moved by hand:
+
+| Thing | In git? | How to get it |
+|---|---|---|
+| the `.nds` ROM (~513 MB) | no (`*.nds` ignored) | **copy manually** (USB / private cloud / scp) — never through git |
+| `extracted/` (~453 MB) | no | **regenerate**: `python3 extract_rom.py` |
+| `tools/venv/` (~17 MB) | no | **regenerate**: `python3 -m venv venv && pip install ndspy` |
+
+Setup steps:
+
+```bash
+# 1. clone the tracked project
+git clone https://github.com/McPe4ce/ie3Ogres-rom-FR.git
+cd ie3Ogres-rom-FR
+
+# 2. copy the ROM into the repo root by hand, exact same filename:
+#    Inazuma-Eleven-3-Sekai-heno-Chousen-The-Ogre-DS-Traduit-en-Français-v06.nds
+
+# 3. recreate the Python env
+cd tools && python3 -m venv venv && source venv/bin/activate && pip install ndspy
+
+# 4. rebuild the extracted filesystem (needs the ROM from step 2)
+python3 extract_rom.py
+
+# 5. sanity check — both should pass cleanly
+python3 evet_slots.py evet     # 0 round-trip failures, full-pkb identical
+python3 ie3_codec.py           # all "OK"
+```
+
+Notes:
+- **In-progress translation JSON** (e.g. `evet_jp.json`) is not auto-tracked —
+  only `.py`/`.md` have been committed. To carry half-finished translations
+  between machines, commit the JSON deliberately (`git add tools/evet_jp.json`)
+  or copy it alongside the ROM. It's small; committing is easiest.
+- The bypass-permission settings live in `~/.claude/settings.local.json` on the
+  current machine only — not part of the project; re-add on the new machine if
+  wanted.
