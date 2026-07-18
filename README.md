@@ -65,3 +65,19 @@ proven in `tools/inspect_pkh2.py`), not raw regex over whole files.
 
 See [`docs/FORMAT_NOTES.md`](docs/FORMAT_NOTES.md) for full technical detail
 and [`docs/TOOLS.md`](docs/TOOLS.md) for what each script does.
+
+## Claude Code skills
+
+`.claude/skills/` has four project-scoped skills that capture this
+project's tooling and reverse-engineered format knowledge, so a fresh
+Claude Code session doesn't have to re-derive it. They auto-trigger based
+on what you're working on, or can be read directly:
+
+- `ie3-rom-extraction` — extracting the ROM and scanning for untranslated text
+- `ie3-pkb-pkh-format` — the `.pkb`/`.pkh` "PackNum" script/dialogue archive format
+- `ie3-str-format` — the `.STR` flat string pool format
+- `ie3-french-encoding` — the (unsolved) custom French character encoding, and what not to try again
+
+Keep these in sync with `docs/FORMAT_NOTES.md` as the format understanding
+evolves — the docs are the source of truth, the skills are a condensed,
+task-oriented pointer to them.
