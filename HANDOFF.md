@@ -6,20 +6,47 @@ skills in `.claude/skills/`. Read [`README.md`](README.md) first.
 
 ## Where we are (2026-07-19)
 
-Both former blockers are **solved**, the `.pkb` translation pipeline is
-**built and byte-exact verified**, and the whole-ROM repack is **built and
-content-lossless verified** — an edit can now be written back into a `.nds`:
+All tooling is **built & verified end-to-end** (extract → edit → reinsert →
+whole-ROM repack, byte-checked for both text formats), and **translation is
+underway** — the project is now in the content-filling phase.
 
 | Thing | State |
 |---|---|
 | `.STR` indexing (offset vs index) | ✅ **ordinal index** — resizing safe (no offset table exists anywhere). |
-| Custom French encoding | ✅ **solved** — 11 lowercase accents + `0x81` symbols, in `tools/ie3_codec.py`. |
+| Custom encodings | ✅ **two**: `evet.pkb` dialogue = single-byte accented (`tools/ie3_codec.py`); `*.STR` menus = **full-width SJIS, no accents** (`tools/str_codec.py`, round-trips 1206/1207 shipped-FR records). Don't mix them up. |
 | `.pkb`/`.pkh` slot model | ✅ **byte-exact round-trip** on all 2972 evet + 28 mcht slots. |
 | `.pkb` extract → edit → reinsert | ✅ **built & tested** (`evet_dump.py` / `evet_reinsert.py`). |
-| Whole-ROM repack (edited file → new `.nds`) | ✅ **built & verified** (`repack_rom.py`) — content-lossless; a one-slot evet edit lands in the ROM, only that file differs. |
-| `.STR` dump/reinsert tools | ✅ **built & verified** (`str_slots/str_dump/str_reinsert.py`) — byte-exact round-trip on all 7 `.STR` files; item/unitbase edits repack cleanly. |
-| Translating the text | ⬜ **not started** — Phil (the owner) will draft French. |
+| Whole-ROM repack (edited file → new `.nds`) | ✅ **built & verified** (`repack_rom.py`) — content-lossless; edits land in the ROM, only edited files differ. |
+| `.STR` dump/reinsert tools | ✅ **built & verified** (`str_slots/str_dump/str_reinsert/str_codec.py`) — byte-exact on all 7 `.STR` files. |
+| Translation house style + skill | ✅ `ie3-translation` skill + `docs/NAME_GLOSSARY.md` (official EU names). |
+| **Translating the text** | 🔶 **in progress** — `item.STR` **448/822** done (`translations/item.json`). |
 | Emulator test | ⬜ not started (no emulator installed). |
+
+## Translation progress & how to resume (start here tomorrow)
+
+- **Read the `ie3-translation` skill first** — it has the house style, the
+  two-encoding rule, terminology, and the per-format workflow.
+- **`item.STR`: 448/822 done**, saved in `translations/item.json` (the durable
+  artifact — the scratchpad `.nds`/`.STR` builds are gone, but this JSON isn't).
+  Rebuild the patched file anytime:
+  ```bash
+  python3 str_reinsert.py ../translations/item.json --out item_new.STR
+  python3 repack_rom.py -r data_iz/logic/item.STR=item_new.STR -o patched.nds --verify
+  ```
+  Done so far: consumables, travel/route tickets, spirit emblems, story/key
+  items, command/skill effect strings, and **all 352 技の秘伝書 technique
+  manuals** (done by formula — see the skill).
+- **Remaining item.STR (374):** flavour gear — uniforms, spikes, gloves,
+  misangas/pendants, formations, GK-shoe names — all reference **team &
+  character names**. **Next step: build the team-name glossary** (mine the
+  ROM's existing FR + official EU names) and finish the gear with it; that same
+  glossary is what `unitbase.STR` (2374 bios) and `evet` dialogue need next.
+- **Naming decision (locked):** official European (English-dub) names, kept
+  constant — see `docs/NAME_GLOSSARY.md`. Romaji only for truly unknown NPCs.
+- **Uncommitted at end of 2026-07-19** (Phil commits himself): new
+  `tools/str_codec.py`, `.claude/skills/ie3-translation/`, `docs/NAME_GLOSSARY.md`,
+  `translations/`; modified `tools/str_reinsert.py` (encoder fix — the previously
+  committed version used the WRONG encoder), `str_dump.py`, `str_slots.py`.
 
 ## The pipeline (use these; don't rewrite)
 

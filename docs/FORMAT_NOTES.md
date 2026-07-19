@@ -266,12 +266,26 @@ punctuation marks like `°` — detect encoding per-string.)
 `item.STR` (822 strings) and `unitbase.STR` (2374 strings) are currently **100%
 untranslated Japanese SJIS**, so every entry is fair game.
 
+**Encoding — `.STR` is FULL-WIDTH SJIS, not the single-byte dialogue encoding
+(confirmed 2026-07-19).** Translated `.STR` text (menus, item/player
+descriptions) is written in **full-width SJIS Latin with NO accents** — letters
+are full-width forms (`0x82 xx`), space is the full-width space `　` (`0x81 40`),
+apostrophe is `’` (`0x81 66`), accented letters are written unaccented (house
+style). This is a **different encoding** from `evet.pkb` dialogue (single-byte,
+lowercase-accented — `tools/ie3_codec.py`). Verified: the shipped already-French
+`.STR` pools (`sp_binder`, `command`, `tacticscmd`) contain **zero**
+single-byte-accent bytes, and `tools/str_codec.py` (`encode_str_fr` /
+`decode_str_fr`) reproduces 1206/1207 of them byte-exactly (the 1 is a
+blank-spaces record). Use `str_codec` for `.STR`; never `ie3_codec`.
+
 **Tooling (built 2026-07-19):** `tools/str_slots.py` (byte-exact model +
-round-trip self-test), `tools/str_dump.py` (dump translatable records to JSON,
-addressed by ordinal `idx`), `tools/str_reinsert.py` (apply edits into a new
-`.STR`, count/order preserved, edited records re-padded to 0x20, no budget
-check). Feed the result to `tools/repack_rom.py`. A no-op reinsert reproduces
-the original `.STR` byte-for-byte. See `docs/TOOLS.md`.
+round-trip self-test), `tools/str_codec.py` (full-width FR codec), `str_dump.py`
+(dump translatable records to JSON, addressed by ordinal `idx`),
+`str_reinsert.py` (apply edits into a new `.STR`, count/order preserved, edited
+records re-padded to 0x20, no budget check). Feed the result to
+`tools/repack_rom.py`. A no-op reinsert reproduces the original byte-for-byte.
+See `docs/TOOLS.md`. **Translation status:** `item.STR` 448/822 in
+`translations/item.json`; see the `ie3-translation` skill + `docs/NAME_GLOSSARY.md`.
 
 ## Open questions / TODO
 

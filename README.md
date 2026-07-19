@@ -19,9 +19,11 @@ Scope: personal copy, personal/learning use. Not for redistribution.
 | Reverse-engineer `.STR` flat string pool format | ✅ done — ordinal index, resizing safe (see [`docs/FORMAT_NOTES.md`](docs/FORMAT_NOTES.md)) |
 | Build extraction script (dump text + IDs to editable file) | ✅ done — `.pkb`: `tools/evet_dump.py`; `.STR`: `tools/str_dump.py` |
 | Build reinsertion script (write translations back) | ✅ done — `.pkb`: `tools/evet_reinsert.py` (budget-checked); `.STR`: `tools/str_reinsert.py` (resize-free); both byte-exact round-trip |
-| Whole-ROM repack (edited files → new `.nds`) | ✅ done — `tools/repack_rom.py`, content-lossless (`--verify`); one-slot edit proven to land in the ROM |
+| Whole-ROM repack (edited files → new `.nds`) | ✅ done — `tools/repack_rom.py`, content-lossless (`--verify`); edits proven to land in the ROM |
+| Translation house style + name glossary | ✅ `ie3-translation` skill + `docs/NAME_GLOSSARY.md` (official EU names) |
+| Draft French — `item.STR` | 🔶 in progress — **448/822** (`translations/item.json`); remaining are team-named gear |
+| Draft French — `unitbase.STR` (2374) + `evet` (~15,756) | ⬜ next up (needs the team-name glossary) |
 | Test in emulator | ⬜ not started (no emulator yet) |
-| Draft French for the 15,756 `evet` Japanese chunks | ⬜ awaiting translator (Phil) — extraction is ready |
 
 ## Quickstart
 
@@ -81,7 +83,8 @@ on what you're working on, or can be read directly:
 - `ie3-rom-extraction` — extracting the ROM and scanning for untranslated text
 - `ie3-pkb-pkh-format` — the `.pkb`/`.pkh` "PackNum" script/dialogue archive format
 - `ie3-str-format` — the `.STR` flat string pool format
-- `ie3-french-encoding` — the (unsolved) custom French character encoding, and what not to try again
+- `ie3-french-encoding` — the custom single-byte French encoding for `evet` dialogue
+- `ie3-translation` — how to actually translate: house style, name glossary, the two encodings, per-format workflow
 
 Keep these in sync with `docs/FORMAT_NOTES.md` as the format understanding
 evolves — the docs are the source of truth, the skills are a condensed,

@@ -172,6 +172,12 @@ per-record budget. Built 2026-07-19; round-trips all seven `.STR` files.
   `python3 str_slots.py item unitbase` runs a round-trip self-test + census.
   Captures each record's *actual* trailing padding (alignment is a per-file
   convention — `games.STR` packs some strings tight; see `FORMAT_NOTES.md`).
+- `str_codec.py` — **the `.STR` text codec** (`encode_str_fr` / `decode_str_fr`).
+  `.STR` menus/descriptions use **full-width SJIS Latin, no accents** (NOT the
+  single-byte accented dialogue encoding — that's `ie3_codec.py` for `evet`).
+  Run it directly to re-prove the round-trip against shipped French
+  (1206/1207 records reproduce exactly; the 1 is a blank-spaces record).
+  `str_reinsert.py` uses this; import it for any `.STR` French encoding.
 - `str_dump.py` — dump translatable records to editable JSON, addressed by
   ordinal `idx`: `python3 str_dump.py item [--jp-only] [-o out.json]`. Empty/
   padding records are skipped but their indices preserved.
