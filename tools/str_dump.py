@@ -17,22 +17,24 @@ Usage:
 import json, argparse
 from collections import Counter
 from str_slots import load, LOGIC
-from ie3_codec import decode_text
+from str_codec import decode_str_fr
+
+
+def _has_real_jp(s):
+    """True if the string contains kana or CJK kanji (genuinely untranslated).
+    Full-width Latin decodes to SJIS pairs too but is already-translated French,
+    so we key off actual Japanese script, not raw SJIS-pair presence."""
+    return any('぀' <= c <= 'ヿ' or '一' <= c <= '鿿' or 'ｦ' <= c <= 'ﾝ'
+               for c in s)
 
 
 def classify(b):
-    """jp (>=2 SJIS pairs) / fr (other high bytes) / ascii / empty."""
+    """jp (real kana/kanji -> translate) / fr (already full-width French) /
+    ascii / empty."""
     if not b:
         return "empty"
-    hits, k = 0, 0
-    while k < len(b) - 1:
-        lo = b[k]
-        if 0x81 <= lo <= 0x9f or 0xe0 <= lo <= 0xef:
-            tr = b[k + 1]
-            if 0x40 <= tr <= 0xfc and tr != 0x7f:
-                hits += 1; k += 2; continue
-        k += 1
-    if hits >= 2:
+    s = b.decode("shift_jis", errors="replace")
+    if _has_real_jp(s):
         return "jp"
     return "fr" if any(x >= 0x80 for x in b) else "ascii"
 
@@ -41,10 +43,7 @@ def decode_src(b, cls):
     if cls == "jp":
         return b.decode("shift_jis", errors="replace")
     if cls == "fr":
-        try:
-            return decode_text(b, control="token")
-        except Exception:
-            return b.decode("latin-1")  # e.g. UTF-8 punctuation in games.STR
+        return decode_str_fr(b)   # already-French full-width -> readable ASCII
     return b.decode("ascii", errors="replace")
 
 

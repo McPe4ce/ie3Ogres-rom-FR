@@ -1,9 +1,11 @@
 """Apply translated text from a str_dump.py JSON back into a NEW .STR file.
 
 Strategy (safe, evet-style): the original .STR is the byte-exact base. For each
-edited entry we replace that record's text with encode_text(fr) and re-pad it to
-the next 0x20 boundary (matching the convention of the fully-untranslated target
-files). Unedited records keep their original bytes verbatim, so a no-op reinsert
+edited entry we replace that record's text with the full-width SJIS encoding of
+`fr` (str_codec.encode_str_fr — .STR uses full-width Latin, NOT the single-byte
+accented dialogue encoding; see str_codec.py) and re-pad it to the next 0x20
+boundary (matching the convention of the fully-untranslated target files).
+Unedited records keep their original bytes verbatim, so a no-op reinsert
 reproduces the original .STR byte-for-byte. Record COUNT and ORDER are always
 preserved — the two invariants the game's ordinal lookup actually depends on.
 There is NO per-record budget: .STR strings may grow or shrink freely.
@@ -13,7 +15,7 @@ Usage:
 """
 import json, argparse
 from str_slots import load, build_str, _align_up, LOGIC
-from ie3_codec import encode_text
+from str_codec import encode_str_fr
 
 
 def main():
@@ -48,7 +50,7 @@ def main():
                 continue
         idx = e["idx"]
         try:
-            enc, folds = encode_text(fr)
+            enc, folds = encode_str_fr(fr)
         except ValueError as ex:
             print(f"  ! idx {idx}: {ex} — skipped")
             skipped += 1

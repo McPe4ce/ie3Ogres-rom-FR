@@ -1,0 +1,4939 @@
+{
+ "file": "item",
+ "records": 1024,
+ "count": 822,
+ "entries": [
+  {
+   "idx": 1,
+   "cls": "jp",
+   "src": "とれたてのおいしい[水/みず]。\nＧＰが　ちょっと[回復/かいふく]。",
+   "fr": "Eau fraîche et délicieuse.\nRestaure un peu de GP."
+  },
+  {
+   "idx": 2,
+   "cls": "jp",
+   "src": "スポーツマンにはこれ！\nＧＰが　そこそこ[回復/かいふく]。",
+   "fr": "Le choix des sportifs !\nRestaure assez de GP."
+  },
+  {
+   "idx": 3,
+   "cls": "jp",
+   "src": "[飲/の]むと[元気/げんき]になれる！\nＧＰが　かなり[回復/かいふく]。",
+   "fr": "Un vrai coup de fouet !\nRestaure beaucoup de GP."
+  },
+  {
+   "idx": 4,
+   "cls": "jp",
+   "src": "[飲/の]めば[力/ちから]があふれ[出/だ]す！\nＧＰ　ぜんぶ[回復/かいふく]！",
+   "fr": "La force déborde à chaque gorgée !\nRestaure tout le GP !"
+  },
+  {
+   "idx": 9,
+   "cls": "jp",
+   "src": "カルシウムたっぷり。\nＧＰが　ちょっと[回復/かいふく]。",
+   "fr": "Riche en calcium.\nRestaure un peu de GP."
+  },
+  {
+   "idx": 11,
+   "cls": "jp",
+   "src": "クッキー[味/あじ]で[食/た]べやすい。\nＴＰが　ちょっと[回復/かいふく]。",
+   "fr": "Goût cookie, facile à grignoter.\nRestaure un peu de TP."
+  },
+  {
+   "idx": 12,
+   "cls": "jp",
+   "src": "[疲/つか]れた[体/からだ]にオススメ！\nＴＰが　そこそこ[回復/かいふく]。",
+   "fr": "Idéal pour les corps fatigués !\nRestaure assez de TP."
+  },
+  {
+   "idx": 13,
+   "cls": "jp",
+   "src": "[香/かお]りも[上質/じょうしつ]な[人気/にんき][商品/しょうひん]！\nＴＰが　かなり[回復/かいふく]。",
+   "fr": "Un produit prisé au parfum raffiné !\nRestaure beaucoup de TP."
+  },
+  {
+   "idx": 14,
+   "cls": "jp",
+   "src": "ひとくち[食/た]べれば[効果/こうか]ばつぐん！\nＴＰ　ぜんぶ[回復/かいふく]！",
+   "fr": "Une bouchée et l'effet est immédiat !\nRestaure tout le TP !"
+  },
+  {
+   "idx": 16,
+   "cls": "jp",
+   "src": "あったか〜い[手作/てづく]り。\nＴＰが　ちょっと[回復/かいふく]。",
+   "fr": "Fait maison, tout chaud.\nRestaure un peu de TP."
+  },
+  {
+   "idx": 20,
+   "cls": "jp",
+   "src": "ほどよいコクのトンコツ[味/あじ]。\nＧＰとＴＰを　そこそこ[回復/かいふく]。",
+   "fr": "Un bouillon tonkotsu bien corsé.\nRestaure assez de GP et de TP."
+  },
+  {
+   "idx": 21,
+   "cls": "jp",
+   "src": "１[度/ど][食/た]べたらやみつきになる[味/あじ]！\nＧＰとＴＰを　ぜんぶ[回復/かいふく]！",
+   "fr": "Une saveur dont on devient vite accro !\nRestaure tout le GP et le TP !"
+  },
+  {
+   "idx": 31,
+   "cls": "jp",
+   "src": "これを[使/つか]うと\n[大阪/おおさか]へ[行/い]けるようになるぞ！",
+   "fr": "Permet de se rendre\nà Osaka !"
+  },
+  {
+   "idx": 32,
+   "cls": "jp",
+   "src": "[遊園地/ゆうえんち]の[入場券/にゅうじょうけん]。　これを[使/つか]うと\nナニワランドへ[行/い]けるようになるぞ！",
+   "fr": "Billet d'entrée du parc d'attractions.\nPermet d'aller à Naniwa Land !"
+  },
+  {
+   "idx": 33,
+   "cls": "jp",
+   "src": "これを[使/つか]うと\n[奈良/なら]へ[行/い]けるようになるぞ！",
+   "fr": "Permet de se rendre\nà Nara !"
+  },
+  {
+   "idx": 34,
+   "cls": "jp",
+   "src": "フェリーの[乗船券/じょうせんけん]。　これを[使/つか]うと\n[沖縄/おきなわ]へ[行/い]けるようになるぞ！",
+   "fr": "Billet de ferry.\nPermet d'aller à Okinawa !"
+  },
+  {
+   "idx": 35,
+   "cls": "jp",
+   "src": "これを[使/つか]うと\n[福岡/ふくおか]へ[行/い]けるようになるぞ！",
+   "fr": "Permet de se rendre\nà Fukuoka !"
+  },
+  {
+   "idx": 36,
+   "cls": "jp",
+   "src": "[戦士/せんし]たちの　ほこりを[感/かん]じる！\nこれを[使/つか]うと　[対戦/たいせん]ルートが…？",
+   "fr": "On y sent la fierté des guerriers !\nL'utiliser ouvrirait une route de combat…?"
+  },
+  {
+   "idx": 37,
+   "cls": "jp",
+   "src": "アジア[予選/よせん]の[思/おも]い[出/で]が　よみがえる！\nこれを[使/つか]うと　[対戦/たいせん]ルートが…？",
+   "fr": "Les souvenirs des qualifications d'Asie ressurgissent !\nL'utiliser ouvrirait une route de combat…?"
+  },
+  {
+   "idx": 38,
+   "cls": "jp",
+   "src": "[真/しん]・[帝国/ていこく]のエクストラチケット。\nこれを[使/つか]うと　[対戦/たいせん]ルートが…？",
+   "fr": ""
+  },
+  {
+   "idx": 39,
+   "cls": "jp",
+   "src": "ゼウスのエクストラチケット。\nこれを[使/つか]うと　[対戦/たいせん]ルートが…？",
+   "fr": ""
+  },
+  {
+   "idx": 40,
+   "cls": "jp",
+   "src": "ウラゼウスのエクストラチケット。\nこれを[使/つか]うと　[対戦/たいせん]ルートが…？",
+   "fr": ""
+  },
+  {
+   "idx": 41,
+   "cls": "jp",
+   "src": "ジェミニのエクストラチケット。\nこれを[使/つか]うと　[対戦/たいせん]ルートが…？",
+   "fr": ""
+  },
+  {
+   "idx": 42,
+   "cls": "jp",
+   "src": "イプシロンのエクストラチケット。\nこれを[使/つか]うと　[対戦/たいせん]ルートが…？",
+   "fr": ""
+  },
+  {
+   "idx": 43,
+   "cls": "jp",
+   "src": "イプシロン[改/かい]のエクストラチケット。\nこれを[使/つか]うと　[対戦/たいせん]ルートが…？",
+   "fr": ""
+  },
+  {
+   "idx": 44,
+   "cls": "jp",
+   "src": "ジェネシスのエクストラチケット。\nこれを[使/つか]うと　[対戦/たいせん]ルートが…？",
+   "fr": ""
+  },
+  {
+   "idx": 45,
+   "cls": "jp",
+   "src": "[未知/みち]の[素材/そざい]で[作/つく]られたナゾのチケット。\nこれを[使/つか]うと　[対戦/たいせん]ルートが…？",
+   "fr": ""
+  },
+  {
+   "idx": 47,
+   "cls": "jp",
+   "src": "[闇/やみ]のオーラが[漂/ただよ]うチケット。\nこれを[使/つか]うと　[対戦/たいせん]ルートが…？",
+   "fr": ""
+  },
+  {
+   "idx": 48,
+   "cls": "jp",
+   "src": "[某/ぼう]アイドルのコンサートチケット。\nこれを[使/つか]うと　[対戦/たいせん]ルートが…？",
+   "fr": ""
+  },
+  {
+   "idx": 49,
+   "cls": "jp",
+   "src": "[強/つよ]いパワーを[感/かん]じる…！\nこれを[使/つか]うと　[対戦/たいせん]ルートが…？",
+   "fr": ""
+  },
+  {
+   "idx": 50,
+   "cls": "jp",
+   "src": "[世界/せかい]のライバルたちが[集/つど]うチケット。\nこれを[使/つか]うと　[対戦/たいせん]ルートが…？",
+   "fr": ""
+  },
+  {
+   "idx": 51,
+   "cls": "jp",
+   "src": "カードの[形状/けいじょう]になっているチケット。\nこれを[使/つか]うと　[対戦/たいせん]ルートが…？",
+   "fr": ""
+  },
+  {
+   "idx": 52,
+   "cls": "jp",
+   "src": "どんなときもあきらめない\n『ガムシャラ ガッツ』",
+   "fr": "Ne jamais renoncer, quoi qu'il arrive.\n『Cran Acharné』"
+  },
+  {
+   "idx": 53,
+   "cls": "jp",
+   "src": "どんなに[強/つよ]い[敵/てき]も[恐/おそ]れない\n『タチムカウ ユウキ』",
+   "fr": "Ne craindre aucun ennemi, si fort soit-il.\n『Courage Défiant』"
+  },
+  {
+   "idx": 54,
+   "cls": "jp",
+   "src": "[大切/たいせつ]なものを[守/まも]りたいと[思/おも]う\n『ソコナシノ ヤサシサ』",
+   "fr": "Vouloir protéger ce qui compte vraiment.\n『Bonté Sans Fond』"
+  },
+  {
+   "idx": 55,
+   "cls": "jp",
+   "src": "[仲間/なかま]のすべてを[信/しん]じられる\n『ゼッタイテキ　シンライ』",
+   "fr": "Croire en chacun de ses coéquipiers.\n『Confiance Absolue』"
+  },
+  {
+   "idx": 56,
+   "cls": "jp",
+   "src": "どんな[事態/じたい]にも[動/どう]じない\n『コオリノレイセイ』",
+   "fr": "Rester imperturbable en toute situation.\n『Sang-Froid de Glace』"
+  },
+  {
+   "idx": 57,
+   "cls": "jp",
+   "src": "[隠/かく]された[真実/しんじつ]を[見抜/みぬ]く[力/ちから]\n『ミヌクシンガン』",
+   "fr": "Le pouvoir de percer la vérité cachée.\n『Regard Perçant』"
+  },
+  {
+   "idx": 58,
+   "cls": "jp",
+   "src": "[人/ひと]の[過/あやま]ちを[許/ゆる]す[心/こころ]の[強/つよ]さ\n『ユルス ツヨサ』",
+   "fr": "La force d'âme de pardonner les fautes.\n『Force du Pardon』"
+  },
+  {
+   "idx": 59,
+   "cls": "jp",
+   "src": "[他人/たにん]の[喜/よろこ]びと[悲/かな]しみを[分/わ]かつ\n『ワカチアウ ナミダ』",
+   "fr": "Partager les joies et les peines d'autrui.\n『Larmes Partagées』"
+  },
+  {
+   "idx": 60,
+   "cls": "jp",
+   "src": "[高/たか]き[志/こころざし]を[持/も]つ[者/もの]だけが[見/み]る\n『ハテシナキ　ユメ』",
+   "fr": "Que seuls entrevoient les grands ambitieux.\n『Rêve Sans Fin』"
+  },
+  {
+   "idx": 61,
+   "cls": "jp",
+   "src": "[自分/じぶん]の[力/ちから]を[信/しん]じる[心/こころ]\n『マヨワナイ ジシン』",
+   "fr": "Un cœur qui croit en sa propre force.\n『Confiance Inébranlable』"
+  },
+  {
+   "idx": 62,
+   "cls": "jp",
+   "src": "どん[底/ぞこ]でも[消/き]えることのない\n『センシノ　ホコリ』",
+   "fr": "Qui ne s'éteint jamais, même au plus bas.\n『Fierté du Guerrier』"
+  },
+  {
+   "idx": 63,
+   "cls": "jp",
+   "src": "カノンが[落/お]とした[通信機/つうしんき]。\nこれを[使/つか]えばタイムスリップできる！？",
+   "fr": "Le communicateur que Canon a laissé tomber.\nIl permettrait de voyager dans le temps ?!"
+  },
+  {
+   "idx": 77,
+   "cls": "jp",
+   "src": "サッカー[部/ぶ][室/しつ]の[小部屋/こべや]をあける[鍵/かぎ]。",
+   "fr": "Clé du cagibi du club de foot."
+  },
+  {
+   "idx": 78,
+   "cls": "jp",
+   "src": "[体育館/たいいくかん]の[入/い]り[口/ぐち]の[鍵/かぎ]。\n[中/なか]に[入/はい]れるようになるぞ！",
+   "fr": "Clé de l'entrée du gymnase.\nElle permet enfin d'entrer !"
+  },
+  {
+   "idx": 79,
+   "cls": "jp",
+   "src": "[体育館/たいいくかん]エリアの[門/もん]をあける[鍵/かぎ]。\nここから[駄菓子/だがし][屋/や]にいけるぞ！",
+   "fr": "Clé du portail de la zone du gymnase.\nElle mène à l'épicerie à bonbons !"
+  },
+  {
+   "idx": 80,
+   "cls": "jp",
+   "src": "「[星/ほし]の[使徒/しと]」[研究所/けんきゅうじょ]の[扉/とびら]をあける[鍵/かぎ]。",
+   "fr": "Clé du laboratoire des Apôtres de l'Étoile."
+  },
+  {
+   "idx": 84,
+   "cls": "jp",
+   "src": "カノン[家/け]の[扉/とびら]を[開/あ]ける[鍵/かぎ]。\nひ[孫/まご]の[家/いえ]だから　[入/はい]ってもいいよね？",
+   "fr": "Clé de la maison de Canon.\nC'est chez mon arrière-petit-fils, je peux entrer, non ?"
+  },
+  {
+   "idx": 85,
+   "cls": "jp",
+   "src": "[地下道/ちかどう]の[扉/とびら]を[開/あ]ける[鍵/かぎ]。\nこれでオーガスタジアムに[行/い]けるぞ！",
+   "fr": "Clé de la porte du souterrain.\nElle mène au stade Ogre !"
+  },
+  {
+   "idx": 86,
+   "cls": "jp",
+   "src": "ライオコット[島/とう]に[封印/ふういん]された\n[伝説/でんせつ]の[地/ち]を[開/ひら]くといわれる[鍵/かぎ]。",
+   "fr": "Clé scellée sur l'île de Lioccot, qui\nouvrirait, dit-on, la terre légendaire."
+  },
+  {
+   "idx": 87,
+   "cls": "jp",
+   "src": "これがあれば　ガルシルドの[野望/やぼう]を\n[止/と]める[事/こと]ができるはずだ！",
+   "fr": "Avec ceci, on devrait pouvoir arrêter\nles ambitions de Garshield !"
+  },
+  {
+   "idx": 88,
+   "cls": "jp",
+   "src": "かつてガルシルドがおかした[悪事/あくじ]と\n[今後/こんご]の[計画/けいかく]が[記/しる]された[書類/しょるい]。",
+   "fr": "Un document relatant les méfaits passés\net les plans futurs de Garshield."
+  },
+  {
+   "idx": 89,
+   "cls": "jp",
+   "src": "ネオジャパン[戦/せん]のあとに　[砂木沼/さぎぬま]から\nもらった[合体/がったい][技/わざ]の[秘伝書/ひでんしょ]。",
+   "fr": "Le manuel de technique combinée reçu de\nSaginuma après le match contre Neo Japan."
+  },
+  {
+   "idx": 90,
+   "cls": "jp",
+   "src": "[入手/にゅうしゅ][困難/こんなん]な　すごく[貴重/きちょう]なハーブ。\n[香/かお]りだけで　つかれがとれる！",
+   "fr": "Une herbe rare et très précieuse.\nSon seul parfum chasse la fatigue !"
+  },
+  {
+   "idx": 91,
+   "cls": "jp",
+   "src": "[新種/しんしゅ][発見/はっけん]！？\n[闇/やみ]の[色/いろ]をした[奇妙/きみょう]なトカゲ。",
+   "fr": "Une espèce inédite ?!\nUn étrange lézard couleur de ténèbres."
+  },
+  {
+   "idx": 96,
+   "cls": "jp",
+   "src": "イナズママークのピンバッチ。\nかなりのレアモノという　ウワサも。",
+   "fr": "Un pin's à l'emblème d'Inazuma.\nUn objet plutôt rare, à ce qu'on raconte."
+  },
+  {
+   "idx": 97,
+   "cls": "jp",
+   "src": "きれいな[赤/あか]いコイン。",
+   "fr": "Une jolie pièce rouge."
+  },
+  {
+   "idx": 98,
+   "cls": "jp",
+   "src": "きれいな[青/あお]いコイン。",
+   "fr": "Une jolie pièce bleue."
+  },
+  {
+   "idx": 99,
+   "cls": "jp",
+   "src": "きれいな[黄色/きいろ]いコイン。",
+   "fr": "Une jolie pièce jaune."
+  },
+  {
+   "idx": 101,
+   "cls": "jp",
+   "src": "あざやかな[黄色/きいろ]がまぶしい\n[雷門/らいもん][愛用/あいよう]のユニフォーム。",
+   "fr": ""
+  },
+  {
+   "idx": 102,
+   "cls": "jp",
+   "src": "[静/しず]かなグレーのユニフォームは\n[最強/さいきょう]の[力/ちから]の[証/あかし]。",
+   "fr": ""
+  },
+  {
+   "idx": 103,
+   "cls": "jp",
+   "src": "オカルトな[色合/いろあ]いが\n[不気味/ぶきみ]に[見/み]えるユニフォーム。",
+   "fr": ""
+  },
+  {
+   "idx": 104,
+   "cls": "jp",
+   "src": "[野生児/やせいじ]たちの[心/こころ]をいやす\n[森/もり]の[香/かお]りのユニフォーム。",
+   "fr": ""
+  },
+  {
+   "idx": 105,
+   "cls": "jp",
+   "src": "[無/む]をイメージさせるカラーリングが\n[見/み]る[者/もの]に[恐怖感/きょうふかん]を[与/あた]える。",
+   "fr": ""
+  },
+  {
+   "idx": 106,
+   "cls": "jp",
+   "src": "[派手/はで]なピンクと[青/あお]のユニフォーム。\nちょっと[着/き]るのがはずかしい？",
+   "fr": ""
+  },
+  {
+   "idx": 107,
+   "cls": "jp",
+   "src": "[忍者/にんじゃ]のための[装束/しょうぞく]。\nこれを[着/き]れば　[君/きみ]もシノビに！？",
+   "fr": ""
+  },
+  {
+   "idx": 108,
+   "cls": "jp",
+   "src": "[山/やま]の[大自然/だいしぜん]で[育/そだ]った[者/もの]に[与/あた]えられる。\n[着心地/きごこち]はバツグン！",
+   "fr": ""
+  },
+  {
+   "idx": 109,
+   "cls": "jp",
+   "src": "[赤/あか]い[色/いろ]が[力強/ちからづよ]さをあらわす\n[強豪/きょうごう]にふさわしいユニフォーム。",
+   "fr": ""
+  },
+  {
+   "idx": 110,
+   "cls": "jp",
+   "src": "しんぴ[的/てき]な[気高/けだか]さを[感/かん]じさせる\n[世宇子/ぜうす][愛用/あいよう]のユニフォーム。",
+   "fr": ""
+  },
+  {
+   "idx": 111,
+   "cls": "jp",
+   "src": "[赤/あか]と[黄色/きいろ]のカラーリングが\n[着/き]る[者/もの]のかわいさを[引/ひ]き[立/た]てる。",
+   "fr": ""
+  },
+  {
+   "idx": 112,
+   "cls": "jp",
+   "src": "[同好/どうこう][会/かい]から[部活/ぶかつ]になった！\n[傘美野/かさみの]じまんのユニフォーム。",
+   "fr": ""
+  },
+  {
+   "idx": 113,
+   "cls": "jp",
+   "src": "[胸/むね]の「Ｓ」は　サリーの「Ｓ」！\n[稲妻町/いなずまちょう][商店街/しょうてんがい]のイメージユニフォーム。",
+   "fr": ""
+  },
+  {
+   "idx": 114,
+   "cls": "jp",
+   "src": "[最強/さいきょう]と[呼/よ]ばれるチームだけに[与/あた]えられる\n[幻/まぼろし]のユニフォーム。",
+   "fr": ""
+  },
+  {
+   "idx": 115,
+   "cls": "jp",
+   "src": "[混沌/こんとん]の[使者/ししゃ]\nカオスチームのユニフォーム。",
+   "fr": ""
+  },
+  {
+   "idx": 116,
+   "cls": "jp",
+   "src": "[空/そら]から[降/ふ]る[雨/あめ]をあらわした\n[水/みず][色/いろ]のタテじまユニフォーム。",
+   "fr": ""
+  },
+  {
+   "idx": 117,
+   "cls": "jp",
+   "src": "[中央/ちゅうおう]を[横切/よこぎ]るようにズバッと\nラインが[入/はい]ったユニフォーム。",
+   "fr": ""
+  },
+  {
+   "idx": 118,
+   "cls": "jp",
+   "src": "[大西洋/たいせいよう]の[雄大/ゆうだい]な[海/うみ]を\nイメージしたウェア。",
+   "fr": ""
+  },
+  {
+   "idx": 119,
+   "cls": "jp",
+   "src": "[親/した]しみやすく　ポップでカジュアルな\nストライプのユニフォーム。",
+   "fr": ""
+  },
+  {
+   "idx": 120,
+   "cls": "jp",
+   "src": "[両/りょう]はしのストライプがナナメに\n[入/はい]った　スタイリッシュなウェア。",
+   "fr": ""
+  },
+  {
+   "idx": 121,
+   "cls": "jp",
+   "src": "３[色/しょく]を[効果的/こうかてき]に[配置/はいち]した\nインパクト[重視/じゅうし]のユニフォーム。",
+   "fr": ""
+  },
+  {
+   "idx": 122,
+   "cls": "jp",
+   "src": "[縦/たて]のラインがとくちょうのウェア。\n[着/き]ると[心/こころ]が[引/ひ]き[締/し]まる。",
+   "fr": ""
+  },
+  {
+   "idx": 123,
+   "cls": "jp",
+   "src": "あらゆるスポーツでの[使用/しよう]を\n[考/かんが]えられた[多目的/たもくてき]ウェア。",
+   "fr": ""
+  },
+  {
+   "idx": 125,
+   "cls": "jp",
+   "src": "[腰/こし]から[上/うえ][方向/ほうこう]へ　えぐるように\nラインが[入/はい]ったアグレッシブなウェア。",
+   "fr": ""
+  },
+  {
+   "idx": 126,
+   "cls": "jp",
+   "src": "シックなツートンカラーが\n[心/こころ]を[落/お]ち[着/つ]かせるウェア。",
+   "fr": ""
+  },
+  {
+   "idx": 127,
+   "cls": "jp",
+   "src": "[頂点/ちょうてん]を[目指/めざ]すに[相応/ふさわ]しい[者/もの]のみが\n[着/き]ることを[許/ゆる]されるウェア。",
+   "fr": ""
+  },
+  {
+   "idx": 128,
+   "cls": "jp",
+   "src": "[夕方/ゆうがた]の[空/そら]をイメージした\nあたたかさをかんじるユニフォーム。",
+   "fr": ""
+  },
+  {
+   "idx": 130,
+   "cls": "jp",
+   "src": "あざやかな[色合/いろあ]いをした\nタテじま[模様/もよう]のユニフォーム。",
+   "fr": ""
+  },
+  {
+   "idx": 132,
+   "cls": "jp",
+   "src": "ネクタイがとてもオシャレ。\nこれぞ　しんしのたしなみ！？",
+   "fr": ""
+  },
+  {
+   "idx": 133,
+   "cls": "jp",
+   "src": "３つの[星/ほし]がアクセント。\nもちろん　[着/き]ごこち[３ツ星/みつぼし][級/きゅう]！",
+   "fr": ""
+  },
+  {
+   "idx": 134,
+   "cls": "jp",
+   "src": "みんなのアイドルきこうしになれる\nとても[気高/けだか]いユニフォーム。",
+   "fr": ""
+  },
+  {
+   "idx": 135,
+   "cls": "jp",
+   "src": "むねのＶは　しょうりのＶ！\n[勝/か]つことをアピールしたユニフォーム。",
+   "fr": ""
+  },
+  {
+   "idx": 136,
+   "cls": "jp",
+   "src": "カンフーでおなじみ　[中国/ちゅうごく]けんぽうの\nでんとう[的/てき]なユニフォーム。",
+   "fr": ""
+  },
+  {
+   "idx": 137,
+   "cls": "jp",
+   "src": "[上/うえ]と[下/した]が[対称/たいしょう]になるように\n[配色/はいしょく]されたウェア。",
+   "fr": ""
+  },
+  {
+   "idx": 138,
+   "cls": "jp",
+   "src": "アタマがスッキリして　[思考/しこう]がさえる\nようになるというユニフォーム。",
+   "fr": ""
+  },
+  {
+   "idx": 139,
+   "cls": "jp",
+   "src": "[身分/みぶん]が[高/たか]い[者/もの]しか[着/き]ることができない\nセレブ[感/かん]あふれるユニフォーム。",
+   "fr": ""
+  },
+  {
+   "idx": 140,
+   "cls": "jp",
+   "src": "[熱/あつ]くもえる　こころを[表/あらわ]した\n[炎/ほのお][色/いろ]のユニフォーム。",
+   "fr": ""
+  },
+  {
+   "idx": 142,
+   "cls": "jp",
+   "src": "[天空/てんくう]の[使徒/しと]たちが[身/み]にまとう\nまばゆい[輝/かがや]きのユニフォーム。",
+   "fr": ""
+  },
+  {
+   "idx": 151,
+   "cls": "jp",
+   "src": "[雷門/らいもん]サッカー[部/ぶ]が[使/つか]うスパイク。\n[昔/むかし]ながらのベーシックデザイン。",
+   "fr": ""
+  },
+  {
+   "idx": 152,
+   "cls": "jp",
+   "src": "キック＋６\n[高貴/こうき]なイメージの[帝国/ていこく]スパイク。",
+   "fr": ""
+  },
+  {
+   "idx": 153,
+   "cls": "jp",
+   "src": "キック＋１\n[不気味/ぶきみ]なオーラの[尾刈斗/おかると]のスパイク。",
+   "fr": ""
+  },
+  {
+   "idx": 154,
+   "cls": "jp",
+   "src": "キック＋２\n[野生児/やせいじ]たちのじょうぶなスパイク。",
+   "fr": ""
+  },
+  {
+   "idx": 155,
+   "cls": "jp",
+   "src": "スピード＋３\n[白/しろ]い[十字/じゅうじ]の[御影/みかげ][専農/せんのう]のスパイク。",
+   "fr": ""
+  },
+  {
+   "idx": 156,
+   "cls": "jp",
+   "src": "キック＋１\nピンクと[青/あお]がプリティーなスパイク。",
+   "fr": ""
+  },
+  {
+   "idx": 157,
+   "cls": "jp",
+   "src": "スピード＋６\n[忍者/にんじゃ][専用/せんよう]のぞうり[型/がた]のスパイク。",
+   "fr": ""
+  },
+  {
+   "idx": 158,
+   "cls": "jp",
+   "src": "キック＋７\nいがすり[模様/もよう]の[千羽山/せんばやま]スパイク。",
+   "fr": ""
+  },
+  {
+   "idx": 159,
+   "cls": "jp",
+   "src": "スピード＋９\n[赤/あか]と[黒/くろ]のシックな[木戸川/きどかわ]スパイク。",
+   "fr": ""
+  },
+  {
+   "idx": 160,
+   "cls": "jp",
+   "src": "キック＋９\n[神々/こうごう]しい[世宇子/ぜうす]スパイク。",
+   "fr": ""
+  },
+  {
+   "idx": 161,
+   "cls": "jp",
+   "src": "キック＋２\nかわいい[稲妻/いなずま]ＫＦＣスパイク。",
+   "fr": ""
+  },
+  {
+   "idx": 162,
+   "cls": "jp",
+   "src": "スピード＋２\n[傘美野/かさみの]らしいスパイク。",
+   "fr": ""
+  },
+  {
+   "idx": 163,
+   "cls": "jp",
+   "src": "キック＋３\nサリーさんデザインの[緑色/みどりいろ]のスパイク。",
+   "fr": ""
+  },
+  {
+   "idx": 164,
+   "cls": "jp",
+   "src": "イナズマイレブンの[証/あかし]である\n[黄色/きいろ]の[線/せん]がはいったスパイク。",
+   "fr": ""
+  },
+  {
+   "idx": 165,
+   "cls": "jp",
+   "src": "キック＋８\nはげしい[情熱/じょうねつ]の[赤/あか][色/いろ]のスパイク。",
+   "fr": ""
+  },
+  {
+   "idx": 166,
+   "cls": "jp",
+   "src": "スピード＋７\n[白銀/はくぎん]のように[輝/かがや]くスパイク。",
+   "fr": ""
+  },
+  {
+   "idx": 167,
+   "cls": "jp",
+   "src": "スピード＋８\n[疾風/しっぷう]のごときスパイク。",
+   "fr": ""
+  },
+  {
+   "idx": 168,
+   "cls": "jp",
+   "src": "キック＋１６\n[圧倒的/あっとうてき]シュートパワーを[持/も]つスパイク。",
+   "fr": ""
+  },
+  {
+   "idx": 169,
+   "cls": "jp",
+   "src": "キック＋１８\n[友情/ゆうじょう]を[信/しん]じる[者/もの]の[伝説/でんせつ]のスパイク。",
+   "fr": ""
+  },
+  {
+   "idx": 170,
+   "cls": "jp",
+   "src": "スピード＋１６\nピッチを[切/き]り[裂/さ]く[超/ちょう]スピードなスパイク。",
+   "fr": ""
+  },
+  {
+   "idx": 171,
+   "cls": "jp",
+   "src": "スピード＋３\n[汗/あせ]と[涙/なみだ]の[青春/せいしゅん]がつまったスパイク。",
+   "fr": ""
+  },
+  {
+   "idx": 172,
+   "cls": "jp",
+   "src": "キック＋６\n[流行/はやり]のスマートな[形/かたち]のスパイク。",
+   "fr": ""
+  },
+  {
+   "idx": 174,
+   "cls": "jp",
+   "src": "[山/やま]　ＴＰ４０　[１人/ひとり]\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Terre / TP 40 / 1 joueur\nManuel de technique de tir"
+  },
+  {
+   "idx": 175,
+   "cls": "jp",
+   "src": "スピード＋７\n[羽/はね]の[模様/もよう]をあしらったスパイク。",
+   "fr": ""
+  },
+  {
+   "idx": 176,
+   "cls": "jp",
+   "src": "[風/かぜ]　ＴＰ６６　[１人/ひとり]　ロング\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Air / TP 66 / 1 joueur / Longue distance\nManuel de technique de tir"
+  },
+  {
+   "idx": 177,
+   "cls": "jp",
+   "src": "キック＋４\n[選手/せんしゅ]のどりょくがつまったスパイク。",
+   "fr": ""
+  },
+  {
+   "idx": 178,
+   "cls": "jp",
+   "src": "[火/ひ]　ＴＰ４６　[１人/ひとり]\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Feu / TP 46 / 1 joueur\nManuel de technique de tir"
+  },
+  {
+   "idx": 179,
+   "cls": "jp",
+   "src": "[風/かぜ]　ＴＰ４６　[１人/ひとり]\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Air / TP 46 / 1 joueur\nManuel de technique de tir"
+  },
+  {
+   "idx": 180,
+   "cls": "jp",
+   "src": "[風/かぜ]　ＴＰ４９　[２人/ふたり]　ＳＣ\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Air / TP 49 / 2 joueurs / SC\nManuel de technique de tir"
+  },
+  {
+   "idx": 182,
+   "cls": "jp",
+   "src": "[黒/くろ][服用/ふくよう][靴/ぐつ]",
+   "fr": ""
+  },
+  {
+   "idx": 183,
+   "cls": "jp",
+   "src": "[風/かぜ]　ＴＰ４９　[２人/ふたり]\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Air / TP 49 / 2 joueurs\nManuel de technique de tir"
+  },
+  {
+   "idx": 184,
+   "cls": "jp",
+   "src": "エイリア[学園/がくえん][用/よう]",
+   "fr": ""
+  },
+  {
+   "idx": 185,
+   "cls": "jp",
+   "src": "スピード＋１０\nカミナリマークが[印象的/いんしょうてき]なスパイク。",
+   "fr": ""
+  },
+  {
+   "idx": 186,
+   "cls": "jp",
+   "src": "スピード＋１０\nサッカーの[天才/てんさい]が[使/つか]うというスパイク。",
+   "fr": ""
+  },
+  {
+   "idx": 187,
+   "cls": "jp",
+   "src": "キック＋１０\n[内/うち]なる[闘志/とうし]を[秘/ひ]めたシューズ。",
+   "fr": ""
+  },
+  {
+   "idx": 188,
+   "cls": "jp",
+   "src": "スピード＋１０\n[努力/どりょく]を[成果/せいか]に[返/かえ]すスパイク。",
+   "fr": ""
+  },
+  {
+   "idx": 189,
+   "cls": "jp",
+   "src": "キック＋１０\n[精神/せいしん]を[集中/しゅうちゅう]させるというシューズ。",
+   "fr": ""
+  },
+  {
+   "idx": 190,
+   "cls": "jp",
+   "src": "キック＋１０\n[秘/ひ]めた[力/ちから]を[解放/かいほう]するというスパイク。",
+   "fr": ""
+  },
+  {
+   "idx": 191,
+   "cls": "jp",
+   "src": "スピード＋５\n[心地/ここち]よい[風/かぜ]を[感/かん]じられるスパイク。",
+   "fr": ""
+  },
+  {
+   "idx": 192,
+   "cls": "jp",
+   "src": "キック＋５\nするどいキックを[生/う]み[出/だ]すシューズ。",
+   "fr": ""
+  },
+  {
+   "idx": 193,
+   "cls": "jp",
+   "src": "スピード＋６\n[羽/はね]のようにとても[軽/かる]いスパイク。",
+   "fr": ""
+  },
+  {
+   "idx": 194,
+   "cls": "jp",
+   "src": "キック＋７\n[弾丸/だんがん]のように[丈夫/じょうぶ]なスパイク。",
+   "fr": ""
+  },
+  {
+   "idx": 195,
+   "cls": "jp",
+   "src": "[火/ひ]　ＴＰ５８　[２人/ふたり]\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Feu / TP 58 / 2 joueurs\nManuel de technique de tir"
+  },
+  {
+   "idx": 196,
+   "cls": "jp",
+   "src": "[林/はやし]　ＴＰ５５　[１人/ひとり]　ＳＣ\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Bois / TP 55 / 1 joueur / SC\nManuel de technique de tir"
+  },
+  {
+   "idx": 197,
+   "cls": "jp",
+   "src": "[山/やま]　ＴＰ６２　[１人/ひとり]　ロング\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Terre / TP 62 / 1 joueur / Longue distance\nManuel de technique de tir"
+  },
+  {
+   "idx": 198,
+   "cls": "jp",
+   "src": "[林/はやし]　ＴＰ６４　３[人/にん]\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Bois / TP 64 / 3 joueurs\nManuel de technique de tir"
+  },
+  {
+   "idx": 199,
+   "cls": "jp",
+   "src": "[林/はやし]　ＴＰ６４　３[人/にん]\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Bois / TP 64 / 3 joueurs\nManuel de technique de tir"
+  },
+  {
+   "idx": 200,
+   "cls": "jp",
+   "src": "[山/やま]　ＴＰ５５　[１人/ひとり]　ＳＣ\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Terre / TP 55 / 1 joueur / SC\nManuel de technique de tir"
+  },
+  {
+   "idx": 201,
+   "cls": "jp",
+   "src": "[雷門/らいもん][中/ちゅう]で[使/つか]われている\nごくふつうのグローブ。",
+   "fr": ""
+  },
+  {
+   "idx": 202,
+   "cls": "jp",
+   "src": "ガード＋６\n[常勝/じょうしょう]の[名/な]にふさわしい[帝国/ていこく]のグローブ。",
+   "fr": ""
+  },
+  {
+   "idx": 203,
+   "cls": "jp",
+   "src": "ガード＋２\n[不気味/ぶきみ]な[黒/くろ]と[青/あお][色/いろ]のグローブ。",
+   "fr": ""
+  },
+  {
+   "idx": 204,
+   "cls": "jp",
+   "src": "ガード＋２\n[野生/やせい]を[感/かん]じさせる[緑/みどり]と[白/しろ]のグローブ。",
+   "fr": ""
+  },
+  {
+   "idx": 205,
+   "cls": "jp",
+   "src": "ガード＋３\n[危険/きけん]な[香/かお]りをはなつグローブ。",
+   "fr": ""
+  },
+  {
+   "idx": 206,
+   "cls": "jp",
+   "src": "ガード＋１\n[秋葉/しゅうよう]の[生徒/せいと]が[愛用/あいよう]するグローブ。",
+   "fr": ""
+  },
+  {
+   "idx": 207,
+   "cls": "jp",
+   "src": "ガード＋６\n[忍者/にんじゃ]が[身/み]に[付/つ]ける[戦闘/せんとう][用/よう]のグローブ。",
+   "fr": ""
+  },
+  {
+   "idx": 208,
+   "cls": "jp",
+   "src": "ガード＋７\n[自然/しぜん]の[香/かお]りあふれるグローブ。",
+   "fr": ""
+  },
+  {
+   "idx": 209,
+   "cls": "jp",
+   "src": "ガード＋９\n[木戸川/きどかわ]が[愛用/あいよう]しているグローブ。",
+   "fr": ""
+  },
+  {
+   "idx": 210,
+   "cls": "jp",
+   "src": "ガード＋９\n[世宇子/ぜうす]が[使用/しよう]するグローブ。",
+   "fr": ""
+  },
+  {
+   "idx": 211,
+   "cls": "jp",
+   "src": "ガード＋２\n[稲妻/いなずま]ＫＦＣが[使用/しよう]しているグローブ。",
+   "fr": ""
+  },
+  {
+   "idx": 212,
+   "cls": "jp",
+   "src": "ガード＋２\n[黄緑/きみどり][色/いろ]のフレッシュなグローブ。",
+   "fr": ""
+  },
+  {
+   "idx": 213,
+   "cls": "jp",
+   "src": "ガード＋３\nサリーさん[特注/とくちゅう]のハイセンスグローブ。",
+   "fr": ""
+  },
+  {
+   "idx": 214,
+   "cls": "jp",
+   "src": "[山/やま]　ＴＰ６９　[１人/ひとり]　ロング\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Terre / TP 69 / 1 joueur / Longue distance\nManuel de technique de tir"
+  },
+  {
+   "idx": 215,
+   "cls": "jp",
+   "src": "ガード＋２\n[青/あお]がまぶしい[青春/せいしゅん]ど[真/ま]ん[中/なか]グローブ。",
+   "fr": ""
+  },
+  {
+   "idx": 216,
+   "cls": "jp",
+   "src": "ガード＋５\n[円堂/えんどう][大介/だいすけ]のかたみのグローブ。",
+   "fr": ""
+  },
+  {
+   "idx": 217,
+   "cls": "jp",
+   "src": "[山/やま]　ＴＰ５５　[１人/ひとり]\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Terre / TP 55 / 1 joueur\nManuel de technique de tir"
+  },
+  {
+   "idx": 218,
+   "cls": "jp",
+   "src": "[風/かぜ]　ＴＰ５８　[２人/ふたり]\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Air / TP 58 / 2 joueurs\nManuel de technique de tir"
+  },
+  {
+   "idx": 219,
+   "cls": "jp",
+   "src": "ガード＋１８\n[努力/どりょく]をおしまない[者/もの]の[伝説/でんせつ]のグローブ。",
+   "fr": ""
+  },
+  {
+   "idx": 220,
+   "cls": "jp",
+   "src": "ガード＋３\n[勝利/しょうり]の[名/な]を[冠/かん]したグローブ。",
+   "fr": ""
+  },
+  {
+   "idx": 221,
+   "cls": "jp",
+   "src": "ガード＋８\n[熱血/ねっけつ][色/いろ]に[染/そ]まるグローブ。",
+   "fr": ""
+  },
+  {
+   "idx": 222,
+   "cls": "jp",
+   "src": "[火/ひ]　ＴＰ６７　３[人/にん]\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Feu / TP 67 / 3 joueurs\nManuel de technique de tir"
+  },
+  {
+   "idx": 223,
+   "cls": "jp",
+   "src": "[風/かぜ]　ＴＰ５８　[２人/ふたり]\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Air / TP 58 / 2 joueurs\nManuel de technique de tir"
+  },
+  {
+   "idx": 224,
+   "cls": "jp",
+   "src": "[風/かぜ]　ＴＰ４０　[１人/ひとり]\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Air / TP 40 / 1 joueur\nManuel de technique de tir"
+  },
+  {
+   "idx": 225,
+   "cls": "jp",
+   "src": "[山/やま]　ＴＰ４３　[１人/ひとり]　ＳＣ\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Terre / TP 43 / 1 joueur / SC\nManuel de technique de tir"
+  },
+  {
+   "idx": 226,
+   "cls": "jp",
+   "src": "[林/はやし]　ＴＰ４０　[１人/ひとり]\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Bois / TP 40 / 1 joueur\nManuel de technique de tir"
+  },
+  {
+   "idx": 227,
+   "cls": "jp",
+   "src": "[風/かぜ]　ＴＰ４３　[１人/ひとり]\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Air / TP 43 / 1 joueur\nManuel de technique de tir"
+  },
+  {
+   "idx": 228,
+   "cls": "jp",
+   "src": "[火/ひ]　ＴＰ４３　[１人/ひとり]\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Feu / TP 43 / 1 joueur\nManuel de technique de tir"
+  },
+  {
+   "idx": 229,
+   "cls": "jp",
+   "src": "[火/ひ]　ＴＰ５２　[１人/ひとり]　ＳＣ\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Feu / TP 52 / 1 joueur / SC\nManuel de technique de tir"
+  },
+  {
+   "idx": 230,
+   "cls": "jp",
+   "src": "[林/はやし]　ＴＰ４３　[１人/ひとり]　ＳＣ\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Bois / TP 43 / 1 joueur / SC\nManuel de technique de tir"
+  },
+  {
+   "idx": 232,
+   "cls": "jp",
+   "src": "[林/はやし]　ＴＰ４９　[１人/ひとり]　ＳＣ\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Bois / TP 49 / 1 joueur / SC\nManuel de technique de tir"
+  },
+  {
+   "idx": 233,
+   "cls": "jp",
+   "src": "[山/やま]　ＴＰ５８　[２人/ふたり]　ＳＣ\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Terre / TP 58 / 2 joueurs / SC\nManuel de technique de tir"
+  },
+  {
+   "idx": 234,
+   "cls": "jp",
+   "src": "[山/やま]　ＴＰ８０　３[人/にん]　ロング\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Terre / TP 80 / 3 joueurs / Longue distance\nManuel de technique de tir"
+  },
+  {
+   "idx": 235,
+   "cls": "jp",
+   "src": "[火/ひ]　ＴＰ７６　３[人/にん]　ロング\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Feu / TP 76 / 3 joueurs / Longue distance\nManuel de technique de tir"
+  },
+  {
+   "idx": 236,
+   "cls": "jp",
+   "src": "[山/やま]　ＴＰ７６　[１人/ひとり]　ロング\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Terre / TP 76 / 1 joueur / Longue distance\nManuel de technique de tir"
+  },
+  {
+   "idx": 237,
+   "cls": "jp",
+   "src": "[林/はやし]　ＴＰ６７　３[人/にん]\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Bois / TP 67 / 3 joueurs\nManuel de technique de tir"
+  },
+  {
+   "idx": 238,
+   "cls": "jp",
+   "src": "[林/はやし]　ＴＰ４９　[１人/ひとり]　ＳＣ\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Bois / TP 49 / 1 joueur / SC\nManuel de technique de tir"
+  },
+  {
+   "idx": 239,
+   "cls": "jp",
+   "src": "[火/ひ]　ＴＰ５８　[１人/ひとり]\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Feu / TP 58 / 1 joueur\nManuel de technique de tir"
+  },
+  {
+   "idx": 240,
+   "cls": "jp",
+   "src": "[山/やま]　ＴＰ４３　[１人/ひとり]　ＳＣ\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Terre / TP 43 / 1 joueur / SC\nManuel de technique de tir"
+  },
+  {
+   "idx": 241,
+   "cls": "jp",
+   "src": "コントロール＋２\n[丈夫/じょうぶ]な[素材/そざい]でできているミサンガ。",
+   "fr": ""
+  },
+  {
+   "idx": 242,
+   "cls": "jp",
+   "src": "[山/やま]　ＴＰ４９　３[人/にん]\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Terre / TP 49 / 3 joueurs\nManuel de technique de tir"
+  },
+  {
+   "idx": 243,
+   "cls": "jp",
+   "src": "[林/はやし]　ＴＰ４３　[１人/ひとり]\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Bois / TP 43 / 1 joueur\nManuel de technique de tir"
+  },
+  {
+   "idx": 244,
+   "cls": "jp",
+   "src": "コントロール＋５\n[強靭/きょうじん]な[体/からだ]になることを[願/ねが]うミサンガ。",
+   "fr": ""
+  },
+  {
+   "idx": 245,
+   "cls": "jp",
+   "src": "[火/ひ]　ＴＰ５８　[１人/ひとり]\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Feu / TP 58 / 1 joueur\nManuel de technique de tir"
+  },
+  {
+   "idx": 246,
+   "cls": "jp",
+   "src": "ガッツ＋１\n[多/おお]くの[戦/たたか]いをのりこえてきたミサンガ。",
+   "fr": ""
+  },
+  {
+   "idx": 247,
+   "cls": "jp",
+   "src": "ガッツ＋５\n[熱/あつ]く[燃/も]える[魂/たましい]がこもったミサンガ。",
+   "fr": ""
+  },
+  {
+   "idx": 248,
+   "cls": "jp",
+   "src": "[火/ひ]　ＴＰ４８　[１人/ひとり]　ロング\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Feu / TP 48 / 1 joueur / Longue distance\nManuel de technique de tir"
+  },
+  {
+   "idx": 249,
+   "cls": "jp",
+   "src": "[火/ひ]　ＴＰ６７　[１人/ひとり]\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Feu / TP 67 / 1 joueur\nManuel de technique de tir"
+  },
+  {
+   "idx": 250,
+   "cls": "jp",
+   "src": "コントロール＋８\n[幸運/こううん]を[味方/みかた]につけるミサンガ。",
+   "fr": ""
+  },
+  {
+   "idx": 251,
+   "cls": "jp",
+   "src": "ガッツ＋２\nさわやかな[青春/せいしゅん]を[感/かん]じさせるミサンガ。",
+   "fr": ""
+  },
+  {
+   "idx": 252,
+   "cls": "jp",
+   "src": "[山/やま]　ＴＰ５５　[１人/ひとり]　ＳＣ\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Terre / TP 55 / 1 joueur / SC\nManuel de technique de tir"
+  },
+  {
+   "idx": 253,
+   "cls": "jp",
+   "src": "ガッツ＋７\n[勝利/しょうり]を[呼/よ]び[込/こ]むミサンガ。",
+   "fr": ""
+  },
+  {
+   "idx": 254,
+   "cls": "jp",
+   "src": "ガッツ＋１０\nイナズマのオーラをまとうミサンガ。",
+   "fr": ""
+  },
+  {
+   "idx": 255,
+   "cls": "jp",
+   "src": "[林/はやし]　ＴＰ５８　[１人/ひとり]\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Bois / TP 58 / 1 joueur\nManuel de technique de tir"
+  },
+  {
+   "idx": 256,
+   "cls": "jp",
+   "src": "[山/やま]　ＴＰ６７　[２人/ふたり]\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Terre / TP 67 / 2 joueurs\nManuel de technique de tir"
+  },
+  {
+   "idx": 257,
+   "cls": "jp",
+   "src": "コントロール＋６\nきぼうに[満/み]ちているミサンガ。",
+   "fr": ""
+  },
+  {
+   "idx": 258,
+   "cls": "jp",
+   "src": "ガッツ＋９\nはげしい[気合/きあい]が[伝/つた]わってくるミサンガ。",
+   "fr": ""
+  },
+  {
+   "idx": 259,
+   "cls": "jp",
+   "src": "ガッツ＋２\nバトルを[挑/いど]まれなくなるミサンガ。",
+   "fr": ""
+  },
+  {
+   "idx": 260,
+   "cls": "jp",
+   "src": "ガッツ＋２\nバトルをとても[挑/いど]まれやすくなるミサンガ。",
+   "fr": ""
+  },
+  {
+   "idx": 261,
+   "cls": "jp",
+   "src": "ガッツ＋２\nバトルを[挑/いど]まれやすくなるミサンガ。",
+   "fr": ""
+  },
+  {
+   "idx": 262,
+   "cls": "jp",
+   "src": "[火/ひ]　ＴＰ５８　[１人/ひとり]　ＳＣ\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Feu / TP 58 / 1 joueur / SC\nManuel de technique de tir"
+  },
+  {
+   "idx": 263,
+   "cls": "jp",
+   "src": "[風/かぜ]　ＴＰ６１　[２人/ふたり]　ＳＣ\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Air / TP 61 / 2 joueurs / SC\nManuel de technique de tir"
+  },
+  {
+   "idx": 264,
+   "cls": "jp",
+   "src": "[火/ひ]　ＴＰ６２　[１人/ひとり]　ロング\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Feu / TP 62 / 1 joueur / Longue distance\nManuel de technique de tir"
+  },
+  {
+   "idx": 265,
+   "cls": "jp",
+   "src": "ボディ＋６／ＴＰ＋１０\n[夕香/ゆうか]のちかいのペンダント。",
+   "fr": ""
+  },
+  {
+   "idx": 266,
+   "cls": "jp",
+   "src": "[林/はやし]　ＴＰ５２　[１人/ひとり]　キャッチ\nキーパー[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Bois / TP 52 / 1 joueur / Prise\nManuel de technique de gardien"
+  },
+  {
+   "idx": 267,
+   "cls": "jp",
+   "src": "[山/やま]　ＴＰ４２　[１人/ひとり]　キャッチ\nキーパー[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Terre / TP 42 / 1 joueur / Prise\nManuel de technique de gardien"
+  },
+  {
+   "idx": 268,
+   "cls": "jp",
+   "src": "[火/ひ]　ＴＰ６０　[１人/ひとり]　キャッチ\nキーパー[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Feu / TP 60 / 1 joueur / Prise\nManuel de technique de gardien"
+  },
+  {
+   "idx": 269,
+   "cls": "jp",
+   "src": "[火/ひ]　ＴＰ４５　[１人/ひとり]　キャッチ\nキーパー[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Feu / TP 45 / 1 joueur / Prise\nManuel de technique de gardien"
+  },
+  {
+   "idx": 270,
+   "cls": "jp",
+   "src": "[林/はやし]　ＴＰ６０　[１人/ひとり]　キャッチ\nキーパー[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Bois / TP 60 / 1 joueur / Prise\nManuel de technique de gardien"
+  },
+  {
+   "idx": 271,
+   "cls": "jp",
+   "src": "[山/やま]　ＴＰ５７　[１人/ひとり]　キャッチ\nキーパー[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Terre / TP 57 / 1 joueur / Prise\nManuel de technique de gardien"
+  },
+  {
+   "idx": 272,
+   "cls": "jp",
+   "src": "[風/かぜ]　ＴＰ４２　[１人/ひとり]　キャッチ\nキーパー[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Air / TP 42 / 1 joueur / Prise\nManuel de technique de gardien"
+  },
+  {
+   "idx": 273,
+   "cls": "jp",
+   "src": "[山/やま]　ＴＰ４５　[１人/ひとり]　キャッチ\nキーパー[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Terre / TP 45 / 1 joueur / Prise\nManuel de technique de gardien"
+  },
+  {
+   "idx": 274,
+   "cls": "jp",
+   "src": "[火/ひ]　ＴＰ４２　[１人/ひとり]　パンチング\nキーパー[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Feu / TP 42 / 1 joueur / Poing\nManuel de technique de gardien"
+  },
+  {
+   "idx": 275,
+   "cls": "jp",
+   "src": "[風/かぜ]　ＴＰ３７　[１人/ひとり]　キャッチ\nキーパー[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Air / TP 37 / 1 joueur / Prise\nManuel de technique de gardien"
+  },
+  {
+   "idx": 276,
+   "cls": "jp",
+   "src": "[林/はやし]　ＴＰ４７　[１人/ひとり]　キャッチ\nキーパー[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Bois / TP 47 / 1 joueur / Prise\nManuel de technique de gardien"
+  },
+  {
+   "idx": 277,
+   "cls": "jp",
+   "src": "[風/かぜ]　ＴＰ３７　[１人/ひとり]　キャッチ\nキーパー[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Air / TP 37 / 1 joueur / Prise\nManuel de technique de gardien"
+  },
+  {
+   "idx": 278,
+   "cls": "jp",
+   "src": "[山/やま]　ＴＰ４２　[１人/ひとり]　パンチング\nキーパー[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Terre / TP 42 / 1 joueur / Poing\nManuel de technique de gardien"
+  },
+  {
+   "idx": 279,
+   "cls": "jp",
+   "src": "[火/ひ]　ＴＰ５５　[１人/ひとり]　パンチング２\nキーパー[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Feu / TP 55 / 1 joueur / Poing 2\nManuel de technique de gardien"
+  },
+  {
+   "idx": 280,
+   "cls": "jp",
+   "src": "[山/やま]　ＴＰ４５　[１人/ひとり]　キャッチ\nキーパー[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Terre / TP 45 / 1 joueur / Prise\nManuel de technique de gardien"
+  },
+  {
+   "idx": 281,
+   "cls": "jp",
+   "src": "[林/はやし]　ＴＰ３７　[１人/ひとり]　キャッチ\nキーパー[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Bois / TP 37 / 1 joueur / Prise\nManuel de technique de gardien"
+  },
+  {
+   "idx": 282,
+   "cls": "jp",
+   "src": "[火/ひ]　ＴＰ４０　[１人/ひとり]　キャッチ\nキーパー[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Feu / TP 40 / 1 joueur / Prise\nManuel de technique de gardien"
+  },
+  {
+   "idx": 283,
+   "cls": "jp",
+   "src": "[山/やま]　ＴＰ４２　[１人/ひとり]　パンチング\nキーパー[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Terre / TP 42 / 1 joueur / Poing\nManuel de technique de gardien"
+  },
+  {
+   "idx": 284,
+   "cls": "jp",
+   "src": "[風/かぜ]　ＴＰ６０　３[人/にん]　Ｌサイズ\nパンチング２　キーパー[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Air / TP 60 / 3 joueurs / Taille L / Poing 2\nManuel de technique de gardien"
+  },
+  {
+   "idx": 285,
+   "cls": "jp",
+   "src": "[山/やま]　ＴＰ６０　[１人/ひとり]　キャッチ\nキーパー[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Terre / TP 60 / 1 joueur / Prise\nManuel de technique de gardien"
+  },
+  {
+   "idx": 286,
+   "cls": "jp",
+   "src": "[風/かぜ]　ＴＰ４７　[１人/ひとり]　キャッチ\nキーパー[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Air / TP 47 / 1 joueur / Prise\nManuel de technique de gardien"
+  },
+  {
+   "idx": 287,
+   "cls": "jp",
+   "src": "[風/かぜ]　ＴＰ６０　[１人/ひとり]　キャッチ\nキーパー[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Air / TP 60 / 1 joueur / Prise\nManuel de technique de gardien"
+  },
+  {
+   "idx": 288,
+   "cls": "jp",
+   "src": "[林/はやし]　ＴＰ６０　[１人/ひとり]　キャッチ\nキーパー[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Bois / TP 60 / 1 joueur / Prise\nManuel de technique de gardien"
+  },
+  {
+   "idx": 291,
+   "cls": "jp",
+   "src": "[林/はやし]　ＴＰ３４　[１人/ひとり]　ＳＢ\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Bois / TP 34 / 1 joueur / SB\nManuel de technique de tir"
+  },
+  {
+   "idx": 292,
+   "cls": "jp",
+   "src": "[林/はやし]　ＴＰ４２　[１人/ひとり]\nオフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Bois / TP 42 / 1 joueur\nManuel de technique offensive"
+  },
+  {
+   "idx": 293,
+   "cls": "jp",
+   "src": "[風/かぜ]　ＴＰ２０　[１人/ひとり]　Ｍ／Ｓサイズ\nオフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Air / TP 20 / 1 joueur / Taille M/S\nManuel de technique offensive"
+  },
+  {
+   "idx": 294,
+   "cls": "jp",
+   "src": "[風/かぜ]　ＴＰ２０　[１人/ひとり]\nオフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Air / TP 20 / 1 joueur\nManuel de technique offensive"
+  },
+  {
+   "idx": 295,
+   "cls": "jp",
+   "src": "[林/はやし]　ＴＰ２８　[１人/ひとり]\nオフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Bois / TP 28 / 1 joueur\nManuel de technique offensive"
+  },
+  {
+   "idx": 296,
+   "cls": "jp",
+   "src": "[山/やま]　ＴＰ２０　[１人/ひとり]\nオフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Terre / TP 20 / 1 joueur\nManuel de technique offensive"
+  },
+  {
+   "idx": 297,
+   "cls": "jp",
+   "src": "[山/やま]　ＴＰ４６　[２人/ふたり]\nオフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Terre / TP 46 / 2 joueurs\nManuel de technique offensive"
+  },
+  {
+   "idx": 298,
+   "cls": "jp",
+   "src": "[火/ひ]　ＴＰ２７　[１人/ひとり]\nオフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Feu / TP 27 / 1 joueur\nManuel de technique offensive"
+  },
+  {
+   "idx": 299,
+   "cls": "jp",
+   "src": "[風/かぜ]　ＴＰ２７　[１人/ひとり]\nオフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Air / TP 27 / 1 joueur\nManuel de technique offensive"
+  },
+  {
+   "idx": 300,
+   "cls": "jp",
+   "src": "[風/かぜ]　ＴＰ２０　[１人/ひとり]\nオフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Air / TP 20 / 1 joueur\nManuel de technique offensive"
+  },
+  {
+   "idx": 301,
+   "cls": "jp",
+   "src": "[林/はやし]　ＴＰ２０　[１人/ひとり]\nオフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Bois / TP 20 / 1 joueur\nManuel de technique offensive"
+  },
+  {
+   "idx": 302,
+   "cls": "jp",
+   "src": "[山/やま]　ＴＰ２４　[１人/ひとり]　Ｌサイズ\nオフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Terre / TP 24 / 1 joueur / Taille L\nManuel de technique offensive"
+  },
+  {
+   "idx": 303,
+   "cls": "jp",
+   "src": "[風/かぜ]　ＴＰ２０　[１人/ひとり]\nオフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Air / TP 20 / 1 joueur\nManuel de technique offensive"
+  },
+  {
+   "idx": 304,
+   "cls": "jp",
+   "src": "[林/はやし]　ＴＰ２５　[１人/ひとり]\nオフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Bois / TP 25 / 1 joueur\nManuel de technique offensive"
+  },
+  {
+   "idx": 305,
+   "cls": "jp",
+   "src": "[山/やま]　ＴＰ２７　[１人/ひとり]\nオフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Terre / TP 27 / 1 joueur\nManuel de technique offensive"
+  },
+  {
+   "idx": 306,
+   "cls": "jp",
+   "src": "[火/ひ]　ＴＰ５７　３[人/にん]\nオフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Feu / TP 57 / 3 joueurs\nManuel de technique offensive"
+  },
+  {
+   "idx": 307,
+   "cls": "jp",
+   "src": "[林/はやし]　ＴＰ３１　[１人/ひとり]\nオフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Bois / TP 31 / 1 joueur\nManuel de technique offensive"
+  },
+  {
+   "idx": 308,
+   "cls": "jp",
+   "src": "[山/やま]　ＴＰ３３　[１人/ひとり]\nオフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Terre / TP 33 / 1 joueur\nManuel de technique offensive"
+  },
+  {
+   "idx": 309,
+   "cls": "jp",
+   "src": "[風/かぜ]　ＴＰ３６　[１人/ひとり]\nオフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Air / TP 36 / 1 joueur\nManuel de technique offensive"
+  },
+  {
+   "idx": 310,
+   "cls": "jp",
+   "src": "[山/やま]　ＴＰ２０　[１人/ひとり]\nオフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Terre / TP 20 / 1 joueur\nManuel de technique offensive"
+  },
+  {
+   "idx": 311,
+   "cls": "jp",
+   "src": "[風/かぜ]　ＴＰ５０　[１人/ひとり]\nオフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Air / TP 50 / 1 joueur\nManuel de technique offensive"
+  },
+  {
+   "idx": 312,
+   "cls": "jp",
+   "src": "[火/ひ]　ＴＰ２５　[１人/ひとり]\nオフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Feu / TP 25 / 1 joueur\nManuel de technique offensive"
+  },
+  {
+   "idx": 313,
+   "cls": "jp",
+   "src": "[風/かぜ]　ＴＰ４６　[１人/ひとり]\nオフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Air / TP 46 / 1 joueur\nManuel de technique offensive"
+  },
+  {
+   "idx": 314,
+   "cls": "jp",
+   "src": "[風/かぜ]　ＴＰ２５　[１人/ひとり]\nオフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Air / TP 25 / 1 joueur\nManuel de technique offensive"
+  },
+  {
+   "idx": 315,
+   "cls": "jp",
+   "src": "[林/はやし]　ＴＰ２１　[１人/ひとり]\nオフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Bois / TP 21 / 1 joueur\nManuel de technique offensive"
+  },
+  {
+   "idx": 321,
+   "cls": "jp",
+   "src": "[山/やま]　ＴＰ３０　[１人/ひとり]　ＳＢ　Ｌサイズ\nディフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Terre / TP 30 / 1 joueur / SB / Taille L\nManuel de technique défensive"
+  },
+  {
+   "idx": 322,
+   "cls": "jp",
+   "src": "[風/かぜ]　ＴＰ２５　[１人/ひとり]　Ｓサイズ\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Air / TP 25 / 1 joueur / Taille S\nManuel de technique de tir"
+  },
+  {
+   "idx": 323,
+   "cls": "jp",
+   "src": "[林/はやし]　ＴＰ１２　[１人/ひとり]\nディフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Bois / TP 12 / 1 joueur\nManuel de technique défensive"
+  },
+  {
+   "idx": 324,
+   "cls": "jp",
+   "src": "[風/かぜ]　ＴＰ２０　[１人/ひとり]\nディフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Air / TP 20 / 1 joueur\nManuel de technique défensive"
+  },
+  {
+   "idx": 325,
+   "cls": "jp",
+   "src": "[山/やま]　ＴＰ３２　[１人/ひとり]　Ｌサイズ\nディフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Terre / TP 32 / 1 joueur / Taille L\nManuel de technique défensive"
+  },
+  {
+   "idx": 326,
+   "cls": "jp",
+   "src": "[林/はやし]　ＴＰ２０　[１人/ひとり]　Ｍ／Ｓサイズ\nディフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Bois / TP 20 / 1 joueur / Taille M/S\nManuel de technique défensive"
+  },
+  {
+   "idx": 327,
+   "cls": "jp",
+   "src": "[林/はやし]　ＴＰ３３　[１人/ひとり]\nディフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Bois / TP 33 / 1 joueur\nManuel de technique défensive"
+  },
+  {
+   "idx": 328,
+   "cls": "jp",
+   "src": "[風/かぜ]　ＴＰ３８　[１人/ひとり]\nディフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Air / TP 38 / 1 joueur\nManuel de technique défensive"
+  },
+  {
+   "idx": 329,
+   "cls": "jp",
+   "src": "[林/はやし]　ＴＰ３０　[１人/ひとり]\nディフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Bois / TP 30 / 1 joueur\nManuel de technique défensive"
+  },
+  {
+   "idx": 330,
+   "cls": "jp",
+   "src": "[林/はやし]　ＴＰ３９　[１人/ひとり]\nディフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Bois / TP 39 / 1 joueur\nManuel de technique défensive"
+  },
+  {
+   "idx": 331,
+   "cls": "jp",
+   "src": "[山/やま]　ＴＰ２０　[１人/ひとり]　Ｌサイズ\nディフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Terre / TP 20 / 1 joueur / Taille L\nManuel de technique défensive"
+  },
+  {
+   "idx": 332,
+   "cls": "jp",
+   "src": "[山/やま]　ＴＰ２０　[１人/ひとり]　ＳＢ\nディフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Terre / TP 20 / 1 joueur / SB\nManuel de technique défensive"
+  },
+  {
+   "idx": 333,
+   "cls": "jp",
+   "src": "[風/かぜ]　ＴＰ５７　３[人/にん]\nディフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Air / TP 57 / 3 joueurs\nManuel de technique défensive"
+  },
+  {
+   "idx": 334,
+   "cls": "jp",
+   "src": "[風/かぜ]　ＴＰ３２　[１人/ひとり]　ＳＢ\nディフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Air / TP 32 / 1 joueur / SB\nManuel de technique défensive"
+  },
+  {
+   "idx": 335,
+   "cls": "jp",
+   "src": "[林/はやし]　ＴＰ２８　[１人/ひとり]\nディフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Bois / TP 28 / 1 joueur\nManuel de technique défensive"
+  },
+  {
+   "idx": 336,
+   "cls": "jp",
+   "src": "[林/はやし]　ＴＰ２２　[１人/ひとり]\nディフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Bois / TP 22 / 1 joueur\nManuel de technique défensive"
+  },
+  {
+   "idx": 337,
+   "cls": "jp",
+   "src": "[林/はやし]　ＴＰ２１　[１人/ひとり]\nディフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Bois / TP 21 / 1 joueur\nManuel de technique défensive"
+  },
+  {
+   "idx": 338,
+   "cls": "jp",
+   "src": "[山/やま]　ＴＰ５７　３[人/にん]\nディフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Terre / TP 57 / 3 joueurs\nManuel de technique défensive"
+  },
+  {
+   "idx": 339,
+   "cls": "jp",
+   "src": "[林/はやし]　ＴＰ４８　[２人/ふたり]\nディフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Bois / TP 48 / 2 joueurs\nManuel de technique défensive"
+  },
+  {
+   "idx": 340,
+   "cls": "jp",
+   "src": "[火/ひ]　ＴＰ４３　[１人/ひとり]　ＳＢ\nディフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Feu / TP 43 / 1 joueur / SB\nManuel de technique défensive"
+  },
+  {
+   "idx": 341,
+   "cls": "jp",
+   "src": "[山/やま]　ＴＰ４４　[１人/ひとり]　Ｌサイズ\nディフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Terre / TP 44 / 1 joueur / Taille L\nManuel de technique défensive"
+  },
+  {
+   "idx": 342,
+   "cls": "jp",
+   "src": "[風/かぜ]　ＴＰ２４　[１人/ひとり]\nディフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Air / TP 24 / 1 joueur\nManuel de technique défensive"
+  },
+  {
+   "idx": 343,
+   "cls": "jp",
+   "src": "[山/やま]　ＴＰ１６　[１人/ひとり]\nディフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Terre / TP 16 / 1 joueur\nManuel de technique défensive"
+  },
+  {
+   "idx": 344,
+   "cls": "jp",
+   "src": "[火/ひ]　ＴＰ３５　[１人/ひとり]　パンチング\nキーパー[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Feu / TP 35 / 1 joueur / Poing\nManuel de technique de gardien"
+  },
+  {
+   "idx": 345,
+   "cls": "jp",
+   "src": "[山/やま]　ＴＰ３２　[１人/ひとり]　キャッチ\nキーパー[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Terre / TP 32 / 1 joueur / Prise\nManuel de technique de gardien"
+  },
+  {
+   "idx": 346,
+   "cls": "jp",
+   "src": "[火/ひ]　ＴＰ６２　[２人/ふたり]　ロング\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Feu / TP 62 / 2 joueurs / Longue distance\nManuel de technique de tir"
+  },
+  {
+   "idx": 347,
+   "cls": "jp",
+   "src": "[風/かぜ]　ＴＰ５２　３[人/にん]\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Air / TP 52 / 3 joueurs\nManuel de technique de tir"
+  },
+  {
+   "idx": 348,
+   "cls": "jp",
+   "src": "[火/ひ]　ＴＰ６４　３[人/にん]\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Feu / TP 64 / 3 joueurs\nManuel de technique de tir"
+  },
+  {
+   "idx": 349,
+   "cls": "jp",
+   "src": "[林/はやし]　ＴＰ５２　３[人/にん]\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Bois / TP 52 / 3 joueurs\nManuel de technique de tir"
+  },
+  {
+   "idx": 350,
+   "cls": "jp",
+   "src": "[火/ひ]　ＴＰ５５　３[人/にん]\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Feu / TP 55 / 3 joueurs\nManuel de technique de tir"
+  },
+  {
+   "idx": 351,
+   "cls": "jp",
+   "src": "[風/かぜ]　ＴＰ３７　[２人/ふたり]　ＳＢ　Ｍ／Ｓサイズ\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Air / TP 37 / 2 joueurs / SB / Taille M/S\nManuel de technique de tir"
+  },
+  {
+   "idx": 352,
+   "cls": "jp",
+   "src": "[林/はやし]　ＴＰ２８　[１人/ひとり]　ＳＣ\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Bois / TP 28 / 1 joueur / SC\nManuel de technique de tir"
+  },
+  {
+   "idx": 353,
+   "cls": "jp",
+   "src": "[火/ひ]　ＴＰ３７　[２人/ふたり]\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Feu / TP 37 / 2 joueurs\nManuel de technique de tir"
+  },
+  {
+   "idx": 354,
+   "cls": "jp",
+   "src": "[火/ひ]　ＴＰ２５　[１人/ひとり]　ＳＣ\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Feu / TP 25 / 1 joueur / SC\nManuel de technique de tir"
+  },
+  {
+   "idx": 355,
+   "cls": "jp",
+   "src": "[林/はやし]　ＴＰ２２　[１人/ひとり]　ＳＣ\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Bois / TP 22 / 1 joueur / SC\nManuel de technique de tir"
+  },
+  {
+   "idx": 356,
+   "cls": "jp",
+   "src": "[風/かぜ]　ＴＰ４０　[２人/ふたり]　ＳＢ\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Air / TP 40 / 2 joueurs / SB\nManuel de technique de tir"
+  },
+  {
+   "idx": 357,
+   "cls": "jp",
+   "src": "[火/ひ]　ＴＰ２０　[１人/ひとり]\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Feu / TP 20 / 1 joueur\nManuel de technique de tir"
+  },
+  {
+   "idx": 358,
+   "cls": "jp",
+   "src": "[林/はやし]　ＴＰ５２　３[人/にん]\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Bois / TP 52 / 3 joueurs\nManuel de technique de tir"
+  },
+  {
+   "idx": 359,
+   "cls": "jp",
+   "src": "[林/はやし]　ＴＰ２１　[１人/ひとり]　ＳＣ\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Bois / TP 21 / 1 joueur / SC\nManuel de technique de tir"
+  },
+  {
+   "idx": 360,
+   "cls": "jp",
+   "src": "[風/かぜ]　ＴＰ３４　[２人/ふたり]　ＳＢ　Ｍ／Ｓサイズ\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Air / TP 34 / 2 joueurs / SB / Taille M/S\nManuel de technique de tir"
+  },
+  {
+   "idx": 361,
+   "cls": "jp",
+   "src": "[火/ひ]　ＴＰ２２　[１人/ひとり]\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Feu / TP 22 / 1 joueur\nManuel de technique de tir"
+  },
+  {
+   "idx": 362,
+   "cls": "jp",
+   "src": "[山/やま]　ＴＰ２０　[１人/ひとり]　ＳＣ\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Terre / TP 20 / 1 joueur / SC\nManuel de technique de tir"
+  },
+  {
+   "idx": 363,
+   "cls": "jp",
+   "src": "[風/かぜ]　ＴＰ２０　[１人/ひとり]　ＳＣ\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Air / TP 20 / 1 joueur / SC\nManuel de technique de tir"
+  },
+  {
+   "idx": 364,
+   "cls": "jp",
+   "src": "[風/かぜ]　ＴＰ２５　[１人/ひとり]　ロング\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Air / TP 25 / 1 joueur / Longue distance\nManuel de technique de tir"
+  },
+  {
+   "idx": 365,
+   "cls": "jp",
+   "src": "[林/はやし]　ＴＰ２０　[１人/ひとり]　ＳＣ\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Bois / TP 20 / 1 joueur / SC\nManuel de technique de tir"
+  },
+  {
+   "idx": 366,
+   "cls": "jp",
+   "src": "[林/はやし]　ＴＰ４６　[１人/ひとり]　ＳＣ\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Bois / TP 46 / 1 joueur / SC\nManuel de technique de tir"
+  },
+  {
+   "idx": 367,
+   "cls": "jp",
+   "src": "[火/ひ]　ＴＰ３１　[１人/ひとり]　ＳＣ\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Feu / TP 31 / 1 joueur / SC\nManuel de technique de tir"
+  },
+  {
+   "idx": 368,
+   "cls": "jp",
+   "src": "[火/ひ]　ＴＰ３０　[１人/ひとり]　ロング\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Feu / TP 30 / 1 joueur / Longue distance\nManuel de technique de tir"
+  },
+  {
+   "idx": 369,
+   "cls": "jp",
+   "src": "[風/かぜ]　ＴＰ２０　[１人/ひとり]\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Air / TP 20 / 1 joueur\nManuel de technique de tir"
+  },
+  {
+   "idx": 370,
+   "cls": "jp",
+   "src": "[林/はやし]　ＴＰ２５　[１人/ひとり]\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Bois / TP 25 / 1 joueur\nManuel de technique de tir"
+  },
+  {
+   "idx": 371,
+   "cls": "jp",
+   "src": "[風/かぜ]　ＴＰ２８　[１人/ひとり]　ＳＣ\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Air / TP 28 / 1 joueur / SC\nManuel de technique de tir"
+  },
+  {
+   "idx": 372,
+   "cls": "jp",
+   "src": "[山/やま]　ＴＰ２１　[１人/ひとり]　ＳＣ\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Terre / TP 21 / 1 joueur / SC\nManuel de technique de tir"
+  },
+  {
+   "idx": 373,
+   "cls": "jp",
+   "src": "[林/はやし]　ＴＰ２０　[１人/ひとり]\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Bois / TP 20 / 1 joueur\nManuel de technique de tir"
+  },
+  {
+   "idx": 374,
+   "cls": "jp",
+   "src": "[風/かぜ]　ＴＰ２２　[１人/ひとり]　ＳＣ\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Air / TP 22 / 1 joueur / SC\nManuel de technique de tir"
+  },
+  {
+   "idx": 375,
+   "cls": "jp",
+   "src": "[林/はやし]　ＴＰ２８　[１人/ひとり]\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Bois / TP 28 / 1 joueur\nManuel de technique de tir"
+  },
+  {
+   "idx": 376,
+   "cls": "jp",
+   "src": "[火/ひ]　ＴＰ５５　３[人/にん]\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Feu / TP 55 / 3 joueurs\nManuel de technique de tir"
+  },
+  {
+   "idx": 377,
+   "cls": "jp",
+   "src": "[火/ひ]　ＴＰ３４　[２人/ふたり]　ＳＢ\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Feu / TP 34 / 2 joueurs / SB\nManuel de technique de tir"
+  },
+  {
+   "idx": 378,
+   "cls": "jp",
+   "src": "[山/やま]　ＴＰ４０　[１人/ひとり]\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Terre / TP 40 / 1 joueur\nManuel de technique de tir"
+  },
+  {
+   "idx": 379,
+   "cls": "jp",
+   "src": "[林/はやし]　ＴＰ３１　[１人/ひとり]\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Bois / TP 31 / 1 joueur\nManuel de technique de tir"
+  },
+  {
+   "idx": 380,
+   "cls": "jp",
+   "src": "[火/ひ]　ＴＰ３４　[１人/ひとり]\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Feu / TP 34 / 1 joueur\nManuel de technique de tir"
+  },
+  {
+   "idx": 381,
+   "cls": "jp",
+   "src": "[風/かぜ]　ＴＰ４６　[１人/ひとり]\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Air / TP 46 / 1 joueur\nManuel de technique de tir"
+  },
+  {
+   "idx": 382,
+   "cls": "jp",
+   "src": "[風/かぜ]　ＴＰ３１　[１人/ひとり]　ＳＢ\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Air / TP 31 / 1 joueur / SB\nManuel de technique de tir"
+  },
+  {
+   "idx": 383,
+   "cls": "jp",
+   "src": "[山/やま]　ＴＰ２０　[１人/ひとり]　ＳＣ\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Terre / TP 20 / 1 joueur / SC\nManuel de technique de tir"
+  },
+  {
+   "idx": 384,
+   "cls": "jp",
+   "src": "[風/かぜ]　ＴＰ５２　[１人/ひとり]\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Air / TP 52 / 1 joueur\nManuel de technique de tir"
+  },
+  {
+   "idx": 385,
+   "cls": "jp",
+   "src": "[火/ひ]　ＴＰ４６　[２人/ふたり]\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Feu / TP 46 / 2 joueurs\nManuel de technique de tir"
+  },
+  {
+   "idx": 386,
+   "cls": "jp",
+   "src": "[山/やま]　ＴＰ２２　[１人/ひとり]　ＳＣ\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Terre / TP 22 / 1 joueur / SC\nManuel de technique de tir"
+  },
+  {
+   "idx": 387,
+   "cls": "jp",
+   "src": "[風/かぜ]　ＴＰ４２　[１人/ひとり]　パンチング２\nキーパー[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Air / TP 42 / 1 joueur / Poing 2\nManuel de technique de gardien"
+  },
+  {
+   "idx": 388,
+   "cls": "jp",
+   "src": "[風/かぜ]　ＴＰ２２　[１人/ひとり]　キャッチ\nキーパー[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Air / TP 22 / 1 joueur / Prise\nManuel de technique de gardien"
+  },
+  {
+   "idx": 389,
+   "cls": "jp",
+   "src": "[山/やま]　ＴＰ２２　[１人/ひとり]　キャッチ\nキーパー[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Terre / TP 22 / 1 joueur / Prise\nManuel de technique de gardien"
+  },
+  {
+   "idx": 390,
+   "cls": "jp",
+   "src": "[火/ひ]　ＴＰ２５　[１人/ひとり]　パンチング\nキーパー[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Feu / TP 25 / 1 joueur / Poing\nManuel de technique de gardien"
+  },
+  {
+   "idx": 391,
+   "cls": "jp",
+   "src": "[火/ひ]　ＴＰ２０　[１人/ひとり]　パンチング\nキーパー[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Feu / TP 20 / 1 joueur / Poing\nManuel de technique de gardien"
+  },
+  {
+   "idx": 392,
+   "cls": "jp",
+   "src": "[林/はやし]　ＴＰ３０　[１人/ひとり]　キャッチ\nキーパー[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Bois / TP 30 / 1 joueur / Prise\nManuel de technique de gardien"
+  },
+  {
+   "idx": 393,
+   "cls": "jp",
+   "src": "[林/はやし]　ＴＰ２２　[１人/ひとり]　キャッチ\nキーパー[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Bois / TP 22 / 1 joueur / Prise\nManuel de technique de gardien"
+  },
+  {
+   "idx": 394,
+   "cls": "jp",
+   "src": "[火/ひ]　ＴＰ４０　[１人/ひとり]　パンチング２\nキーパー[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Feu / TP 40 / 1 joueur / Poing 2\nManuel de technique de gardien"
+  },
+  {
+   "idx": 395,
+   "cls": "jp",
+   "src": "[山/やま]　ＴＰ３２　[１人/ひとり]　キャッチ\nキーパー[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Terre / TP 32 / 1 joueur / Prise\nManuel de technique de gardien"
+  },
+  {
+   "idx": 396,
+   "cls": "jp",
+   "src": "[山/やま]　ＴＰ４７　３[人/にん]　キャッチ\nキーパー[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Terre / TP 47 / 3 joueurs / Prise\nManuel de technique de gardien"
+  },
+  {
+   "idx": 397,
+   "cls": "jp",
+   "src": "[火/ひ]　ＴＰ２１　[１人/ひとり]　キャッチ\nキーパー[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Feu / TP 21 / 1 joueur / Prise\nManuel de technique de gardien"
+  },
+  {
+   "idx": 398,
+   "cls": "jp",
+   "src": "[山/やま]　ＴＰ２０　[１人/ひとり]　キャッチ\nキーパー[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Terre / TP 20 / 1 joueur / Prise\nManuel de technique de gardien"
+  },
+  {
+   "idx": 399,
+   "cls": "jp",
+   "src": "[火/ひ]　ＴＰ３２　[１人/ひとり]　パンチング\nキーパー[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Feu / TP 32 / 1 joueur / Poing\nManuel de technique de gardien"
+  },
+  {
+   "idx": 400,
+   "cls": "jp",
+   "src": "[山/やま]　ＴＰ２１　[１人/ひとり]　パンチング\nキーパー[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Terre / TP 21 / 1 joueur / Poing\nManuel de technique de gardien"
+  },
+  {
+   "idx": 401,
+   "cls": "jp",
+   "src": "[風/かぜ]　ＴＰ３２　[１人/ひとり]　キャッチ\nキーパー[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Air / TP 32 / 1 joueur / Prise\nManuel de technique de gardien"
+  },
+  {
+   "idx": 402,
+   "cls": "jp",
+   "src": "[火/ひ]　ＴＰ２５　[１人/ひとり]　パンチング\nキーパー[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Feu / TP 25 / 1 joueur / Poing\nManuel de technique de gardien"
+  },
+  {
+   "idx": 403,
+   "cls": "jp",
+   "src": "[山/やま]　ＴＰ２５　[１人/ひとり]　キャッチ\nキーパー[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Terre / TP 25 / 1 joueur / Prise\nManuel de technique de gardien"
+  },
+  {
+   "idx": 404,
+   "cls": "jp",
+   "src": "[山/やま]　ＴＰ５０　[１人/ひとり]　キャッチ\nキーパー[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Terre / TP 50 / 1 joueur / Prise\nManuel de technique de gardien"
+  },
+  {
+   "idx": 405,
+   "cls": "jp",
+   "src": "[風/かぜ]　ＴＰ２７　[１人/ひとり]　キャッチ\nキーパー[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Air / TP 27 / 1 joueur / Prise\nManuel de technique de gardien"
+  },
+  {
+   "idx": 406,
+   "cls": "jp",
+   "src": "[林/はやし]　ＴＰ２０　[１人/ひとり]　キャッチ\nキーパー[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Bois / TP 20 / 1 joueur / Prise\nManuel de technique de gardien"
+  },
+  {
+   "idx": 407,
+   "cls": "jp",
+   "src": "[山/やま]　ＴＰ５５　３[人/にん]　キャッチ\nキーパー[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Terre / TP 55 / 3 joueurs / Prise\nManuel de technique de gardien"
+  },
+  {
+   "idx": 408,
+   "cls": "jp",
+   "src": "[林/はやし]　ＴＰ５７　[２人/ふたり]\nオフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Bois / TP 57 / 2 joueurs\nManuel de technique offensive"
+  },
+  {
+   "idx": 409,
+   "cls": "jp",
+   "src": "[山/やま]　ＴＰ３１　[１人/ひとり]\nオフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Terre / TP 31 / 1 joueur\nManuel de technique offensive"
+  },
+  {
+   "idx": 410,
+   "cls": "jp",
+   "src": "[火/ひ]　ＴＰ３３　[１人/ひとり]\nオフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Feu / TP 33 / 1 joueur\nManuel de technique offensive"
+  },
+  {
+   "idx": 411,
+   "cls": "jp",
+   "src": "[山/やま]　ＴＰ３９　[１人/ひとり]\nオフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Terre / TP 39 / 1 joueur\nManuel de technique offensive"
+  },
+  {
+   "idx": 412,
+   "cls": "jp",
+   "src": "[火/ひ]　ＴＰ５７　[２人/ふたり]\nオフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Feu / TP 57 / 2 joueurs\nManuel de technique offensive"
+  },
+  {
+   "idx": 413,
+   "cls": "jp",
+   "src": "なし　ＴＰ１５　[１人/ひとり]\nオフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Aucun / TP 15 / 1 joueur\nManuel de technique offensive"
+  },
+  {
+   "idx": 414,
+   "cls": "jp",
+   "src": "[風/かぜ]　ＴＰ５３　[１人/ひとり]\nオフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Air / TP 53 / 1 joueur\nManuel de technique offensive"
+  },
+  {
+   "idx": 415,
+   "cls": "jp",
+   "src": "[風/かぜ]　ＴＰ４４　[１人/ひとり]\nオフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Air / TP 44 / 1 joueur\nManuel de technique offensive"
+  },
+  {
+   "idx": 416,
+   "cls": "jp",
+   "src": "[林/はやし]　ＴＰ４７　[１人/ひとり]\nオフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Bois / TP 47 / 1 joueur\nManuel de technique offensive"
+  },
+  {
+   "idx": 417,
+   "cls": "jp",
+   "src": "[山/やま]　ＴＰ５６　[１人/ひとり]\nオフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Terre / TP 56 / 1 joueur\nManuel de technique offensive"
+  },
+  {
+   "idx": 418,
+   "cls": "jp",
+   "src": "[林/はやし]　ＴＰ４４　[１人/ひとり]\nオフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Bois / TP 44 / 1 joueur\nManuel de technique offensive"
+  },
+  {
+   "idx": 419,
+   "cls": "jp",
+   "src": "[火/ひ]　ＴＰ４４　[１人/ひとり]\nオフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Feu / TP 44 / 1 joueur\nManuel de technique offensive"
+  },
+  {
+   "idx": 420,
+   "cls": "jp",
+   "src": "[風/かぜ]　ＴＰ５７　[２人/ふたり]\nオフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Air / TP 57 / 2 joueurs\nManuel de technique offensive"
+  },
+  {
+   "idx": 421,
+   "cls": "jp",
+   "src": "[火/ひ]　ＴＰ４８　[２人/ふたり]\nオフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Feu / TP 48 / 2 joueurs\nManuel de technique offensive"
+  },
+  {
+   "idx": 422,
+   "cls": "jp",
+   "src": "[火/ひ]　ＴＰ３９　[１人/ひとり]\nオフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Feu / TP 39 / 1 joueur\nManuel de technique offensive"
+  },
+  {
+   "idx": 423,
+   "cls": "jp",
+   "src": "[山/やま]　ＴＰ４７　[１人/ひとり]\nオフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Terre / TP 47 / 1 joueur\nManuel de technique offensive"
+  },
+  {
+   "idx": 424,
+   "cls": "jp",
+   "src": "[林/はやし]　ＴＰ４４　[１人/ひとり]\nオフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Bois / TP 44 / 1 joueur\nManuel de technique offensive"
+  },
+  {
+   "idx": 425,
+   "cls": "jp",
+   "src": "[風/かぜ]　ＴＰ５６　[１人/ひとり]\nオフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Air / TP 56 / 1 joueur\nManuel de technique offensive"
+  },
+  {
+   "idx": 426,
+   "cls": "jp",
+   "src": "[林/はやし]　ＴＰ５６　[１人/ひとり]\nオフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Bois / TP 56 / 1 joueur\nManuel de technique offensive"
+  },
+  {
+   "idx": 427,
+   "cls": "jp",
+   "src": "[林/はやし]　ＴＰ５８　[１人/ひとり]\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Bois / TP 58 / 1 joueur\nManuel de technique de tir"
+  },
+  {
+   "idx": 428,
+   "cls": "jp",
+   "src": "[林/はやし]　ＴＰ５３　[１人/ひとり]　ＳＢ\nディフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Bois / TP 53 / 1 joueur / SB\nManuel de technique défensive"
+  },
+  {
+   "idx": 429,
+   "cls": "jp",
+   "src": "[風/かぜ]　ＴＰ４７　[１人/ひとり]\nディフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Air / TP 47 / 1 joueur\nManuel de technique défensive"
+  },
+  {
+   "idx": 430,
+   "cls": "jp",
+   "src": "[山/やま]　ＴＰ５３　[１人/ひとり]　ＳＢ\nディフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Terre / TP 53 / 1 joueur / SB\nManuel de technique défensive"
+  },
+  {
+   "idx": 431,
+   "cls": "jp",
+   "src": "[山/やま]　ＴＰ５６　[１人/ひとり]　ＳＢ\nディフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Terre / TP 56 / 1 joueur / SB\nManuel de technique défensive"
+  },
+  {
+   "idx": 432,
+   "cls": "jp",
+   "src": "[風/かぜ]　ＴＰ３６　[１人/ひとり]\nディフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Air / TP 36 / 1 joueur\nManuel de technique défensive"
+  },
+  {
+   "idx": 433,
+   "cls": "jp",
+   "src": "[林/はやし]　ＴＰ４４　[２人/ふたり]\nディフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Bois / TP 44 / 2 joueurs\nManuel de technique défensive"
+  },
+  {
+   "idx": 434,
+   "cls": "jp",
+   "src": "[山/やま]　ＴＰ３６　[１人/ひとり]\nディフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Terre / TP 36 / 1 joueur\nManuel de technique défensive"
+  },
+  {
+   "idx": 435,
+   "cls": "jp",
+   "src": "[火/ひ]　ＴＰ３３　[１人/ひとり]\nディフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Feu / TP 33 / 1 joueur\nManuel de technique défensive"
+  },
+  {
+   "idx": 436,
+   "cls": "jp",
+   "src": "[山/やま]　ＴＰ４４　[１人/ひとり]　ＳＢ\nディフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Terre / TP 44 / 1 joueur / SB\nManuel de technique défensive"
+  },
+  {
+   "idx": 437,
+   "cls": "jp",
+   "src": "[山/やま]　ＴＰ３９　[１人/ひとり]\nディフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Terre / TP 39 / 1 joueur\nManuel de technique défensive"
+  },
+  {
+   "idx": 438,
+   "cls": "jp",
+   "src": "[風/かぜ]　ＴＰ４４　[１人/ひとり]　ＳＢ\nディフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Air / TP 44 / 1 joueur / SB\nManuel de technique défensive"
+  },
+  {
+   "idx": 439,
+   "cls": "jp",
+   "src": "[林/はやし]　ＴＰ３６　[１人/ひとり]\nディフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Bois / TP 36 / 1 joueur\nManuel de technique défensive"
+  },
+  {
+   "idx": 440,
+   "cls": "jp",
+   "src": "[火/ひ]　ＴＰ４２　[１人/ひとり]\nディフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Feu / TP 42 / 1 joueur\nManuel de technique défensive"
+  },
+  {
+   "idx": 441,
+   "cls": "jp",
+   "src": "[林/はやし]　ＴＰ５８　[１人/ひとり]\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Bois / TP 58 / 1 joueur\nManuel de technique de tir"
+  },
+  {
+   "idx": 442,
+   "cls": "jp",
+   "src": "[山/やま]　ＴＰ４２　[１人/ひとり]\nディフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Terre / TP 42 / 1 joueur\nManuel de technique défensive"
+  },
+  {
+   "idx": 443,
+   "cls": "jp",
+   "src": "[山/やま]　ＴＰ５６　[１人/ひとり]　ＳＢ　Ｌサイズ\nディフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Terre / TP 56 / 1 joueur / SB / Taille L\nManuel de technique défensive"
+  },
+  {
+   "idx": 444,
+   "cls": "jp",
+   "src": "[火/ひ]　ＴＰ３６　[１人/ひとり]\nディフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Feu / TP 36 / 1 joueur\nManuel de technique défensive"
+  },
+  {
+   "idx": 445,
+   "cls": "jp",
+   "src": "[風/かぜ]　ＴＰ５６　[１人/ひとり]\nディフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Air / TP 56 / 1 joueur\nManuel de technique défensive"
+  },
+  {
+   "idx": 446,
+   "cls": "jp",
+   "src": "[林/はやし]　ＴＰ５６　[１人/ひとり]\nディフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Bois / TP 56 / 1 joueur\nManuel de technique défensive"
+  },
+  {
+   "idx": 450,
+   "cls": "jp",
+   "src": "[攻守/こうしゅ]にバランスの[取/と]れた[基本/きほん][的/てき]な[陣形/じんけい]。\n４−４−２",
+   "fr": ""
+  },
+  {
+   "idx": 451,
+   "cls": "jp",
+   "src": "[帝国/ていこく]が[使/つか]う　[司令塔/しれいとう]がカギを[握/にぎ]る。\n５−３−２",
+   "fr": ""
+  },
+  {
+   "idx": 452,
+   "cls": "jp",
+   "src": "[尾刈斗/おかると]が[使/つか]う　[攻守/こうしゅ]に[手堅/てがた]い。\n４−５−１",
+   "fr": ""
+  },
+  {
+   "idx": 453,
+   "cls": "jp",
+   "src": "[野生/のせ]が[使/つか]う[攻撃/こうげき]を[重視/じゅうし]した[陣形/じんけい]。\n３−４−３",
+   "fr": ""
+  },
+  {
+   "idx": 454,
+   "cls": "jp",
+   "src": "[御影/みかげ]が[使/つか]う　[組織/そしき][的/てき]な[陣形/じんけい]。\n４−４−２",
+   "fr": ""
+  },
+  {
+   "idx": 455,
+   "cls": "jp",
+   "src": "[秋葉/しゅうよう]が[使/つか]う　５トップの[無謀/むぼう]な[陣形/じんけい]。\n２−３−５",
+   "fr": ""
+  },
+  {
+   "idx": 456,
+   "cls": "jp",
+   "src": "[戦国/せんごく]が[使/つか]うサイド[重視/じゅうし]の[戦術/せんじゅつ]。\n４−４−２",
+   "fr": ""
+  },
+  {
+   "idx": 457,
+   "cls": "jp",
+   "src": "[千羽山/せんばやま]の[鉄壁/てっぺき]の[守/まも]りの[陣形/じんけい]。\n４−３−２−１",
+   "fr": ""
+  },
+  {
+   "idx": 458,
+   "cls": "jp",
+   "src": "[木戸川/きどがわ]の[攻/せ]めに[貪欲/どんよく]な[陣形/じんけい]。\n４−３−３",
+   "fr": ""
+  },
+  {
+   "idx": 459,
+   "cls": "jp",
+   "src": "[世宇子/ぜうす]の[個人/こじん][能力/のうりょく]を[活/い]かした[陣形/じんけい]。\n４−４−１−１",
+   "fr": ""
+  },
+  {
+   "idx": 460,
+   "cls": "jp",
+   "src": "[中央/ちゅうおう]に[特化/とっか]した[守備/しゅび][型/がた]の[陣形/じんけい]。\n５−４−１",
+   "fr": ""
+  },
+  {
+   "idx": 463,
+   "cls": "jp",
+   "src": "サイドを[重視/じゅうし]した[陣形/じんけい]。\n４−３−３",
+   "fr": ""
+  },
+  {
+   "idx": 464,
+   "cls": "jp",
+   "src": "[扱/あつか]いが[難/むずか]しい[変則/へんそく][的/てき]な[陣形/じんけい]。\n３−４−３",
+   "fr": ""
+  },
+  {
+   "idx": 466,
+   "cls": "jp",
+   "src": "シュートは[打/う]たせて[取/と]る！\n３−１−３−３",
+   "fr": ""
+  },
+  {
+   "idx": 468,
+   "cls": "jp",
+   "src": "ボールキープを[大事/だいじ]にする[陣形/じんけい]。\n３−２−２−１−２",
+   "fr": ""
+  },
+  {
+   "idx": 469,
+   "cls": "jp",
+   "src": "バランスと[使/つか]いやすさを[重視/じゅうし]した[陣形/じんけい]。\n４−３−３",
+   "fr": ""
+  },
+  {
+   "idx": 474,
+   "cls": "jp",
+   "src": "バランス[重視/じゅうし]で[使/つか]いやすい\n[基本的/きほんてき]な[陣形/じんけい]。",
+   "fr": ""
+  },
+  {
+   "idx": 475,
+   "cls": "jp",
+   "src": "ＤＦが３[人/にん]！　[守/まも]りに[特化/とっか]した\n[守備的/しゅびてき]な[陣形/じんけい]。",
+   "fr": ""
+  },
+  {
+   "idx": 476,
+   "cls": "jp",
+   "src": "３[人/にん]によるクロス[攻撃/こうげき]でどとうに[攻/せ]める\n[攻撃的/こうげきてき]な[陣形/じんけい]。",
+   "fr": ""
+  },
+  {
+   "idx": 477,
+   "cls": "jp",
+   "src": "３[人/にん]もＦＷ！？　いかなる[時/とき]も[攻/せ]める\n[超/ちょう][攻撃的/こうげきてき]な[陣形/じんけい]。",
+   "fr": ""
+  },
+  {
+   "idx": 478,
+   "cls": "jp",
+   "src": "[両/りょう]サイドから　ＤＦの[裏/うら]を[走/はし]りぬける\nバランス[重視/じゅうし]の[陣形/じんけい]。",
+   "fr": ""
+  },
+  {
+   "idx": 479,
+   "cls": "jp",
+   "src": "[右/みぎ]バックから[左/ひだり]サイドへ[駆/か]け[上/あ]がる\n[少/すこ]しトリッキーな[陣形/じんけい]。",
+   "fr": ""
+  },
+  {
+   "idx": 480,
+   "cls": "jp",
+   "src": "[右/みぎ]サイドが[大好/だいす]きな[人/ひと]へおくる\n[超/ちょう]トリッキーな[陣形/じんけい]。",
+   "fr": ""
+  },
+  {
+   "idx": 481,
+   "cls": "jp",
+   "src": "[攻撃/こうげき]も[守備/しゅび]も[中央/ちゅうおう]のみ！\n[中央/ちゅうおう]に[特化/とっか]した[陣形/じんけい]。",
+   "fr": ""
+  },
+  {
+   "idx": 482,
+   "cls": "jp",
+   "src": "３[人/にん]が[交/まじ]わり　ＤＦをコンランさせる\n[攻撃的/こうげきてき]な[陣形/じんけい]。",
+   "fr": ""
+  },
+  {
+   "idx": 483,
+   "cls": "jp",
+   "src": "[両/りょう]バックからＦＷを[援護/えんご]する\n[守備的/しゅびてき]な[陣形/じんけい]。",
+   "fr": ""
+  },
+  {
+   "idx": 485,
+   "cls": "jp",
+   "src": "ジェミニ[用/よう]",
+   "fr": ""
+  },
+  {
+   "idx": 486,
+   "cls": "jp",
+   "src": "イプシロン[用/よう]",
+   "fr": ""
+  },
+  {
+   "idx": 487,
+   "cls": "jp",
+   "src": "ジェネシス[用/よう]",
+   "fr": ""
+  },
+  {
+   "idx": 488,
+   "cls": "jp",
+   "src": "Ｄエンペラーズ[用/よう]",
+   "fr": ""
+  },
+  {
+   "idx": 489,
+   "cls": "jp",
+   "src": "[陽花戸/よかと]が[使/つか]う　やや[守備的/しゅびてき]な[陣形/じんけい]。\n５−３−２",
+   "fr": ""
+  },
+  {
+   "idx": 490,
+   "cls": "jp",
+   "src": "[漫遊寺/まんゆうじ]のツートップを[生/い]かした[陣形/じんけい]。\n５−３−２",
+   "fr": ""
+  },
+  {
+   "idx": 491,
+   "cls": "jp",
+   "src": "３[人/にん]のＦＷで[両/りょう]サイドを[切/き]り[崩/くず]す！\n４−３−３",
+   "fr": ""
+  },
+  {
+   "idx": 492,
+   "cls": "jp",
+   "src": "[中盤/ちゅうばん]の[層/そう]を[重視/じゅうし]した[陣形/じんけい]。\n５−３−２",
+   "fr": ""
+  },
+  {
+   "idx": 493,
+   "cls": "jp",
+   "src": "オーストラリア[用/よう]",
+   "fr": ""
+  },
+  {
+   "idx": 494,
+   "cls": "jp",
+   "src": "ネオジャパンが[使/つか]う　[攻撃/こうげき][重視/じゅうし]の[陣形/じんけい]。\n４−３−３",
+   "fr": ""
+  },
+  {
+   "idx": 495,
+   "cls": "jp",
+   "src": "カタール[前半/ぜんはん][用/よう]",
+   "fr": ""
+  },
+  {
+   "idx": 496,
+   "cls": "jp",
+   "src": "[韓国/かんこく][用/よう]",
+   "fr": ""
+  },
+  {
+   "idx": 497,
+   "cls": "jp",
+   "src": "イギリス[用/よう]",
+   "fr": ""
+  },
+  {
+   "idx": 498,
+   "cls": "jp",
+   "src": "アルゼンチン[用/よう]",
+   "fr": ""
+  },
+  {
+   "idx": 499,
+   "cls": "jp",
+   "src": "アメリカ[用/よう]",
+   "fr": ""
+  },
+  {
+   "idx": 500,
+   "cls": "jp",
+   "src": "イタリア[用/よう]",
+   "fr": ""
+  },
+  {
+   "idx": 501,
+   "cls": "jp",
+   "src": "スペイン[用/よう]",
+   "fr": ""
+  },
+  {
+   "idx": 502,
+   "cls": "jp",
+   "src": "[前線/ぜんせん]のストライカーがカギを[握/にぎ]る[陣形/じんけい]。\n４−３−３",
+   "fr": ""
+  },
+  {
+   "idx": 503,
+   "cls": "jp",
+   "src": "[南/みなみ]アフリカ[用/よう]",
+   "fr": ""
+  },
+  {
+   "idx": 504,
+   "cls": "jp",
+   "src": "フランス[用/よう]",
+   "fr": ""
+  },
+  {
+   "idx": 505,
+   "cls": "jp",
+   "src": "ドイツ[用/よう]",
+   "fr": ""
+  },
+  {
+   "idx": 506,
+   "cls": "jp",
+   "src": "コトアール[用/よう]",
+   "fr": ""
+  },
+  {
+   "idx": 507,
+   "cls": "jp",
+   "src": "[天空/てんくう]の[使徒/しと]の[組織的/そしきてき]な[陣形/じんけい]。\n４−４−２",
+   "fr": ""
+  },
+  {
+   "idx": 508,
+   "cls": "jp",
+   "src": "[魔界/まかい][軍団/ぐんだん]Ｚの[使/つか]う　[攻撃的/こうげきてき]な[陣形/じんけい]。\n５−３−２",
+   "fr": ""
+  },
+  {
+   "idx": 509,
+   "cls": "jp",
+   "src": "チームＫ[用/よう]",
+   "fr": ""
+  },
+  {
+   "idx": 510,
+   "cls": "jp",
+   "src": "チームガルシルド[用/よう]",
+   "fr": ""
+  },
+  {
+   "idx": 511,
+   "cls": "jp",
+   "src": "スタミナ＋５０",
+   "fr": ""
+  },
+  {
+   "idx": 514,
+   "cls": "jp",
+   "src": "ダークエンジェルが[使/つか]う[陣形/じんけい]。\n４−４−２",
+   "fr": ""
+  },
+  {
+   "idx": 515,
+   "cls": "jp",
+   "src": "オーガ[用/よう]",
+   "fr": ""
+  },
+  {
+   "idx": 516,
+   "cls": "jp",
+   "src": "カオス[用/よう]",
+   "fr": ""
+  },
+  {
+   "idx": 521,
+   "cls": "jp",
+   "src": "[星/ほし]の[力/ちから]を[封/ふう]じこめた\nジェミニストーム[愛用/あいよう]ウェア。",
+   "fr": ""
+  },
+  {
+   "idx": 522,
+   "cls": "jp",
+   "src": "エネルギーに[満/み]ちあふれた\nイプシロン[専用/せんよう]ウェア。",
+   "fr": ""
+  },
+  {
+   "idx": 523,
+   "cls": "jp",
+   "src": "[最強/さいきょう]の[戦士/せんし]のあかしである\nジェネシス[専用/せんよう]ウェア。",
+   "fr": ""
+  },
+  {
+   "idx": 525,
+   "cls": "jp",
+   "src": "サッカーも[任務/にんむ]もこなすことができる\nＳＰ[愛用/あいよう]のスーツ[型/がた]ウェア。",
+   "fr": ""
+  },
+  {
+   "idx": 526,
+   "cls": "jp",
+   "src": "[白恋/はくれん]が[使/つか]っている　[純白/じゅんぱく]のウェア。\nあったか[素材/そざい]で　[寒/さむ]さしらず！",
+   "fr": ""
+  },
+  {
+   "idx": 527,
+   "cls": "jp",
+   "src": "カンフーをたしなむ[者/もの]があこがれる\n[漫遊寺/まんゆうじ][用/よう]ウェア。",
+   "fr": ""
+  },
+  {
+   "idx": 528,
+   "cls": "jp",
+   "src": "[力/ちから]を[求/もと]める[者/もの]が[使/つか]うとされる\n[真/しん]・[帝国/ていこく][学園/がくえん]ウェア。",
+   "fr": ""
+  },
+  {
+   "idx": 529,
+   "cls": "jp",
+   "src": "お[祭/まつ]り[気分/きぶん]で　おめでたい！\n[陽気/ようき]な[陽花戸/よかと][中/ちゅう]ウェア。",
+   "fr": ""
+  },
+  {
+   "idx": 530,
+   "cls": "jp",
+   "src": "[透/す]きとおるエメラルドグリーンカラーの\n[大海原/おうみはら][中/ちゅう][愛用/あいよう]ウェア。",
+   "fr": ""
+  },
+  {
+   "idx": 531,
+   "cls": "jp",
+   "src": "うらぎりの[黒/くろ]い[力/ちから]がこめられた\nダークエンペラーズ[用/よう]ウェア。",
+   "fr": ""
+  },
+  {
+   "idx": 532,
+   "cls": "jp",
+   "src": "ギャルセンス[大/だい]ばくはつ！\n[大阪/おおさか]ギャルズ[愛用/あいよう]ウェア。",
+   "fr": ""
+  },
+  {
+   "idx": 533,
+   "cls": "jp",
+   "src": "[警備/けいび]マシンズアーマーで[作/つく]ったウェア。\n[着/き]るとロボットになれるぞ！",
+   "fr": ""
+  },
+  {
+   "idx": 534,
+   "cls": "jp",
+   "src": "[背番号/せばんごう]が[漢字/かんじ]で[書/か]かれた\n[古/ふる]き[良/よ]き[時代/じだい]のウェア。",
+   "fr": ""
+  },
+  {
+   "idx": 535,
+   "cls": "jp",
+   "src": "ガイコツをあしらった\nとても[不気味/ぶきみ]なウェア。",
+   "fr": ""
+  },
+  {
+   "idx": 536,
+   "cls": "jp",
+   "src": "カエルをだいたんにあしらった\nポップなデザインのウェア。",
+   "fr": ""
+  },
+  {
+   "idx": 537,
+   "cls": "jp",
+   "src": "むねの[星/ほし]がきらりと[光/ひか]る！\nスポーツ[感/かん]あふれるウェア。",
+   "fr": ""
+  },
+  {
+   "idx": 538,
+   "cls": "jp",
+   "src": "[海/うみ]の[男/おとこ]によく[似合/にあ]う！？\nさわやかセーラーウェア。",
+   "fr": ""
+  },
+  {
+   "idx": 539,
+   "cls": "jp",
+   "src": "[乙女/おとめ]のはじらい　[忘/わす]れずに！\n[女/おんな]の[子/こ][感/かん]たっぷりのウェア。",
+   "fr": ""
+  },
+  {
+   "idx": 541,
+   "cls": "jp",
+   "src": "ケモノが[赤/あか]い[牙/きば]をむいたような\n[極悪/ごくあく]オーラあふれるウェア。",
+   "fr": ""
+  },
+  {
+   "idx": 542,
+   "cls": "jp",
+   "src": "[伝説/でんせつ]の[武道家/ぶどうか]も[愛用/あいよう]していたとされる\nブラックラインがおしゃれなウェア。",
+   "fr": ""
+  },
+  {
+   "idx": 543,
+   "cls": "jp",
+   "src": "バイカー[達/たち]がこぞって[着/き]たがる\nジャケット[風/ふう]デザインのウェア。",
+   "fr": ""
+  },
+  {
+   "idx": 544,
+   "cls": "jp",
+   "src": "[宇宙/うちゅう]の[力/ちから]を[呼/よ]びさます\nスペース[感/かん]たっぷりのウェア。",
+   "fr": ""
+  },
+  {
+   "idx": 545,
+   "cls": "jp",
+   "src": "[背番号/せばんごう]まわりがアクセントのウェア。\nなぜか　はっぴスタイル。",
+   "fr": ""
+  },
+  {
+   "idx": 546,
+   "cls": "jp",
+   "src": "[両/りょう]はしに[入/はい]る[大/おお]きなストライプが\n[気持/きも]ちをグッと[引/ひ]きしめる！",
+   "fr": ""
+  },
+  {
+   "idx": 549,
+   "cls": "jp",
+   "src": "イナズマウェアと[人気/にんき]を[分/わ]かちあう\n[鳴/な]りひびく[雷/かみなり]をデザインしたウェア。",
+   "fr": ""
+  },
+  {
+   "idx": 550,
+   "cls": "jp",
+   "src": "[熱/あつ]きちしおがたぎり[出/だ]す\nたたかいの[心/こころ]をデザインしたウェア。",
+   "fr": ""
+  },
+  {
+   "idx": 551,
+   "cls": "jp",
+   "src": "[戦士/せんし]たちが[好/この]んで[着/き]たがる\nたたかいの[気持/きも]ちを[高/たか]ぶらせるウェア。",
+   "fr": ""
+  },
+  {
+   "idx": 552,
+   "cls": "jp",
+   "src": "[未来/みらい]の[素材/そざい]で[作/つく]られた\n[羽/はね]のようにかるいウェア。",
+   "fr": ""
+  },
+  {
+   "idx": 553,
+   "cls": "jp",
+   "src": "しゃくねつの[力/ちから]を[呼/よ]びさます\nプロミネンス[着用/ちゃくよう]のウェア。",
+   "fr": ""
+  },
+  {
+   "idx": 554,
+   "cls": "jp",
+   "src": "こごえるほどの[力/ちから]を[秘/ひ]めた\nダイヤモンドダスト[着用/ちゃくよう]のウェア。",
+   "fr": ""
+  },
+  {
+   "idx": 555,
+   "cls": "jp",
+   "src": "ヤングな[時代/じだい]のイナズマイレブンＯＢが\n[愛用/あいよう]していたウェア。",
+   "fr": ""
+  },
+  {
+   "idx": 556,
+   "cls": "jp",
+   "src": "[腰/こし]の[辺/あた]りにくびれを[入/い]れた\nカラフルなウェア。",
+   "fr": ""
+  },
+  {
+   "idx": 557,
+   "cls": "jp",
+   "src": "[仲間/なかま]への[思/おも]いやりの[心/こころ]が\nこめられているというユニフォーム。",
+   "fr": ""
+  },
+  {
+   "idx": 558,
+   "cls": "jp",
+   "src": "[着/き]るとサッカーへの[情熱/じょうねつ]が\nわいてくるようなウェア。",
+   "fr": ""
+  },
+  {
+   "idx": 559,
+   "cls": "jp",
+   "src": "[空気/くうき][抵抗/ていこう]が[少/すく]なく　[流/なが]れるような\n[感覚/かんかく]で[走/はし]れるウェア。",
+   "fr": ""
+  },
+  {
+   "idx": 560,
+   "cls": "jp",
+   "src": "[正面/しょうめん]からのしょうげきに[強/つよ]い？\nチョッキ[状/じょう]のウェア。",
+   "fr": ""
+  },
+  {
+   "idx": 561,
+   "cls": "jp",
+   "src": "[相手/あいて]をいかくする[目的/もくてき]で[作/つく]られた\n[風変/ふうが]わりなデザインのウェア。",
+   "fr": ""
+  },
+  {
+   "idx": 562,
+   "cls": "jp",
+   "src": "[肩/かた]からソデにかける[部分/ぶぶん]を\n[丈夫/じょうぶ]な[素材/そざい]にしたウェア。",
+   "fr": ""
+  },
+  {
+   "idx": 563,
+   "cls": "jp",
+   "src": "なだらかな[横/よこ]のストライプが[並/なら]ぶ\nスマートなデザインのウェア。",
+   "fr": ""
+  },
+  {
+   "idx": 564,
+   "cls": "jp",
+   "src": "[両/りょう]ソデにアクセントとして\nはん[点/てん]のデザインが[入/はい]ったウェア。",
+   "fr": ""
+  },
+  {
+   "idx": 565,
+   "cls": "jp",
+   "src": "[見/み]たものを[恐/おそ]れさせるという\n[魔界/まかい][軍団/ぐんだん]Ｚのウェア。",
+   "fr": ""
+  },
+  {
+   "idx": 566,
+   "cls": "jp",
+   "src": "トレーティングカードの[世界/せかい]から[参戦/さんせん]！\nカードチームのウェア。",
+   "fr": ""
+  },
+  {
+   "idx": 567,
+   "cls": "jp",
+   "src": "[時空/じくう]を[越/こ]えた[未知/みち]の[素材/そざい]で\n[作/つく]られたというナゾのウェア。",
+   "fr": ""
+  },
+  {
+   "idx": 568,
+   "cls": "jp",
+   "src": "[天空/てんくう]と[魔界/まかい]\nお[互/たが]いの[力/ちから]が[結集/けっしゅう]したウェア。",
+   "fr": ""
+  },
+  {
+   "idx": 570,
+   "cls": "jp",
+   "src": "スピード＋４\n[星/ほし]の[力/ちから]を[持/も]つシューズ。",
+   "fr": ""
+  },
+  {
+   "idx": 571,
+   "cls": "jp",
+   "src": "ジェミニＧＫシューズ。",
+   "fr": ""
+  },
+  {
+   "idx": 572,
+   "cls": "jp",
+   "src": "スピード＋７\n[惑星/わくせい]をはかいする[力/ちから]を[持/も]つシューズ。",
+   "fr": ""
+  },
+  {
+   "idx": 573,
+   "cls": "jp",
+   "src": "イプシロンＧＫシューズ。",
+   "fr": ""
+  },
+  {
+   "idx": 574,
+   "cls": "jp",
+   "src": "スピード＋１０\n[宇宙/うちゅう]をも[超/こ]えるパワーを[秘/ひ]めたシューズ。",
+   "fr": ""
+  },
+  {
+   "idx": 575,
+   "cls": "jp",
+   "src": "ジェネシスＧＫシューズ。",
+   "fr": ""
+  },
+  {
+   "idx": 576,
+   "cls": "jp",
+   "src": "キック＋３\n[見/み]た[目/め][革/かわ]ぐつ　ＳＰ[愛用/あいよう]のスパイク。",
+   "fr": ""
+  },
+  {
+   "idx": 577,
+   "cls": "jp",
+   "src": "ＳＰＧＫシューズ。",
+   "fr": ""
+  },
+  {
+   "idx": 578,
+   "cls": "jp",
+   "src": "キック＋４\n[雪/ゆき]でも[自由/じゆう]に[動/うご]ける[白恋/はくれん][中/ちゅう]スパイク。",
+   "fr": ""
+  },
+  {
+   "idx": 579,
+   "cls": "jp",
+   "src": "[白恋/はくれん]ＧＫシューズ。",
+   "fr": ""
+  },
+  {
+   "idx": 580,
+   "cls": "jp",
+   "src": "キック＋５\nたんれん[用/よう]の[漫遊寺/まんゆうじ][中/ちゅう]のスパイク。",
+   "fr": ""
+  },
+  {
+   "idx": 581,
+   "cls": "jp",
+   "src": "[漫遊寺/まんゆうじ]ＧＫシューズ。",
+   "fr": ""
+  },
+  {
+   "idx": 582,
+   "cls": "jp",
+   "src": "スピード＋６\n[深/ふか]い[黒/くろ][色/いろ]の[真/しん]・[帝国/ていこく][学園/がくえん]のスパイク。",
+   "fr": ""
+  },
+  {
+   "idx": 583,
+   "cls": "jp",
+   "src": "[真帝国/しんていこく]ＧＫシューズ。",
+   "fr": ""
+  },
+  {
+   "idx": 584,
+   "cls": "jp",
+   "src": "キック＋８\nゆうぐれでも[目立/めだ]つ[陽花戸/よかと][中/ちゅう]スパイク。",
+   "fr": ""
+  },
+  {
+   "idx": 585,
+   "cls": "jp",
+   "src": "[陽花戸/よかと]ＧＫシューズ。",
+   "fr": ""
+  },
+  {
+   "idx": 586,
+   "cls": "jp",
+   "src": "キック＋９\n[海/うみ]がイメージの[大海原/おうみはら][中/ちゅう]のスパイク。",
+   "fr": ""
+  },
+  {
+   "idx": 587,
+   "cls": "jp",
+   "src": "[大海原/おうみはら]ＧＫシューズ。",
+   "fr": ""
+  },
+  {
+   "idx": 588,
+   "cls": "jp",
+   "src": "スピード＋１７\n[闇/やみ]の[力/ちから]を[秘/ひ]めたシューズ。",
+   "fr": ""
+  },
+  {
+   "idx": 589,
+   "cls": "jp",
+   "src": "キラＧＫシューズ。",
+   "fr": ""
+  },
+  {
+   "idx": 590,
+   "cls": "jp",
+   "src": "キック＋７\n[白/しろ]と[紫/むらさき]のギャルズ[自慢/じまん]のスパイク。",
+   "fr": ""
+  },
+  {
+   "idx": 591,
+   "cls": "jp",
+   "src": "ギャルズＧＫシューズ。",
+   "fr": ""
+  },
+  {
+   "idx": 592,
+   "cls": "jp",
+   "src": "[警備兵/けいびへい]ＦＰシューズ。",
+   "fr": ""
+  },
+  {
+   "idx": 593,
+   "cls": "jp",
+   "src": "[警備兵/けいびへい]ＧＫシューズ。",
+   "fr": ""
+  },
+  {
+   "idx": 594,
+   "cls": "jp",
+   "src": "キック＋１７\n[植物/しょくぶつ]エキスから[作/つく]り[出/だ]したスパイク。",
+   "fr": ""
+  },
+  {
+   "idx": 596,
+   "cls": "jp",
+   "src": "スピード＋１８\nヤングＯＢの[真/ま]っ[赤/か]なシューズ。",
+   "fr": ""
+  },
+  {
+   "idx": 597,
+   "cls": "jp",
+   "src": "こうかなシューズ。",
+   "fr": ""
+  },
+  {
+   "idx": 598,
+   "cls": "jp",
+   "src": "スピード＋９\nライダー[用/よう]のブーツタイプのシューズ。",
+   "fr": ""
+  },
+  {
+   "idx": 599,
+   "cls": "jp",
+   "src": "ユニ１０ＧＫシューズ。",
+   "fr": ""
+  },
+  {
+   "idx": 600,
+   "cls": "jp",
+   "src": "スピード＋５\nマーシャルウェアとセットで！！",
+   "fr": ""
+  },
+  {
+   "idx": 601,
+   "cls": "jp",
+   "src": "ユニ９ＧＫシューズ。",
+   "fr": ""
+  },
+  {
+   "idx": 602,
+   "cls": "jp",
+   "src": "スピード＋４\nペガサスがイメージの[白/しろ]いシューズ。",
+   "fr": ""
+  },
+  {
+   "idx": 603,
+   "cls": "jp",
+   "src": "スピード＋１０\n[全/すべ]てを[巻/ま]きこむしんくうのスパイク。",
+   "fr": ""
+  },
+  {
+   "idx": 604,
+   "cls": "jp",
+   "src": "キック＋９\nあらぶる[力/ちから]を[表現/ひょうげん]しているスパイク。",
+   "fr": ""
+  },
+  {
+   "idx": 605,
+   "cls": "jp",
+   "src": "キック＋２\nチェック[模様/もよう]が　イカしたシューズ。",
+   "fr": ""
+  },
+  {
+   "idx": 606,
+   "cls": "jp",
+   "src": "スピード＋１\nどんなヤツでもさわやかになるシューズ。",
+   "fr": ""
+  },
+  {
+   "idx": 607,
+   "cls": "jp",
+   "src": "キック＋３\n[科学力/かがくりょく]まんさいのスパイク。",
+   "fr": ""
+  },
+  {
+   "idx": 608,
+   "cls": "jp",
+   "src": "キック＋１０\nもえさかる[炎/ほのお]の[力/ちから]を[持/も]つスパイク。",
+   "fr": ""
+  },
+  {
+   "idx": 609,
+   "cls": "jp",
+   "src": "プロミＧＫシューズ。",
+   "fr": ""
+  },
+  {
+   "idx": 610,
+   "cls": "jp",
+   "src": "スピード＋１０\nあらゆるものを[凍/こお]らせるスパイク。",
+   "fr": ""
+  },
+  {
+   "idx": 611,
+   "cls": "jp",
+   "src": "ダイヤモＧＫシューズ。",
+   "fr": ""
+  },
+  {
+   "idx": 612,
+   "cls": "jp",
+   "src": "スピード＋９\nとてもメカニカルなシューズ。",
+   "fr": ""
+  },
+  {
+   "idx": 613,
+   "cls": "jp",
+   "src": "キック＋１４\n[全/すべ]てを[呑/の]みこみ[無/む]に[帰/かえ]すというスパイク。",
+   "fr": ""
+  },
+  {
+   "idx": 614,
+   "cls": "jp",
+   "src": "カオスＧＫシューズ。",
+   "fr": ""
+  },
+  {
+   "idx": 615,
+   "cls": "jp",
+   "src": "フューチャーＧＫ[用/よう]シューズ。",
+   "fr": ""
+  },
+  {
+   "idx": 616,
+   "cls": "jp",
+   "src": "スピード＋１６\n[天空/てんくう]の[使徒/しと]が[身/み]に[付/つ]けるシューズ。",
+   "fr": ""
+  },
+  {
+   "idx": 617,
+   "cls": "jp",
+   "src": "キック＋１６\n[魔界/まかい][軍団/ぐんだん]Ｚが[使/つか]う[黒/くろ]きスパイク。",
+   "fr": ""
+  },
+  {
+   "idx": 618,
+   "cls": "jp",
+   "src": "キック＋１７\n[天/てん]と[魔/ま]の[力/ちから]が[融合/ゆうごう]したスパイク。",
+   "fr": ""
+  },
+  {
+   "idx": 619,
+   "cls": "jp",
+   "src": "キック＋１８\n[脅威/きょうい]のパワーを[持/も]つオーガのスパイク。",
+   "fr": ""
+  },
+  {
+   "idx": 620,
+   "cls": "jp",
+   "src": "[魔界/まかい][軍団/ぐんだん]ＧＫシューズ。",
+   "fr": ""
+  },
+  {
+   "idx": 621,
+   "cls": "jp",
+   "src": "[天空/てんくう]と[魔界/まかい]の[混合/こんごう]チームのＧＫ[用/よう]スパイク。",
+   "fr": ""
+  },
+  {
+   "idx": 625,
+   "cls": "jp",
+   "src": "ガード＋１５\n[天空/てんくう]の[使徒/しと]が[使/つか]うグローブ。",
+   "fr": ""
+  },
+  {
+   "idx": 626,
+   "cls": "jp",
+   "src": "ガード＋１５\n[魔界/まかい][軍団/ぐんだん]Ｚが[使/つか]うグローブ。",
+   "fr": ""
+  },
+  {
+   "idx": 627,
+   "cls": "jp",
+   "src": "ガード＋１７\n[天/てん]と[魔/ま]の[力/ちから]が[融合/ゆうごう]したグローブ。",
+   "fr": ""
+  },
+  {
+   "idx": 628,
+   "cls": "jp",
+   "src": "ガード＋１８\n[脅威/きょうい]のパワーを[持/も]つオーガのグローブ。",
+   "fr": ""
+  },
+  {
+   "idx": 629,
+   "cls": "jp",
+   "src": "ガード＋１５\n[札/ふだ]の[力/ちから]が[込/こ]められたナゾのグローブ。",
+   "fr": ""
+  },
+  {
+   "idx": 630,
+   "cls": "jp",
+   "src": "ガード＋４\n[星/ほし]の[力/ちから]を[封/ふう]じこめたグローブ。",
+   "fr": ""
+  },
+  {
+   "idx": 631,
+   "cls": "jp",
+   "src": "ガード＋７\n[銀河/ぎんが]の[力/ちから]を[封/ふう]じこめたグローブ。",
+   "fr": ""
+  },
+  {
+   "idx": 632,
+   "cls": "jp",
+   "src": "ガード＋１０\nビッグバンのパワーを[秘/ひ]めたグローブ。",
+   "fr": ""
+  },
+  {
+   "idx": 633,
+   "cls": "jp",
+   "src": "ガード＋７\nグローブ。",
+   "fr": ""
+  },
+  {
+   "idx": 634,
+   "cls": "jp",
+   "src": "ガード＋３\n[護身用/ごしんよう]に[開発/かいはつ]されたグローブ。",
+   "fr": ""
+  },
+  {
+   "idx": 635,
+   "cls": "jp",
+   "src": "ガード＋４\n[白恋/はくれん][中/ちゅう]が[使/つか]う　あつでのグローブ。",
+   "fr": ""
+  },
+  {
+   "idx": 636,
+   "cls": "jp",
+   "src": "ガード＋５\nコブシに[闘気/とうき]をまとったグローブ。",
+   "fr": ""
+  },
+  {
+   "idx": 637,
+   "cls": "jp",
+   "src": "ガード＋６\nつわものだけが[使/つか]えるグローブ。",
+   "fr": ""
+  },
+  {
+   "idx": 638,
+   "cls": "jp",
+   "src": "ガード＋８\n[陽花戸/よかと][中/ちゅう]が[愛用/あいよう]するグローブ。",
+   "fr": ""
+  },
+  {
+   "idx": 639,
+   "cls": "jp",
+   "src": "ガード＋９\n[水/みず]かき[付/つ]き　[大海原/おうみはら][中/ちゅう]のグローブ。",
+   "fr": ""
+  },
+  {
+   "idx": 640,
+   "cls": "jp",
+   "src": "ガード＋１２\n[憎/にく]しみを[力/ちから]にかえるグローブ。",
+   "fr": ""
+  },
+  {
+   "idx": 641,
+   "cls": "jp",
+   "src": "ガード＋７\n[乙女/おとめ]のために[作/つく]られたグローブ。",
+   "fr": ""
+  },
+  {
+   "idx": 642,
+   "cls": "jp",
+   "src": "グローブ。",
+   "fr": ""
+  },
+  {
+   "idx": 643,
+   "cls": "jp",
+   "src": "ガード＋１４\n[深/ふか]い[森/もり]のパワーをたくわえたグローブ。",
+   "fr": ""
+  },
+  {
+   "idx": 644,
+   "cls": "jp",
+   "src": "ガード＋１８\n[数多/あまた]のボールを[止/と]めてきたグローブ。",
+   "fr": ""
+  },
+  {
+   "idx": 645,
+   "cls": "jp",
+   "src": "グローブ。",
+   "fr": ""
+  },
+  {
+   "idx": 646,
+   "cls": "jp",
+   "src": "ガード＋７\n[太陽/たいよう]エネルギーを[蓄/たくわ]えたグローブ。",
+   "fr": ""
+  },
+  {
+   "idx": 647,
+   "cls": "jp",
+   "src": "ガード＋７\nオーロラのエネルギーを[集/あつ]めたグローブ。",
+   "fr": ""
+  },
+  {
+   "idx": 648,
+   "cls": "jp",
+   "src": "ガード＋５\n[未来/みらい]からやってきたグローブ。",
+   "fr": ""
+  },
+  {
+   "idx": 649,
+   "cls": "jp",
+   "src": "ガード＋１\n[練習用/れんしゅうよう]の　ごくふつうのグローブ。",
+   "fr": ""
+  },
+  {
+   "idx": 650,
+   "cls": "jp",
+   "src": "ガード＋２\n[空気/くうき]のように[軽/かる]いグローブ。",
+   "fr": ""
+  },
+  {
+   "idx": 651,
+   "cls": "jp",
+   "src": "ガード＋７\n[自然/しぜん]のパワーを[封/ふう]じこめたグローブ。",
+   "fr": ""
+  },
+  {
+   "idx": 652,
+   "cls": "jp",
+   "src": "ガード＋５\nはがねのような[硬/かた]さを[持/も]つグローブ。",
+   "fr": ""
+  },
+  {
+   "idx": 653,
+   "cls": "jp",
+   "src": "ガード＋４\nじょうねつてきなカラーのグローブ。",
+   "fr": ""
+  },
+  {
+   "idx": 654,
+   "cls": "jp",
+   "src": "ガード＋５\nあのプリティなグローブの[第/だい]２[弾/だん]！",
+   "fr": ""
+  },
+  {
+   "idx": 655,
+   "cls": "jp",
+   "src": "ガード＋６\n[必勝/ひっしょう]の[気持/きも]ちが[詰/つ]まったグローブ。",
+   "fr": ""
+  },
+  {
+   "idx": 656,
+   "cls": "jp",
+   "src": "ガード＋３\n[見/み]ているだけで　さわやかなグローブ。",
+   "fr": ""
+  },
+  {
+   "idx": 657,
+   "cls": "jp",
+   "src": "ガード＋８\nあらゆる[物/もの]をはかいするグローブ。",
+   "fr": ""
+  },
+  {
+   "idx": 658,
+   "cls": "jp",
+   "src": "ガード＋１０\n[時/とき]をあやつり[空/そら]をもゆがますグローブ。",
+   "fr": ""
+  },
+  {
+   "idx": 660,
+   "cls": "jp",
+   "src": "ガッツ＋３\nチタンを[織/お]り[込/こ]んだミサンガ。",
+   "fr": ""
+  },
+  {
+   "idx": 661,
+   "cls": "jp",
+   "src": "コントロール＋３\n[仲間/なかま]とおそろいで[着/つ]けたいミサンガ。",
+   "fr": ""
+  },
+  {
+   "idx": 662,
+   "cls": "jp",
+   "src": "ガッツ＋４\n[熱/あつ]いたましいがこめられたミサンガ。",
+   "fr": ""
+  },
+  {
+   "idx": 663,
+   "cls": "jp",
+   "src": "ガッツ＋８\n[広大/こうだい]な[大地/だいち]の[力/ちから]を[受/う]けたミサンガ。",
+   "fr": ""
+  },
+  {
+   "idx": 664,
+   "cls": "jp",
+   "src": "ガッツ＋６\nかわいらしい　ももいろのミサンガ。",
+   "fr": ""
+  },
+  {
+   "idx": 665,
+   "cls": "jp",
+   "src": "コントロール＋４\nおしゃれな[男/おとこ]の[子/こ]に[人気/にんき]のミサンガ。",
+   "fr": ""
+  },
+  {
+   "idx": 666,
+   "cls": "jp",
+   "src": "ガッツ＋２０\n[最強/さいきょう]のパワーを[秘/ひ]めたミサンガ。",
+   "fr": ""
+  },
+  {
+   "idx": 667,
+   "cls": "jp",
+   "src": "コントロール＋９\nふしぎな[素材/そざい]で[作/つく]られたミサンガ。",
+   "fr": ""
+  },
+  {
+   "idx": 668,
+   "cls": "jp",
+   "src": "ガッツ＋１２\nトップクラスのパワーを[持/も]つミサンガ。",
+   "fr": ""
+  },
+  {
+   "idx": 676,
+   "cls": "jp",
+   "src": "スタミナ＋１２\nアキの[贈/おく]り[物/もの]。[島/しま]のお[守/まも]りらしい。",
+   "fr": ""
+  },
+  {
+   "idx": 677,
+   "cls": "jp",
+   "src": "スタミナ＋１２\n[冬花/ふゆか]の[贈/おく]り[物/もの]。ふしぎとあたたかい。",
+   "fr": ""
+  },
+  {
+   "idx": 678,
+   "cls": "jp",
+   "src": "ボディ＋１２\n[夏未/なつみ]の[贈/おく]り[物/もの]。[実/じつ]は[手作/てづく]りのようだ。",
+   "fr": ""
+  },
+  {
+   "idx": 679,
+   "cls": "jp",
+   "src": "ボディ＋１２\n[春奈/はるな]の[贈/おく]り[物/もの]。[兄妹/きょうだい]の[絆/きずな]を[感/かん]じる。",
+   "fr": ""
+  },
+  {
+   "idx": 680,
+   "cls": "jp",
+   "src": "スタミナ＋３\n[銅/どう]でできた　ペンダント。",
+   "fr": ""
+  },
+  {
+   "idx": 681,
+   "cls": "jp",
+   "src": "スタミナ＋７\n[銀/ぎん]でできた　ペンダント。",
+   "fr": ""
+  },
+  {
+   "idx": 682,
+   "cls": "jp",
+   "src": "スタミナ＋１５\n[金/きん]でできた　ペンダント。",
+   "fr": ""
+  },
+  {
+   "idx": 683,
+   "cls": "jp",
+   "src": "ボディ＋３\n[銅/どう]でできた　ペンダント。",
+   "fr": ""
+  },
+  {
+   "idx": 684,
+   "cls": "jp",
+   "src": "ボディ＋７\n[銀/ぎん]でできた　ペンダント。",
+   "fr": ""
+  },
+  {
+   "idx": 685,
+   "cls": "jp",
+   "src": "ボディ＋１５\n[金/きん]でできた　ペンダント。",
+   "fr": ""
+  },
+  {
+   "idx": 700,
+   "cls": "jp",
+   "src": "[風/かぜ]　ＴＰ３７　[１人/ひとり]\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Air / TP 37 / 1 joueur\nManuel de technique de tir"
+  },
+  {
+   "idx": 701,
+   "cls": "jp",
+   "src": "[火/ひ]　ＴＰ４６　[１人/ひとり]\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Feu / TP 46 / 1 joueur\nManuel de technique de tir"
+  },
+  {
+   "idx": 702,
+   "cls": "jp",
+   "src": "[風/かぜ]　ＴＰ４０　[１人/ひとり]　ロング\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Air / TP 40 / 1 joueur / Longue distance\nManuel de technique de tir"
+  },
+  {
+   "idx": 703,
+   "cls": "jp",
+   "src": "[林/はやし]　ＴＰ６１　３[人/にん]\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Bois / TP 61 / 3 joueurs\nManuel de technique de tir"
+  },
+  {
+   "idx": 704,
+   "cls": "jp",
+   "src": "[山/やま]　ＴＰ６４　３[人/にん]\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Terre / TP 64 / 3 joueurs\nManuel de technique de tir"
+  },
+  {
+   "idx": 705,
+   "cls": "jp",
+   "src": "[山/やま]　ＴＰ３７　[１人/ひとり]　ロング\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Terre / TP 37 / 1 joueur / Longue distance\nManuel de technique de tir"
+  },
+  {
+   "idx": 706,
+   "cls": "jp",
+   "src": "[林/はやし]　ＴＰ３７　[１人/ひとり]\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Bois / TP 37 / 1 joueur\nManuel de technique de tir"
+  },
+  {
+   "idx": 707,
+   "cls": "jp",
+   "src": "[林/はやし]　ＴＰ３４　[２人/ふたり]　ＳＣ\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Bois / TP 34 / 2 joueurs / SC\nManuel de technique de tir"
+  },
+  {
+   "idx": 708,
+   "cls": "jp",
+   "src": "[山/やま]　ＴＰ３７　[１人/ひとり]　ＳＢ\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Terre / TP 37 / 1 joueur / SB\nManuel de technique de tir"
+  },
+  {
+   "idx": 709,
+   "cls": "jp",
+   "src": "[火/ひ]　ＴＰ３１　[１人/ひとり]　ＳＣ\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Feu / TP 31 / 1 joueur / SC\nManuel de technique de tir"
+  },
+  {
+   "idx": 710,
+   "cls": "jp",
+   "src": "[山/やま]　ＴＰ２５　[１人/ひとり]　ＳＣ\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Terre / TP 25 / 1 joueur / SC\nManuel de technique de tir"
+  },
+  {
+   "idx": 711,
+   "cls": "jp",
+   "src": "[風/かぜ]　ＴＰ４９　[２人/ふたり]\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Air / TP 49 / 2 joueurs\nManuel de technique de tir"
+  },
+  {
+   "idx": 712,
+   "cls": "jp",
+   "src": "[火/ひ]　ＴＰ２１　[１人/ひとり]　ＳＣ\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Feu / TP 21 / 1 joueur / SC\nManuel de technique de tir"
+  },
+  {
+   "idx": 713,
+   "cls": "jp",
+   "src": "[火/ひ]　ＴＰ４６　[１人/ひとり]　ＳＢ\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Feu / TP 46 / 1 joueur / SB\nManuel de technique de tir"
+  },
+  {
+   "idx": 714,
+   "cls": "jp",
+   "src": "[林/はやし]　ＴＰ４６　[２人/ふたり]\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Bois / TP 46 / 2 joueurs\nManuel de technique de tir"
+  },
+  {
+   "idx": 715,
+   "cls": "jp",
+   "src": "[風/かぜ]　ＴＰ５２　[１人/ひとり]\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Air / TP 52 / 1 joueur\nManuel de technique de tir"
+  },
+  {
+   "idx": 716,
+   "cls": "jp",
+   "src": "[林/はやし]　ＴＰ５８　[１人/ひとり]\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Bois / TP 58 / 1 joueur\nManuel de technique de tir"
+  },
+  {
+   "idx": 717,
+   "cls": "jp",
+   "src": "[林/はやし]　ＴＰ３１　[１人/ひとり]　ＳＣ\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Bois / TP 31 / 1 joueur / SC\nManuel de technique de tir"
+  },
+  {
+   "idx": 718,
+   "cls": "jp",
+   "src": "[山/やま]　ＴＰ５５　[２人/ふたり]　ロング　Ｍ／Ｌサイズ\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Terre / TP 55 / 2 joueurs / Longue distance / Taille M/L\nManuel de technique de tir"
+  },
+  {
+   "idx": 719,
+   "cls": "jp",
+   "src": "[林/はやし]　ＴＰ４３　[２人/ふたり]　ＳＢ\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Bois / TP 43 / 2 joueurs / SB\nManuel de technique de tir"
+  },
+  {
+   "idx": 720,
+   "cls": "jp",
+   "src": "[山/やま]　ＴＰ４６　[１人/ひとり]\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Terre / TP 46 / 1 joueur\nManuel de technique de tir"
+  },
+  {
+   "idx": 721,
+   "cls": "jp",
+   "src": "[風/かぜ]　ＴＰ５５　３[人/にん]\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Air / TP 55 / 3 joueurs\nManuel de technique de tir"
+  },
+  {
+   "idx": 722,
+   "cls": "jp",
+   "src": "[風/かぜ]　ＴＰ６１　３[人/にん]　Ｌサイズ\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Air / TP 61 / 3 joueurs / Taille L\nManuel de technique de tir"
+  },
+  {
+   "idx": 723,
+   "cls": "jp",
+   "src": "[林/はやし]　ＴＰ４０　[１人/ひとり]\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Bois / TP 40 / 1 joueur\nManuel de technique de tir"
+  },
+  {
+   "idx": 724,
+   "cls": "jp",
+   "src": "[山/やま]　ＴＰ３４　[２人/ふたり]\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Terre / TP 34 / 2 joueurs\nManuel de technique de tir"
+  },
+  {
+   "idx": 725,
+   "cls": "jp",
+   "src": "[山/やま]　ＴＰ６２　３[人/にん]　ロング　Ｍ／Ｓサイズ\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Terre / TP 62 / 3 joueurs / Longue distance / Taille M/S\nManuel de technique de tir"
+  },
+  {
+   "idx": 726,
+   "cls": "jp",
+   "src": "[山/やま]　ＴＰ４９　[２人/ふたり]　ＳＢ　[女性/じょせい]\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Terre / TP 49 / 2 joueurs / SB / Fille\nManuel de technique de tir"
+  },
+  {
+   "idx": 727,
+   "cls": "jp",
+   "src": "[林/はやし]　ＴＰ５２　[２人/ふたり]　ＳＣ\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Bois / TP 52 / 2 joueurs / SC\nManuel de technique de tir"
+  },
+  {
+   "idx": 728,
+   "cls": "jp",
+   "src": "[山/やま]　ＴＰ６１　３[人/にん]\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Terre / TP 61 / 3 joueurs\nManuel de technique de tir"
+  },
+  {
+   "idx": 729,
+   "cls": "jp",
+   "src": "[山/やま]　ＴＰ３７　[２人/ふたり]　ＳＣ\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Terre / TP 37 / 2 joueurs / SC\nManuel de technique de tir"
+  },
+  {
+   "idx": 730,
+   "cls": "jp",
+   "src": "[火/ひ]　ＴＰ５５　[２人/ふたり]\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Feu / TP 55 / 2 joueurs\nManuel de technique de tir"
+  },
+  {
+   "idx": 731,
+   "cls": "jp",
+   "src": "[林/はやし]　ＴＰ５５　[２人/ふたり]　ＳＢ\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Bois / TP 55 / 2 joueurs / SB\nManuel de technique de tir"
+  },
+  {
+   "idx": 732,
+   "cls": "jp",
+   "src": "[林/はやし]　ＴＰ３７　[２人/ふたり]\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Bois / TP 37 / 2 joueurs\nManuel de technique de tir"
+  },
+  {
+   "idx": 733,
+   "cls": "jp",
+   "src": "[林/はやし]　ＴＰ６１　３[人/にん]\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Bois / TP 61 / 3 joueurs\nManuel de technique de tir"
+  },
+  {
+   "idx": 734,
+   "cls": "jp",
+   "src": "[風/かぜ]　ＴＰ６１　３[人/にん]\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Air / TP 61 / 3 joueurs\nManuel de technique de tir"
+  },
+  {
+   "idx": 735,
+   "cls": "jp",
+   "src": "[林/はやし]　ＴＰ４９　[１人/ひとり]\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Bois / TP 49 / 1 joueur\nManuel de technique de tir"
+  },
+  {
+   "idx": 736,
+   "cls": "jp",
+   "src": "[風/かぜ]　ＴＰ５５　[２人/ふたり]\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Air / TP 55 / 2 joueurs\nManuel de technique de tir"
+  },
+  {
+   "idx": 737,
+   "cls": "jp",
+   "src": "[風/かぜ]　ＴＰ６７　[２人/ふたり]　[風/かぜ]キャラ\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Air / TP 67 / 2 joueurs / Perso Air\nManuel de technique de tir"
+  },
+  {
+   "idx": 738,
+   "cls": "jp",
+   "src": "[林/はやし]　ＴＰ６１　３[人/にん]\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Bois / TP 61 / 3 joueurs\nManuel de technique de tir"
+  },
+  {
+   "idx": 739,
+   "cls": "jp",
+   "src": "[火/ひ]　ＴＰ６６　３[人/にん]　ロング\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Feu / TP 66 / 3 joueurs / Longue distance\nManuel de technique de tir"
+  },
+  {
+   "idx": 740,
+   "cls": "jp",
+   "src": "[火/ひ]　ＴＰ６４　３[人/にん]\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Feu / TP 64 / 3 joueurs\nManuel de technique de tir"
+  },
+  {
+   "idx": 741,
+   "cls": "jp",
+   "src": "[火/ひ]　ＴＰ４４　[１人/ひとり]　ロング\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Feu / TP 44 / 1 joueur / Longue distance\nManuel de technique de tir"
+  },
+  {
+   "idx": 742,
+   "cls": "jp",
+   "src": "[風/かぜ]　ＴＰ６４　[１人/ひとり]\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Air / TP 64 / 1 joueur\nManuel de technique de tir"
+  },
+  {
+   "idx": 743,
+   "cls": "jp",
+   "src": "[山/やま]　ＴＰ２８　[１人/ひとり]　ＳＢ\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Terre / TP 28 / 1 joueur / SB\nManuel de technique de tir"
+  },
+  {
+   "idx": 744,
+   "cls": "jp",
+   "src": "[火/ひ]　ＴＰ３７　[１人/ひとり]　ＳＣ\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Feu / TP 37 / 1 joueur / SC\nManuel de technique de tir"
+  },
+  {
+   "idx": 745,
+   "cls": "jp",
+   "src": "[火/ひ]　ＴＰ４９　[１人/ひとり]　ＳＢ\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Feu / TP 49 / 1 joueur / SB\nManuel de technique de tir"
+  },
+  {
+   "idx": 746,
+   "cls": "jp",
+   "src": "[風/かぜ]　ＴＰ６６　[１人/ひとり]　ロング\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Air / TP 66 / 1 joueur / Longue distance\nManuel de technique de tir"
+  },
+  {
+   "idx": 747,
+   "cls": "jp",
+   "src": "[火/ひ]　ＴＰ５２　[１人/ひとり]　ＳＢ\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Feu / TP 52 / 1 joueur / SB\nManuel de technique de tir"
+  },
+  {
+   "idx": 748,
+   "cls": "jp",
+   "src": "[風/かぜ]　ＴＰ５２　[１人/ひとり]　ＳＣ\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Air / TP 52 / 1 joueur / SC\nManuel de technique de tir"
+  },
+  {
+   "idx": 749,
+   "cls": "jp",
+   "src": "[火/ひ]　ＴＰ６４　[２人/ふたり]\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Feu / TP 64 / 2 joueurs\nManuel de technique de tir"
+  },
+  {
+   "idx": 750,
+   "cls": "jp",
+   "src": "[火/ひ]　ＴＰ６７　[２人/ふたり]　[火/ひ]キャラ\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Feu / TP 67 / 2 joueurs / Perso Feu\nManuel de technique de tir"
+  },
+  {
+   "idx": 751,
+   "cls": "jp",
+   "src": "[風/かぜ]　ＴＰ６４　[２人/ふたり]\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Air / TP 64 / 2 joueurs\nManuel de technique de tir"
+  },
+  {
+   "idx": 752,
+   "cls": "jp",
+   "src": "[林/はやし]　ＴＰ４６　[１人/ひとり]\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Bois / TP 46 / 1 joueur\nManuel de technique de tir"
+  },
+  {
+   "idx": 753,
+   "cls": "jp",
+   "src": "[山/やま]　ＴＰ６７　３[人/にん]\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Terre / TP 67 / 3 joueurs\nManuel de technique de tir"
+  },
+  {
+   "idx": 754,
+   "cls": "jp",
+   "src": "[林/はやし]　ＴＰ６７　[２人/ふたり]\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Bois / TP 67 / 2 joueurs\nManuel de technique de tir"
+  },
+  {
+   "idx": 755,
+   "cls": "jp",
+   "src": "[火/ひ]　ＴＰ５５　[１人/ひとり]　ＳＣ\nシュート[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Feu / TP 55 / 1 joueur / SC\nManuel de technique de tir"
+  },
+  {
+   "idx": 760,
+   "cls": "jp",
+   "src": "[林/はやし]　ＴＰ３９　[１人/ひとり]\nオフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Bois / TP 39 / 1 joueur\nManuel de technique offensive"
+  },
+  {
+   "idx": 761,
+   "cls": "jp",
+   "src": "[山/やま]　ＴＰ４２　[１人/ひとり]\nオフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Terre / TP 42 / 1 joueur\nManuel de technique offensive"
+  },
+  {
+   "idx": 762,
+   "cls": "jp",
+   "src": "[火/ひ]　ＴＰ４２　[１人/ひとり]\nオフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Feu / TP 42 / 1 joueur\nManuel de technique offensive"
+  },
+  {
+   "idx": 763,
+   "cls": "jp",
+   "src": "[山/やま]　ＴＰ５０　[２人/ふたり]\nオフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Terre / TP 50 / 2 joueurs\nManuel de technique offensive"
+  },
+  {
+   "idx": 764,
+   "cls": "jp",
+   "src": "[風/かぜ]　ＴＰ３９　[１人/ひとり]\nオフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Air / TP 39 / 1 joueur\nManuel de technique offensive"
+  },
+  {
+   "idx": 765,
+   "cls": "jp",
+   "src": "[火/ひ]　ＴＰ２０　[１人/ひとり]\nオフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Feu / TP 20 / 1 joueur\nManuel de technique offensive"
+  },
+  {
+   "idx": 766,
+   "cls": "jp",
+   "src": "[林/はやし]　ＴＰ５３　[２人/ふたり]\nオフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Bois / TP 53 / 2 joueurs\nManuel de technique offensive"
+  },
+  {
+   "idx": 767,
+   "cls": "jp",
+   "src": "[火/ひ]　ＴＰ２５　[１人/ひとり]\nオフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Feu / TP 25 / 1 joueur\nManuel de technique offensive"
+  },
+  {
+   "idx": 768,
+   "cls": "jp",
+   "src": "[山/やま]　ＴＰ３９　[１人/ひとり]　[女性/じょせい]\nオフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Terre / TP 39 / 1 joueur / Fille\nManuel de technique offensive"
+  },
+  {
+   "idx": 769,
+   "cls": "jp",
+   "src": "[火/ひ]　ＴＰ４７　[２人/ふたり]\nオフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Feu / TP 47 / 2 joueurs\nManuel de technique offensive"
+  },
+  {
+   "idx": 770,
+   "cls": "jp",
+   "src": "[火/ひ]　ＴＰ４２　[１人/ひとり]\nオフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Feu / TP 42 / 1 joueur\nManuel de technique offensive"
+  },
+  {
+   "idx": 771,
+   "cls": "jp",
+   "src": "[山/やま]　ＴＰ５７　３[人/にん]\nオフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Terre / TP 57 / 3 joueurs\nManuel de technique offensive"
+  },
+  {
+   "idx": 772,
+   "cls": "jp",
+   "src": "[火/ひ]　ＴＰ４７　[１人/ひとり]\nオフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Feu / TP 47 / 1 joueur\nManuel de technique offensive"
+  },
+  {
+   "idx": 773,
+   "cls": "jp",
+   "src": "[風/かぜ]　ＴＰ４７　[２人/ふたり]　Ｍサイズ\nオフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Air / TP 47 / 2 joueurs / Taille M\nManuel de technique offensive"
+  },
+  {
+   "idx": 774,
+   "cls": "jp",
+   "src": "[山/やま]　ＴＰ４２　[１人/ひとり]\nオフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Terre / TP 42 / 1 joueur\nManuel de technique offensive"
+  },
+  {
+   "idx": 775,
+   "cls": "jp",
+   "src": "[林/はやし]　ＴＰ３５　[１人/ひとり]\nオフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Bois / TP 35 / 1 joueur\nManuel de technique offensive"
+  },
+  {
+   "idx": 776,
+   "cls": "jp",
+   "src": "[林/はやし]　ＴＰ３６　[１人/ひとり]\nオフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Bois / TP 36 / 1 joueur\nManuel de technique offensive"
+  },
+  {
+   "idx": 777,
+   "cls": "jp",
+   "src": "[火/ひ]　ＴＰ３８　[１人/ひとり]\nオフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Feu / TP 38 / 1 joueur\nManuel de technique offensive"
+  },
+  {
+   "idx": 778,
+   "cls": "jp",
+   "src": "[林/はやし]　ＴＰ４９　[１人/ひとり]\nオフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Bois / TP 49 / 1 joueur\nManuel de technique offensive"
+  },
+  {
+   "idx": 779,
+   "cls": "jp",
+   "src": "[風/かぜ]　ＴＰ３１　[１人/ひとり]　[女性/じょせい]\nオフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Air / TP 31 / 1 joueur / Fille\nManuel de technique offensive"
+  },
+  {
+   "idx": 780,
+   "cls": "jp",
+   "src": "[風/かぜ]　ＴＰ４１　[１人/ひとり]\nオフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Air / TP 41 / 1 joueur\nManuel de technique offensive"
+  },
+  {
+   "idx": 781,
+   "cls": "jp",
+   "src": "[火/ひ]　ＴＰ５３　[１人/ひとり]\nオフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Feu / TP 53 / 1 joueur\nManuel de technique offensive"
+  },
+  {
+   "idx": 782,
+   "cls": "jp",
+   "src": "[風/かぜ]　ＴＰ５３　[１人/ひとり]\nオフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Air / TP 53 / 1 joueur\nManuel de technique offensive"
+  },
+  {
+   "idx": 793,
+   "cls": "jp",
+   "src": "[火/ひ]　ＴＰ４７　[２人/ふたり]　ＳＢ\nディフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Feu / TP 47 / 2 joueurs / SB\nManuel de technique défensive"
+  },
+  {
+   "idx": 794,
+   "cls": "jp",
+   "src": "[風/かぜ]　ＴＰ２８　[１人/ひとり]\nディフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Air / TP 28 / 1 joueur\nManuel de technique défensive"
+  },
+  {
+   "idx": 795,
+   "cls": "jp",
+   "src": "[林/はやし]　ＴＰ４２　[１人/ひとり]\nディフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Bois / TP 42 / 1 joueur\nManuel de technique défensive"
+  },
+  {
+   "idx": 796,
+   "cls": "jp",
+   "src": "[山/やま]　ＴＰ４７　[２人/ふたり]\nディフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Terre / TP 47 / 2 joueurs\nManuel de technique défensive"
+  },
+  {
+   "idx": 797,
+   "cls": "jp",
+   "src": "[山/やま]　ＴＰ４２　[１人/ひとり]　ＳＢ\nディフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Terre / TP 42 / 1 joueur / SB\nManuel de technique défensive"
+  },
+  {
+   "idx": 798,
+   "cls": "jp",
+   "src": "[風/かぜ]　ＴＰ４２　[１人/ひとり]　ＳＢ　[女性/じょせい]\nディフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Air / TP 42 / 1 joueur / SB / Fille\nManuel de technique défensive"
+  },
+  {
+   "idx": 799,
+   "cls": "jp",
+   "src": "[火/ひ]　ＴＰ２５　[１人/ひとり]\nディフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Feu / TP 25 / 1 joueur\nManuel de technique défensive"
+  },
+  {
+   "idx": 800,
+   "cls": "jp",
+   "src": "[山/やま]　ＴＰ３８　[１人/ひとり]　ＳＢ\nディフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Terre / TP 38 / 1 joueur / SB\nManuel de technique défensive"
+  },
+  {
+   "idx": 801,
+   "cls": "jp",
+   "src": "[林/はやし]　ＴＰ４６　[２人/ふたり]\nディフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Bois / TP 46 / 2 joueurs\nManuel de technique défensive"
+  },
+  {
+   "idx": 802,
+   "cls": "jp",
+   "src": "[火/ひ]　ＴＰ２０　[１人/ひとり]　ＳＢ　Ｌサイズ\nディフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Feu / TP 20 / 1 joueur / SB / Taille L\nManuel de technique défensive"
+  },
+  {
+   "idx": 803,
+   "cls": "jp",
+   "src": "[火/ひ]　ＴＰ２９　[１人/ひとり]\nディフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Feu / TP 29 / 1 joueur\nManuel de technique défensive"
+  },
+  {
+   "idx": 804,
+   "cls": "jp",
+   "src": "[火/ひ]　ＴＰ４２　[１人/ひとり]　ＳＢ\nディフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Feu / TP 42 / 1 joueur / SB\nManuel de technique défensive"
+  },
+  {
+   "idx": 805,
+   "cls": "jp",
+   "src": "[火/ひ]　ＴＰ２８　[１人/ひとり]　ＳＢ　Ｌサイズ\nディフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Feu / TP 28 / 1 joueur / SB / Taille L\nManuel de technique défensive"
+  },
+  {
+   "idx": 806,
+   "cls": "jp",
+   "src": "[火/ひ]　ＴＰ５０　[１人/ひとり]\nディフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Feu / TP 50 / 1 joueur\nManuel de technique défensive"
+  },
+  {
+   "idx": 807,
+   "cls": "jp",
+   "src": "[林/はやし]　ＴＰ５７　３[人/にん]\nディフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Bois / TP 57 / 3 joueurs\nManuel de technique défensive"
+  },
+  {
+   "idx": 808,
+   "cls": "jp",
+   "src": "[風/かぜ]　ＴＰ４６　[２人/ふたり]\nディフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Air / TP 46 / 2 joueurs\nManuel de technique défensive"
+  },
+  {
+   "idx": 809,
+   "cls": "jp",
+   "src": "[山/やま]　ＴＰ５２　３[人/にん]\nディフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Terre / TP 52 / 3 joueurs\nManuel de technique défensive"
+  },
+  {
+   "idx": 810,
+   "cls": "jp",
+   "src": "[火/ひ]　ＴＰ３９　[１人/ひとり]\nディフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Feu / TP 39 / 1 joueur\nManuel de technique défensive"
+  },
+  {
+   "idx": 811,
+   "cls": "jp",
+   "src": "[林/はやし]　ＴＰ４６　[１人/ひとり]　ＳＢ\nディフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Bois / TP 46 / 1 joueur / SB\nManuel de technique défensive"
+  },
+  {
+   "idx": 812,
+   "cls": "jp",
+   "src": "[山/やま]　ＴＰ５７　３[人/にん]\nディフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Terre / TP 57 / 3 joueurs\nManuel de technique défensive"
+  },
+  {
+   "idx": 813,
+   "cls": "jp",
+   "src": "[風/かぜ]　ＴＰ４２　[１人/ひとり]\nディフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Air / TP 42 / 1 joueur\nManuel de technique défensive"
+  },
+  {
+   "idx": 814,
+   "cls": "jp",
+   "src": "[山/やま]　ＴＰ５０　[２人/ふたり]　ＳＢ　Ｌサイズ\nディフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Terre / TP 50 / 2 joueurs / SB / Taille L\nManuel de technique défensive"
+  },
+  {
+   "idx": 815,
+   "cls": "jp",
+   "src": "[山/やま]　ＴＰ５０　[１人/ひとり]　ＳＢ　Ｌサイズ\nディフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Terre / TP 50 / 1 joueur / SB / Taille L\nManuel de technique défensive"
+  },
+  {
+   "idx": 816,
+   "cls": "jp",
+   "src": "[林/はやし]　ＴＰ３９　[１人/ひとり]　[女性/じょせい]\nディフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Bois / TP 39 / 1 joueur / Fille\nManuel de technique défensive"
+  },
+  {
+   "idx": 817,
+   "cls": "jp",
+   "src": "[火/ひ]　ＴＰ５３　[１人/ひとり]\nディフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Feu / TP 53 / 1 joueur\nManuel de technique défensive"
+  },
+  {
+   "idx": 818,
+   "cls": "jp",
+   "src": "[風/かぜ]　ＴＰ５０　[２人/ふたり]\nディフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Air / TP 50 / 2 joueurs\nManuel de technique défensive"
+  },
+  {
+   "idx": 819,
+   "cls": "jp",
+   "src": "[風/かぜ]　ＴＰ４４　[１人/ひとり]　ＳＢ\nディフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Air / TP 44 / 1 joueur / SB\nManuel de technique défensive"
+  },
+  {
+   "idx": 820,
+   "cls": "jp",
+   "src": "[火/ひ]　ＴＰ５７　３[人/にん]\nディフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Feu / TP 57 / 3 joueurs\nManuel de technique défensive"
+  },
+  {
+   "idx": 821,
+   "cls": "jp",
+   "src": "[風/かぜ]　ＴＰ５３　[１人/ひとり]\nディフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Air / TP 53 / 1 joueur\nManuel de technique défensive"
+  },
+  {
+   "idx": 822,
+   "cls": "jp",
+   "src": "[林/はやし]　ＴＰ５３　[２人/ふたり]　ＳＢ　Ｌサイズ\nディフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Bois / TP 53 / 2 joueurs / SB / Taille L\nManuel de technique défensive"
+  },
+  {
+   "idx": 823,
+   "cls": "jp",
+   "src": "[風/かぜ]　ＴＰ５７　３[人/にん]　[女性/じょせい]\nディフェンス[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Air / TP 57 / 3 joueurs / Fille\nManuel de technique défensive"
+  },
+  {
+   "idx": 832,
+   "cls": "jp",
+   "src": "[林/はやし]　ＴＰ５０　[１人/ひとり]　キャッチ\nキーパー[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Bois / TP 50 / 1 joueur / Prise\nManuel de technique de gardien"
+  },
+  {
+   "idx": 833,
+   "cls": "jp",
+   "src": "[山/やま]　ＴＰ３５　[１人/ひとり]　キャッチ\nキーパー[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Terre / TP 35 / 1 joueur / Prise\nManuel de technique de gardien"
+  },
+  {
+   "idx": 834,
+   "cls": "jp",
+   "src": "[火/ひ]　ＴＰ３０　[１人/ひとり]　パンチング\nキーパー[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Feu / TP 30 / 1 joueur / Poing\nManuel de technique de gardien"
+  },
+  {
+   "idx": 835,
+   "cls": "jp",
+   "src": "[風/かぜ]　ＴＰ３５　[１人/ひとり]　キャッチ\nキーパー[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Air / TP 35 / 1 joueur / Prise\nManuel de technique de gardien"
+  },
+  {
+   "idx": 836,
+   "cls": "jp",
+   "src": "[山/やま]　ＴＰ４０　[１人/ひとり]　パンチング\nキーパー[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Terre / TP 40 / 1 joueur / Poing\nManuel de technique de gardien"
+  },
+  {
+   "idx": 837,
+   "cls": "jp",
+   "src": "[火/ひ]　ＴＰ３７　[１人/ひとり]　キャッチ\nキーパー[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Feu / TP 37 / 1 joueur / Prise\nManuel de technique de gardien"
+  },
+  {
+   "idx": 838,
+   "cls": "jp",
+   "src": "[火/ひ]　ＴＰ５２　[１人/ひとり]　キャッチ\nキーパー[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Feu / TP 52 / 1 joueur / Prise\nManuel de technique de gardien"
+  },
+  {
+   "idx": 839,
+   "cls": "jp",
+   "src": "[火/ひ]　ＴＰ５０　[１人/ひとり]　パンチング\nキーパー[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Feu / TP 50 / 1 joueur / Poing\nManuel de technique de gardien"
+  },
+  {
+   "idx": 840,
+   "cls": "jp",
+   "src": "[林/はやし]　ＴＰ４５　[１人/ひとり]　キャッチ\nキーパー[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Bois / TP 45 / 1 joueur / Prise\nManuel de technique de gardien"
+  },
+  {
+   "idx": 842,
+   "cls": "jp",
+   "src": "[林/はやし]　ＴＰ３２　[１人/ひとり]　[女性/じょせい]　キャッチ\nキーパー[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Bois / TP 32 / 1 joueur / Fille / Prise\nManuel de technique de gardien"
+  },
+  {
+   "idx": 843,
+   "cls": "jp",
+   "src": "[林/はやし]　ＴＰ４７　[２人/ふたり]　キャッチ\nキーパー[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Bois / TP 47 / 2 joueurs / Prise\nManuel de technique de gardien"
+  },
+  {
+   "idx": 844,
+   "cls": "jp",
+   "src": "[火/ひ]　ＴＰ４７　[１人/ひとり]　パンチング\nキーパー[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Feu / TP 47 / 1 joueur / Poing\nManuel de technique de gardien"
+  },
+  {
+   "idx": 845,
+   "cls": "jp",
+   "src": "[風/かぜ]　ＴＰ３０　[１人/ひとり]　[女性/じょせい]　キャッチ\nキーパー[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Air / TP 30 / 1 joueur / Fille / Prise\nManuel de technique de gardien"
+  },
+  {
+   "idx": 846,
+   "cls": "jp",
+   "src": "[風/かぜ]　ＴＰ２０　[１人/ひとり]　キャッチ\nキーパー[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Air / TP 20 / 1 joueur / Prise\nManuel de technique de gardien"
+  },
+  {
+   "idx": 847,
+   "cls": "jp",
+   "src": "[火/ひ]　ＴＰ５７　３[人/にん]　キャッチ\nキーパー[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Feu / TP 57 / 3 joueurs / Prise\nManuel de technique de gardien"
+  },
+  {
+   "idx": 848,
+   "cls": "jp",
+   "src": "[林/はやし]　ＴＰ３５　[１人/ひとり]　キャッチ\nキーパー[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Bois / TP 35 / 1 joueur / Prise\nManuel de technique de gardien"
+  },
+  {
+   "idx": 849,
+   "cls": "jp",
+   "src": "[風/かぜ]　ＴＰ４０　[１人/ひとり]　パンチング\nキーパー[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Air / TP 40 / 1 joueur / Poing\nManuel de technique de gardien"
+  },
+  {
+   "idx": 850,
+   "cls": "jp",
+   "src": "[林/はやし]　ＴＰ４０　[１人/ひとり]　キャッチ\nキーパー[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Bois / TP 40 / 1 joueur / Prise\nManuel de technique de gardien"
+  },
+  {
+   "idx": 851,
+   "cls": "jp",
+   "src": "[風/かぜ]　ＴＰ６０　[１人/ひとり]　パンチング２\nキーパー[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Air / TP 60 / 1 joueur / Poing 2\nManuel de technique de gardien"
+  },
+  {
+   "idx": 852,
+   "cls": "jp",
+   "src": "[風/かぜ]　ＴＰ５２　[１人/ひとり]　キャッチ\nキーパー[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Air / TP 52 / 1 joueur / Prise\nManuel de technique de gardien"
+  },
+  {
+   "idx": 853,
+   "cls": "jp",
+   "src": "[風/かぜ]　ＴＰ３７　[１人/ひとり]　パンチング２\nキーパー[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Air / TP 37 / 1 joueur / Poing 2\nManuel de technique de gardien"
+  },
+  {
+   "idx": 854,
+   "cls": "jp",
+   "src": "[火/ひ]　ＴＰ５０　[１人/ひとり]　キャッチ\nキーパー[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Feu / TP 50 / 1 joueur / Prise\nManuel de technique de gardien"
+  },
+  {
+   "idx": 855,
+   "cls": "jp",
+   "src": "[風/かぜ]　ＴＰ５０　[１人/ひとり]　キャッチ\nキーパー[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Air / TP 50 / 1 joueur / Prise\nManuel de technique de gardien"
+  },
+  {
+   "idx": 856,
+   "cls": "jp",
+   "src": "[風/かぜ]　ＴＰ４５　[１人/ひとり]　キャッチ\nキーパー[技/わざ]の[秘伝書/ひでんしょ]",
+   "fr": "Air / TP 45 / 1 joueur / Prise\nManuel de technique de gardien"
+  },
+  {
+   "idx": 879,
+   "cls": "jp",
+   "src": "セットプレイからのシュート[技/わざ]",
+   "fr": "Technique de tir sur coup de pied arrêté."
+  },
+  {
+   "idx": 880,
+   "cls": "jp",
+   "src": "セットプレイからのシュート[技/わざ]",
+   "fr": "Technique de tir sur coup de pied arrêté."
+  },
+  {
+   "idx": 881,
+   "cls": "jp",
+   "src": "[相手/あいて]ゴール[前/まえ]までボールを[運/はこ]ぶ。",
+   "fr": "Amène le ballon devant le but adverse."
+  },
+  {
+   "idx": 882,
+   "cls": "jp",
+   "src": "[相手/あいて]1[人/にん]の[動/うご]きを[止/と]める。",
+   "fr": "Immobilise un adversaire."
+  },
+  {
+   "idx": 883,
+   "cls": "jp",
+   "src": "[相手/あいて]の[配置/はいち]をサイドよりに[変/か]えて\n[中央/ちゅうおう]にボールを[通/とお]しやすくする。",
+   "fr": "Déplace les adversaires vers les côtés\npour dégager le centre."
+  },
+  {
+   "idx": 884,
+   "cls": "jp",
+   "src": "[相手/あいて]からボールを[奪/うば]う。",
+   "fr": "Reprend le ballon à un adversaire."
+  },
+  {
+   "idx": 885,
+   "cls": "jp",
+   "src": "[相手/あいて]からボールを[奪/うば]う。",
+   "fr": "Reprend le ballon à un adversaire."
+  },
+  {
+   "idx": 886,
+   "cls": "jp",
+   "src": "[相手/あいて]ゴール[前/まえ]に[選手/せんしゅ]を[集/あつ]める。",
+   "fr": "Rassemble des joueurs devant le but adverse."
+  },
+  {
+   "idx": 887,
+   "cls": "jp",
+   "src": "[相手/あいて][全員/ぜんいん]の[配置/はいち]を[変更/へんこう]する。",
+   "fr": "Change le placement de tous les adversaires."
+  },
+  {
+   "idx": 888,
+   "cls": "jp",
+   "src": "[相手/あいて][全員/ぜんいん]の[動/うご]きを[止/と]める。",
+   "fr": "Immobilise tous les adversaires."
+  },
+  {
+   "idx": 889,
+   "cls": "jp",
+   "src": "[必/かなら]ずシュートできる。",
+   "fr": "Permet de tirer à coup sûr."
+  },
+  {
+   "idx": 890,
+   "cls": "jp",
+   "src": "[暫定/ざんてい][登録/とうろく]その10",
+   "fr": "Enregistrement provisoire 10."
+  },
+  {
+   "idx": 891,
+   "cls": "jp",
+   "src": "[暫定/ざんてい][登録/とうろく]その11",
+   "fr": "Enregistrement provisoire 11."
+  },
+  {
+   "idx": 892,
+   "cls": "jp",
+   "src": "[暫定/ざんてい][登録/とうろく]その12",
+   "fr": "Enregistrement provisoire 12."
+  },
+  {
+   "idx": 893,
+   "cls": "jp",
+   "src": "[暫定/ざんてい][登録/とうろく]その13",
+   "fr": "Enregistrement provisoire 13."
+  },
+  {
+   "idx": 894,
+   "cls": "jp",
+   "src": "[暫定/ざんてい][登録/とうろく]その14",
+   "fr": "Enregistrement provisoire 14."
+  },
+  {
+   "idx": 895,
+   "cls": "jp",
+   "src": "[味方/みかた][全員/ぜんいん]の[動/うご]きを[速/はや]くする。",
+   "fr": "Accélère tous les alliés."
+  },
+  {
+   "idx": 896,
+   "cls": "jp",
+   "src": "[相手/あいて][全員/ぜんいん]の[動/うご]きを[遅/おそ]くする。",
+   "fr": "Ralentit tous les adversaires."
+  },
+  {
+   "idx": 897,
+   "cls": "jp",
+   "src": "[試合/しあい][時間/じかん]がしばらく[停止/ていし]する。",
+   "fr": "Arrête le temps de jeu un moment."
+  },
+  {
+   "idx": 898,
+   "cls": "jp",
+   "src": "[試合/しあい][時間/じかん]がしばらく[早/はや]くなる。",
+   "fr": "Accélère le temps de jeu un moment."
+  },
+  {
+   "idx": 899,
+   "cls": "jp",
+   "src": "[暫定/ざんてい][登録/とうろく]その19",
+   "fr": "Enregistrement provisoire 19."
+  },
+  {
+   "idx": 900,
+   "cls": "jp",
+   "src": "[暫定/ざんてい][登録/とうろく]その20",
+   "fr": "Enregistrement provisoire 20."
+  },
+  {
+   "idx": 901,
+   "cls": "jp",
+   "src": "キーパーのセービング[能力/のうりょく]が　アップ！",
+   "fr": "Augmente les capacités d'arrêt du gardien !"
+  },
+  {
+   "idx": 902,
+   "cls": "jp",
+   "src": "[選手/せんしゅ]のスピードが　アップするぞ！",
+   "fr": "Augmente la vitesse du joueur !"
+  },
+  {
+   "idx": 903,
+   "cls": "jp",
+   "src": "シュートわざの　[成功率/せいこうりつ]が\nドーンとアップ！",
+   "fr": "Fait grimper en flèche la réussite des tirs !"
+  },
+  {
+   "idx": 904,
+   "cls": "jp",
+   "src": "ディフェンスが\nバンバン[決/き]まるようになる！",
+   "fr": "Les défenses réussissent bien plus souvent !"
+  },
+  {
+   "idx": 905,
+   "cls": "jp",
+   "src": "オフェンスが\nガンガン[決/き]まるようになる！",
+   "fr": "Les offensives réussissent bien plus souvent !"
+  },
+  {
+   "idx": 906,
+   "cls": "jp",
+   "src": "[動/うご]けないじょうたいからの\n[回復/かいふく]が　[早/はや]くなる！",
+   "fr": "Accélère la récupération après une immobilisation !"
+  },
+  {
+   "idx": 907,
+   "cls": "jp",
+   "src": "キーパーをごまかしファウルをゲット！\nちょっとずるい？",
+   "fr": "Trompe le gardien et provoque une faute !\nUn peu déloyal ?"
+  },
+  {
+   "idx": 908,
+   "cls": "jp",
+   "src": "[男/おとこ]の[子/こ]に　わざをしかければ\n[成功率/せいこうりつ]アップ！",
+   "fr": "Meilleure réussite des techniques contre les garçons !"
+  },
+  {
+   "idx": 909,
+   "cls": "jp",
+   "src": "[女/おんな]の[子/こ]に　わざをしかければ\n[成功率/せいこうりつ]アップ！",
+   "fr": "Meilleure réussite des techniques contre les filles !"
+  },
+  {
+   "idx": 910,
+   "cls": "jp",
+   "src": "[全/すべ]ての[消費/しょうひ]ＴＰが[少/すく]なくなる！\nこれでわざをガンガン[使/つか]えるぞ！！",
+   "fr": "Réduit tout le TP consommé !\nDe quoi enchaîner les techniques !!"
+  },
+  {
+   "idx": 911,
+   "cls": "jp",
+   "src": "[消費/しょうひ]ＴＰが[増/ふ]えるが\nわざの[威力/いりょく]が　パワーアップ！！",
+   "fr": "Consomme plus de TP, mais la puissance\ndes techniques augmente !!"
+  },
+  {
+   "idx": 912,
+   "cls": "jp",
+   "src": "[属性/ぞくせい]が[有利/ゆうり]な[時/とき]はさらにパワーアップ！",
+   "fr": "Encore plus puissant quand l'attribut est favorable !"
+  },
+  {
+   "idx": 913,
+   "cls": "jp",
+   "src": "[常/つね]に[勉強/べんきょう]！！[学習能力/がくしゅうのうりょく]があがって\nどんどん[成長/せいちょう]するぞ！！",
+   "fr": "Toujours étudier !! La capacité d'apprentissage\ngrimpe et la progression s'accélère !!"
+  },
+  {
+   "idx": 914,
+   "cls": "jp",
+   "src": "[自分/じぶん]はあまり[成長/せいちょう]しなくなる。\nしかし　[仲間/なかま]が・・・。",
+   "fr": "On progresse peu soi-même.\nMais les coéquipiers, eux…"
+  },
+  {
+   "idx": 915,
+   "cls": "jp",
+   "src": "ランダムでクリティカルヒット！\n[威力/いりょく]がアップするぞ！",
+   "fr": "Coup critique aléatoire !\nLa puissance augmente !"
+  },
+  {
+   "idx": 916,
+   "cls": "jp",
+   "src": "[属性/ぞくせい]こうかが　[全/すべ]て[無効/むこう]になる！\n[実力勝負/じつりょくしょうぶ]だ！",
+   "fr": "Annule tous les effets d'attribut !\nQue le meilleur gagne !"
+  },
+  {
+   "idx": 917,
+   "cls": "jp",
+   "src": "まさにラッキー！ランダムで\nコマンドバトルの　[成功率/せいこうりつ]アップ！",
+   "fr": "Quelle chance ! Augmente aléatoirement\nla réussite des duels de commande !"
+  },
+  {
+   "idx": 918,
+   "cls": "jp",
+   "src": "なんとアンラッキー！ランダムで\nコマンドバトルの　[成功率/せいこうりつ]ダウン！",
+   "fr": "Pas de chance ! Baisse aléatoirement\nla réussite des duels de commande !"
+  },
+  {
+   "idx": 919,
+   "cls": "jp",
+   "src": "チーム[全体/ぜんたい]のスピードが\nぐんとアップ！",
+   "fr": "Augmente nettement la vitesse de toute l'équipe !"
+  },
+  {
+   "idx": 920,
+   "cls": "jp",
+   "src": "チーム[全体/ぜんたい]の　シュートわざの\n[成功率/せいこうりつ]が　ぐんとアップ！",
+   "fr": "Augmente nettement la réussite des tirs\nde toute l'équipe !"
+  },
+  {
+   "idx": 921,
+   "cls": "jp",
+   "src": "チーム[全体/ぜんたい]の　ディフェンスの\n[成功率/せいこうりつ]が　ぐんとアップ！",
+   "fr": "Augmente nettement la réussite défensive\nde toute l'équipe !"
+  },
+  {
+   "idx": 922,
+   "cls": "jp",
+   "src": "チーム[全体/ぜんたい]の　オフェンスの\n[成功率/せいこうりつ]が　ぐんとアップ！",
+   "fr": "Augmente nettement la réussite offensive\nde toute l'équipe !"
+  },
+  {
+   "idx": 923,
+   "cls": "jp",
+   "src": "[試合中/しあいちゅう]　[負/ま]けていると\n[全/すべ]ての[成功率/せいこうりつ]が　アップする！",
+   "fr": "Quand on est mené au score,\ntoutes les réussites augmentent !"
+  },
+  {
+   "idx": 924,
+   "cls": "jp",
+   "src": "[勝/か]っている[時/とき]　ひとりの[成功率/せいこうりつ]アップ！\nしかし　[負/ま]けているとダウン。",
+   "fr": "En tête, la réussite d'un joueur augmente !\nMais elle baisse quand on est mené."
+  },
+  {
+   "idx": 925,
+   "cls": "jp",
+   "src": "[勝/か]っている[時/とき]　みんなの[成功率/せいこうりつ]アップ！\nしかし　[負/ま]けているとダウン。",
+   "fr": "En tête, la réussite de tous augmente !\nMais elle baisse quand on est mené."
+  },
+  {
+   "idx": 926,
+   "cls": "jp",
+   "src": "ＴＰが[少/すく]なくなるとランダムで\nＴＰが[満/まん]タンに！！",
+   "fr": "Quand le TP est bas, il se recharge\nparfois entièrement !!"
+  },
+  {
+   "idx": 927,
+   "cls": "jp",
+   "src": "ＧＰを[消費/しょうひ]して\n[必殺技/ひっさつわざ]の[成功率/せいこうりつ]をあげる！",
+   "fr": "Consomme du GP pour augmenter la\nréussite des techniques spéciales !"
+  },
+  {
+   "idx": 951,
+   "cls": "jp",
+   "src": "[胸/むね]のイナズママークがシンボル！\n[日本代表/にっぽんだいひょう]チームのユニフォーム。",
+   "fr": ""
+  },
+  {
+   "idx": 952,
+   "cls": "jp",
+   "src": "オーストラリアの[雄大/ゆうだい]な[自然/しぜん]を\nイメージしたユニフォーム。",
+   "fr": ""
+  },
+  {
+   "idx": 953,
+   "cls": "jp",
+   "src": "[熱砂/ねっさ]をものともしない\nカタールのユニフォーム。",
+   "fr": ""
+  },
+  {
+   "idx": 954,
+   "cls": "jp",
+   "src": "[火竜/かりゅう]のイメージで　[燃/も]えるような[赤/あか]を\n[基調/きちょう]にしたユニフォーム。",
+   "fr": ""
+  },
+  {
+   "idx": 955,
+   "cls": "jp",
+   "src": "[誇/ほこ]り[高/たか]き[騎士/きし]のように\n[洗練/せんれん]されたユニフォーム。",
+   "fr": ""
+  },
+  {
+   "idx": 956,
+   "cls": "jp",
+   "src": "[縦/たて]のストライプがとくちょうの\nアルゼンチン[代表/だいひょう]ユニフォーム。",
+   "fr": ""
+  },
+  {
+   "idx": 957,
+   "cls": "jp",
+   "src": "シンプルなデザインが\n[清/きよ]らかさと[勇/いさ]ましさを[引/ひ]き[立/た]てる。",
+   "fr": ""
+  },
+  {
+   "idx": 958,
+   "cls": "jp",
+   "src": "[胸元/むなもと]のエンブレムがアクセントの\nイタリアチームのユニフォーム。",
+   "fr": ""
+  },
+  {
+   "idx": 959,
+   "cls": "jp",
+   "src": "トッププレーヤーの[証/あかし]たる\nセレソンのユニフォーム。",
+   "fr": ""
+  },
+  {
+   "idx": 960,
+   "cls": "jp",
+   "src": "[大介/だいすけ]が[率/ひき]いる[最強/さいきょう]のチーム\nコトアール[代表/だいひょう]のユニフォーム。",
+   "fr": ""
+  },
+  {
+   "idx": 961,
+   "cls": "jp",
+   "src": "イナズマジャパンに[対抗/たいこう]すべく\n[作/つく]られたユニフォーム。",
+   "fr": ""
+  },
+  {
+   "idx": 962,
+   "cls": "jp",
+   "src": "ミスターＫのサッカーに[対/たい]する\n[復讐心/ふくしゅうしん]が[宿/やど]るというユニフォーム。",
+   "fr": ""
+  },
+  {
+   "idx": 963,
+   "cls": "jp",
+   "src": "マフラーを[腰/こし]に[巻/ま]きつけた\n[変則/へんそく]スタイルのユニフォーム。",
+   "fr": ""
+  },
+  {
+   "idx": 964,
+   "cls": "jp",
+   "src": "[華麗/かれい]に　だが[激/はげ]しく！\nフランスサッカーを[体現/たいげん]するウェア。",
+   "fr": ""
+  },
+  {
+   "idx": 965,
+   "cls": "jp",
+   "src": "[情熱/じょうねつ]の[国/くに]スペインをイメージした\n[鮮/あざ]やかなデザインのユニフォーム。",
+   "fr": ""
+  },
+  {
+   "idx": 966,
+   "cls": "jp",
+   "src": "[不屈/ふくつ]の[精神/せいしん]が[宿/やど]るといわれる\nドイツ[代表/だいひょう]のユニフォーム。",
+   "fr": ""
+  },
+  {
+   "idx": 967,
+   "cls": "jp",
+   "src": "フィールドを[自由/じゆう]に[駆/か]け[回/まわ]るイメージで\n[作/つく]られた[南/みなみ]アフリカのユニフォーム。",
+   "fr": ""
+  },
+  {
+   "idx": 971,
+   "cls": "jp",
+   "src": "[白地/しろじ]に[青/あお]のラインが[映/は]える\n[鮮/あざ]やかなデザインのスパイク。",
+   "fr": ""
+  },
+  {
+   "idx": 972,
+   "cls": "jp",
+   "src": "キック＋７\n[紫紺/しこん][色/いろ]のオーストラリアのスパイク。",
+   "fr": ""
+  },
+  {
+   "idx": 973,
+   "cls": "jp",
+   "src": "スピード＋６\n[熱砂/ねっさ]でも[平気/へいき]なカタールのシューズ。",
+   "fr": ""
+  },
+  {
+   "idx": 974,
+   "cls": "jp",
+   "src": "キック＋１０\n[闘志/とうし]を[秘/ひ]めた[韓国/かんこく]のスパイク。",
+   "fr": ""
+  },
+  {
+   "idx": 975,
+   "cls": "jp",
+   "src": "スピード＋１０\n[誇/ほこ]り[高/たか]きイギリスのスパイク。",
+   "fr": ""
+  },
+  {
+   "idx": 976,
+   "cls": "jp",
+   "src": "キック＋１２\n[南米/なんべい]の[雄/ゆう]　アルゼンチンのシューズ。",
+   "fr": ""
+  },
+  {
+   "idx": 977,
+   "cls": "jp",
+   "src": "スピード＋１３\n[聖獣/せいじゅう]を[模/も]したアメリカのスパイク。",
+   "fr": ""
+  },
+  {
+   "idx": 978,
+   "cls": "jp",
+   "src": "スピード＋１６\nイタリア[製/せい]の[高品質/こうひんしつ]なシューズ。",
+   "fr": ""
+  },
+  {
+   "idx": 979,
+   "cls": "jp",
+   "src": "キック＋１３\nサッカー[王国/おうこく]ブラジルのスパイク。",
+   "fr": ""
+  },
+  {
+   "idx": 980,
+   "cls": "jp",
+   "src": "スピード＋１５\nアフリカの[小国/しょうこく]　コトアールのシューズ。",
+   "fr": ""
+  },
+  {
+   "idx": 981,
+   "cls": "jp",
+   "src": "スピード＋８\n[瞳子/ひとみこ]が[率/ひき]いるネオジャパンのスパイク。",
+   "fr": ""
+  },
+  {
+   "idx": 982,
+   "cls": "jp",
+   "src": "キック＋１１\n[復讐/ふくしゅう]の[心/こころ]を[宿/やど]すというスパイク。",
+   "fr": ""
+  },
+  {
+   "idx": 983,
+   "cls": "jp",
+   "src": "キック＋１４\nガルシルドの[野望/やぼう]を[表現/ひょうげん]するスパイク。",
+   "fr": ""
+  },
+  {
+   "idx": 984,
+   "cls": "jp",
+   "src": "スピード＋１３\n[華麗/かれい]に[魅/み]せるフランスのシューズ。",
+   "fr": ""
+  },
+  {
+   "idx": 985,
+   "cls": "jp",
+   "src": "キック＋１１\n[情熱/じょうねつ]を[秘/ひ]めたスペインのスパイク。",
+   "fr": ""
+  },
+  {
+   "idx": 986,
+   "cls": "jp",
+   "src": "キック＋１０\nくじけぬ[心/こころ]を[持/も]つドイツのスパイク。",
+   "fr": ""
+  },
+  {
+   "idx": 987,
+   "cls": "jp",
+   "src": "スピード＋１２\n[瞬発力/しゅんぱつりょく]のある[南/みなみ]アフリカのシューズ。",
+   "fr": ""
+  },
+  {
+   "idx": 991,
+   "cls": "jp",
+   "src": "オレンジを[基調/きちょう]にデザインされた\n[鮮/あざ]やかなカラーのグローブ。",
+   "fr": ""
+  },
+  {
+   "idx": 992,
+   "cls": "jp",
+   "src": "ガード＋８\nオーストラリア[製/せい]の[丈夫/じょうぶ]なグローブ。",
+   "fr": ""
+  },
+  {
+   "idx": 993,
+   "cls": "jp",
+   "src": "ガード＋１０\n[暑/あつ]さにも[強/つよ]いカタールのグローブ。",
+   "fr": ""
+  },
+  {
+   "idx": 994,
+   "cls": "jp",
+   "src": "ガード＋１２\n[闘志/とうし]があふれるという[韓国/かんこく]のグローブ。",
+   "fr": ""
+  },
+  {
+   "idx": 995,
+   "cls": "jp",
+   "src": "ガード＋１４\n[誇/ほこ]り[高/たか]きイギリスのグローブ。",
+   "fr": ""
+  },
+  {
+   "idx": 996,
+   "cls": "jp",
+   "src": "ガード＋１５\n[鉄壁/てっぺき]を[誇/ほこ]るアルゼンチンのグローブ。",
+   "fr": ""
+  },
+  {
+   "idx": 997,
+   "cls": "jp",
+   "src": "ガード＋１６\n[聖獣/せいじゅう]の[力/ちから]が[宿/やど]るアメリカのグローブ。",
+   "fr": ""
+  },
+  {
+   "idx": 998,
+   "cls": "jp",
+   "src": "ガード＋１６\nイタリア[製/せい]の[高品質/こうひんしつ]なグローブ。",
+   "fr": ""
+  },
+  {
+   "idx": 999,
+   "cls": "jp",
+   "src": "ガード＋１７\nサッカー[王国/おうこく]ブラジルのグローブ。",
+   "fr": ""
+  },
+  {
+   "idx": 1000,
+   "cls": "jp",
+   "src": "ガード＋１７\nアフリカの[小国/しょうこく]　コトアールのグローブ。",
+   "fr": ""
+  },
+  {
+   "idx": 1001,
+   "cls": "jp",
+   "src": "ガード＋１１\n[瞳子/ひとみこ]が[率/ひき]いるネオジャパンのグローブ。",
+   "fr": ""
+  },
+  {
+   "idx": 1002,
+   "cls": "jp",
+   "src": "ガード＋１５\n[復讐/ふくしゅう]の[心/こころ]を[宿/やど]すといわれるグローブ。",
+   "fr": ""
+  },
+  {
+   "idx": 1003,
+   "cls": "jp",
+   "src": "ガード＋１７\nガルシルドの[野望/やぼう]を[表現/ひょうげん]するグローブ。",
+   "fr": ""
+  },
+  {
+   "idx": 1004,
+   "cls": "jp",
+   "src": "ガード＋１２\n[華麗/かれい]に[魅/み]せるフランスのグローブ。",
+   "fr": ""
+  },
+  {
+   "idx": 1005,
+   "cls": "jp",
+   "src": "ガード＋１３\n[情熱/じょうねつ]を[秘/ひ]めたスペインのグローブ。",
+   "fr": ""
+  },
+  {
+   "idx": 1006,
+   "cls": "jp",
+   "src": "ガード＋１３\nくじけぬ[心/こころ]を[持/も]つドイツのグローブ。",
+   "fr": ""
+  },
+  {
+   "idx": 1007,
+   "cls": "jp",
+   "src": "ガード＋１４\n[弾力/だんりょく]のある[南/みなみ]アフリカのグローブ。",
+   "fr": ""
+  }
+ ]
+}

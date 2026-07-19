@@ -77,7 +77,7 @@ def load(name, logic=LOGIC):
     Returns (raw_bytes, records) where records is a list of (text_bytes, pad_len)."""
     data = open(logic + name + ".STR", "rb").read()
     parsed = parse_str(data)
-    records = [(t, p) for _off, t, p in parsed]
+    records = [(t, p) for _, t, p in parsed]
     rebuilt = build_str(records)
     assert rebuilt == data, (
         f"{name}.STR round-trip FAILED: rebuilt {len(rebuilt)} vs original "
@@ -87,7 +87,7 @@ def load(name, logic=LOGIC):
 
 def _census(records):
     """Classify records for a quick summary (reuses the STR heuristics)."""
-    texts = [t for t, _p in records]
+    texts = [t for t, _ in records]
     def looks_sjis_jp(b):
         hits, k = 0, 0
         while k < len(b) - 1:
