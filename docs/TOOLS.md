@@ -133,15 +133,39 @@ scanned — edit it to narrow/widen scope.
   write if any edit overflows (unless `--allow-overflow`). Reports house-style
   folds. A no-op reinsert reproduces the original `.pkb` byte-for-byte.
 
-Workflow: `evet_dump.py` → edit `fr` fields → `evet_reinsert.py` → (repack ROM
-via ndspy — see below) → test in emulator.
+Workflow: `evet_dump.py` → edit `fr` fields → `evet_reinsert.py` →
+`repack_rom.py` (below) → test in emulator.
+
+## Whole-ROM repack (`repack_rom.py`)
+
+Writes edited internal file(s) back into a **new** `.nds` via `ndspy` (source
+ROM never modified). Maps an internal ROM path to a local edited file:
+
+```bash
+# pure round-trip: prove the repack is content-lossless
+python3 repack_rom.py -o /tmp/roundtrip.nds --verify
+
+# patch one file
+python3 repack_rom.py -r data_iz/script/evet.pkb=evet_new.pkb -o patched.nds --verify
+
+# patch several
+python3 repack_rom.py -r data_iz/script/evet.pkb=evet_new.pkb \
+                      -r data_iz/logic/item.STR=item_new.STR -o patched.nds --verify
+```
+
+**Important — the output `.nds` is NOT byte-identical to the source.** `ndspy`
+rebuilds the container: it rewrites the file allocation table, relocates files,
+and trims the original's trailing padding (~512 MB → ~447 MB). The real
+correctness invariant is **content-lossless**: `--verify` re-reads the output
+and asserts every internal file, both ARM binaries, and all 133 overlays match
+what was packed (edited files carry the edit; all others match the source).
+Verified: a one-slot evet edit produces a patched ROM differing from the
+original in exactly `data_iz/script/evet.pkb` and nowhere else.
 
 ## Still to build
 
 - `.STR` dump/reinsert tools (mechanism is understood — ordinal index, resize
   freely under the four invariants; item/unitbase are fully untranslated).
-- Whole-ROM repack: write edited `.pkb`/`.STR` back into the `.nds` via
-  `ndspy`'s `NintendoDSRom` save support.
 - Emulator testing (none installed yet) — needed to validate the encoding
   hypothesis (esp. lowercase-only accents / folded uppercase) and that in-slot
   sub-string reflow renders correctly, before bulk reinsertion.

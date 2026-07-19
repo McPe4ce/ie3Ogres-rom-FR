@@ -18,8 +18,9 @@ Scope: personal copy, personal/learning use. Not for redistribution.
 | Reverse-engineer custom French character encoding | ✅ done — `tools/ie3_codec.py` (see [`docs/FORMAT_NOTES.md`](docs/FORMAT_NOTES.md)) |
 | Reverse-engineer `.STR` flat string pool format | ✅ done — ordinal index, resizing safe (see [`docs/FORMAT_NOTES.md`](docs/FORMAT_NOTES.md)) |
 | Build extraction script (dump text + IDs to editable file) | ✅ done for `.pkb` — `tools/evet_dump.py` (`.STR` dumper still TODO) |
-| Build reinsertion script (write translations back into `.pkb`) | ✅ done for `.pkb` — `tools/evet_reinsert.py`, budget-checked, byte-exact round-trip (`.STR` + whole-ROM repack still TODO) |
-| Repack ROM + test in emulator | ⬜ not started (no emulator yet) |
+| Build reinsertion script (write translations back into `.pkb`) | ✅ done for `.pkb` — `tools/evet_reinsert.py`, budget-checked, byte-exact round-trip (`.STR` still TODO) |
+| Whole-ROM repack (edited files → new `.nds`) | ✅ done — `tools/repack_rom.py`, content-lossless (`--verify`); one-slot edit proven to land in the ROM |
+| Test in emulator | ⬜ not started (no emulator yet) |
 | Draft French for the 15,756 `evet` Japanese chunks | ⬜ awaiting translator (Phil) — extraction is ready |
 
 ## Quickstart

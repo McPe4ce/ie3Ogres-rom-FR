@@ -4,10 +4,11 @@ Quick orientation for the next session. Full detail is in
 [`docs/FORMAT_NOTES.md`](docs/FORMAT_NOTES.md) (source of truth) and the four
 skills in `.claude/skills/`. Read [`README.md`](README.md) first.
 
-## Where we are (2026-07-18)
+## Where we are (2026-07-19)
 
-Both former blockers are **solved** and the `.pkb` translation pipeline is
-**built and byte-exact verified**:
+Both former blockers are **solved**, the `.pkb` translation pipeline is
+**built and byte-exact verified**, and the whole-ROM repack is **built and
+content-lossless verified** — an edit can now be written back into a `.nds`:
 
 | Thing | State |
 |---|---|
@@ -15,9 +16,10 @@ Both former blockers are **solved** and the `.pkb` translation pipeline is
 | Custom French encoding | ✅ **solved** — 11 lowercase accents + `0x81` symbols, in `tools/ie3_codec.py`. |
 | `.pkb`/`.pkh` slot model | ✅ **byte-exact round-trip** on all 2972 evet + 28 mcht slots. |
 | `.pkb` extract → edit → reinsert | ✅ **built & tested** (`evet_dump.py` / `evet_reinsert.py`). |
+| Whole-ROM repack (edited file → new `.nds`) | ✅ **built & verified** (`repack_rom.py`) — content-lossless; a one-slot evet edit lands in the ROM, only that file differs. |
 | Translating the text | ⬜ **not started** — Phil (the owner) will draft French. |
 | `.STR` dump/reinsert tools | ⬜ not built (mechanism understood). |
-| Whole-ROM repack + emulator test | ⬜ not started (no emulator installed). |
+| Emulator test | ⬜ not started (no emulator installed). |
 
 ## The pipeline (use these; don't rewrite)
 
@@ -59,15 +61,20 @@ One-shot probes kept for provenance (not routine use): `analyze_str_dat*.py`,
 
 ## Recommended next steps (roughly in order)
 
-1. **Whole-ROM repack via `ndspy`** — write an edited `.pkb`/`.STR` back into a
-   fresh `.nds` so there's something testable. (No repack tool exists yet.)
+1. ~~**Whole-ROM repack via `ndspy`**~~ ✅ **done** — `tools/repack_rom.py`.
+   Use it: `python3 repack_rom.py -r data_iz/script/evet.pkb=evet_new.pkb -o
+   patched.nds --verify`. Output is content-lossless but **not** byte-identical
+   to the source (ndspy rebuilds the FAT + trims padding, ~512→~447 MB); the
+   `--verify` content check is the correctness proof, not a byte diff.
 2. **Set up an emulator** (melonDS/DeSmuME) and validate on a *small* test
    patch: confirm accents render and control codes aren't garbled, and that
    in-slot sub-string reflow displays correctly. Nothing has been visually
-   verified yet — only byte-verified.
+   verified yet — only byte-verified. (`patched.nds` from step 1 with the
+   one-slot `Où tester? ù` edit is a ready-made first test target.)
 3. **`.STR` dump/reinsert tools** — mirror the evet workflow for
    `item.STR` / `unitbase.STR` (ordinal index; preserve string count, order,
-   null terminators, and 32-byte alignment — the four invariants).
+   null terminators, and 32-byte alignment — the four invariants). Then feed
+   the edited `.STR` into `repack_rom.py` alongside the `.pkb`.
 
 ## Ground rules
 
