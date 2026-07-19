@@ -246,14 +246,32 @@ resizing is safe.** Investigated with `tools/analyze_str_dat.py`,
   at load time — i.e. ordinal indexing.
 
 **Editing rule (safe):** a `.STR` file may be freely re-translated, resizing
-strings up or down, **provided** you preserve: (1) the total string count,
-(2) the string order, (3) one `0x00` terminator per string, and (4) 32-byte
-alignment of each string's start (re-pad with `0x00` up to the next 0x20
-boundary after each terminator). Do **not** add or remove strings. Note:
-`item.STR` and `unitbase.STR` are currently **100% untranslated Japanese
-SJIS** (verified by `tools/verify_str_align.py` — 822/822 and 2374/2374
-strings classify as SJIS, 0 already-French, all 32-byte aligned), so every
-entry is fair game.
+strings up or down, **provided** you preserve: (1) the total record count,
+(2) the record order, and (3) one `0x00` terminator per record. Do **not** add
+or remove strings/terminators. There is **no per-record byte budget** — ordinal
+lookup means absolute offsets don't matter.
+
+**CORRECTION (2026-07-19): 32-byte alignment is a per-file CONVENTION, not a
+universal invariant.** The earlier claim that every string is 0x20-aligned holds
+only for the fully-Japanese files (`item`, `unitbase`, `command`). A byte-exact
+model over **all seven** `.STR` files (`tools/str_slots.py`) revealed that
+`games.STR` (partially French) **packs some strings tight** — a French string
+begins immediately after the previous terminator with no alignment padding. So
+alignment must be *captured per record*, not assumed. `str_slots.py` records the
+actual padding and round-trips all seven files byte-for-byte. `item`/`command`
+are exactly **1024-record fixed tables** (used strings + empty padding records),
+which further supports ordinal indexing. (`games.STR` also uses UTF-8 for a few
+punctuation marks like `°` — detect encoding per-string.)
+
+`item.STR` (822 strings) and `unitbase.STR` (2374 strings) are currently **100%
+untranslated Japanese SJIS**, so every entry is fair game.
+
+**Tooling (built 2026-07-19):** `tools/str_slots.py` (byte-exact model +
+round-trip self-test), `tools/str_dump.py` (dump translatable records to JSON,
+addressed by ordinal `idx`), `tools/str_reinsert.py` (apply edits into a new
+`.STR`, count/order preserved, edited records re-padded to 0x20, no budget
+check). Feed the result to `tools/repack_rom.py`. A no-op reinsert reproduces
+the original `.STR` byte-for-byte. See `docs/TOOLS.md`.
 
 ## Open questions / TODO
 

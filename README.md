@@ -17,8 +17,8 @@ Scope: personal copy, personal/learning use. Not for redistribution.
 | Reverse-engineer `.pkb`/`.pkh` script-text format | ✅ done (see [`docs/FORMAT_NOTES.md`](docs/FORMAT_NOTES.md)) |
 | Reverse-engineer custom French character encoding | ✅ done — `tools/ie3_codec.py` (see [`docs/FORMAT_NOTES.md`](docs/FORMAT_NOTES.md)) |
 | Reverse-engineer `.STR` flat string pool format | ✅ done — ordinal index, resizing safe (see [`docs/FORMAT_NOTES.md`](docs/FORMAT_NOTES.md)) |
-| Build extraction script (dump text + IDs to editable file) | ✅ done for `.pkb` — `tools/evet_dump.py` (`.STR` dumper still TODO) |
-| Build reinsertion script (write translations back into `.pkb`) | ✅ done for `.pkb` — `tools/evet_reinsert.py`, budget-checked, byte-exact round-trip (`.STR` still TODO) |
+| Build extraction script (dump text + IDs to editable file) | ✅ done — `.pkb`: `tools/evet_dump.py`; `.STR`: `tools/str_dump.py` |
+| Build reinsertion script (write translations back) | ✅ done — `.pkb`: `tools/evet_reinsert.py` (budget-checked); `.STR`: `tools/str_reinsert.py` (resize-free); both byte-exact round-trip |
 | Whole-ROM repack (edited files → new `.nds`) | ✅ done — `tools/repack_rom.py`, content-lossless (`--verify`); one-slot edit proven to land in the ROM |
 | Test in emulator | ⬜ not started (no emulator yet) |
 | Draft French for the 15,756 `evet` Japanese chunks | ⬜ awaiting translator (Phil) — extraction is ready |

@@ -17,8 +17,8 @@ content-lossless verified** — an edit can now be written back into a `.nds`:
 | `.pkb`/`.pkh` slot model | ✅ **byte-exact round-trip** on all 2972 evet + 28 mcht slots. |
 | `.pkb` extract → edit → reinsert | ✅ **built & tested** (`evet_dump.py` / `evet_reinsert.py`). |
 | Whole-ROM repack (edited file → new `.nds`) | ✅ **built & verified** (`repack_rom.py`) — content-lossless; a one-slot evet edit lands in the ROM, only that file differs. |
+| `.STR` dump/reinsert tools | ✅ **built & verified** (`str_slots/str_dump/str_reinsert.py`) — byte-exact round-trip on all 7 `.STR` files; item/unitbase edits repack cleanly. |
 | Translating the text | ⬜ **not started** — Phil (the owner) will draft French. |
-| `.STR` dump/reinsert tools | ⬜ not built (mechanism understood). |
 | Emulator test | ⬜ not started (no emulator installed). |
 
 ## The pipeline (use these; don't rewrite)
@@ -66,15 +66,27 @@ One-shot probes kept for provenance (not routine use): `analyze_str_dat*.py`,
    patched.nds --verify`. Output is content-lossless but **not** byte-identical
    to the source (ndspy rebuilds the FAT + trims padding, ~512→~447 MB); the
    `--verify` content check is the correctness proof, not a byte diff.
-2. **Set up an emulator** (melonDS/DeSmuME) and validate on a *small* test
-   patch: confirm accents render and control codes aren't garbled, and that
-   in-slot sub-string reflow displays correctly. Nothing has been visually
-   verified yet — only byte-verified. (`patched.nds` from step 1 with the
-   one-slot `Où tester? ù` edit is a ready-made first test target.)
-3. **`.STR` dump/reinsert tools** — mirror the evet workflow for
-   `item.STR` / `unitbase.STR` (ordinal index; preserve string count, order,
-   null terminators, and 32-byte alignment — the four invariants). Then feed
-   the edited `.STR` into `repack_rom.py` alongside the `.pkb`.
+2. **Emulator visual spot-check** — still owed, but lower-priority than first
+   thought. Rationale: the shipped v06 patch *already renders* its 11,264
+   French chunks in-game, and `ie3_codec` writes only bytes drawn from that
+   exact already-renderable alphabet (verified: every byte of a test edit,
+   incl. `ù`=`0xC9`, already appears in shipped FR text — zero novel bytes).
+   So the *encoding* is effectively proven; what a screen would still confirm
+   is **reflow of newly-sized strings** (French longer than the Japanese it
+   replaces). Do the visual check on the **first real translated batch**, not
+   on the mechanism. A one-slot `Où tester? ù` test build exists but its slot
+   (`rec 0`, a travel menu) is hard to reach in-game.
+3. ~~**`.STR` dump/reinsert tools**~~ ✅ **done** — `str_slots.py` /
+   `str_dump.py` / `str_reinsert.py`, byte-exact on all 7 `.STR` files.
+   Correction learned while building: 32-byte alignment is a *per-file
+   convention*, not universal (`games.STR` packs some strings tight), so the
+   model captures actual padding. Workflow: `str_dump.py item --jp-only` → edit
+   `fr` → `str_reinsert.py` → `repack_rom.py -r data_iz/logic/item.STR=…`.
+
+With extraction, reinsertion, and repack all built for both text formats, the
+project is **tooling-complete for translation**: the remaining work is the
+actual French drafting (Phil) plus a one-time emulator spot-check on the first
+translated batch.
 
 ## Ground rules
 

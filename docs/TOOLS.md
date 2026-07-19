@@ -162,10 +162,31 @@ what was packed (edited files carry the edit; all others match the source).
 Verified: a one-slot evet edit produces a patched ROM differing from the
 original in exactly `data_iz/script/evet.pkb` and nowhere else.
 
+## Text extraction & reinsertion (`.STR`)
+
+Mirror of the `.pkb` pipeline for `data_iz/logic/*.STR` flat string pools.
+Lookup is by ordinal index (no offset table), so strings resize freely — no
+per-record budget. Built 2026-07-19; round-trips all seven `.STR` files.
+
+- `str_slots.py` — **byte-exact model** (`load`, `parse_str`, `build_str`).
+  `python3 str_slots.py item unitbase` runs a round-trip self-test + census.
+  Captures each record's *actual* trailing padding (alignment is a per-file
+  convention — `games.STR` packs some strings tight; see `FORMAT_NOTES.md`).
+- `str_dump.py` — dump translatable records to editable JSON, addressed by
+  ordinal `idx`: `python3 str_dump.py item [--jp-only] [-o out.json]`. Empty/
+  padding records are skipped but their indices preserved.
+- `str_reinsert.py` — apply the edited JSON into a **new** `.STR` (original
+  untouched): `python3 str_reinsert.py trans.json --out item_new.STR`. Preserves
+  record count/order, re-pads edited records to 0x20, reports house-style folds.
+  A no-op reinsert reproduces the original byte-for-byte.
+
+Workflow: `str_dump.py` → edit `fr` fields → `str_reinsert.py` →
+`repack_rom.py` → test in emulator.
+
 ## Still to build
 
-- `.STR` dump/reinsert tools (mechanism is understood — ordinal index, resize
-  freely under the four invariants; item/unitbase are fully untranslated).
-- Emulator testing (none installed yet) — needed to validate the encoding
-  hypothesis (esp. lowercase-only accents / folded uppercase) and that in-slot
-  sub-string reflow renders correctly, before bulk reinsertion.
+- Emulator testing (none installed yet) — the encoding itself is effectively
+  proven (the shipped v06 patch already renders these bytes in-game; edits use
+  only that already-renderable alphabet), so a visual check is now mainly to
+  confirm **reflow of newly-sized strings**. Do it on the first real translated
+  batch. See `HANDOFF.md`.
