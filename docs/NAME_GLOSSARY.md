@@ -40,6 +40,81 @@ Legend for **Confidence**: ✅ confident · ⚠️ likely, verify against in-gam
 | 砂木沼 | **Saginuma** 🔤 | romaji fallback — verify official EU name |
 | 大阪 / 奈良 / 沖縄 / 福岡 | Osaka / Nara / Okinawa / Fukuoka | real place names, keep |
 | ナニワランド | Naniwa Land | in-game amusement park |
+| ズーラン | **Zoolan** | FR-confirmed — villain / org ("manoir de Zoolan", "M. Zoolan") |
+| キラート? | **Dr Kirado** | FR-confirmed ("Dr Kirado") — record JP when found |
+| ヘリオ? | **Hélio** | FR-confirmed — rival goalkeeper (Ogre/Canon arc) |
+| ティアゴ・トーレス | **Thiago Torres** | FR-confirmed — capitaine d'Argentine (Empereurs) |
+| パオロ・ビアンキ | **Paolo Bianchi** | FR-confirmed — vice-capitaine d'Orphée (Italie) |
+| マック・ロビンゴ | **Mac Robingo** | FR-confirmed — capitaine du Brésil (The Kingdom) |
+
+## Teams, clubs & national selections
+
+Built 2026-07-20 to unblock the `item.STR` gear (uniforms, GK shoes, formations
+all reference a team) and reused by `unitbase.STR` + `evet`. **Source** column:
+`FR` = attested in this ROM's own shipped French dialogue (grep-confirmed, the
+strongest evidence) · `EU` = official European localisation name, not (yet) seen
+in this ROM's FR · `🔤` = romaji fallback, no confident official name.
+
+Legend: ✅ confident · ⚠️ likely, verify in-game · 🔤 romaji fallback.
+
+### Japanese school teams
+
+| Japanese (reading) | French (use this) | Source | Conf. |
+|---|---|---|---|
+| 雷門 (らいもん) | **Raimon** | FR ("Raimon" ×56) | ✅ |
+| 世宇子 (ぜうす) | **Kirkwood** | FR ("Jouer contre Kirkwood!") | ✅ |
+| 帝国 (ていこく) | **Royal Académie** | FR ("Royal Académie" / "Nouv. Royal Ac.") — do **not** confuse with Argentina's *Les Empereurs* | ✅ |
+| 陽花戸 (よかと) | **Occult** | EU (team nickname オカルト = Occult; not in this ROM's FR) | ⚠️ |
+| 白恋 (はくれん) | **Hakuren** 🔤 | — | 🔤 verify (EU likely "Alpine") |
+| 傘美野 (かさみの) | **Kasamino** 🔤 | — | 🔤 verify (EU likely "Brimstone") |
+| 漫遊寺 (まんゆうじ) | **Manyuji** 🔤 | — | 🔤 verify |
+| 大海原 (おおみはら) | **Omihara** 🔤 | — | 🔤 verify |
+| 稲妻町商店街 | **Inazuma-town** (équipe du quartier) | item 113: 胸の「Ｓ」＝サリー "Sally" | ⚠️ |
+
+### Aliea / Alius-arc teams (Chaos & co.)
+
+| Japanese | French (use this) | Source | Conf. |
+|---|---|---|---|
+| エイリア（学園） | **Académie Alius** | FR ("l'Académie Alius") | ✅ |
+| ジェミニ（ストーム） | **Tempête des Gémeaux** (Gemini Storm) | FR ("maillots de Tempête des Gémeaux") | ✅ |
+| イプシロン | **Epsilon** | FR ("le rang d'Epsilon dans l'Académie Alius") | ✅ |
+| イプシロン改 | **Epsilon Amélioré** | EU (改 = "improved/Kai") | ⚠️ |
+| ジェネシス | **The Genesis** | EU (Alius top team; not in ROM FR) | ⚠️ |
+| ダイヤモンドダスト | **Diamond Dust** | FR ("équipe Diamond Dust") | ✅ |
+| プロミネンス | **Prominence** | FR ("équipe Prominence") | ✅ |
+| カオス | **Chaos** | FR ("Chaos! La fusion de Diamond dust et Prominence") | ✅ |
+
+### Ogre-arc & rivals
+
+| Japanese | French (use this) | Source | Conf. |
+|---|---|---|---|
+| オーガ | **Ogre** (les Ogres) | FR ("l'équipe des Ogres") | ✅ |
+| コトアール（尾刈斗） | **Cotarl** | FR ("Cotarl" ×42) — fictional nation | ✅ |
+| ガルシルド | **Garshield** | FR | ✅ |
+| ネオジャパン | **Neo Japan** | (see main table) | ✅ |
+| ゼウス | **Zeus** | FR ("L'équipe Zeus!") — distinct from 世宇子/Kirkwood | ✅ |
+| ウラゼウス | **Ura-Zeus** 🔤 | 🔤 (裏 = dark/reverse Zeus) | ⚠️ |
+| ギャルズ | **Galz** 🔤 | — | 🔤 verify |
+
+### FFI national selections (国代表 uniforms)
+
+| Country (JP) | Team — French | Source | Conf. |
+|---|---|---|---|
+| 日本 Japon | **Inazuma Japan** | FR | ✅ |
+| アルゼンチン | **Les Empereurs** (Argentina) | FR ("équipe d'Argentine [Les Empereurs]… Thiago Torres") | ✅ |
+| ブラジル | **The Kingdom** (Brésil) | FR ("le Brésil! [The Kingdom]… Mac Robingo") | ✅ |
+| イタリア | **Orphée** (Italie) | FR ("sélection italienne [Orphée]… Paolo Bianchi") | ✅ |
+| アメリカ | **Les Licornes** (USA / Unicorn) | FR ("Licornes" ×22) | ✅ |
+| オーストラリア | **Big Waves** (Australie) | FR ("affronter les Big Waves") | ✅ |
+| 韓国 | **Dragons de feu** (Corée / Fire Dragon) | FR ("les dragons de feu") | ✅ |
+| カタール | **Lions du désert** (Qatar / Desert Lion) | FR ("Les lions du désert") | ✅ |
+| イギリス | **Knights of Queen** (Angleterre) | FR ("Knights"/"Queen") | ⚠️ confirm it's the England FFI team |
+| ドイツ / スペイン / フランス / 南アフリカ | *(country label, translate literally: Allemagne / Espagne / France / Afrique du Sud)* | — item "◯◯用" = region-locked, **not** a team uniform | ✅ |
+
+**Gear-item nuance:** terse items like `アルゼンチン用`, `カタール前半用` mean
+"For Argentina / For Qatar (first half)" — a **country/region label**, translate
+the country name literally (*Argentine, Qatar*). Only a full uniform *description*
+that evokes the FFI squad uses the **team** name above (Les Empereurs, etc.).
 
 ## Notes / to-verify
 
@@ -52,5 +127,9 @@ Legend for **Confidence**: ✅ confident · ⚠️ likely, verify against in-gam
 - Item/equipment flavour names that are Ogre/enemy-team coinages (e.g. 尾刈斗
   "Okalt/Occult", ガルシルド "Garshield") are brand/monster names, not roster
   players — romanize sensibly and keep constant.
-- The Ogre-arc antagonists and rival teams (Knights of Queen / Little Gigant /
-  etc.) have their own official EU names — add them here as they come up.
+- The Ogre-arc antagonists and rival teams now have a dedicated **Teams** section
+  above (built 2026-07-20 by grep-mining the shipped FR dialogue). The `🔤`/`⚠️`
+  rows there (白恋 Hakuren, 傘美野 Kasamino, 漫遊寺 Manyuji, 大海原 Omihara,
+  陽花戸/Occult, ギャルズ Galz, ジェネシス, ドイツ/スペイン FFI squads) are the
+  ones that did **not** surface in this ROM's FR — verify those against the wiki
+  or in-game before relying on them in bulk, and upgrade the flag.

@@ -4,7 +4,7 @@ Quick orientation for the next session. Full detail is in
 [`docs/FORMAT_NOTES.md`](docs/FORMAT_NOTES.md) (source of truth) and the four
 skills in `.claude/skills/`. Read [`README.md`](README.md) first.
 
-## Where we are (2026-07-19)
+## Where we are (2026-07-20)
 
 All tooling is **built & verified end-to-end** (extract → edit → reinsert →
 whole-ROM repack, byte-checked for both text formats), and **translation is
@@ -38,9 +38,17 @@ underway** — the project is now in the content-filling phase.
   manuals** (done by formula — see the skill).
 - **Remaining item.STR (374):** flavour gear — uniforms, spikes, gloves,
   misangas/pendants, formations, GK-shoe names — all reference **team &
-  character names**. **Next step: build the team-name glossary** (mine the
-  ROM's existing FR + official EU names) and finish the gear with it; that same
-  glossary is what `unitbase.STR` (2374 bios) and `evet` dialogue need next.
+  character names**. **Team-name glossary: ✅ built (2026-07-20)** — see the new
+  "Teams, clubs & national selections" section in `docs/NAME_GLOSSARY.md`, mined
+  by grepping the shipped FR `evet` dialogue (11,264 FR chunks). Confirmed from
+  the ROM's own FR: Raimon, Kirkwood (世宇子), Royal Académie (帝国), Ogre,
+  Cotarl, Zeus, Académie Alius + Gemini Storm/Epsilon/Diamond Dust/Prominence/
+  Chaos, and the FFI squads (Les Empereurs=Argentine, The Kingdom=Brésil,
+  Orphée=Italie, Licornes=USA, Big Waves=Australie, Dragons de feu=Corée, Lions
+  du désert=Qatar). Still `🔤`/`⚠️` (not in ROM FR, verify): 白恋 Hakuren,
+  傘美野 Kasamino, 漫遊寺 Manyuji, 大海原 Omihara, 陽花戸/Occult, Galz, Genesis.
+  **Next step:** finish the 374 gear entries in `translations/item.json` using
+  that glossary. Same glossary now unblocks `unitbase.STR` (2374 bios) + `evet`.
 - **Naming decision (locked):** official European (English-dub) names, kept
   constant — see `docs/NAME_GLOSSARY.md`. Romaji only for truly unknown NPCs.
 - **Uncommitted at end of 2026-07-19** (Phil commits himself): new
