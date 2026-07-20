@@ -36,11 +36,14 @@ In melonDS: load the ROM, then open the **cheat manager** (recent builds:
 titlebar menu ▸ *"Setup cheats"* / *"Cheat codes"*). **Add new cheat**, paste a
 block from `ie3_cheats_melonds.txt`, tick it **enabled**, then **reset** the game
 (*System ▸ Reset*). Codes with a `94000130…` first line are **button-activated**
-(hold the L/R trigger combo in-game to apply); the "All Equipment x99" block is
+(hold **SELECT** in-game to apply); the "All Equipment x99" block is
 always-on.
 
-Recommended: enable **All Equipment x99** + **Unlocked Team Strips (uniforms)** —
-those two cover the riskiest long strings (gloves +17/+18, FFI kits, uniforms).
+Recommended: enable **All Equipment x99** + **All Uniforms (always-on)** — those
+two cover the riskiest long strings (gloves +17/+18, FFI kits, uniforms). The
+`94000130…` blocks are **hold-SELECT** activators (not L+R); the always-on
+uniform variant needs no button. Uniforms are changed from the **team menu**, not
+the per-player equipment screen.
 
 ## 3. Speed & convenience hotkeys (melonDS)
 - **Fast-forward / no frame limit:** hold the fast-forward key (default **Tab**;

@@ -1,7 +1,8 @@
 Inazuma Eleven 3: Sekai e no Chousen!! The Ogre (JP)  —  Game code: BOEJ
 Action Replay codes for melonDS (Setup cheats -> Add -> paste a block -> enable -> Reset).
-Codes beginning with 94000130 FFFB0000 are BUTTON-ACTIVATED: hold the trigger combo in-game to apply.
-Source: inazumalife.com. For the item.STR reflow test, enable [All Equipment x99] + [Unlocked Team Strips].
+Codes beginning with 94000130 FFFB0000 are BUTTON-ACTIVATED: hold SELECT in-game to apply.
+For the item.STR reflow test, enable [All Equipment x99] + [All Uniforms (always-on)].
+Source: inazumalife.com (button version); always-on variant derived by removing the SELECT conditional.
 
 === Infinite Money (Prestige) ===
 020A0B14 000F423F
@@ -203,7 +204,35 @@ Source: inazumalife.com. For the item.STR reflow test, enable [All Equipment x99
 020A19C4 63636363
 020A19C8 63636363
 
-=== Unlocked Team Strips / Uniforms (button-activated: hold L+R) ===
+=== All Uniforms (always-on) — RECOMMENDED, no button needed ===
+220A078E 00000001
+D5000000 00000001
+C0000000 00000027
+D8000000 020A0765
+D2000000 00000000
+D5000000 00000001
+C0000000 0000002F
+D8000000 020A0909
+D2000000 00000000
+D5000000 00000001
+C0000000 00000014
+D8000000 020A0AB7
+D2000000 00000000
+220A166A 00000001
+D5000000 00000001
+C0000000 00000027
+D8000000 020A1641
+D2000000 00000000
+D5000000 00000001
+C0000000 0000002F
+D8000000 020A17E5
+D2000000 00000000
+D5000000 00000001
+C0000000 00000014
+D8000000 020A1993
+D2000000 00000000
+
+=== Unlocked Team Strips / Uniforms (button version: hold SELECT) ===
 94000130 FFFB0000
 220A078E 00000001
 D5000000 00000001
@@ -237,7 +266,7 @@ C0000000 00000014
 D8000000 020A1993
 D2000000 00000000
 
-=== All Healing Items x99 (button-activated: hold L+R) ===
+=== All Healing Items x99 (button version: hold SELECT) ===
 94000130 FFFB0000
 E20A0700 00000018
 63636300 00000063
