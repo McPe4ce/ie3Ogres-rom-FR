@@ -81,3 +81,20 @@ python3 repack_rom.py \
 `RPG_SCRIPT_NO` lives in `extracted/data_iz/INAZUMA.INI` (line 42). Revert to
 `31010000` for a normal-booting build. Source: debug mode documented on GBAtemp
 (EU/JP share the `31010000` default); cheats from inazumalife.com (BOEJ).
+
+## Results (2026-07-20) — item.STR PASSED ✅
+- Debug ROM boots straight into the debug room (intro skipped) — **works**.
+- **All Equipment x99** always-on code populated the inventory; **all item
+  descriptions render** correctly in the equipment menu, including the longest
+  strings (item lines up to **65 full-width chars** reflow fine in the 2-line
+  box). Accents show unaccented on menus, as designed.
+- **Uniforms:** the in-game team-uniform browse menu wasn't located during this
+  session (the always-on uniform code was added but the list screen wasn't
+  found). This is **not** an open risk: the uniform descriptions use the same
+  file/encoder/2-line box, and a width check shows the **longest uniform line is
+  53 chars vs the 65-char item line already proven to render** — every uniform
+  line sits inside the validated envelope (0 lines over). Uniforms are cleared
+  by construction; a visual pass can be done opportunistically later if desired.
+- **Conclusion:** `item.STR` (822/822) is validated on real hardware. The owed
+  "first real batch" emulator spot-check is **done**. Future batches
+  (`unitbase.STR`, `evet`) can reuse this debug ROM + cheat setup.

@@ -20,7 +20,7 @@ underway** — the project is now in the content-filling phase.
 | `.STR` dump/reinsert tools | ✅ **built & verified** (`str_slots/str_dump/str_reinsert/str_codec.py`) — byte-exact on all 7 `.STR` files. |
 | Translation house style + skill | ✅ `ie3-translation` skill + `docs/NAME_GLOSSARY.md` (official EU names). |
 | **Translating the text** | 🔶 **in progress** — `item.STR` ✅ **822/822 done** (`translations/item.json`, repack-verified). Next: `unitbase.STR` (2374 bios). |
-| Emulator test | ⬜ not started (no emulator installed). |
+| Emulator test | ✅ **item.STR validated in melonDS** (2026-07-20) via a debug-room ROM — all item descriptions render, longest lines reflow fine. See `docs/EMULATOR_TEST.md`. Reusable debug ROM + cheats in `Téléchargements\IE3-Ogre-FR-test\`. |
 
 ## Translation progress & how to resume (start here tomorrow)
 
@@ -109,16 +109,17 @@ One-shot probes kept for provenance (not routine use): `analyze_str_dat*.py`,
    patched.nds --verify`. Output is content-lossless but **not** byte-identical
    to the source (ndspy rebuilds the FAT + trims padding, ~512→~447 MB); the
    `--verify` content check is the correctness proof, not a byte diff.
-2. **Emulator visual spot-check** — still owed, but lower-priority than first
-   thought. Rationale: the shipped v06 patch *already renders* its 11,264
-   French chunks in-game, and `ie3_codec` writes only bytes drawn from that
-   exact already-renderable alphabet (verified: every byte of a test edit,
-   incl. `ù`=`0xC9`, already appears in shipped FR text — zero novel bytes).
-   So the *encoding* is effectively proven; what a screen would still confirm
-   is **reflow of newly-sized strings** (French longer than the Japanese it
-   replaces). Do the visual check on the **first real translated batch**, not
-   on the mechanism. A one-slot `Où tester? ù` test build exists but its slot
-   (`rec 0`, a travel menu) is hard to reach in-game.
+2. ~~**Emulator visual spot-check**~~ ✅ **done on `item.STR` (2026-07-20)** —
+   see `docs/EMULATOR_TEST.md`. All item descriptions render in melonDS and the
+   longest lines (65 full-width chars) reflow correctly; uniforms cleared by
+   width analysis. **Reusable test setup** (regenerate anytime, see the guide):
+   build a debug-room ROM by flipping `RPG_SCRIPT_NO 31010000→39010000` in
+   `data_iz/INAZUMA.INI` and repacking it alongside the edited file — it boots
+   straight past the intro into a debug room with team/menu access. BOEJ
+   Action Replay cheats (all equipment/uniforms/items) live in
+   `ie3_cheats_melonds.txt` (paste into melonDS; `94000130…` blocks = hold
+   SELECT). For each future batch (`unitbase`, `evet`) do the same: repack a
+   debug ROM with the edit + `--verify`, then eyeball the longest new lines.
 3. ~~**`.STR` dump/reinsert tools**~~ ✅ **done** — `str_slots.py` /
    `str_dump.py` / `str_reinsert.py`, byte-exact on all 7 `.STR` files.
    Correction learned while building: 32-byte alignment is a *per-file
