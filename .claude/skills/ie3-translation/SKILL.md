@@ -80,9 +80,21 @@ messages together (see the parts of one slot), so you can't cleanly split
   風/火キャラ→"Perso Air/Feu", ＳＣ/ＳＢ kept as-is. Elements: 火 Feu · 山 Terre ·
   風 Air · 林 Bois · なし Aucun. (Watch: a modifier can wrap onto the type line —
   parse the type as a *suffix*, not "line 2". Strip furigana first.)
-- **陣形** (formation): "Formation".
+- **陣形** (formation): "Formation". Keep the formation number verbatim
+  (`４−４−２` → `4-4-2`).
+- **Equipment stat tokens** (gear descriptions, e.g. `キック＋６`): キック→**Tir**,
+  スピード→**Vitesse**, ガード→**Défense**, コントロール→**Contrôle**,
+  ガッツ→**Cran**, ボディ→**Corps**, スタミナ→**Endurance**, ＴＰ→**TP**.
+  Render as `Tir +6\n<flavour line>`.
+- **Team names in gear:** use `docs/NAME_GLOSSARY.md` → "Teams" section. Note the
+  country-uniform items (`アルゼンチン用`, uniform 956 etc.) use the **country
+  label** ("Argentine"), not the FFI team name — only full uniform *descriptions*
+  that evoke the squad use the team name (Les Empereurs, The Kingdom, …).
 - Recovery tiers are the item scale above. Command/skill *effect* strings
   ("成功率アップ" etc.) → "Augmente la réussite de…".
+- **`.STR` gotcha:** never use ASCII `"` double-quotes — `str_codec` maps them
+  to full-width `＂` which SJIS can't encode (reinsert skips the record). Use no
+  quotes, or single `'` (which round-trips to the game's `’`).
 
 ## Workflow (per format)
 

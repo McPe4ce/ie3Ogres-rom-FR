@@ -19,15 +19,23 @@ underway** — the project is now in the content-filling phase.
 | Whole-ROM repack (edited file → new `.nds`) | ✅ **built & verified** (`repack_rom.py`) — content-lossless; edits land in the ROM, only edited files differ. |
 | `.STR` dump/reinsert tools | ✅ **built & verified** (`str_slots/str_dump/str_reinsert/str_codec.py`) — byte-exact on all 7 `.STR` files. |
 | Translation house style + skill | ✅ `ie3-translation` skill + `docs/NAME_GLOSSARY.md` (official EU names). |
-| **Translating the text** | 🔶 **in progress** — `item.STR` **448/822** done (`translations/item.json`). |
+| **Translating the text** | 🔶 **in progress** — `item.STR` ✅ **822/822 done** (`translations/item.json`, repack-verified). Next: `unitbase.STR` (2374 bios). |
 | Emulator test | ⬜ not started (no emulator installed). |
 
 ## Translation progress & how to resume (start here tomorrow)
 
 - **Read the `ie3-translation` skill first** — it has the house style, the
   two-encoding rule, terminology, and the per-format workflow.
-- **`item.STR`: 448/822 done**, saved in `translations/item.json` (the durable
-  artifact — the scratchpad `.nds`/`.STR` builds are gone, but this JSON isn't).
+- **`item.STR`: ✅ 822/822 done** (finished 2026-07-20), saved in
+  `translations/item.json` (the durable artifact — the scratchpad `.nds`/`.STR`
+  builds are gone, but this JSON isn't). The final 374 gear entries were filled
+  using the new team glossary; QA passed: encoder 822/822 clean (0 skips),
+  repack `--verify` OK (only `item.STR` differs, 79296→111776 bytes — `.STR`
+  has no budget so growth is fine). Stat-token convention set for gear:
+  キック→**Tir**, スピード→**Vitesse**, ガード→**Défense**, コントロール→**Contrôle**,
+  ガッツ→**Cran**, ボディ→**Corps**, スタミナ→**Endurance**, ＴＰ→**TP**.
+  Gotcha found: avoid ASCII `"` double-quotes (str_codec maps them to full-width
+  ＂ which SJIS can't encode — use no quotes or single `'`).
   Rebuild the patched file anytime:
   ```bash
   python3 str_reinsert.py ../translations/item.json --out item_new.STR

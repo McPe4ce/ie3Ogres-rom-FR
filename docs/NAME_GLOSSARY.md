@@ -46,6 +46,11 @@ Legend for **Confidence**: ✅ confident · ⚠️ likely, verify against in-gam
 | ティアゴ・トーレス | **Thiago Torres** | FR-confirmed — capitaine d'Argentine (Empereurs) |
 | パオロ・ビアンキ | **Paolo Bianchi** | FR-confirmed — vice-capitaine d'Orphée (Italie) |
 | マック・ロビンゴ | **Mac Robingo** | FR-confirmed — capitaine du Brésil (The Kingdom) |
+| 円堂大介 | **David Evans** | Mark's grandfather (円堂 = Evans); item 216 "gants souvenir de David Evans", leads Cotarl (item 960) — ⚠️ verify EU first name |
+| 夕香 | **Yuka** 🔤 | item 265 "pendentif du serment de Yuka" — 🔤 verify |
+| 冬花 | **Camelia** | manager; item 677 gift — ⚠️ (EU "Camelia Travis"?) |
+| 瞳子 | **Toko** 🔤 | leads Neo Japan (items 981/1001) — 🔤 verify (EU "Camelia"? distinct from 冬花) |
+| ミスターＫ | **Mister K** | item 962 — antagonist coach, kept as-is |
 
 ## Teams, clubs & national selections
 
@@ -63,13 +68,19 @@ Legend: ✅ confident · ⚠️ likely, verify in-game · 🔤 romaji fallback.
 |---|---|---|---|
 | 雷門 (らいもん) | **Raimon** | FR ("Raimon" ×56) | ✅ |
 | 世宇子 (ぜうす) | **Kirkwood** | FR ("Jouer contre Kirkwood!") | ✅ |
-| 帝国 (ていこく) | **Royal Académie** | FR ("Royal Académie" / "Nouv. Royal Ac.") — do **not** confuse with Argentina's *Les Empereurs* | ✅ |
-| 陽花戸 (よかと) | **Occult** | EU (team nickname オカルト = Occult; not in this ROM's FR) | ⚠️ |
+| 帝国 (ていこく) | **Royal Académie** | FR ("Royal Académie" / "Nouv. Royal Ac.") — do **not** confuse with Argentina's *Les Empereurs*. 真・帝国(学園) → **Vraie Royal Académie / Vraie Royal Ac.** | ✅ |
+| 尾刈斗 (おかると) | **Occult** | EU (team nickname オカルト = Occult) — used in `item.STR` gear (crampons 153, formation 452) | ⚠️ |
+| 陽花戸 (よかと) | **Yokato** 🔤 | — separate school from 尾刈斗/Occult; romaji fallback | 🔤 verify |
 | 白恋 (はくれん) | **Hakuren** 🔤 | — | 🔤 verify (EU likely "Alpine") |
 | 傘美野 (かさみの) | **Kasamino** 🔤 | — | 🔤 verify (EU likely "Brimstone") |
-| 漫遊寺 (まんゆうじ) | **Manyuji** 🔤 | — | 🔤 verify |
-| 大海原 (おおみはら) | **Omihara** 🔤 | — | 🔤 verify |
-| 稲妻町商店街 | **Inazuma-town** (équipe du quartier) | item 113: 胸の「Ｓ」＝サリー "Sally" | ⚠️ |
+| 漫遊寺 (まんゆうじ) | **Manyuji** 🔤 | kung-fu-themed school | 🔤 verify |
+| 大海原 (おおみはら) | **Omihara** 🔤 | sea-themed school | 🔤 verify |
+| 御影（専農） (みかげ) | **Mikage Sennou** 🔤 | white-cross school | 🔤 verify |
+| 千羽山 (せんばやま) | **Senbayama** 🔤 | iron-wall defence school | 🔤 verify |
+| 木戸川（清修） (きどかわ) | **Kidokawa** 🔤 | red/black school | 🔤 verify (EU "Kidokawa Seishuu") |
+| 秋葉 (あきば) | **Akiba** 🔤 | 5-top reckless formation | 🔤 verify |
+| 戦国 (せんごく) | **Sengoku** 🔤 | wing-focused school | 🔤 verify |
+| 稲妻町商店街 / 稲妻ＫＦＣ | **Inazuma-town** / **Inazuma KFC** | item 113: 胸の「Ｓ」＝サリー "Sally" — quartier team | ⚠️ |
 
 ### Aliea / Alius-arc teams (Chaos & co.)
 
@@ -94,7 +105,14 @@ Legend: ✅ confident · ⚠️ likely, verify in-game · 🔤 romaji fallback.
 | ネオジャパン | **Neo Japan** | (see main table) | ✅ |
 | ゼウス | **Zeus** | FR ("L'équipe Zeus!") — distinct from 世宇子/Kirkwood | ✅ |
 | ウラゼウス | **Ura-Zeus** 🔤 | 🔤 (裏 = dark/reverse Zeus) | ⚠️ |
-| ギャルズ | **Galz** 🔤 | — | 🔤 verify |
+| 大阪ギャルズ / ギャルズ | **Galz d'Osaka** 🔤 | Osaka girls' team | 🔤 verify |
+| ダークエンペラーズ / Ｄエンペラーズ | **Dark Emperors** | EU coinage — kept English | ⚠️ |
+| ダークエンジェル | **Dark Angels** | EU coinage — kept English | ⚠️ |
+| 魔界軍団Ｚ | **Légion des Enfers Z** | 魔界=enfers, 軍団=légion, Z-arc team | ⚠️ |
+| 天空の使徒 | **Apôtres du Ciel** | 天空=ciel (cf. 星の使徒 = Apôtres de l'Étoile) | ⚠️ |
+| カードチーム / トレーディングカード | **équipe Cartes** | card-game crossover team | ⚠️ |
+| 警備兵 / 警備マシンズ | **gardes / sentinelles** | robot security team | ⚠️ |
+| チームＫ / チームガルシルド | **équipe K / équipe Garshield** | Ogre-arc squads | ✅ |
 
 ### FFI national selections (国代表 uniforms)
 
