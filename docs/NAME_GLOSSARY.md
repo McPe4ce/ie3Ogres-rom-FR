@@ -51,6 +51,14 @@ Legend for **Confidence**: ✅ confident · ⚠️ likely, verify against in-gam
 | 冬花 | **Camelia** | manager; item 677 gift — ⚠️ (EU "Camelia Travis"?) |
 | 瞳子 | **Toko** 🔤 | leads Neo Japan (items 981/1001) — 🔤 verify (EU "Camelia"? distinct from 冬花) |
 | ミスターＫ | **Mister K** | item 962 — antagonist coach, kept as-is |
+| バーン | **Burn** | FR-confirmed in shipped evet ("Avec Gazelle et Burn, on va aller rejoindre Dave...") | ✅ |
+| ガゼル | **Gazelle** | FR-confirmed, same line as Burn — note FR uses "Gazelle", not "Gazel" | ✅ |
+| アフロディ | **Aphrodite** | FR-confirmed ("a utiliser Aphrodite et les Dragons de feu") | ✅ |
+| アイキュー | **IQ** 🔤 | Diamond Dust member; JP evet scout line names him + his sister. Keep the letters "IQ" (katakana spells I-Q) — do NOT render as French "QI", which is reserved for the *stat* (bio 1119) | 🔤 |
+| アイシー | **Icy** 🔤 | アイキュー's little sister (bio 1122), Diamond Dust — ice-theme pun pair with [[IQ]] | 🔤 |
+| 雷門総一郎 | **Soichiro** 🔤 | JP evet: "サッカー協会の会長は雷門　総一郎さん" = chairman of the football association, i.e. [[Nelly]]'s father. Surname already fixed as *Raimon*. Needed to decode bio 1275 | 🔤 |
+| 阿太郎 / 吽助 | **Ataro** / **Unsuke** 🔤 | Kyoto duo, bios 1179/1181 name each other as combo partners (JP pun on 阿吽 a-un) — keep as a pair | 🔤 |
+| エイリア石 | **la pierre Alius** | built on エイリア学園 = *Académie Alius* (✅ FR-attested); powers bios 1237–1246 | ⚠️ |
 | 兜角雄 | **Kabuto** 🔤 | unitbase bio 231 (a childhood friend calls him his rival) — 🔤 verify |
 | 天野（兄弟） | **Amano** 🔤 | unitbase bio 293, twin brothers — 🔤 verify (the JP gag puns 天野 on 雨 "rain") |
 
@@ -105,6 +113,9 @@ Legend: ✅ confident · ⚠️ likely, verify in-game · 🔤 romaji fallback.
 | コトアール（尾刈斗） | **Cotarl** | FR ("Cotarl" ×42) — fictional nation | ✅ |
 | ガルシルド | **Garshield** | FR | ✅ |
 | ネオジャパン | **Neo Japan** | (see main table) | ✅ |
+| 樹海（チーム） | **la Mer d'Arbres** | 富士の樹海 = Aokigahara, the "sea of trees" at Mt Fuji (JP evet: "富士の樹海にサッカーチームがあった"). Bios 1074–1084 are all "樹海チームの◯◯担当" → "le ◯◯ de l'équipe de la Mer d'Arbres" | ⚠️ |
+| 星の使徒研究所 | **laboratoire des Apôtres de l'Étoile** | 星の使徒 already fixed as *Apôtres de l'Étoile*; 研究所 → laboratoire. Bios 1085–1095 = guard robots no 1–11, 排除！→ "Élimination !" | ⚠️ |
+| 紫苑の閃光 | **l'Éclair pourpre** | bio 1002 only — 紫苑 (furigana しおん, aster / deep purple) occurs **exactly once in the whole ROM**, so treated as a one-off epithet and rendered for meaning, not as a proper noun | ⚠️ |
 | ゼウス | **Zeus** | FR ("L'équipe Zeus!") — distinct from 世宇子/Kirkwood | ✅ |
 | ウラゼウス | **Ura-Zeus** 🔤 | 🔤 (裏 = dark/reverse Zeus) | ⚠️ |
 | 大阪ギャルズ / ギャルズ | **Galz d'Osaka** 🔤 | Osaka girls' team | 🔤 verify |
