@@ -68,10 +68,14 @@ def main():
             fit_fail.append((e["rec"], e["part"], need))
         edits += 1
 
-    # sanity: every slot must still recompose to exactly its budget
-    for rec in range(len(slots)):
-        rid, off, bud, slot = slots[rec]
-        assert len(slot.recompose()) == bud, f"rec{rec} span changed!"
+    # sanity: every slot must still recompose to exactly its budget.
+    # NB: only meaningful when nothing overflowed -- set_chunk_bytes() installs
+    # the oversized chunk before returning False, so on overflow the span is
+    # legitimately wrong and the fit_fail report below is the useful message.
+    if not fit_fail:
+        for rec in range(len(slots)):
+            rid, off, bud, slot = slots[rec]
+            assert len(slot.recompose()) == bud, f"rec{rec} span changed!"
 
     print(f"applied {edits} edits ({skipped} skipped for encode errors)")
     if fold_report:

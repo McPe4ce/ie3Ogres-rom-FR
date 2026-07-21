@@ -33,6 +33,11 @@ format skills; this skill is about *the French itself*.
 | **`evet.pkb` dialogue** | single-byte, custom | **lowercase accents OK** (é è à ç ê î ï ô ù û) | `ie3_codec.encode_text` |
 | **`*.STR` menus/descriptions** | full-width SJIS Latin | **NO accents** (folded to ASCII) | `str_codec.encode_str_fr` |
 
+**Hardware-confirmed 2026-07-21:** lowercase accents **render correctly in evet
+speech bubbles** (`frère`, `écran`, `Entraînement` checked in-game, slot 18).
+The accent-stripping in `.STR` is a menu-font limitation, *not* a ROM-wide one —
+do not strip accents in dialogue.
+
 You may **write natural accented French either way** — each encoder folds what its
 target can't show (`str_codec` strips all accents: "Défense"→"Defense"; `ie3_codec`
 keeps lowercase accents, folds uppercase accents / `ë ö ü œ æ` / `« »` to ASCII).

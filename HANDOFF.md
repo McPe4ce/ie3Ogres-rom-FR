@@ -19,10 +19,149 @@ underway** — the project is now in the content-filling phase.
 | Whole-ROM repack (edited file → new `.nds`) | ✅ **built & verified** (`repack_rom.py`) — content-lossless; edits land in the ROM, only edited files differ. |
 | `.STR` dump/reinsert tools | ✅ **built & verified** (`str_slots/str_dump/str_reinsert/str_codec.py`) — byte-exact on all 7 `.STR` files. |
 | Translation house style + skill | ✅ `ie3-translation` skill + `docs/NAME_GLOSSARY.md` (official EU names). |
-| **Translating the text** | 🔶 **in progress** — **all `.STR` files done**: `item.STR` ✅ 822/822, `unitbase.STR` ✅ 2374/2374, `command.STR` ✅ 8/8 (all repack-verified); `games`/`rpgtitle` carry no real content (residue only). Next: `evet.pkb`. |
+| **Translating the text** | 🔶 **in progress** — **all `.STR` files done**; `evet.pkb` **81/15,756**: `item.STR` ✅ 822/822, `unitbase.STR` ✅ 2374/2374, `command.STR` ✅ 8/8 (all repack-verified); `games`/`rpgtitle` carry no real content (residue only). Next: `evet.pkb`. |
 | Emulator test | ✅ **item.STR validated in melonDS** (2026-07-20) via a debug-room ROM — all item descriptions render, longest lines reflow fine. See `docs/EMULATOR_TEST.md`. Reusable debug ROM + cheats in `Téléchargements\IE3-Ogre-FR-test\`. |
 
-## Translation progress & how to resume (start here tomorrow)
+## ▶ NEXT SESSION — exact steps (evet.pkb, resume at rec 92)
+
+**State as of 2026-07-21:** every `.STR` file is done. `evet.pkb` is **81/15,756
+JP chunks** translated (pilot + batch 2, both in the ROM and hardware-verified).
+The master artifact is `translations/evet.json` — it holds **all 39,610 entries**
+(already-French ones included, for context) and accumulates across sessions.
+
+**Resume at rec 92.** 1,752 slots still contain untranslated JP.
+
+### The loop, exactly
+
+```bash
+cd /home/mcpeace/ie3Ogres-rom-FR/tools && source venv/bin/activate
+
+# 1. See what's next (prints the next slots + their untranslated chunk counts)
+python3 - <<'EOF'
+import json
+d=json.load(open('../translations/evet.json'))
+jp={}
+for e in d['entries']:
+    if e['cls']=='jp' and not e.get('fr') and e['src'].strip():
+        jp[e['rec']]=jp.get(e['rec'],0)+1
+n=[r for r in sorted(jp)][:12]
+print('resume at rec',n[0]); print([(r,jp[r]) for r in n],'=',sum(jp[r] for r in n),'chunks')
+EOF
+```
+
+**2. Read the slot WITH its French neighbours before translating.** Slots are
+interleaved — JP chunks sit between already-French ones, and you must match the
+surrounding register (formal/informal, `tu`/`vous`). Print a slot with:
+
+```bash
+python3 - <<'EOF'
+import json
+REC=92                                    # <- the slot you're working on
+d=json.load(open('../translations/evet.json'))
+for e in sorted((x for x in d['entries'] if x['rec']==REC), key=lambda x:x['part']):
+    todo = e['cls']=='jp' and not e.get('fr')
+    print(f'{"JP>" if todo else "   "} p{e["part"]:<3} [{e["cls"]}] {e["src"]!r}')
+EOF
+```
+
+**3. Mine every recurring name from the ROM before using it** (non-negotiable —
+it has caught real errors every single batch):
+
+```bash
+python3 - <<'EOF'
+import json,re
+d=json.load(open('../translations/evet.json'))
+FR=[e['src'] for e in d['entries'] if e['cls'] in ('fr','ascii')]
+for c in ['Jude','Axel','Nathan']:                 # <- names in your slot
+    h=[s for s in FR if re.search(r'\b'+c,s)]
+    print(f'{c:<10} x{len(h):<3}', repr(h[0])[:70] if h else '— (no attestation -> romaji, log it)')
+EOF
+```
+
+Confirmed so far: 円堂→**Mark**, 鬼道→**Jude**, 豪炎寺→**Axel**, 風丸→**Nathan**,
+吹雪→**Shawn**, 佐久間→**Caleb**, 立向居→**Darren**, 木暮→**Scotty**, 塔子→**Celia**,
+木野→**Silvia**, 一之瀬→**Erik Eagles** *(plural — the ROM writes it that way)*,
+土門→**Bobby**, 壁山→**Jack**, 綱海→**Hurley**, ヒロト→**Xavier**, 緑川→**Jordan**,
+染岡→**Kevin**, 音無→**Nelly**, 冬花→**Camelia** *(not a transliteration)*,
+響木→**Coach Hillman**, イナズマジャパン→**[Inazuma Japon]** (keep the brackets).
+Romaji fallbacks (no ROM attestation): Toby, Toramaru, Fudou, Hijikata, Rika,
+Nice Dolphin, Manyuji, Hakuren, Kuon. Techniques get **translated**, not
+transliterated: ゴッドハンド→"Main céleste" (shipped), so ザ・ウォール→**"Le Mur"**.
+
+**4. Write the French into the master artifact** (keyed by `(rec, part)`):
+
+```bash
+python3 - <<'PYEOF'
+import json
+FR={ (92,0):"...", (92,4):"...", }          # <- your batch
+d=json.load(open('../translations/evet.json'))
+n=0
+for e in d['entries']:
+    if (e['rec'],e['part']) in FR and e['cls']=='jp':
+        e['fr']=FR[(e['rec'],e['part'])]; n+=1
+json.dump(d,open('../translations/evet.json','w'),ensure_ascii=False,indent=1)
+print(f'applied {n}/{len(FR)}')
+PYEOF
+```
+
+**5. Gate, reinsert, repack, deploy** — always in this order:
+
+```bash
+python3 evet_fit.py ../translations/evet.json          # MUST pass before step 2
+python3 evet_reinsert.py ../translations/evet.json --out /tmp/evet_new.pkb
+python3 repack_rom.py \
+  -r data_iz/logic/item.STR=/tmp/item_new.STR \
+  -r data_iz/logic/unitbase.STR=/tmp/unitbase_new.STR \
+  -r data_iz/logic/command.STR=/tmp/command_new.STR \
+  -r data_iz/script/evet.pkb=/tmp/evet_new.pkb \
+  -o /tmp/IE3-Ogre-FR-NORMAL.nds --verify
+cp /tmp/IE3-Ogre-FR-NORMAL.nds /mnt/c/Users/philg/Downloads/IE3-Ogre-FR-test/
+```
+(`/tmp/*_new.STR` won't survive a reboot — regenerate with
+`python3 str_reinsert.py ../translations/<file>.json --out /tmp/<file>_new.STR`.)
+
+**Two invariants that prove the batch is sound:** `evet_reinsert.py` must report
+**0 skipped**, and the new `.pkb` must be **exactly 2,926,480 bytes** — identical
+to the original. A different size means a slot span moved and every later offset
+is wrong; stop and investigate rather than shipping it.
+
+### Hard-won gotchas — do not rediscover these
+
+- **The budget rule is PER-PART, not per-slot.** Growth is absorbed by zero-runs
+  *at or after* the edited chunk, each keeping 1 terminator zero; it cannot
+  borrow padding from earlier parts. A "slot total ≤ budget" model looks right
+  and silently passes edits the tool rejects. **Never re-derive the rule** —
+  `evet_fit.py` calls the real `set_chunk_bytes()` so it matches by construction.
+  ~3% of chunks need shortening; expect 1–2 per batch, they're usually over by a
+  few bytes and a shorter synonym fixes it.
+- **Accents ARE correct in evet dialogue** — hardware-confirmed 2026-07-21
+  (`frère`, `écran`, `Entraînement`). Only `.STR` menus strip them. Write natural
+  accented French; the encoder folds uppercase accents (`Ç`→`C`, `É`→`E`) as
+  house style. Avoid `«»`/`œ` (they fold too).
+- **Blank chunks:** some `jp` chunks are a lone ideographic space `'　'`. Leave
+  `fr` empty — do not invent text for them.
+- **Duplicates:** identical JP must get byte-identical French.
+- **Gender:** JP is genderless. Use the JP marker; if there is none, default
+  masculine and set `"gender_check": true` on that entry. Never guess silently.
+- **`RPG_SCRIPT_NO` cannot jump to arbitrary scenes.** Tried and failed — bank 31
+  holds 13 system/boot scripts and `39010000` (debug room) isn't even an `eve`
+  record, so the value is not a record-ID lookup. Scene scripts assume a loaded
+  map/party and cold-boot to a black screen. **Verification means playing the
+  story**, which is a reason to translate in rec order (≈ story order).
+- **`grep` silently fails on `INAZUMA.INI`** (Shift-JIS + mixed CRLF/NEL → treated
+  as binary). Use `grep -a`, and verify INI edits with `cmp -l` (expect 1–2
+  differing bytes), never file size — a bad `sed` yields an identical-size file.
+
+### Still owed (unchanged)
+
+- **The unitbase gender sweep, 53 entries** — needs in-game portraits, list with
+  `python3 tools/flag_gender.py --list`. Use `IE3-Ogre-FR-DEBUG.nds`.
+- **The scope decision.** At ~49 chunks/batch this is ~320 more batches. Ask Phil
+  whether to keep going exhaustively or cut a **story-critical subset** (main-path
+  dialogue only) for a playable French story much sooner. This question has been
+  deferred twice; raise it before starting a long run.
+
+## Translation progress & how to resume
 
 - **Read the `ie3-translation` skill first** — it has the house style, the
   two-encoding rule, terminology, and the per-format workflow.
