@@ -4,7 +4,7 @@ Quick orientation for the next session. Full detail is in
 [`docs/FORMAT_NOTES.md`](docs/FORMAT_NOTES.md) (source of truth) and the four
 skills in `.claude/skills/`. Read [`README.md`](README.md) first.
 
-## Where we are (2026-07-20)
+## Where we are (2026-07-21)
 
 All tooling is **built & verified end-to-end** (extract → edit → reinsert →
 whole-ROM repack, byte-checked for both text formats), and **translation is
@@ -19,7 +19,7 @@ underway** — the project is now in the content-filling phase.
 | Whole-ROM repack (edited file → new `.nds`) | ✅ **built & verified** (`repack_rom.py`) — content-lossless; edits land in the ROM, only edited files differ. |
 | `.STR` dump/reinsert tools | ✅ **built & verified** (`str_slots/str_dump/str_reinsert/str_codec.py`) — byte-exact on all 7 `.STR` files. |
 | Translation house style + skill | ✅ `ie3-translation` skill + `docs/NAME_GLOSSARY.md` (official EU names). |
-| **Translating the text** | 🔶 **in progress** — `item.STR` ✅ **822/822 done** (`translations/item.json`, repack-verified). Next: `unitbase.STR` (2374 bios). |
+| **Translating the text** | 🔶 **in progress** — `item.STR` ✅ **822/822** and `unitbase.STR` ✅ **2374/2374** done (both repack-verified). Next: menu leftovers (65) then `evet.pkb`. |
 | Emulator test | ✅ **item.STR validated in melonDS** (2026-07-20) via a debug-room ROM — all item descriptions render, longest lines reflow fine. See `docs/EMULATOR_TEST.md`. Reusable debug ROM + cheats in `Téléchargements\IE3-Ogre-FR-test\`. |
 
 ## Translation progress & how to resume (start here tomorrow)
@@ -44,7 +44,12 @@ underway** — the project is now in the content-filling phase.
   Done so far: consumables, travel/route tickets, spirit emblems, story/key
   items, command/skill effect strings, and **all 352 技の秘伝書 technique
   manuals** (done by formula — see the skill).
-- **Remaining item.STR (374):** flavour gear — uniforms, spikes, gloves,
+- **Next up (suggested order):** the **menu leftovers** `command.STR` (8),
+  `games.STR` (43), `rpgtitle.STR` (14) — ~65 entries total, and finishing them
+  closes out **every `.STR` file in the ROM**. Then `evet.pkb` (~15,756 chunks,
+  the big one — and **budget-checked**, unlike `.STR`, so expect to tighten
+  wording; `evet_reinsert.py` refuses to write and lists overflowing slots).
+- ~~**Remaining item.STR (374):**~~ ✅ done. Was: flavour gear — uniforms, spikes, gloves,
   misangas/pendants, formations, GK-shoe names — all reference **team &
   character names**. **Team-name glossary: ✅ built (2026-07-20)** — see the new
   "Teams, clubs & national selections" section in `docs/NAME_GLOSSARY.md`, mined
@@ -57,6 +62,36 @@ underway** — the project is now in the content-filling phase.
   傘美野 Kasamino, 漫遊寺 Manyuji, 大海原 Omihara, 陽花戸/Occult, Galz, Genesis.
   **Next step:** finish the 374 gear entries in `translations/item.json` using
   that glossary. Same glossary now unblocks `unitbase.STR` (2374 bios) + `evet`.
+- **`unitbase.STR`: ✅ 2374/2374 done** (finished 2026-07-21), saved in
+  `translations/unitbase.json`. QA passed: encoder **2374 edits / 0 skipped**,
+  0 lines over 65 chars, 0 ASCII double-quotes, and a whole-ROM
+  `repack_rom.py --verify` OK (1985 files + arm9/arm7 + 133 overlays intact;
+  271840→391328 bytes — `.STR` has no budget so growth is fine).
+  - **Method that paid off — mine the ROM, don't trust memory.** Every recurring
+    name was grepped against the 11,264 shipped-FR `evet` chunks before use.
+    That produced real corrections: FR uses **Gazelle** (not "Gazel"),
+    **Rococo Urupa** is FR-attested, and 久遠 is a **coach** (久遠監督 ×38), not a
+    place. 17 new glossary rows, each with its evidence + confidence mark.
+  - **Duplicates were auto-filled, never retyped.** ~60 entries repeat an
+    earlier `src` verbatim (the 8 "mystery man" bios, ~30 Heaven/Hell bios,
+    and 2364–2379 which repeat the main cast). They were filled
+    programmatically from the already-translated text so the same character
+    never reads two different ways. Reusable snippet:
+    ```python
+    done = {e['src']: e['fr'] for e in d['entries'] if e.get('fr')}
+    dup  = {e['idx']: done[e['src']] for e in d['entries']
+            if not e.get('fr') and e['src'] in done}
+    ```
+- **⚠️ OWED: the gender sweep (53 entries).** Japanese bios are often
+  grammatically genderless; French forces an agreement. Where the JP marked it
+  (女子, 彼女, 娘, くのいち…) the choice is settled. Where it didn't, the entry
+  carries **`"gender_check": true`** in `translations/unitbase.json` — a durable,
+  machine-readable to-do list that travels with the artifact. These are
+  *candidates*, not known errors. To resolve: the bio index maps to a player
+  unit, so the in-game portrait settles it — use the debug ROM, then flip the
+  handful that are wrong (isolated one-line edits, no re-translation).
+  `python3 tools/flag_gender.py --list` prints them; the flags can be stripped
+  once resolved.
 - **Naming decision (locked):** official European (English-dub) names, kept
   constant — see `docs/NAME_GLOSSARY.md`. Romaji only for truly unknown NPCs.
 - **Uncommitted at end of 2026-07-19** (Phil commits himself): new

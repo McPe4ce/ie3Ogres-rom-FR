@@ -8,9 +8,10 @@ skipping the whole intro.
 ## Files
 On this machine both live in **`Téléchargements\IE3-Ogre-FR-test\`**
 (`C:\Users\philg\Downloads\IE3-Ogre-FR-test\`):
-- **`IE3-Ogre-FR-DEBUG.nds`** — your v06 French ROM **+ the full item.STR
-  translation + debug boot**. Use this for testing only. *(Gitignored like all
-  `*.nds`; regenerate anytime — see "How it was built" below.)*
+- **`IE3-Ogre-FR-DEBUG.nds`** — your v06 French ROM **+ the full item.STR and
+  unitbase.STR translations + debug boot** (rebuilt 2026-07-21). Use this for
+  testing only. *(Gitignored like all `*.nds`; regenerate anytime — see "How it
+  was built" below.)*
 - **`ie3_cheats_melonds.txt`** — Action Replay codes (all equipment / uniforms /
   items / money) for game code **BOEJ**. *(Master copy also kept at repo root.)*
 
@@ -70,14 +71,21 @@ If something overflows, note the item; the fix is just shortening that entry's
 ```bash
 cd tools && source venv/bin/activate
 # 1. debug INI: RPG_SCRIPT_NO 31010000 -> 39010000 (boot script -> debug room)
-# 2. rebuild translated STR
-python3 str_reinsert.py ../translations/item.json --out /tmp/item_new.STR
-# 3. repack both edits into one ROM
+sed 's/RPG_SCRIPT_NO=31010000/RPG_SCRIPT_NO=39010000/' \
+    ../extracted/data_iz/INAZUMA.INI > /tmp/INAZUMA_debug.INI   # same 5725 bytes
+# 2. rebuild the translated STR pools
+python3 str_reinsert.py ../translations/item.json     --out /tmp/item_new.STR
+python3 str_reinsert.py ../translations/unitbase.json --out /tmp/unitbase_new.STR
+# 3. repack all edits into one ROM
 python3 repack_rom.py \
   -r data_iz/logic/item.STR=/tmp/item_new.STR \
+  -r data_iz/logic/unitbase.STR=/tmp/unitbase_new.STR \
   -r data_iz/INAZUMA.INI=/tmp/INAZUMA_debug.INI \
   -o ../IE3-Ogre-FR-DEBUG.nds --verify
 ```
+Expected on the 2026-07-21 build: `item.STR` 79296→111776, `unitbase.STR`
+271840→391328, `INAZUMA.INI` unchanged size, then
+`verify OK: all 1985 files, arm9/arm7, and 133 overlays round-trip intact`.
 `RPG_SCRIPT_NO` lives in `extracted/data_iz/INAZUMA.INI` (line 42). Revert to
 `31010000` for a normal-booting build. Source: debug mode documented on GBAtemp
 (EU/JP share the `31010000` default); cheats from inazumalife.com (BOEJ).
@@ -98,3 +106,28 @@ python3 repack_rom.py \
 - **Conclusion:** `item.STR` (822/822) is validated on real hardware. The owed
   "first real batch" emulator spot-check is **done**. Future batches
   (`unitbase.STR`, `evet`) can reuse this debug ROM + cheat setup.
+
+## unitbase.STR added (2026-07-21) — two things to check in-game
+
+The debug ROM now also carries **`unitbase.STR` (2374/2374 player bios)**.
+Build QA passed (encoder 2374/0 skipped, 0 lines >65 chars, repack `--verify`
+OK), so **encoding and reflow are not at risk** — bios use the same 2-line box
+and the same 65-char envelope already proven by `item.STR`. Two open questions
+need *eyes*, not tooling:
+
+1. **⚠️ The gender sweep (53 entries) — the one real to-do.** Japanese bios are
+   often genderless; French forces an agreement, and where the JP gave no
+   signal the entry was defaulted and flagged `"gender_check": true` in
+   `translations/unitbase.json`. **How to check:** view a flagged player's bio
+   in-game (bio index ↔ player unit) and see whether the portrait is male or
+   female. Wrong ones are isolated one-line edits in the JSON — no
+   re-translation, just flip the agreement and rebuild. List them with
+   `python3 tools/flag_gender.py --list`.
+2. **Hyphenated line breaks (3 entries).** Bios 1521, 2161 and 2162 needed a
+   word split across the line break (`l'agri-\nculture`, `l'élec-\ntricité`,
+   `poissons-\nchats`) to fit 65 chars. Confirm these render acceptably; if
+   not, reword — each is a single self-contained entry.
+
+Where to look: the bios show on the **player/roster info screen**, so the
+"All Equipment" cheat isn't needed — use the debug room's star/cat icons to get
+players, then open a player's info.

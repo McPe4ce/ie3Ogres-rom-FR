@@ -95,6 +95,51 @@ messages together (see the parts of one slot), so you can't cleanly split
 - **`.STR` gotcha:** never use ASCII `"` double-quotes — `str_codec` maps them
   to full-width `＂` which SJIS can't encode (reinsert skips the record). Use no
   quotes, or single `'` (which round-trips to the game's `’`).
+- **Line length:** keep every line **≤ 65 chars** — that's the longest line
+  empirically proven to render in the 2-line box (confirmed in melonDS, see
+  `docs/EMULATOR_TEST.md`). Benign codec substitutions: `'`→`’` and `-`→`−`
+  (full-width minus). Both are attested in the shipped FR; don't "fix" them.
+
+## ⚠️ Gender agreement (JP is genderless, French isn't)
+
+Japanese bios/dialogue frequently give **no gender signal at all**, but French
+forces an agreement on every adjective and participle. Rules:
+
+1. **Use the JP marker when there is one** — 女子, 彼女, 娘, 少女, くのいち,
+   紅一点, 妹, ～ちゃん, and role nouns (巫女, 看板娘) all settle it.
+2. **When there is no marker, default masculine** (matches the unmarked JP and
+   the rest of the corpus) **and flag the entry** rather than guessing silently.
+3. **Flag durably, in the artifact** — add `"gender_check": true` to the entry
+   in the translation JSON. It survives session loss, travels with the file, and
+   is machine-readable. Resolve later against the in-game portrait; a wrong
+   guess is a one-line edit, never a re-translation.
+
+Currently 53 flagged in `translations/unitbase.json`. Expect the same issue in
+`evet.pkb` for any speaker whose gender isn't established by context.
+
+## Duplicates: reuse, never retype
+
+Long `.STR` files repeat the same `src` verbatim (in `unitbase` ~60 entries: the
+8 "mystery man" bios, ~30 Heaven/Hell bios, and 2364–2379 repeating the main
+cast). **Identical Japanese must get byte-identical French**, or the same
+character reads two different ways in-game. Fill them programmatically:
+
+```python
+done = {e['src']: e['fr'] for e in d['entries'] if e.get('fr')}
+dup  = {e['idx']: done[e['src']] for e in d['entries']
+        if not e.get('fr') and e['src'] in done}
+```
+
+## Names: mine the ROM, don't trust memory
+
+Before using any recurring name, grep the **shipped FR `evet` chunks** for it
+(`evet_dump.py evet -o evet_all.json`, then filter `cls == 'fr'`). This is not
+optional politeness — it catches real errors: the FR patch uses **Gazelle**
+(not the English "Gazel"), **Rococo Urupa** is attested verbatim, and 久遠 turns
+out to be a **coach** (久遠監督 ×38), not a place name. Record every decision in
+`docs/NAME_GLOSSARY.md` with its source and a confidence mark (✅ ROM-attested /
+⚠️ reasoned / 🔤 romaji fallback). Also watch for collisions: **IQ** is a
+character (アイキュー) but **QI** is the French stat — never unify them.
 
 ## Workflow (per format)
 
