@@ -1,0 +1,55 @@
+{
+ "file": "command",
+ "records": 1024,
+ "count": 8,
+ "entries": [
+  {
+   "idx": 156,
+   "cls": "jp",
+   "src": "風のごとし！",
+   "fr": "Comme le vent!"
+  },
+  {
+   "idx": 157,
+   "cls": "jp",
+   "src": "なんと[自分/じぶん]の[属性/ぞくせい]が\n[風/かぜ]に[変/か]わるぞ！",
+   "fr": "Incroyable! Ton attribut\nse change en Air!"
+  },
+  {
+   "idx": 158,
+   "cls": "jp",
+   "src": "林のごとし！",
+   "fr": "Comme la forêt!"
+  },
+  {
+   "idx": 159,
+   "cls": "jp",
+   "src": "なんと[自分/じぶん]の[属性/ぞくせい]が\n[林/はやし]に[変/か]わるぞ！",
+   "fr": "Incroyable! Ton attribut\nse change en Bois!"
+  },
+  {
+   "idx": 160,
+   "cls": "jp",
+   "src": "火のごとし！",
+   "fr": "Comme le feu!"
+  },
+  {
+   "idx": 161,
+   "cls": "jp",
+   "src": "なんと[自分/じぶん]の[属性/ぞくせい]が\n[火/ひ]に[変/か]わるぞ！",
+   "fr": "Incroyable! Ton attribut\nse change en Feu!"
+  },
+  {
+   "idx": 162,
+   "cls": "jp",
+   "src": "山のごとし！",
+   "fr": "Comme la montagne!"
+  },
+  {
+   "idx": 163,
+   "cls": "jp",
+   "src": "なんと[自分/じぶん]の[属性/ぞくせい]が\n[山/やま]に[変/か]わるぞ！",
+   "fr": "Incroyable! Ton attribut\nse change en Terre!"
+  }
+ ]
+}

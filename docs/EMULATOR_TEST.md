@@ -131,3 +131,20 @@ need *eyes*, not tooling:
 Where to look: the bios show on the **player/roster info screen**, so the
 "All Equipment" cheat isn't needed — use the debug room's star/cat icons to get
 players, then open a player's info.
+
+## command.STR added (2026-07-21) — 8 element-change messages
+
+The debug ROM now also carries **`command.STR` (8/8)** — the 風林火山 element-change
+battle messages (`Comme le vent!` / `Incroyable! Ton attribut\nse change en Air!`
+and the Bois/Feu/Terre equivalents). Line 1 keeps the Sun Tzu imagery, line 2 uses
+the glossary element names because it's mechanical text.
+
+**To see them:** trigger an element-change technique in a match — the **rabbit**
+icon in the debug room gives an instant match vs Wild Jr. Two lines, well inside
+the 65-char envelope, so this is a low-risk look rather than a real reflow test.
+
+With this, **every genuinely-untranslated `.STR` entry in the ROM is done.**
+`games.STR` and `rpgtitle.STR` were investigated and found to contain **no real
+untranslated content** — only patch residue, a 2010 developer leftover, and
+already-French strings the `--jp-only` filter misread. See the skill file for the
+full breakdown and the residue-detection method. Do not "finish" those two files.

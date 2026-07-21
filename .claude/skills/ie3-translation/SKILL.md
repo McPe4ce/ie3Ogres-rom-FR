@@ -50,12 +50,42 @@ Recognised by file, not by guessing. Untranslated counts as of 2026-07-19:
 | Item descriptions | `logic/item.STR` | 822 | almost none | **best first** — formulaic |
 | Player bios | `logic/unitbase.STR` | 2374 | **heavy** | needs the name glossary |
 | Story dialogue + choices + system msgs | `script/evet.pkb` | ~15,756 chunks | heavy | biggest; do in batches |
-| Menu leftovers | `logic/{command,games,rpgtitle}.STR` | 8 / 43 / 14 | light | quick cleanups |
-| (already done) | `logic/{tacticscmd,sp_binder}.STR` | 0 | — | skip |
+| (already done) | `logic/{command,tacticscmd,sp_binder}.STR` | 0 | — | skip |
+| (residue only) | `logic/{games,rpgtitle}.STR` | 0 real | — | **do not translate** — see below |
 
 Within `evet.pkb` a single slot bundles narration + choice options + battle
 messages together (see the parts of one slot), so you can't cleanly split
 "dialogue" vs "choice box" structurally — translate a slot as a coherent unit.
+
+## ⚠️ `--jp-only` overcounts: residue is not untranslated content
+
+`str_dump.py --jp-only` flags anything containing kana/CJK bytes. In files the v06
+patch already touched, that catches **orphaned tails** left behind by whatever
+tool applied the patch — fragments, not strings. Verified 2026-07-21:
+
+| File | `--jp-only` says | Actually real |
+|---|---|---|
+| `command.STR` | 8 | **8** ✅ done |
+| `rpgtitle.STR` | 14 | **0** — all fragments |
+| `games.STR` | 43 | **0** — 2 unique prompts, both already French next door |
+
+How to tell residue from real work: **look at the neighbouring slot.** Residue
+sits immediately after a complete French string that already says the same thing
+— `'マジロ'` (アルマジロ, armadillo) next to `Super Tatou`; `'サー'` (パサー) next
+to `Belle passe`; `'うばえ！'` next to `Interceptez le ballon!`. The same files
+also hold non-CJK residue the jp filter misses entirely (`'O'`, `'h'`, `'�'`,
+`'Xト'`), which confirms the mechanism.
+
+Two other `--jp-only` false positives to know:
+- **Already-French text** — `Utiliser le lien n°2` trips the filter because `°`
+  encodes as half-width katakana bytes.
+- **Developer leftovers** — `ください 2010/4/8 j_kuramoto` is a 2010 build note in
+  the original JP ROM. Never user-facing.
+
+**Rule: never translate residue.** These slots are almost certainly dead, but
+that isn't proven from game code — and writing to them would corrupt text that
+currently renders correctly. Before starting any "quick cleanup" file, dump it
+**without** `--jp-only` and read the neighbours first.
 
 ## Established terminology (mined from the shipped French — match it)
 

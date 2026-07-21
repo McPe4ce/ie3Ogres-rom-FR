@@ -19,7 +19,7 @@ underway** — the project is now in the content-filling phase.
 | Whole-ROM repack (edited file → new `.nds`) | ✅ **built & verified** (`repack_rom.py`) — content-lossless; edits land in the ROM, only edited files differ. |
 | `.STR` dump/reinsert tools | ✅ **built & verified** (`str_slots/str_dump/str_reinsert/str_codec.py`) — byte-exact on all 7 `.STR` files. |
 | Translation house style + skill | ✅ `ie3-translation` skill + `docs/NAME_GLOSSARY.md` (official EU names). |
-| **Translating the text** | 🔶 **in progress** — `item.STR` ✅ **822/822** and `unitbase.STR` ✅ **2374/2374** done (both repack-verified). Next: menu leftovers (65) then `evet.pkb`. |
+| **Translating the text** | 🔶 **in progress** — **all `.STR` files done**: `item.STR` ✅ 822/822, `unitbase.STR` ✅ 2374/2374, `command.STR` ✅ 8/8 (all repack-verified); `games`/`rpgtitle` carry no real content (residue only). Next: `evet.pkb`. |
 | Emulator test | ✅ **item.STR validated in melonDS** (2026-07-20) via a debug-room ROM — all item descriptions render, longest lines reflow fine. See `docs/EMULATOR_TEST.md`. Reusable debug ROM + cheats in `Téléchargements\IE3-Ogre-FR-test\`. |
 
 ## Translation progress & how to resume (start here tomorrow)
@@ -44,11 +44,20 @@ underway** — the project is now in the content-filling phase.
   Done so far: consumables, travel/route tickets, spirit emblems, story/key
   items, command/skill effect strings, and **all 352 技の秘伝書 technique
   manuals** (done by formula — see the skill).
-- **Next up (suggested order):** the **menu leftovers** `command.STR` (8),
-  `games.STR` (43), `rpgtitle.STR` (14) — ~65 entries total, and finishing them
-  closes out **every `.STR` file in the ROM**. Then `evet.pkb` (~15,756 chunks,
-  the big one — and **budget-checked**, unlike `.STR`, so expect to tighten
-  wording; `evet_reinsert.py` refuses to write and lists overflowing slots).
+- ~~**Menu leftovers (65):**~~ ✅ **resolved 2026-07-21 — and the count was wrong.**
+  `command.STR` **8/8 done** (the 風林火山 element-change messages; repack-verified,
+  1 expected `ê` fold). The other 57 turned out to be **not translatable at all**:
+  `rpgtitle.STR` (14) and `games.STR` (43) contain only **patch residue**
+  (orphaned tails like `'マジロ'` sitting next to the finished `Super Tatou`), a
+  **2010 developer leftover** (`ください 2010/4/8 j_kuramoto`), and **already-French**
+  strings that `--jp-only` misread because `°` encodes as katakana bytes.
+  **Do not translate them** — those slots are near-certainly dead, but that isn't
+  proven from game code, and writing to them would corrupt text that currently
+  renders fine. Method + full table in the skill file under "`--jp-only`
+  overcounts". **With this, every genuinely-untranslated `.STR` in the ROM is done.**
+- **Next up:** `evet.pkb` (~15,756 chunks, the big one — and **budget-checked**,
+  unlike `.STR`, so expect to tighten wording; `evet_reinsert.py` refuses to write
+  and lists overflowing slots). Worth its own planning pass rather than a cold start.
 - ~~**Remaining item.STR (374):**~~ ✅ done. Was: flavour gear — uniforms, spikes, gloves,
   misangas/pendants, formations, GK-shoe names — all reference **team &
   character names**. **Team-name glossary: ✅ built (2026-07-20)** — see the new
