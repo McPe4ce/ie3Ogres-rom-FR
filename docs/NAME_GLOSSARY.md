@@ -51,6 +51,8 @@ Legend for **Confidence**: ✅ confident · ⚠️ likely, verify against in-gam
 | 冬花 | **Camelia** | manager; item 677 gift — ⚠️ (EU "Camelia Travis"?) |
 | 瞳子 | **Toko** 🔤 | leads Neo Japan (items 981/1001) — 🔤 verify (EU "Camelia"? distinct from 冬花) |
 | ミスターＫ | **Mister K** | item 962 — antagonist coach, kept as-is |
+| 兜角雄 | **Kabuto** 🔤 | unitbase bio 231 (a childhood friend calls him his rival) — 🔤 verify |
+| 天野（兄弟） | **Amano** 🔤 | unitbase bio 293, twin brothers — 🔤 verify (the JP gag puns 天野 on 雨 "rain") |
 
 ## Teams, clubs & national selections
 
