@@ -59,6 +59,14 @@ Legend for **Confidence**: ✅ confident · ⚠️ likely, verify against in-gam
 | 雷門総一郎 | **Soichiro** 🔤 | JP evet: "サッカー協会の会長は雷門　総一郎さん" = chairman of the football association, i.e. [[Nelly]]'s father. Surname already fixed as *Raimon*. Needed to decode bio 1275 | 🔤 |
 | 阿太郎 / 吽助 | **Ataro** / **Unsuke** 🔤 | Kyoto duo, bios 1179/1181 name each other as combo partners (JP pun on 阿吽 a-un) — keep as a pair | 🔤 |
 | エイリア石 | **la pierre Alius** | built on エイリア学園 = *Académie Alius* (✅ FR-attested); powers bios 1237–1246 | ⚠️ |
+| 浜田一二夫 / 二三男 | **Hifuo** / **Fumio** (Hamada) 🔤 | brothers who fight constantly: bio 1551 is the elder (names 弟の二三男), bio 1610 the younger (names 兄の浜田一二夫). JP is a numeric-name gag — 一二 "1-2" / 二三 "2-3" — which does not survive into French; readings are best-guess | 🔤 |
+| 久遠（監督） | **Kuon** 🔤 | JP evet ×38, always 久遠監督 = *a coach*, not a place — bio 1726 "久遠じこみ" → "le football appris chez Kuon" | 🔤 |
+| 飛鷹 /「蹴りのトビー」 | **Toby** / "**Toby la Frappe**" 🔤 | JP evet: 飛鷹センパイ is addressed by the epithet 「蹴りのトビー」 (bio 1720). 蹴り = kick → "la Frappe" | 🔤 |
+| チームＫ | **l'équipe K** | JP evet ×5, a real opposing team (tied to [[Mister K]]); bio 1798 | ⚠️ |
+| レーゼ | **Reize** 🔤 | bio 1724, "元エイリア学園のレーゼ" — not attested anywhere in evet, romaji fallback | 🔤 |
+| ロココ・ウルパ | **Rococo Urupa** | FR-confirmed ("Rococo vous a appelé?"); JP ×28 — capitaine de [[Cotarl]] (リトルギガント). Bios 1895/1905 name him | ✅ |
+| ゴーシュ | **Gauche** 🔤 | bio 1904 (a Cotarl striker's rival); 1 JP evet mention only | 🔤 |
+| 死神 (あだ名) | **le Faucheur** | nickname, not a name: bio 1886 (équipe Garshield playmaker, "呼ばれ嫌われた過去") and 1975. Never attested in FR — keep both uses identical | ⚠️ |
 | 兜角雄 | **Kabuto** 🔤 | unitbase bio 231 (a childhood friend calls him his rival) — 🔤 verify |
 | 天野（兄弟） | **Amano** 🔤 | unitbase bio 293, twin brothers — 🔤 verify (the JP gag puns 天野 on 雨 "rain") |
 
