@@ -72,7 +72,8 @@ tonnerre** ✅, 豪炎寺の父=**Docteur Blaze**, フク=**Fuku** 🔤 (gouvern
 ```bash
 cd /home/mcpeace/ie3Ogres-rom-FR/tools && source venv/bin/activate
 
-# 1. See what's next (prints the next slots + their untranslated chunk counts)
+# 1. See what's next (prints the next STORY slots; skips the deferred bands —
+#    recruitment/NPC recs 101-151 gaps and the 165-286 one-liner band)
 python3 - <<'EOF'
 import json
 d=json.load(open('../translations/evet.json'))
@@ -80,7 +81,8 @@ jp={}
 for e in d['entries']:
     if e['cls']=='jp' and not e.get('fr') and e['src'].strip():
         jp[e['rec']]=jp.get(e['rec'],0)+1
-n=[r for r in sorted(jp)][:12]
+DEFERRED=set(range(101,152))|set(range(165,287))   # side content, do LAST
+n=[r for r in sorted(jp) if r not in DEFERRED][:12]
 print('resume at rec',n[0]); print([(r,jp[r]) for r in n],'=',sum(jp[r] for r in n),'chunks')
 EOF
 ```

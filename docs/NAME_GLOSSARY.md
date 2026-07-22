@@ -103,7 +103,6 @@ Legend for **Confidence**: ✅ confident · ⚠️ likely, verify against in-gam
 | 爆熱ストーム | **la Tempête de feu** 🔤 | Axel's shoot hissatsu (evet recs 152/154). Follows the [[ばくねつスクリュー]] "Vrille de feu" precedent (爆熱→"de feu") | ⚠️ |
 | 豪炎寺の父 / 豪炎寺先生 | **Docteur Blaze** | Axel's father, a doctor (evet rec 156). Surname Blaze FR-attested ("Axel Blaze" ×18); addressed as "Monsieur" by staff | ✅ |
 | フク | **Fuku** 🔤 | the Blaze family housekeeper (evet rec 156, 豪炎寺家のハウスキーパー). No FR attestation — romaji. Very formal register ("Monsieur/Madame", vouvoie tout le monde) | 🔤 |
-| 夕香 → see line above | **Julia** | corrected 2026-07-22 (was "Yuka") — FR-attested rec 413 | ✅ |
 | アストロブレイク | **la Frappe astrale** 🔤 | Jordan's old Alius-era shoot (evet rec 158). Coined to match FR-attested アストロゲート = **la Porte astrale** ("Jordan Greenway, a appris [Porte astrale]!") | ⚠️ |
 | 涼野風介 | **Bryce Withingale** ⚠️ | Gazelle's real name (evet rec 160 self-intro). No ROM attestation — official EU-game name per naming policy | ⚠️ |
 | 南雲晴矢 | **Claude Beacons** ⚠️ | Burn's real name (evet rec 160). No ROM attestation — official EU-game name per naming policy | ⚠️ |
