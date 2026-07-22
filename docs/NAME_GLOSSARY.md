@@ -95,7 +95,12 @@ Legend for **Confidence**: ✅ confident · ⚠️ likely, verify against in-gam
 | ジ・エンパイア | **[Les Empereurs]** | Argentina's team = アルゼンチン (evet rec 113). FR brackets it "[Les Empereurs]" (capitaine ティアゴ・トーレス Thiago Torres) | ✅ |
 | テレス | **Teres** 🔤 | an [Empereurs] player, the big eater (evet rec 113). No clear FR attestation — romaji; possibly distinct from Thiago Torres | 🔤 |
 | 財前（宗助）/ 総理 | **Zaizen** / PM **Sousuke Zaizen** | Touko's father, FFI chairman + PM who opens the tournament (evet rec 112). Surname romaji to match [[touko]]; no FR attestation | 🔤 |
-| **Team-name brackets** | shipped FR wraps *foreign* FFI team names in `[...]` | Attested: `[Knights of Queen]` ×30, `[Les Empereurs]` ×22. Match this for foreign teams in announcer/formal contexts. **Big Waves** and **Inazuma Japon** are shipped mostly *unbracketed* — keep them plain | ✅ |
+| **Team-name brackets** | shipped FR wraps *foreign* FFI team names in `[...]` | Attested: `[Knights of Queen]` ×30, `[Les Empereurs]` ×22. Match this for foreign teams in announcer/formal contexts. **Big Waves** and **Inazuma Japon** are shipped mostly *unbracketed* — keep them plain. デザートライオン (Qatar) → **les Lions du désert**, shipped *unbracketed* (1×) | ✅ |
+| デザートライオン | **les Lions du désert** | Qatar's team = カタール (evet rec 124). See [[teams]]; FR-attested "Les lions du désert" (unbracketed) | ✅ |
+| 虎ノ屋 | **le restaurant du Tigre** | Toramaru's family's shop/restaurant (虎=tigre; evet recs 124–127). **FR-attested ×24** "Le restaurant du tigre" | ✅ |
+| カラス | **Karasu** 🔤 | delinquent who ousted [[suzume]] as leader of Toby's old gang (evet rec 125). No FR attestation — romaji (カラス = crow) | 🔤 |
+| 備流田 | **Biruda** 🔤 | gruff regular who knows Mark, loves katsudon (evet rec 127). No FR attestation — best-guess romaji | 🔤 |
+| 雷雷軒 | **le Rairaiken** 🔤 | Coach Hillman's ramen shop (evet recs 109/128). No FR attestation — romaji. カツ丼 → **katsudon** (kept) | 🔤 |
 
 ## Teams, clubs & national selections
 
