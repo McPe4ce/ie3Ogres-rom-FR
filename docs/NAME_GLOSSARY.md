@@ -34,10 +34,12 @@ Legend for **Confidence**: ✅ confident · ⚠️ likely, verify against in-gam
 | カノン | **Canon** | time-traveller, Mark's descendant (arrière-petit-fils) |
 | ガルシルド | **Garshield** | Ogre-arc antagonist / org |
 | ライオコット島 | **Lioccot** (île de Lioccot) | matches spelling already in shipped FR ("A Lioccot…") |
-| ネオジャパン | **Neo Japan** | rival team |
+| ネオジャパン | **Neo Japan** | rival team (evet rec 145) |
+| 源田 | **Genda** 🔤 | Alius-linked character grouped with Saginuma (evet rec 145). Weak FR attestation ("Genda" ×1) — romaji |
+| 正義の鉄拳 | **le Poing de la justice** 🔤 | Mark's keeper hissatsu (evet rec 146). NOT in shipped FR — coined per house style; ⚠️ reconcile with any skills/hissatsu data file's official name |
 | オーガ | **Ogre** (stade Ogre) | the Ogre team/stadium |
 | 星の使徒 | **Apôtres de l'Étoile** | group name |
-| 砂木沼 | **Saginuma** 🔤 | romaji fallback — verify official EU name |
+| 砂木沼 /（デザーム）| **Saginuma** / codename **Desarm** 🔤 | Neo Japan captain, ex-Alius (evet rec 145). His Alius codename デザーム → **Desarm** (FR-attested). ファースト/セカンドランク → **premier / second rang** |
 | 大阪 / 奈良 / 沖縄 / 福岡 | Osaka / Nara / Okinawa / Fukuoka | real place names, keep |
 | ナニワランド | Naniwa Land | in-game amusement park |
 | ズーラン | **Zoolan** | FR-confirmed — villain / org ("manoir de Zoolan", "M. Zoolan") |
@@ -49,7 +51,7 @@ Legend for **Confidence**: ✅ confident · ⚠️ likely, verify against in-gam
 | 円堂大介 | **David Evans** | Mark's grandfather (円堂 = Evans); item 216 "gants souvenir de David Evans", leads Cotarl (item 960) — ⚠️ verify EU first name |
 | 夕香 | **Yuka** 🔤 | item 265 "pendentif du serment de Yuka" — 🔤 verify |
 | 冬花 | **Camelia** | manager; item 677 gift — ⚠️ (EU "Camelia Travis"?) |
-| 瞳子 | **Toko** 🔤 | leads Neo Japan (items 981/1001) — 🔤 verify (EU "Camelia"? distinct from 冬花) |
+| 瞳子 / 影山瞳子 | **Hitomiko** 🔤 | Neo Japan coach, [[xavier]]'s (吉良ヒロト) adoptive sister, Ray Dark's daughter (evet rec 145). Use **Hitomiko** (canonical), NOT "Toko" — that collides with 塔子=[[touko]]. Items 981/1001 |
 | ミスターＫ | **Mister K** | item 962 — antagonist coach, kept as-is |
 | バーン | **Burn** | FR-confirmed in shipped evet ("Avec Gazelle et Burn, on va aller rejoindre Dave...") | ✅ |
 | ガゼル | **Gazelle** | FR-confirmed, same line as Burn — note FR uses "Gazelle", not "Gazel" | ✅ |
@@ -101,6 +103,10 @@ Legend for **Confidence**: ✅ confident · ⚠️ likely, verify against in-gam
 | カラス | **Karasu** 🔤 | delinquent who ousted [[suzume]] as leader of Toby's old gang (evet rec 125). No FR attestation — romaji (カラス = crow) | 🔤 |
 | 備流田 | **Biruda** 🔤 | gruff regular who knows Mark, loves katsudon (evet rec 127). No FR attestation — best-guess romaji | 🔤 |
 | 雷雷軒 | **le Rairaiken** 🔤 | Coach Hillman's ramen shop (evet recs 109/128). No FR attestation — romaji. カツ丼 → **katsudon** (kept) | 🔤 |
+| ビヨン・カイル | **Bjorn Kyle** 🔤 | Qatar (Lions du désert) captain, evet rec 134. No FR attestation — best-guess romaji, verify. Arabic greetings kept: アッサラーム・アライクム → **Assalamu alaykoum**, マアッ・サラーマ → **Ma'a as-salama** | 🔤 |
+| ヒデ | **Hiden** | a scout/observer analyzing the Inazuma Japon, with an Italian-accented companion (evet rec 135). **FR-attested ×6 as "Hiden"** — match it, not "Hide" | ✅ |
+| ジェネシス | **Genesis** | Alius top squad; evet rec 132 pairs it with [[epsilon]] as ex-teams of Jordan's group. (Glossary elsewhere had "The Genesis" — in dialogue use plain **Genesis**) | ⚠️ |
+| 人脈システム | **système de relations** | the connections/recruit game system (evet rec 129). Matches shipped "machines... de relations" | ✅ |
 
 ## Teams, clubs & national selections
 

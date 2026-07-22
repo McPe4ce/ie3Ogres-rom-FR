@@ -19,13 +19,13 @@ underway** — the project is now in the content-filling phase.
 | Whole-ROM repack (edited file → new `.nds`) | ✅ **built & verified** (`repack_rom.py`) — content-lossless; edits land in the ROM, only edited files differ. |
 | `.STR` dump/reinsert tools | ✅ **built & verified** (`str_slots/str_dump/str_reinsert/str_codec.py`) — byte-exact on all 7 `.STR` files. |
 | Translation house style + skill | ✅ `ie3-translation` skill + `docs/NAME_GLOSSARY.md` (official EU names). |
-| **Translating the text** | 🔶 **in progress** — **all `.STR` files done**; `evet.pkb` **765/15,742** (story-critical-subset strategy, see below): `item.STR` ✅ 822/822, `unitbase.STR` ✅ 2374/2374, `command.STR` ✅ 8/8 (all repack-verified); `games`/`rpgtitle` carry no real content (residue only). Next: `evet.pkb`. |
+| **Translating the text** | 🔶 **in progress** — **all `.STR` files done**; `evet.pkb` **1064/15,742** (story-critical-subset strategy, see below): `item.STR` ✅ 822/822, `unitbase.STR` ✅ 2374/2374, `command.STR` ✅ 8/8 (all repack-verified); `games`/`rpgtitle` carry no real content (residue only). Next: `evet.pkb`. |
 | Emulator test | ✅ **item.STR validated in melonDS** (2026-07-20) via a debug-room ROM — all item descriptions render, longest lines reflow fine. See `docs/EMULATOR_TEST.md`. Reusable debug ROM + cheats in `Téléchargements\IE3-Ogre-FR-test\`. |
 
-## ▶ NEXT SESSION — exact steps (evet.pkb, resume at rec 129)
+## ▶ NEXT SESSION — exact steps (evet.pkb, resume at rec 148)
 
-**State as of 2026-07-22:** every `.STR` file is done. `evet.pkb` is **765/15,742
-JP chunks** translated (recs 92–100, 103–128 added 2026-07-22; reinsert-verified: 765 edits,
+**State as of 2026-07-22:** every `.STR` file is done. `evet.pkb` is **1064/15,742
+JP chunks** translated (recs 92–100, 103–136, 145–147 added 2026-07-22; reinsert-verified: 1064 edits,
 0 skipped, `.pkb` still exactly 2,926,480 bytes; round-trip decode clean). The
 master artifact is `translations/evet.json` — it holds **all 39,610 entries**
 (already-French ones included, for context) and accumulates across sessions.
@@ -39,13 +39,11 @@ Story spine ≈ **480 recs / ~10,500 chunks**. Signal work: a rec is side conten
 if its FR chunks carry recruitment scaffolding, or it's a 1–2-chunk NPC line.
 Verify per rec by reading it (needed anyway).
 
-**Resume at rec 129.** The Qatar-arc setup is done through rec 128: Desert Lion
-opponent announced + running training, Toramaru's secret (his ill mother, the
-**restaurant du Tigre**), and Toby's past (the gang leader **Karasu** who ousted
-Suzume; Hillman secretly training Toby, their parallel delinquent pasts). Recs
-114–123 (tiny post-match beats) + 101–102 (match-system tutorial) stay DEFERRED.
-Next: rec 129 (49) → 130 (20) → 131 (18), continuing toward the Qatar match.
-(塔子/音無 "Celia" collision resolved: 音無=Celia, 塔子=Touko.)
+**Resume at rec 148.** Done through rec 147 (recs 136, 145–147 this pass). Recs
+137–144 are tiny side beats (DEFERRED with 101–102, 114–123, 133). Next block:
+148 (41) → 149 (34) → 150 (23)... **⚠️ name note:** 瞳子=**Hitomiko** (NOT "Toko"
+— collides with 塔子=Touko); 砂木沼=**Saginuma**, codename デザーム=**Desarm**.
+(塔子/音無 resolved: 音無=Celia, 塔子=Touko.)
 
 ### The loop, exactly
 
