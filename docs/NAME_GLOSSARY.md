@@ -36,6 +36,9 @@ Legend for **Confidence**: ✅ confident · ⚠️ likely, verify against in-gam
 | ライオコット島 | **Lioccot** (île de Lioccot) | matches spelling already in shipped FR ("A Lioccot…") |
 | ネオジャパン | **Neo Japan** | rival team (evet rec 145) |
 | 源田 | **Genda** 🔤 | Alius-linked character grouped with Saginuma (evet rec 145). Weak FR attestation ("Genda" ×1) — romaji |
+| 火来（校長）| **proviseur Karai** 🔤 | runs one Extra-match board (evet recs 102/149). No FR attestation — romaji |
+| 秘伝書 | **livre secret** | technique manual, in evet dialogue. Matches shipped evet "Livre secret de Kinuma" (rec 149). NB item.STR used "Manuel de technique" for the item names — in *evet* prose use **livre secret** |
+| エクストラ対戦ルート | **circuit de matchs Extra** 🔤 | the optional match-mode boards (evet recs 102/149). No FR attestation — coined |
 | 正義の鉄拳 | **le Poing de la justice** 🔤 | Mark's keeper hissatsu (evet rec 146). NOT in shipped FR — coined per house style; ⚠️ reconcile with any skills/hissatsu data file's official name |
 | オーガ | **Ogre** (stade Ogre) | the Ogre team/stadium |
 | 星の使徒 | **Apôtres de l'Étoile** | group name |
@@ -47,6 +50,8 @@ Legend for **Confidence**: ✅ confident · ⚠️ likely, verify against in-gam
 | ヘリオ? | **Hélio** | FR-confirmed — rival goalkeeper (Ogre/Canon arc) |
 | ティアゴ・トーレス | **Thiago Torres** | FR-confirmed — capitaine d'Argentine (Empereurs) |
 | パオロ・ビアンキ | **Paolo Bianchi** | FR-confirmed — vice-capitaine d'Orphée (Italie) |
+| フィディオ | **Fidio** | Orphée (Italy) captain (evet rec 150). FR-attested "Fidio". オルフェウス → **[Orphée]** (bracketed, ×16) |
+| 鉄塔 | **la tour** | Mark's steel-tower training spot (evet rec 151). FR-attested ×65 "La tour" |
 | マック・ロビンゴ | **Mac Robingo** | FR-confirmed — capitaine du Brésil (The Kingdom) |
 | 円堂大介 | **David Evans** | Mark's grandfather (円堂 = Evans); item 216 "gants souvenir de David Evans", leads Cotarl (item 960) — ⚠️ verify EU first name |
 | 夕香 | **Yuka** 🔤 | item 265 "pendentif du serment de Yuka" — 🔤 verify |
