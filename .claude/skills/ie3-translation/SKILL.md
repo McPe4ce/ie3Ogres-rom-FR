@@ -176,6 +176,14 @@ out to be a **coach** (久遠監督 ×38), not a place name. Record every decisi
 ⚠️ reasoned / 🔤 romaji fallback). Also watch for collisions: **IQ** is a
 character (アイキュー) but **QI** is the French stat — never unify them.
 
+**⚠️ Grep the EU-name candidates too, not just the romaji.** Six characters sat
+wrongly on romaji fallbacks for sessions because scans only searched the romaji:
+the shipped FR actually attested **Austin (Hobbs)**=虎丸, **Thor (Stoutberg)**=飛鷹,
+**Caleb (Stonewall)**=不動, **Archer (Hawkins)**=土方, **coach Travis**=久遠,
+**Willy (Glass)**=メガネ, **Camillou**=フユッペ, **Julia**=夕香 (all corrected
+2026-07-22). Before logging any 🔤 fallback, list the character's plausible
+EU-dub names from canon and grep the FR corpus for each of them.
+
 ## Workflow (per format)
 
 **`.STR`:**

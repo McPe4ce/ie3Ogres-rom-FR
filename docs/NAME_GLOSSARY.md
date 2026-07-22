@@ -54,7 +54,7 @@ Legend for **Confidence**: ✅ confident · ⚠️ likely, verify against in-gam
 | 鉄塔 | **la tour** | Mark's steel-tower training spot (evet rec 151). FR-attested ×65 "La tour" |
 | マック・ロビンゴ | **Mac Robingo** | FR-confirmed — capitaine du Brésil (The Kingdom) |
 | 円堂大介 | **David Evans** | Mark's grandfather (円堂 = Evans); item 216 "gants souvenir de David Evans", leads Cotarl (item 960) — ⚠️ verify EU first name |
-| 夕香 | **Yuka** 🔤 | item 265 "pendentif du serment de Yuka" — 🔤 verify |
+| 夕香 | **Julia** | Axel's little sister — **FR-attested** (evet rec 413 "Julia n'a rien à faire dans un tel endroit!"). Was wrongly "Yuka" 🔤; item 265 corrected 2026-07-22 | ✅ |
 | 冬花 | **Camelia** | manager; item 677 gift — ⚠️ (EU "Camelia Travis"?) |
 | 瞳子 / 影山瞳子 | **Hitomiko** 🔤 | Neo Japan coach, [[xavier]]'s (吉良ヒロト) adoptive sister, Ray Dark's daughter (evet rec 145). Use **Hitomiko** (canonical), NOT "Toko" — that collides with 塔子=[[touko]]. Items 981/1001 |
 | ミスターＫ | **Mister K** | item 962 — antagonist coach, kept as-is |
@@ -67,8 +67,8 @@ Legend for **Confidence**: ✅ confident · ⚠️ likely, verify against in-gam
 | 阿太郎 / 吽助 | **Ataro** / **Unsuke** 🔤 | Kyoto duo, bios 1179/1181 name each other as combo partners (JP pun on 阿吽 a-un) — keep as a pair | 🔤 |
 | エイリア石 | **la pierre Alius** | built on エイリア学園 = *Académie Alius* (✅ FR-attested); powers bios 1237–1246 | ⚠️ |
 | 浜田一二夫 / 二三男 | **Hifuo** / **Fumio** (Hamada) 🔤 | brothers who fight constantly: bio 1551 is the elder (names 弟の二三男), bio 1610 the younger (names 兄の浜田一二夫). JP is a numeric-name gag — 一二 "1-2" / 二三 "2-3" — which does not survive into French; readings are best-guess | 🔤 |
-| 久遠（監督） | **Kuon** 🔤 | JP evet ×38, always 久遠監督 = *a coach*, not a place — bio 1726 "久遠じこみ" → "le football appris chez Kuon" | 🔤 |
-| 飛鷹 /「蹴りのトビー」 | **Toby** / "**Toby la Frappe**" 🔤 | JP evet: 飛鷹センパイ is addressed by the epithet 「蹴りのトビー」 (bio 1720). 蹴り = kick → "la Frappe" | 🔤 |
+| 久遠（監督） | **coach Travis** | ✅ **CORRECTED 2026-07-22** (was "Kuon" 🔤) — FR-attested ×16: "M.Travis", "Coach Travis", "Percy Travis est mon père" (said by Camelia, rec 56 — he IS her father). All 30 "Kuon" uses in evet.json + bio 1726 fixed | ✅ |
+| 飛鷹（征士郎） /「蹴りのトビー」 | **Thor** (Thor Stoutberg) / "**Thor la Frappe**" | ✅ **CORRECTED 2026-07-22** (was "Toby" 🔤) — 飛鷹 = *Tobitaka*, FR-attested ×4: "C'est Thor Stoutberg d'Okinawa" (rec 27), "Thor a appris [Bête du tonnerre]!" (rec 162). The JP epithet 蹴りのトビー puns on To*bi*taka; FR keeps **Thor la Frappe**. All 50 evet + 2 unitbase "Toby" uses fixed | ✅ |
 | チームＫ | **l'équipe K** | JP evet ×5, a real opposing team (tied to [[Mister K]]); bio 1798 | ⚠️ |
 | レーゼ | **Reize** 🔤 | bio 1724, "元エイリア学園のレーゼ" — not attested anywhere in evet, romaji fallback | 🔤 |
 | ロココ・ウルパ | **Rococo Urupa** | FR-confirmed ("Rococo vous a appelé?"); JP ×28 — capitaine de [[Cotarl]] (リトルギガント). Bios 1895/1905 name him | ✅ |
@@ -76,17 +76,17 @@ Legend for **Confidence**: ✅ confident · ⚠️ likely, verify against in-gam
 | 死神 (あだ名) | **le Faucheur** | nickname, not a name: bio 1886 (équipe Garshield playmaker, "呼ばれ嫌われた過去") and 1975. Never attested in FR — keep both uses identical | ⚠️ |
 | 兜角雄 | **Kabuto** 🔤 | unitbase bio 231 (a childhood friend calls him his rival) — 🔤 verify |
 | 天野（兄弟） | **Amano** 🔤 | unitbase bio 293, twin brothers — 🔤 verify (the JP gag puns 天野 on 雨 "rain") |
-| 不動 | **Fudou** 🔤 | arrogant rival midfielder; evet rec 93–94. No FR attestation — romaji fallback (matches HANDOFF) | 🔤 |
-| 虎丸 | **Toramaru** 🔤 | evet rec 92/94. No FR attestation — romaji fallback | 🔤 |
-| 土方 | **Hijikata** 🔤 | evet rec 92 (Nathan passes to him). No FR attestation — romaji fallback | 🔤 |
-| メガネ（さん） | **Megane** 🔤 | the bespectacled comic reserve, verbal tic でやんす (41 evet chunks). No FR attestation for Megane/Malcolm/Kakeru — romaji fallback, verify later | 🔤 |
+| 不動 | **Caleb** (Caleb Stonewall) | ✅ **CORRECTED 2026-07-22** (was "Fudou" 🔤) — FR-attested ×36 ("Je n'ai absolument pas confiance en Caleb. Il me rappelle trop M.Dark", "Caleb! Arrête de jouer perso"). NB the HANDOFF's "佐久間→Caleb" was a misattribution: 佐久間 = **David Samford** (FR rec 36). All 10 "Fudou" uses fixed | ✅ |
+| 虎丸 | **Austin** (Austin Hobbs) | ✅ **CORRECTED 2026-07-22** (was "Toramaru" 🔤) — FR-attested ×28: "Je m'appelle Austin Hobbs. Austin pour les intimes !" (rec 22), "Austin Hobbs et Archer Hawkins!" (rec 56). Spelling **Hobbs** (ROM's), not Hobbes. All 42 "Toramaru" uses fixed | ✅ |
+| 土方 | **Archer** (Archer Hawkins) | ✅ **CORRECTED 2026-07-22** (was "Hijikata" 🔤) — FR-attested ×18 ("Enchanté, Archer !", "Austin Hobbs et Archer Hawkins!"). All 5 "Hijikata" uses fixed | ✅ |
+| メガネ（さん） | **Willy** (Willy Glass) | ✅ **CORRECTED 2026-07-22** (was "Megane" 🔤) — FR-attested: "Je suis Isaac Glass, le frère jumeau de Willy!" (rec 31) + Willy ×5. Verbal tic でやんす (41 evet chunks) = him | ✅ |
 | ザ・ウォール | **Le Mur** | Jack Wallside's signature technique (evet rec 92). Techniques are translated, not transliterated (cf. ゴッドハンド→Main céleste). No FR attestation | ⚠️ |
 | 桜咲木中 | **collège Sakuragi** 🔤 | fictional school Kuon coached 10 yrs prior (evet rec 96, 7× total). Reading not furigana-confirmed — best-guess romaji, keep constant | 🔤 |
 | ミスター・エンドウ | **Monsieur Evans** | how foreigners address Mark (evet rec 97). Surname *Evans* is FR-attested ×57 ("Mark Evans") | ✅ |
 | ニース / ニース・ドルフィン | **Nice** / **Nice Dolphin** 🔤 | Big Waves (Australia) captain, evet rec 97. No FR attestation for the given name — romaji | 🔤 |
 | ヒビキ提督 | **l'amiral Hillman** | the Ogre time-soldiers' name for 響木 (evet rec 99). **FR-attested verbatim**: "Si l'amiral Hillman apprend où nous nous trouvons" — cf. [[coach-hillman]] | ✅ |
 | インベーダー | **les envahisseurs** | = エイリア学園/Académie Alius as seen by outsiders (evet rec 97). Reasoned, no direct FR attestation | ⚠️ |
-| フユッペ | **Cami** 🔤 | childhood-friend nickname Mark uses; 冬花=**Camelia** is (maybe) the same person — the amnesia plot needs the nickname to stay *distinct* from Camelia, so a diminutive. Evet rec 98 | 🔤 |
+| フユッペ | **Camillou** | ✅ **CORRECTED 2026-07-22** (was "Cami" 🔤) — FR-attested ×24 ("Coach Travis serait le père de Camillou?"). Nickname stays distinct from **Camelia** exactly as in the shipped FR. All 8 "Cami" uses fixed | ✅ |
 | 円堂守 / マモル | **Mark (Evans)** | full name 円堂守 used by the Ogres (evet rec 99) = Mark; given-name マモル also = Mark | ✅ |
 | 音無（春奈） | **Celia** | ✅ **RESOLVED 2026-07-22** — shipped FR "Silvia et Celia! Je compte sur vous 2 pour soutenir nos amis" pairs Celia + Silvia as *managers* = Haruna + Aki. Matches rarity (音無 ×2 in JP, Celia ×2 in FR). Canonical (Haruna Otonashi = Celia Hills) | ✅ |
 | 塔子 / 財前塔子 | **Touko** 🔤 | a *different* character from Celia — a rival tomboy with her own all-girls team (evet rec 100, arrives with [[Rika]]). NOT a manager. No FR attestation — romaji. This was the collision with 音無; resolved above | 🔤 |
@@ -97,7 +97,19 @@ Legend for **Confidence**: ✅ confident · ⚠️ likely, verify against in-gam
 | イナズマキャラバン | **la caravane Inazuma** | the team's mobile base (evet rec 109). "la caravane" is FR-attested | ✅ |
 | ばくねつスクリュー | **la Vrille de feu** 🔤 | Axel's new hissatsu, learned evet rec 109 (爆熱スクリュー). NOT in shipped FR — translated per house style. ⚠️ if the skills/hissatsu data file has an official FR name, reconcile to it | ⚠️ |
 | イナズマシンボル / ねっけつ特訓 | **Symbole Inazuma** / **entraînement intensif** | the field-training system (evet rec 107); uses "points de motivation" (FR-attested). "entrainement intensif" is FR-attested | ⚠️ |
+| 佐久間 | **David Samford** | FR-attested ("Mark, tu le connais, c'est David Samford!" rec 36). The HANDOFF wrongly listed 佐久間→Caleb; Caleb = 不動. Rec 63 cheer fixed to "Jude, David" | ✅ |
 | 影山 | **Ray Dark** 🔤 | the series villain, mastermind behind Sakuragi's downfall (evet rec 113). No FR attestation yet — English-dub canon name per the naming policy | 🔤 |
+| タイガードライブ | **la Frappe du tigre** 🔤 | Toramaru's shoot hissatsu (evet recs 152/154). NOT in shipped FR — translated per house style (虎=tigre FR-attested via "restaurant du Tigre") | ⚠️ |
+| 爆熱ストーム | **la Tempête de feu** 🔤 | Axel's shoot hissatsu (evet recs 152/154). Follows the [[ばくねつスクリュー]] "Vrille de feu" precedent (爆熱→"de feu") | ⚠️ |
+| 豪炎寺の父 / 豪炎寺先生 | **Docteur Blaze** | Axel's father, a doctor (evet rec 156). Surname Blaze FR-attested ("Axel Blaze" ×18); addressed as "Monsieur" by staff | ✅ |
+| フク | **Fuku** 🔤 | the Blaze family housekeeper (evet rec 156, 豪炎寺家のハウスキーパー). No FR attestation — romaji. Very formal register ("Monsieur/Madame", vouvoie tout le monde) | 🔤 |
+| 夕香 → see line above | **Julia** | corrected 2026-07-22 (was "Yuka") — FR-attested rec 413 | ✅ |
+| アストロブレイク | **la Frappe astrale** 🔤 | Jordan's old Alius-era shoot (evet rec 158). Coined to match FR-attested アストロゲート = **la Porte astrale** ("Jordan Greenway, a appris [Porte astrale]!") | ⚠️ |
+| 涼野風介 | **Bryce Withingale** ⚠️ | Gazelle's real name (evet rec 160 self-intro). No ROM attestation — official EU-game name per naming policy | ⚠️ |
+| 南雲晴矢 | **Claude Beacons** ⚠️ | Burn's real name (evet rec 160). No ROM attestation — official EU-game name per naming policy | ⚠️ |
+| チェ・チャンスウ | **Choi Chang Soo** 🔤 | Korea's (Dragons de feu) genius playmaker, 「龍をあやつる者」→ **le maître du dragon**, 「完全なる戦術」→ **la tactique parfaite** (evet rec 160). No ROM attestation — romanization | 🔤 |
+| バウゼン | **Bauzen** 🔤 | one of l'amiral Hillman's future revolutionaries (evet rec 161). No FR attestation — romaji | 🔤 |
+| サンダービースト | **la Bête du tonnerre** | Thor's shoot — FR-attested ("Thor a appris [Bête du tonnerre]!" rec 162) | ✅ |
 | エドガー・バルチナス | **Edgar Partinus** | Knights of Queen (England) captain. **FR-attested ×27 as "Edgar Partinus"** — NOT "Valtinas"/"Baltinas". Mine, don't transliterate | ✅ |
 | ジ・エンパイア | **[Les Empereurs]** | Argentina's team = アルゼンチン (evet rec 113). FR brackets it "[Les Empereurs]" (capitaine ティアゴ・トーレス Thiago Torres) | ✅ |
 | テレス | **Teres** 🔤 | an [Empereurs] player, the big eater (evet rec 113). No clear FR attestation — romaji; possibly distinct from Thiago Torres | 🔤 |
