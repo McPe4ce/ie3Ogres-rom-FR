@@ -84,6 +84,12 @@ Legend for **Confidence**: ✅ confident · ⚠️ likely, verify against in-gam
 | 音無（春奈） | **Celia** | ✅ **RESOLVED 2026-07-22** — shipped FR "Silvia et Celia! Je compte sur vous 2 pour soutenir nos amis" pairs Celia + Silvia as *managers* = Haruna + Aki. Matches rarity (音無 ×2 in JP, Celia ×2 in FR). Canonical (Haruna Otonashi = Celia Hills) | ✅ |
 | 塔子 / 財前塔子 | **Touko** 🔤 | a *different* character from Celia — a rival tomboy with her own all-girls team (evet rec 100, arrives with [[Rika]]). NOT a manager. No FR attestation — romaji. This was the collision with 音無; resolved above | 🔤 |
 | リカ / 浦部リカ | **Rika** 🔤 | Kansai-ben girl chasing her "chéri" = 一之瀬/**Erik Eagles** (evet rec 100, ×44 in JP). FR-attested once ("Celia et Rika"). ダーリン → **chéri** | 🔤 |
+| スズメ | **Suzume** 🔤 | Toby's (飛鷹) former delinquent-gang follower, still calls him 飛鷹さん (evet rec 106, ×12 in JP). No FR attestation — romaji. 玉遊び (his dismissive word for football) → **jeu de balle** | 🔤 |
+| ファイアードラゴン | **les Dragons de feu** | Korea's team (evet rec 103); = 韓国 in the [[teams]] section, FR-attested "les dragons de feu" | ✅ |
+| 古株（さん）/ 古株三兄弟 | **Furukabu** 🔤 | the veteran who drives the Inazuma Caravan + runs the Extra Match desk with his 3 brothers (長男/次男/三男 = l'aîné/le cadet/le benjamin). Evet recs 102/107/109. No FR attestation — romaji | 🔤 |
+| イナズマキャラバン | **la caravane Inazuma** | the team's mobile base (evet rec 109). "la caravane" is FR-attested | ✅ |
+| ばくねつスクリュー | **la Vrille de feu** 🔤 | Axel's new hissatsu, learned evet rec 109 (爆熱スクリュー). NOT in shipped FR — translated per house style. ⚠️ if the skills/hissatsu data file has an official FR name, reconcile to it | ⚠️ |
+| イナズマシンボル / ねっけつ特訓 | **Symbole Inazuma** / **entraînement intensif** | the field-training system (evet rec 107); uses "points de motivation" (FR-attested). "entrainement intensif" is FR-attested | ⚠️ |
 
 ## Teams, clubs & national selections
 
