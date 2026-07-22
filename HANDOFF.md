@@ -19,17 +19,29 @@ underway** — the project is now in the content-filling phase.
 | Whole-ROM repack (edited file → new `.nds`) | ✅ **built & verified** (`repack_rom.py`) — content-lossless; edits land in the ROM, only edited files differ. |
 | `.STR` dump/reinsert tools | ✅ **built & verified** (`str_slots/str_dump/str_reinsert/str_codec.py`) — byte-exact on all 7 `.STR` files. |
 | Translation house style + skill | ✅ `ie3-translation` skill + `docs/NAME_GLOSSARY.md` (official EU names). |
-| **Translating the text** | 🔶 **in progress** — **all `.STR` files done**; `evet.pkb` **81/15,756**: `item.STR` ✅ 822/822, `unitbase.STR` ✅ 2374/2374, `command.STR` ✅ 8/8 (all repack-verified); `games`/`rpgtitle` carry no real content (residue only). Next: `evet.pkb`. |
+| **Translating the text** | 🔶 **in progress** — **all `.STR` files done**; `evet.pkb` **297/15,742** (story-critical-subset strategy, see below): `item.STR` ✅ 822/822, `unitbase.STR` ✅ 2374/2374, `command.STR` ✅ 8/8 (all repack-verified); `games`/`rpgtitle` carry no real content (residue only). Next: `evet.pkb`. |
 | Emulator test | ✅ **item.STR validated in melonDS** (2026-07-20) via a debug-room ROM — all item descriptions render, longest lines reflow fine. See `docs/EMULATOR_TEST.md`. Reusable debug ROM + cheats in `Téléchargements\IE3-Ogre-FR-test\`. |
 
-## ▶ NEXT SESSION — exact steps (evet.pkb, resume at rec 92)
+## ▶ NEXT SESSION — exact steps (evet.pkb, resume at rec 102)
 
-**State as of 2026-07-21:** every `.STR` file is done. `evet.pkb` is **81/15,756
-JP chunks** translated (pilot + batch 2, both in the ROM and hardware-verified).
-The master artifact is `translations/evet.json` — it holds **all 39,610 entries**
+**State as of 2026-07-22:** every `.STR` file is done. `evet.pkb` is **297/15,742
+JP chunks** translated (recs 92–100 added 2026-07-22; reinsert-verified: 297 edits,
+0 skipped, `.pkb` still exactly 2,926,480 bytes; round-trip decode clean). The
+master artifact is `translations/evet.json` — it holds **all 39,610 entries**
 (already-French ones included, for context) and accumulates across sessions.
 
-**Resume at rec 92.** 1,752 slots still contain untranslated JP.
+**SCOPE DECISION MADE (2026-07-22): story-critical subset first.** Walk rec order
+(≈ story order), translate substantive story-cutscene recs, and **skip/defer**:
+recruitment scenes (386 recs / 3,248 chunks, tell: `%s rejoint l'équipe!` /
+`Bonne recherche!` scaffolding), the NPC/tutorial/shop flavor band recs
+1500–2100 (365 recs / 678 chunks), and short one-liner recs (<8 todo chunks).
+Story spine ≈ **480 recs / ~10,500 chunks**. Signal work: a rec is side content
+if its FR chunks carry recruitment scaffolding, or it's a 1–2-chunk NPC line.
+Verify per rec by reading it (needed anyway).
+
+**Resume at rec 102.** (Rec 100 done — the 塔子/音無 "Celia" collision is
+RESOLVED: 音無=Celia, 塔子=Touko; see glossary. Rec 101 is a 3-chunk one-liner,
+low priority per the subset rule.) Next story recs: 102 (23), 103, 104, 105 (21).
 
 ### The loop, exactly
 
@@ -79,10 +91,11 @@ EOF
 ```
 
 Confirmed so far: 円堂→**Mark**, 鬼道→**Jude**, 豪炎寺→**Axel**, 風丸→**Nathan**,
-吹雪→**Shawn**, 佐久間→**Caleb**, 立向居→**Darren**, 木暮→**Scotty**, 塔子→**Celia**,
+吹雪→**Shawn**, 佐久間→**Caleb**, 立向居→**Darren**, 木暮→**Scotty**, 塔子→**Touko** *(NOT Celia — see glossary; 音無=Celia)*,
 木野→**Silvia**, 一之瀬→**Erik Eagles** *(plural — the ROM writes it that way)*,
 土門→**Bobby**, 壁山→**Jack**, 綱海→**Hurley**, ヒロト→**Xavier**, 緑川→**Jordan**,
-染岡→**Kevin**, 音無→**Nelly**, 冬花→**Camelia** *(not a transliteration)*,
+染岡→**Kevin**, 音無（春奈）→**Celia**, 雷門夏未→**Nelly**, 木野→**Silvia**,
+冬花→**Camelia** *(not a transliteration)*,
 響木→**Coach Hillman**, イナズマジャパン→**[Inazuma Japon]** (keep the brackets).
 Romaji fallbacks (no ROM attestation): Toby, Toramaru, Fudou, Hijikata, Rika,
 Nice Dolphin, Manyuji, Hakuren, Kuon. Techniques get **translated**, not

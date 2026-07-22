@@ -69,6 +69,21 @@ Legend for **Confidence**: ✅ confident · ⚠️ likely, verify against in-gam
 | 死神 (あだ名) | **le Faucheur** | nickname, not a name: bio 1886 (équipe Garshield playmaker, "呼ばれ嫌われた過去") and 1975. Never attested in FR — keep both uses identical | ⚠️ |
 | 兜角雄 | **Kabuto** 🔤 | unitbase bio 231 (a childhood friend calls him his rival) — 🔤 verify |
 | 天野（兄弟） | **Amano** 🔤 | unitbase bio 293, twin brothers — 🔤 verify (the JP gag puns 天野 on 雨 "rain") |
+| 不動 | **Fudou** 🔤 | arrogant rival midfielder; evet rec 93–94. No FR attestation — romaji fallback (matches HANDOFF) | 🔤 |
+| 虎丸 | **Toramaru** 🔤 | evet rec 92/94. No FR attestation — romaji fallback | 🔤 |
+| 土方 | **Hijikata** 🔤 | evet rec 92 (Nathan passes to him). No FR attestation — romaji fallback | 🔤 |
+| メガネ（さん） | **Megane** 🔤 | the bespectacled comic reserve, verbal tic でやんす (41 evet chunks). No FR attestation for Megane/Malcolm/Kakeru — romaji fallback, verify later | 🔤 |
+| ザ・ウォール | **Le Mur** | Jack Wallside's signature technique (evet rec 92). Techniques are translated, not transliterated (cf. ゴッドハンド→Main céleste). No FR attestation | ⚠️ |
+| 桜咲木中 | **collège Sakuragi** 🔤 | fictional school Kuon coached 10 yrs prior (evet rec 96, 7× total). Reading not furigana-confirmed — best-guess romaji, keep constant | 🔤 |
+| ミスター・エンドウ | **Monsieur Evans** | how foreigners address Mark (evet rec 97). Surname *Evans* is FR-attested ×57 ("Mark Evans") | ✅ |
+| ニース / ニース・ドルフィン | **Nice** / **Nice Dolphin** 🔤 | Big Waves (Australia) captain, evet rec 97. No FR attestation for the given name — romaji | 🔤 |
+| ヒビキ提督 | **l'amiral Hillman** | the Ogre time-soldiers' name for 響木 (evet rec 99). **FR-attested verbatim**: "Si l'amiral Hillman apprend où nous nous trouvons" — cf. [[coach-hillman]] | ✅ |
+| インベーダー | **les envahisseurs** | = エイリア学園/Académie Alius as seen by outsiders (evet rec 97). Reasoned, no direct FR attestation | ⚠️ |
+| フユッペ | **Cami** 🔤 | childhood-friend nickname Mark uses; 冬花=**Camelia** is (maybe) the same person — the amnesia plot needs the nickname to stay *distinct* from Camelia, so a diminutive. Evet rec 98 | 🔤 |
+| 円堂守 / マモル | **Mark (Evans)** | full name 円堂守 used by the Ogres (evet rec 99) = Mark; given-name マモル also = Mark | ✅ |
+| 音無（春奈） | **Celia** | ✅ **RESOLVED 2026-07-22** — shipped FR "Silvia et Celia! Je compte sur vous 2 pour soutenir nos amis" pairs Celia + Silvia as *managers* = Haruna + Aki. Matches rarity (音無 ×2 in JP, Celia ×2 in FR). Canonical (Haruna Otonashi = Celia Hills) | ✅ |
+| 塔子 / 財前塔子 | **Touko** 🔤 | a *different* character from Celia — a rival tomboy with her own all-girls team (evet rec 100, arrives with [[Rika]]). NOT a manager. No FR attestation — romaji. This was the collision with 音無; resolved above | 🔤 |
+| リカ / 浦部リカ | **Rika** 🔤 | Kansai-ben girl chasing her "chéri" = 一之瀬/**Erik Eagles** (evet rec 100, ×44 in JP). FR-attested once ("Celia et Rika"). ダーリン → **chéri** | 🔤 |
 
 ## Teams, clubs & national selections
 
