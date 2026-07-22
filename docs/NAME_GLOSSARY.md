@@ -111,7 +111,7 @@ Legend for **Confidence**: ✅ confident · ⚠️ likely, verify against in-gam
 | サンダービースト | **la Bête du tonnerre** | Thor's shoot — FR-attested ("Thor a appris [Bête du tonnerre]!" rec 162) | ✅ |
 | エドガー・バルチナス | **Edgar Partinus** | Knights of Queen (England) captain. **FR-attested ×27 as "Edgar Partinus"** — NOT "Valtinas"/"Baltinas". Mine, don't transliterate | ✅ |
 | ジ・エンパイア | **[Les Empereurs]** | Argentina's team = アルゼンチン (evet rec 113). FR brackets it "[Les Empereurs]" (capitaine ティアゴ・トーレス Thiago Torres) | ✅ |
-| テレス | **Teres** 🔤 | an [Empereurs] player, the big eater (evet rec 113). No clear FR attestation — romaji; possibly distinct from Thiago Torres | 🔤 |
+| テレス | **Torres** | ✅ **CORRECTED 2026-07-22** (was "Teres" 🔤) — evet rec 352 shows テレス leading Argentina ("nous, l'Argentine, on a battu Inazuma Japon"), i.e. the captain the FR corpus names **Thiago Torres** ×7 ("leur capitaine Thiago Torres"). The (113,308) "Teres" use was fixed to Torres | ✅ |
 | 財前（宗助）/ 総理 | **Zaizen** / PM **Sousuke Zaizen** | Touko's father, FFI chairman + PM who opens the tournament (evet rec 112). Surname romaji to match [[touko]]; no FR attestation | 🔤 |
 | **Team-name brackets** | shipped FR wraps *foreign* FFI team names in `[...]` | Attested: `[Knights of Queen]` ×30, `[Les Empereurs]` ×22. Match this for foreign teams in announcer/formal contexts. **Big Waves** and **Inazuma Japon** are shipped mostly *unbracketed* — keep them plain. デザートライオン (Qatar) → **les Lions du désert**, shipped *unbracketed* (1×) | ✅ |
 | デザートライオン | **les Lions du désert** | Qatar's team = カタール (evet rec 124). See [[teams]]; FR-attested "Les lions du désert" (unbracketed) | ✅ |
@@ -123,6 +123,24 @@ Legend for **Confidence**: ✅ confident · ⚠️ likely, verify against in-gam
 | ヒデ | **Hiden** | a scout/observer analyzing the Inazuma Japon, with an Italian-accented companion (evet rec 135). **FR-attested ×6 as "Hiden"** — match it, not "Hide" | ✅ |
 | ジェネシス | **Genesis** | Alius top squad; evet rec 132 pairs it with [[epsilon]] as ex-teams of Jordan's group. (Glossary elsewhere had "The Genesis" — in dialogue use plain **Genesis**) | ⚠️ |
 | 人脈システム | **système de relations** | the connections/recruit game system (evet rec 129). Matches shipped "machines... de relations" | ✅ |
+| 鬼瓦 | **détective Smith** | the detective investigating Dark (evet recs 337–338+). **FR-attested ×13** ("Oh, Détective Smith!", "C'est quoi cette histoire, Smith?"). Address form: "détective Smith", bare "Smith" in casual speech | ✅ |
+| 無敵の槍 | **la Lance invincible** | Knights of Queen's formation/tactic (evet rec 336). NOT in shipped FR — translated per technique house style | ⚠️ |
+| バダップ・スリード | **Baddap Sleed** 🔤 | leader of the Ogres strike unit (evet recs 341–342). No FR attestation — official romanization | 🔤 |
+| ウミヘビスタジアム | **le stade de l'Hydre** | England-vs-Italy venue (evet rec 334). **FR-attested ×45** ("stade de l'Hydre, sur l'île de l'Hydre") | ✅ |
+| クジャクスタジアム | **le stade du Paon** | Ogre-arc venue (evet rec 339). **FR-attested ×51** ("partons pour le stade du Paon!") | ✅ |
+| タイタニックスタジアム | **le stade Titanesque** | press-conference venue (evet rec 343). **FR-attested ×20** ("Direction le stade Titanesque!") | ✅ |
+| 「大介の最後のノート」 | **'Dernier manuel de David'** | notebook title (evet rec 334). **FR-attested verbatim** ("Dessus, il est inscrit 'Dernier manuel de David'!"). In prose, ノート alone = **carnet** (FR-attested "vieux carnet") | ✅ |
+| 「大介のスゴ技特訓ノート」 | **'Manuel des super techniques de David'** | Canon's proof notebook (evet rec 340) — distinct JP title, distinct FR title, keeps the "manuel de David" core | ⚠️ |
+| ミスターＫ (dialogue) | **Mister K** | evet recs 335/337 align with the item-962 row above — do NOT use "M.K" | ✅ |
+| イタリア街 | **l'aire de l'Italie** | FR-attested in rec 334's own p79 ("L'aire de l'Italie est à présent disponible!"); pattern "l'aire du Japon" ×9 | ✅ |
+| ガルシルド・ベイハン | **Garshield Bayhan** 🔤 | full name of [[Garshield]] (evet recs 344/351) — FFI president, Brésil coach, "roi du pétrole", dirige la société 'Oil Company'. Surname FR-attested, given name romaji | ⚠️ |
+| 影山東吾 | **Tougo Dark** 🔤 | Ray Dark's father (evet rec 347). Corpus knows him only as "Le père de Dark" — given name romaji, surname aligned to **Dark** | 🔤 |
+| コンドルスタジアム | **le stade du Condor** | evet rec 347. Coined from FR-attested "tour Condor"/"ile du Condor" (×65) + the stade-du-X pattern | ⚠️ |
+| ルシェ | **Rushe** 🔤 | little girl tied to the 'R' mystery (evet recs 349/351/353/476–478, ×26). Calls Mister K **tonton K** (Ｋのおじさん), Fidio **grand frère Fidio**. No FR attestation — official romanization | 🔤 |
+| ヒデナカタ | **Hiden** | the announcer's full-name intro (evet rec 351) — corpus never says "Nakata", only **Hiden** ×6; keep just Hiden everywhere | ✅ |
+| 影山総帥 | **Commandant (Dark)** | Jude's old address for Dark (evet rec 351). **Commandant** FR-attested ×5 ("Commandant! Comment pouvez-vous être en vie?") | ✅ |
+| 栗松（鉄平） | **Tim Saunders** ⚠️ | Raimon teammate left in Japan, writes the letter in evet rec 351 (signs 栗松 鉄平). No ROM attestation — official EU-dub name per naming policy. NB his JP letter uses the でやんす tic — so でやんす is NOT unique to Willy (cf. the [[Willy]] row); attribute by context | ⚠️ |
+| ヘンクタッカー | **Henktacker** 🔤 | Garshield's aide/scientist running "le programme" (evet rec 351). No attestation — romaji, keep constant | 🔤 |
 
 ## Teams, clubs & national selections
 
@@ -201,8 +219,10 @@ Legend: ✅ confident · ⚠️ likely, verify in-game · 🔤 romaji fallback.
 | オーストラリア | **Big Waves** (Australie) | FR ("affronter les Big Waves") | ✅ |
 | 韓国 | **Dragons de feu** (Corée / Fire Dragon) | FR ("les dragons de feu") | ✅ |
 | カタール | **Lions du désert** (Qatar / Desert Lion) | FR ("Les lions du désert") | ✅ |
-| イギリス | **Knights of Queen** (Angleterre) | FR ("Knights"/"Queen") | ⚠️ confirm it's the England FFI team |
-| ドイツ / スペイン / フランス / 南アフリカ | *(country label, translate literally: Allemagne / Espagne / France / Afrique du Sud)* | — item "◯◯用" = region-locked, **not** a team uniform | ✅ |
+| イギリス | **Knights of Queen** (Angleterre) | FR ("sélection anglaise! Les [Knights of Queen]!") — ✅ confirmed England FFI team 2026-07-22 (rec 334 announcer pairs it against Italy/Orphée) | ✅ |
+| フランス | **Rose Griffon** (France) 🔤 | JP ローズグリフォン (evet recs 339–340, poule B). No FR team-name attestation (corpus only has "La France contre les Ogres!") — official romanization kept | 🔤 |
+| コトアール | **Little Gigant** (Cotarl) 🔤 | JP リトルギガント (evet rec 343). Country **Cotarl** is FR-attested ×80 ("du Cotarl", "l'aire du Cotarl"); the team name itself never appears in shipped FR — official romanization kept. Capitaine: [[Rococo Urupa]] ✅ | 🔤 |
+| ドイツ / スペイン / 南アフリカ | *(country label, translate literally: Allemagne / Espagne / Afrique du Sud)* | — item "◯◯用" = region-locked, **not** a team uniform | ✅ |
 
 **Gear-item nuance:** terse items like `アルゼンチン用`, `カタール前半用` mean
 "For Argentina / For Qatar (first half)" — a **country/region label**, translate
