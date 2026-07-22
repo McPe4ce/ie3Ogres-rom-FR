@@ -90,6 +90,12 @@ Legend for **Confidence**: ✅ confident · ⚠️ likely, verify against in-gam
 | イナズマキャラバン | **la caravane Inazuma** | the team's mobile base (evet rec 109). "la caravane" is FR-attested | ✅ |
 | ばくねつスクリュー | **la Vrille de feu** 🔤 | Axel's new hissatsu, learned evet rec 109 (爆熱スクリュー). NOT in shipped FR — translated per house style. ⚠️ if the skills/hissatsu data file has an official FR name, reconcile to it | ⚠️ |
 | イナズマシンボル / ねっけつ特訓 | **Symbole Inazuma** / **entraînement intensif** | the field-training system (evet rec 107); uses "points de motivation" (FR-attested). "entrainement intensif" is FR-attested | ⚠️ |
+| 影山 | **Ray Dark** 🔤 | the series villain, mastermind behind Sakuragi's downfall (evet rec 113). No FR attestation yet — English-dub canon name per the naming policy | 🔤 |
+| エドガー・バルチナス | **Edgar Partinus** | Knights of Queen (England) captain. **FR-attested ×27 as "Edgar Partinus"** — NOT "Valtinas"/"Baltinas". Mine, don't transliterate | ✅ |
+| ジ・エンパイア | **[Les Empereurs]** | Argentina's team = アルゼンチン (evet rec 113). FR brackets it "[Les Empereurs]" (capitaine ティアゴ・トーレス Thiago Torres) | ✅ |
+| テレス | **Teres** 🔤 | an [Empereurs] player, the big eater (evet rec 113). No clear FR attestation — romaji; possibly distinct from Thiago Torres | 🔤 |
+| 財前（宗助）/ 総理 | **Zaizen** / PM **Sousuke Zaizen** | Touko's father, FFI chairman + PM who opens the tournament (evet rec 112). Surname romaji to match [[touko]]; no FR attestation | 🔤 |
+| **Team-name brackets** | shipped FR wraps *foreign* FFI team names in `[...]` | Attested: `[Knights of Queen]` ×30, `[Les Empereurs]` ×22. Match this for foreign teams in announcer/formal contexts. **Big Waves** and **Inazuma Japon** are shipped mostly *unbracketed* — keep them plain | ✅ |
 
 ## Teams, clubs & national selections
 

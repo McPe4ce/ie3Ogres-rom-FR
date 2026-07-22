@@ -19,13 +19,13 @@ underway** — the project is now in the content-filling phase.
 | Whole-ROM repack (edited file → new `.nds`) | ✅ **built & verified** (`repack_rom.py`) — content-lossless; edits land in the ROM, only edited files differ. |
 | `.STR` dump/reinsert tools | ✅ **built & verified** (`str_slots/str_dump/str_reinsert/str_codec.py`) — byte-exact on all 7 `.STR` files. |
 | Translation house style + skill | ✅ `ie3-translation` skill + `docs/NAME_GLOSSARY.md` (official EU names). |
-| **Translating the text** | 🔶 **in progress** — **all `.STR` files done**; `evet.pkb` **464/15,742** (story-critical-subset strategy, see below): `item.STR` ✅ 822/822, `unitbase.STR` ✅ 2374/2374, `command.STR` ✅ 8/8 (all repack-verified); `games`/`rpgtitle` carry no real content (residue only). Next: `evet.pkb`. |
+| **Translating the text** | 🔶 **in progress** — **all `.STR` files done**; `evet.pkb` **588/15,742** (story-critical-subset strategy, see below): `item.STR` ✅ 822/822, `unitbase.STR` ✅ 2374/2374, `command.STR` ✅ 8/8 (all repack-verified); `games`/`rpgtitle` carry no real content (residue only). Next: `evet.pkb`. |
 | Emulator test | ✅ **item.STR validated in melonDS** (2026-07-20) via a debug-room ROM — all item descriptions render, longest lines reflow fine. See `docs/EMULATOR_TEST.md`. Reusable debug ROM + cheats in `Téléchargements\IE3-Ogre-FR-test\`. |
 
-## ▶ NEXT SESSION — exact steps (evet.pkb, resume at rec 110)
+## ▶ NEXT SESSION — exact steps (evet.pkb, resume at rec 114)
 
-**State as of 2026-07-22:** every `.STR` file is done. `evet.pkb` is **464/15,742
-JP chunks** translated (recs 92–100, 103–109 added 2026-07-22; reinsert-verified: 464 edits,
+**State as of 2026-07-22:** every `.STR` file is done. `evet.pkb` is **588/15,742
+JP chunks** translated (recs 92–100, 103–113 added 2026-07-22; reinsert-verified: 588 edits,
 0 skipped, `.pkb` still exactly 2,926,480 bytes; round-trip decode clean). The
 master artifact is `translations/evet.json` — it holds **all 39,610 entries**
 (already-French ones included, for context) and accumulates across sessions.
@@ -39,11 +39,12 @@ Story spine ≈ **480 recs / ~10,500 chunks**. Signal work: a rec is side conten
 if its FR chunks carry recruitment scaffolding, or it's a 1–2-chunk NPC line.
 Verify per rec by reading it (needed anyway).
 
-**Resume at rec 110.** Recs 101–102 were DEFERRED (optional-match /
-"Extra Match Route" system tutorial — side content, not plot). Rec 110 (4) is a
-short departure/system beat; next substantive story recs: 112 (35), 113 (79),
-then the Australia (Big Waves) match. (塔子/音無 "Celia" collision resolved:
-音無=Celia, 塔子=Touko.)
+**Resume at rec 114.** The Big Waves (Australia) match + backstory reveal +
+Axel's family subplot + qualifier montage (England/Argentina) are done through
+rec 113. Recs 101–102 stay DEFERRED (optional-match system tutorial). Recs 114–123 are
+all tiny 1–4-chunk post-match beats (low-priority one-liners). The **next big
+story block is rec 124** (44) → 125 (66) → 126–131 — the round-2 (Qatar) arc. (塔子/音無 "Celia" collision
+resolved: 音無=Celia, 塔子=Touko.)
 
 ### The loop, exactly
 
