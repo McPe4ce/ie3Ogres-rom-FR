@@ -19,18 +19,18 @@ underway** — the project is now in the content-filling phase.
 | Whole-ROM repack (edited file → new `.nds`) | ✅ **built & verified** (`repack_rom.py`) — content-lossless; edits land in the ROM, only edited files differ. |
 | `.STR` dump/reinsert tools | ✅ **built & verified** (`str_slots/str_dump/str_reinsert/str_codec.py`) — byte-exact on all 7 `.STR` files. |
 | Translation house style + skill | ✅ `ie3-translation` skill + `docs/NAME_GLOSSARY.md` (official EU names). |
-| **Translating the text** | 🔶 **in progress** — **all `.STR` files done**; `evet.pkb` **2091/15,742** (story-critical-subset strategy, see below): `item.STR` ✅ 822/822, `unitbase.STR` ✅ 2374/2374, `command.STR` ✅ 8/8 (all repack-verified); `games`/`rpgtitle` carry no real content (residue only). Only `evet.pkb` remains. |
+| **Translating the text** | 🔶 **in progress** — **all `.STR` files done**; `evet.pkb` **2524/15,742** (story-critical-subset strategy, see below): `item.STR` ✅ 822/822, `unitbase.STR` ✅ 2374/2374, `command.STR` ✅ 8/8 (all repack-verified); `games`/`rpgtitle` carry no real content (residue only). Only `evet.pkb` remains. |
 | Emulator test | ✅ **item.STR validated in melonDS** (2026-07-20) via a debug-room ROM — all item descriptions render, longest lines reflow fine. See `docs/EMULATOR_TEST.md`. Reusable debug ROM + cheats in `Téléchargements\IE3-Ogre-FR-test\`. |
 
-## ▶ NEXT SESSION — exact steps (evet.pkb, resume at rec 354)
+## ▶ NEXT SESSION — exact steps (evet.pkb, resume at rec 385)
 
 **State as of 2026-07-22 (3rd session):** every `.STR` file is done. `evet.pkb`
-is **2091/15,742 JP chunks** translated (this session: rec 287 + the whole
-**334–353 arc** — 476 chunks; reinsert-verified: 2091 edits, 0 skipped, `.pkb`
-still exactly 2,926,480 bytes). Recs 288–333 are the 1–3-chunk one-liner band →
-deferred per the scope decision (960 small recs / 2,438 chunks deferred overall).
-Next story blocks (≥8 todo chunks, in rec order):
-**rec 354 (42) → 366 (46) → 367 (46) → 369 (35) → 371 (13) → 372 (17)**. The
+is **2524/15,742 JP chunks** translated (this session: rec 287 + the whole
+**334–383 story spine** — 909 chunks; reinsert-verified: 2524 edits, 0 skipped,
+`.pkb` still exactly 2,926,480 bytes). Recs 288–333 are the 1–3-chunk one-liner
+band → deferred per the scope decision (~960 small recs / ~2,400 chunks deferred
+overall). Next story blocks (≥8 todo chunks, in rec order):
+**rec 385 (72) → 386 (25) → then re-run the queue script**. The
 master artifact is `translations/evet.json` — it holds **all 39,610 entries**
 (already-French ones included, for context) and accumulates across sessions.
 
@@ -56,15 +56,20 @@ Story spine ≈ **480 recs / ~10,500 chunks**. Signal work: a rec is side conten
 if its FR chunks carry recruitment scaffolding, or it's a 1–2-chunk NPC line.
 Verify per rec by reading it (needed anyway).
 
-**Resume at rec 354.** Done through rec 353 (story spine). Deferred: 101–102,
+**Resume at rec 385.** Done through rec 383 (story spine; 378/384 had <8 todo
+chunks and remain deferred). Deferred: 101–102,
 114–123, 133, 137–144, the 165–286 NPC band, and the 288–333 one-liner band.
 New names this session (all in the glossary with evidence): 鬼瓦=**détective
 Smith** ✅, ミスターＫ=**Mister K** (aligned with item 962 — never "M.K"),
 テレス=**Torres** ✅ (corrected from "Teres" — he's Thiago Torres, Argentina's
 captain), ルシェ=**Rushe** 🔤, バダップ・スリード=**Baddap Sleed** 🔤,
 栗松=**Tim Saunders** ⚠️ (EU canon; NB his letter uses でやんす — the tic is NOT
-unique to Willy), ヘンクタッカー=**Henktacker** 🔤, 影山東吾=**Tougo Dark** 🔤,
-ガルシルド・ベイハン=**Garshield Bayhan**, stadiums **Hydre/Paon/Titanesque** ✅
+unique to Willy), ヘンクタッカー=**Hentacker** ✅ (FR-attested rec 409),
+影山東吾=**Tougo Dark** 🔤, ガルシルド=**Zoolan** ✅ ⚠️**BIG CORRECTION**: the
+shipped FR renames Garshield to Zoolan (×41, "Garshield" 0× in corpus; the old
+ズーラン glossary row was this same character) — 40 uses across
+evet/unitbase/item artifacts all fixed, full name ガルシルド・ベイハン=**Zoolan
+Bayhan** 🔤, stadiums **Hydre/Paon/Titanesque** ✅
 + **Condor** ⚠️, teams **Rose Griffon**/**Little Gigant** 🔤, notebook titles
 **'Dernier manuel de David'** ✅ / **'Manuel des super techniques de David'** ⚠️,
 tactic 無敵の槍=**la Lance invincible** ⚠️, 影山総帥=**Commandant Dark** ✅,

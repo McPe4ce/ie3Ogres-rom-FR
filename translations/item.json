@@ -313,13 +313,13 @@
    "idx": 87,
    "cls": "jp",
    "src": "これがあれば　ガルシルドの[野望/やぼう]を\n[止/と]める[事/こと]ができるはずだ！",
-   "fr": "Avec ceci, on devrait pouvoir arrêter\nles ambitions de Garshield !"
+   "fr": "Avec ceci, on devrait pouvoir arrêter\nles ambitions de Zoolan !"
   },
   {
    "idx": 88,
    "cls": "jp",
    "src": "かつてガルシルドがおかした[悪事/あくじ]と\n[今後/こんご]の[計画/けいかく]が[記/しる]された[書類/しょるい]。",
-   "fr": "Un document relatant les méfaits passés\net les plans futurs de Garshield."
+   "fr": "Un document relatant les méfaits passés\net les plans futurs de Zoolan."
   },
   {
    "idx": 89,
@@ -2617,7 +2617,7 @@
    "idx": 510,
    "cls": "jp",
    "src": "チームガルシルド[用/よう]",
-   "fr": "Pour l'equipe Garshield."
+   "fr": "Pour l'equipe Zoolan."
   },
   {
    "idx": 511,
@@ -4807,7 +4807,7 @@
    "idx": 983,
    "cls": "jp",
    "src": "キック＋１４\nガルシルドの[野望/やぼう]を[表現/ひょうげん]するスパイク。",
-   "fr": "Tir +14\nDes crampons qui expriment l'ambition de Garshield."
+   "fr": "Tir +14\nDes crampons qui expriment l'ambition de Zoolan."
   },
   {
    "idx": 984,
@@ -4909,7 +4909,7 @@
    "idx": 1003,
    "cls": "jp",
    "src": "ガード＋１７\nガルシルドの[野望/やぼう]を[表現/ひょうげん]するグローブ。",
-   "fr": "Defense +17\nDes gants qui expriment l'ambition de Garshield."
+   "fr": "Defense +17\nDes gants qui expriment l'ambition de Zoolan."
   },
   {
    "idx": 1004,

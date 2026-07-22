@@ -32,7 +32,7 @@ Legend for **Confidence**: ✅ confident · ⚠️ likely, verify against in-gam
 | Japanese | French (use this) | Notes |
 |---|---|---|
 | カノン | **Canon** | time-traveller, Mark's descendant (arrière-petit-fils) |
-| ガルシルド | **Garshield** | Ogre-arc antagonist / org |
+| ガルシルド | **Zoolan** | ✅ **CORRECTED 2026-07-22 (3rd session)** — the shipped FR renames ガルシルド to **Zoolan** (×41: "manoir de Zoolan", "M. Zoolan", "un coup de Zoolan", "L'équipe Zoolan!"); "Garshield" appears 0× in the FR corpus. The old ズーラン row was this same character — ズーラン never occurs in the JP text. All 40 "Garshield" uses in evet/unitbase/item artifacts fixed |
 | ライオコット島 | **Lioccot** (île de Lioccot) | matches spelling already in shipped FR ("A Lioccot…") |
 | ネオジャパン | **Neo Japan** | rival team (evet rec 145) |
 | 源田 | **Genda** 🔤 | Alius-linked character grouped with Saginuma (evet rec 145). Weak FR attestation ("Genda" ×1) — romaji |
@@ -45,7 +45,7 @@ Legend for **Confidence**: ✅ confident · ⚠️ likely, verify against in-gam
 | 砂木沼 /（デザーム）| **Saginuma** / codename **Desarm** 🔤 | Neo Japan captain, ex-Alius (evet rec 145). His Alius codename デザーム → **Desarm** (FR-attested). ファースト/セカンドランク → **premier / second rang** |
 | 大阪 / 奈良 / 沖縄 / 福岡 | Osaka / Nara / Okinawa / Fukuoka | real place names, keep |
 | ナニワランド | Naniwa Land | in-game amusement park |
-| ズーラン | **Zoolan** | FR-confirmed — villain / org ("manoir de Zoolan", "M. Zoolan") |
+| ~~ズーラン~~ | **Zoolan** | (merged) "Zoolan" is the FR name of **ガルシルド** — see that row; ズーラン does not exist in the JP script |
 | キラート? | **Dr Kirado** | FR-confirmed ("Dr Kirado") — record JP when found |
 | ヘリオ? | **Hélio** | FR-confirmed — rival goalkeeper (Ogre/Canon arc) |
 | ティアゴ・トーレス | **Thiago Torres** | FR-confirmed — capitaine d'Argentine (Empereurs) |
@@ -73,7 +73,7 @@ Legend for **Confidence**: ✅ confident · ⚠️ likely, verify against in-gam
 | レーゼ | **Reize** 🔤 | bio 1724, "元エイリア学園のレーゼ" — not attested anywhere in evet, romaji fallback | 🔤 |
 | ロココ・ウルパ | **Rococo Urupa** | FR-confirmed ("Rococo vous a appelé?"); JP ×28 — capitaine de [[Cotarl]] (リトルギガント). Bios 1895/1905 name him | ✅ |
 | ゴーシュ | **Gauche** 🔤 | bio 1904 (a Cotarl striker's rival); 1 JP evet mention only | 🔤 |
-| 死神 (あだ名) | **le Faucheur** | nickname, not a name: bio 1886 (équipe Garshield playmaker, "呼ばれ嫌われた過去") and 1975. Never attested in FR — keep both uses identical | ⚠️ |
+| 死神 (あだ名) | **le Faucheur** | nickname, not a name: bio 1886 (équipe Zoolan playmaker, "呼ばれ嫌われた過去") and 1975. Never attested in FR — keep both uses identical | ⚠️ |
 | 兜角雄 | **Kabuto** 🔤 | unitbase bio 231 (a childhood friend calls him his rival) — 🔤 verify |
 | 天野（兄弟） | **Amano** 🔤 | unitbase bio 293, twin brothers — 🔤 verify (the JP gag puns 天野 on 雨 "rain") |
 | 不動 | **Caleb** (Caleb Stonewall) | ✅ **CORRECTED 2026-07-22** (was "Fudou" 🔤) — FR-attested ×36 ("Je n'ai absolument pas confiance en Caleb. Il me rappelle trop M.Dark", "Caleb! Arrête de jouer perso"). NB the HANDOFF's "佐久間→Caleb" was a misattribution: 佐久間 = **David Samford** (FR rec 36). All 10 "Fudou" uses fixed | ✅ |
@@ -133,14 +133,16 @@ Legend for **Confidence**: ✅ confident · ⚠️ likely, verify against in-gam
 | 「大介のスゴ技特訓ノート」 | **'Manuel des super techniques de David'** | Canon's proof notebook (evet rec 340) — distinct JP title, distinct FR title, keeps the "manuel de David" core | ⚠️ |
 | ミスターＫ (dialogue) | **Mister K** | evet recs 335/337 align with the item-962 row above — do NOT use "M.K" | ✅ |
 | イタリア街 | **l'aire de l'Italie** | FR-attested in rec 334's own p79 ("L'aire de l'Italie est à présent disponible!"); pattern "l'aire du Japon" ×9 | ✅ |
-| ガルシルド・ベイハン | **Garshield Bayhan** 🔤 | full name of [[Garshield]] (evet recs 344/351) — FFI president, Brésil coach, "roi du pétrole", dirige la société 'Oil Company'. Surname FR-attested, given name romaji | ⚠️ |
+| ガルシルド・ベイハン | **Zoolan Bayhan** 🔤 | full name of [[Zoolan]] (evet recs 344/351) — FFI president, Brésil coach, "roi du pétrole", dirige la société 'Oil Company'. **Zoolan** FR-attested ×41; "Bayhan" unattested, kept only in full-name mentions | ⚠️ |
 | 影山東吾 | **Tougo Dark** 🔤 | Ray Dark's father (evet rec 347). Corpus knows him only as "Le père de Dark" — given name romaji, surname aligned to **Dark** | 🔤 |
 | コンドルスタジアム | **le stade du Condor** | evet rec 347. Coined from FR-attested "tour Condor"/"ile du Condor" (×65) + the stade-du-X pattern | ⚠️ |
 | ルシェ | **Rushe** 🔤 | little girl tied to the 'R' mystery (evet recs 349/351/353/476–478, ×26). Calls Mister K **tonton K** (Ｋのおじさん), Fidio **grand frère Fidio**. No FR attestation — official romanization | 🔤 |
 | ヒデナカタ | **Hiden** | the announcer's full-name intro (evet rec 351) — corpus never says "Nakata", only **Hiden** ×6; keep just Hiden everywhere | ✅ |
 | 影山総帥 | **Commandant (Dark)** | Jude's old address for Dark (evet rec 351). **Commandant** FR-attested ×5 ("Commandant! Comment pouvez-vous être en vie?") | ✅ |
 | 栗松（鉄平） | **Tim Saunders** ⚠️ | Raimon teammate left in Japan, writes the letter in evet rec 351 (signs 栗松 鉄平). No ROM attestation — official EU-dub name per naming policy. NB his JP letter uses the でやんす tic — so でやんす is NOT unique to Willy (cf. the [[Willy]] row); attribute by context | ⚠️ |
-| ヘンクタッカー | **Henktacker** 🔤 | Garshield's aide/scientist running "le programme" (evet rec 351). No attestation — romaji, keep constant | 🔤 |
+| ラガルート | **Lagarto** 🔤 | The Kingdom (Brésil) player, the big brother from the dog scene (evet recs 375/380). No FR attestation — Portuguese-flavoured romanization, keep constant | 🔤 |
+| ウミガメスタジアム | **le stade Tortue** | demi-finale venue (evet rec 377). **FR-attested** ("route du stade Tortue"; "île de la tortue" ×78) | ✅ |
+| ヘンクタッカー | **Hentacker** | Zoolan's aide/scientist running "le programme" (evet rec 351). ✅ **FR-attested** (rec 409: "Mais appelez moi Hentacker! J'appartiens à l'équipe privée de M. Zoolan!") — corrected from the earlier "Henktacker" coinage | ✅ |
 
 ## Teams, clubs & national selections
 
@@ -191,7 +193,7 @@ Legend: ✅ confident · ⚠️ likely, verify in-game · 🔤 romaji fallback.
 |---|---|---|---|
 | オーガ | **Ogre** (les Ogres) | FR ("l'équipe des Ogres") | ✅ |
 | コトアール（尾刈斗） | **Cotarl** | FR ("Cotarl" ×42) — fictional nation | ✅ |
-| ガルシルド | **Garshield** | FR | ✅ |
+| ガルシルド | **Zoolan** | FR ("L'équipe Zoolan!") — corrected 2026-07-22, was wrongly "Garshield" | ✅ |
 | ネオジャパン | **Neo Japan** | (see main table) | ✅ |
 | 樹海（チーム） | **la Mer d'Arbres** | 富士の樹海 = Aokigahara, the "sea of trees" at Mt Fuji (JP evet: "富士の樹海にサッカーチームがあった"). Bios 1074–1084 are all "樹海チームの◯◯担当" → "le ◯◯ de l'équipe de la Mer d'Arbres" | ⚠️ |
 | 星の使徒研究所 | **laboratoire des Apôtres de l'Étoile** | 星の使徒 already fixed as *Apôtres de l'Étoile*; 研究所 → laboratoire. Bios 1085–1095 = guard robots no 1–11, 排除！→ "Élimination !" | ⚠️ |
@@ -205,7 +207,7 @@ Legend: ✅ confident · ⚠️ likely, verify in-game · 🔤 romaji fallback.
 | 天空の使徒 | **Apôtres du Ciel** | 天空=ciel (cf. 星の使徒 = Apôtres de l'Étoile) | ⚠️ |
 | カードチーム / トレーディングカード | **équipe Cartes** | card-game crossover team | ⚠️ |
 | 警備兵 / 警備マシンズ | **gardes / sentinelles** | robot security team | ⚠️ |
-| チームＫ / チームガルシルド | **équipe K / équipe Garshield** | Ogre-arc squads | ✅ |
+| チームＫ / チームガルシルド | **équipe K / équipe Zoolan** | Ogre-arc squads ("L'équipe Zoolan!" FR-attested) | ✅ |
 
 ### FFI national selections (国代表 uniforms)
 
@@ -238,7 +240,7 @@ that evokes the FFI squad uses the **team** name above (Les Empereurs, etc.).
 - "Dr.Killard" and "M.Hillman" appear in shipped FR dialogue — record their JP
   source when found so they're reproduced exactly.
 - Item/equipment flavour names that are Ogre/enemy-team coinages (e.g. 尾刈斗
-  "Okalt/Occult", ガルシルド "Garshield") are brand/monster names, not roster
+  "Okalt/Occult", ガルシルド "Zoolan" — FR renames it) are brand/monster names, not roster
   players — romanize sensibly and keep constant.
 - The Ogre-arc antagonists and rival teams now have a dedicated **Teams** section
   above (built 2026-07-20 by grep-mining the shipped FR dialogue). The `🔤`/`⚠️`
