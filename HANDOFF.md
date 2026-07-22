@@ -4,7 +4,7 @@ Quick orientation for the next session. Full detail is in
 [`docs/FORMAT_NOTES.md`](docs/FORMAT_NOTES.md) (source of truth) and the four
 skills in `.claude/skills/`. Read [`README.md`](README.md) first.
 
-## Where we are (2026-07-21)
+## Where we are (2026-07-22)
 
 All tooling is **built & verified end-to-end** (extract → edit → reinsert →
 whole-ROM repack, byte-checked for both text formats), and **translation is
@@ -19,7 +19,7 @@ underway** — the project is now in the content-filling phase.
 | Whole-ROM repack (edited file → new `.nds`) | ✅ **built & verified** (`repack_rom.py`) — content-lossless; edits land in the ROM, only edited files differ. |
 | `.STR` dump/reinsert tools | ✅ **built & verified** (`str_slots/str_dump/str_reinsert/str_codec.py`) — byte-exact on all 7 `.STR` files. |
 | Translation house style + skill | ✅ `ie3-translation` skill + `docs/NAME_GLOSSARY.md` (official EU names). |
-| **Translating the text** | 🔶 **in progress** — **all `.STR` files done**; `evet.pkb` **1207/15,742** (story-critical-subset strategy, see below): `item.STR` ✅ 822/822, `unitbase.STR` ✅ 2374/2374, `command.STR` ✅ 8/8 (all repack-verified); `games`/`rpgtitle` carry no real content (residue only). Next: `evet.pkb`. |
+| **Translating the text** | 🔶 **in progress** — **all `.STR` files done**; `evet.pkb` **1207/15,742** (story-critical-subset strategy, see below): `item.STR` ✅ 822/822, `unitbase.STR` ✅ 2374/2374, `command.STR` ✅ 8/8 (all repack-verified); `games`/`rpgtitle` carry no real content (residue only). Only `evet.pkb` remains. |
 | Emulator test | ✅ **item.STR validated in melonDS** (2026-07-20) via a debug-room ROM — all item descriptions render, longest lines reflow fine. See `docs/EMULATOR_TEST.md`. Reusable debug ROM + cheats in `Téléchargements\IE3-Ogre-FR-test\`. |
 
 ## ▶ NEXT SESSION — exact steps (evet.pkb, resume at rec 152)
@@ -121,11 +121,18 @@ print(f'applied {n}/{len(FR)}')
 PYEOF
 ```
 
-**5. Gate, reinsert, repack, deploy** — always in this order:
+**5. Gate + reinsert-verify — after EVERY batch:**
 
 ```bash
-python3 evet_fit.py ../translations/evet.json          # MUST pass before step 2
+python3 evet_fit.py ../translations/evet.json          # budget gate, MUST pass
 python3 evet_reinsert.py ../translations/evet.json --out /tmp/evet_new.pkb
+stat -c%s /tmp/evet_new.pkb                            # MUST print 2926480
+```
+
+**6. Full ROM repack + deploy — only when building a playable ROM for Phil**
+(NOT per batch; he plays/QAs once everything is translated):
+
+```bash
 python3 repack_rom.py \
   -r data_iz/logic/item.STR=/tmp/item_new.STR \
   -r data_iz/logic/unitbase.STR=/tmp/unitbase_new.STR \
@@ -169,14 +176,29 @@ is wrong; stop and investigate rather than shipping it.
   as binary). Use `grep -a`, and verify INI edits with `cmp -l` (expect 1–2
   differing bytes), never file size — a bad `sed` yields an identical-size file.
 
-### Still owed (unchanged)
+### Working preferences (from Phil — respect these)
 
-- **The unitbase gender sweep, 53 entries** — needs in-game portraits, list with
-  `python3 tools/flag_gender.py --list`. Use `IE3-Ogre-FR-DEBUG.nds`.
-- **The scope decision.** At ~49 chunks/batch this is ~320 more batches. Ask Phil
-  whether to keep going exhaustively or cut a **story-critical subset** (main-path
-  dialogue only) for a playable French story much sooner. This question has been
-  deferred twice; raise it before starting a long run.
+- **NO STORY SPOILERS in progress reports.** Phil will *play* the finished ROM.
+  Report only: chunk counts / %, rec numbers done, the reinsert invariants, and
+  name/glossary decisions. Never summarize what happens in the scenes, name plot
+  events, or recap arcs. This also applies to what you write in project docs
+  where feasible — keep rec descriptions neutral ("rec 152, 44 chunks"), not
+  narrative. (Translate normally; the constraint is only on what's *said/written
+  about* the content.)
+- **Do NOT offer emulator spot-checks or test-ROM builds each batch.** Phil does
+  the in-game QA himself by playing once everything is translated. The reinsert
+  invariants (0 skipped, exact byte size) are sufficient verification during the
+  work.
+- ~~**The scope decision**~~ ✅ **made 2026-07-22: story-critical subset first**
+  (see the SCOPE DECISION block above). Don't re-raise it.
+
+### Still owed
+
+- **The unitbase gender sweep, 53 entries** (`"gender_check": true` flags in
+  `translations/unitbase.json`, list with `python3 tools/flag_gender.py --list`).
+  Needs in-game portraits — since Phil does the in-game QA himself, the practical
+  path is: leave the flags in place, and fix any wrong agreements he reports
+  from his playthrough (isolated one-line edits).
 
 ## Translation progress & how to resume
 
@@ -211,9 +233,9 @@ is wrong; stop and investigate rather than shipping it.
   proven from game code, and writing to them would corrupt text that currently
   renders fine. Method + full table in the skill file under "`--jp-only`
   overcounts". **With this, every genuinely-untranslated `.STR` in the ROM is done.**
-- **Next up:** `evet.pkb` (~15,756 chunks, the big one — and **budget-checked**,
-  unlike `.STR`, so expect to tighten wording; `evet_reinsert.py` refuses to write
-  and lists overflowing slots). Worth its own planning pass rather than a cold start.
+- **`evet.pkb`: 🔶 in progress — 1207/15,742** (see the "NEXT SESSION" section at
+  the top; that's the live loop). Budget-checked, unlike `.STR` — expect to
+  tighten wording; `evet_fit.py` is the gate.
 - ~~**Remaining item.STR (374):**~~ ✅ done. Was: flavour gear — uniforms, spikes, gloves,
   misangas/pendants, formations, GK-shoe names — all reference **team &
   character names**. **Team-name glossary: ✅ built (2026-07-20)** — see the new
@@ -318,8 +340,9 @@ One-shot probes kept for provenance (not routine use): `analyze_str_dat*.py`,
    straight past the intro into a debug room with team/menu access. BOEJ
    Action Replay cheats (all equipment/uniforms/items) live in
    `ie3_cheats_melonds.txt` (paste into melonDS; `94000130…` blocks = hold
-   SELECT). For each future batch (`unitbase`, `evet`) do the same: repack a
-   debug ROM with the edit + `--verify`, then eyeball the longest new lines.
+   SELECT). Note (2026-07-22): per-batch emulator eyeballing is **not** the
+   workflow anymore — Phil QAs in-game himself at the end (see Working
+   preferences). The debug-ROM setup stays documented for one-off format checks.
 3. ~~**`.STR` dump/reinsert tools**~~ ✅ **done** — `str_slots.py` /
    `str_dump.py` / `str_reinsert.py`, byte-exact on all 7 `.STR` files.
    Correction learned while building: 32-byte alignment is a *per-file
@@ -328,9 +351,9 @@ One-shot probes kept for provenance (not routine use): `analyze_str_dat*.py`,
    `fr` → `str_reinsert.py` → `repack_rom.py -r data_iz/logic/item.STR=…`.
 
 With extraction, reinsertion, and repack all built for both text formats, the
-project is **tooling-complete for translation**: the remaining work is the
-actual French drafting (Phil) plus a one-time emulator spot-check on the first
-translated batch.
+project is **tooling-complete for translation**: the only remaining work is the
+French drafting itself (the evet loop at the top of this file). Final QA is
+Phil playing the finished ROM — not per-batch emulator checks.
 
 ## Ground rules
 
@@ -371,10 +394,10 @@ python3 ie3_codec.py           # all "OK"
 ```
 
 Notes:
-- **In-progress translation JSON** (e.g. `evet_jp.json`) is not auto-tracked —
-  only `.py`/`.md` have been committed. To carry half-finished translations
-  between machines, commit the JSON deliberately (`git add tools/evet_jp.json`)
-  or copy it alongside the ROM. It's small; committing is easiest.
+- **The translation artifacts live in `translations/*.json`** — `evet.json` is
+  the master evet artifact (all 39,610 entries, accumulates across sessions).
+  Make sure they're committed/pushed before switching machines; losing
+  `evet.json` loses all evet progress.
 - The bypass-permission settings live in `~/.claude/settings.local.json` on the
   current machine only — not part of the project; re-add on the new machine if
   wanted.
