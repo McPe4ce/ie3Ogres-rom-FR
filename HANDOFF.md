@@ -210,6 +210,21 @@ is wrong; stop and investigate rather than shipping it.
 - **Blank chunks:** some `jp` chunks are a lone ideographic space `'　'`. Leave
   `fr` empty — do not invent text for them.
 - **Duplicates:** identical JP must get byte-identical French.
+- **A rec's own FR chunks outrank the glossary.** The Zoolan correction was
+  caught because rec 369 carried the shipped chunk "Le manoir de Zoolan est à
+  présent disponible!" while the glossary said "Garshield". When an
+  already-French chunk *inside the rec you're translating* names a
+  person/place/team, that is the ground truth — grep the corpus for it and fix
+  the glossary if they disagree. (Same pattern earlier: イタリア街="l'aire de
+  l'Italie" came from rec 334's own p79.)
+- **`『』` are NOT encodable in evet** (`ie3_codec` raises). When dialogue quotes
+  an item title that item.STR renders as `『Cran Acharné』`, use straight quotes
+  `'Cran Acharné'` — same wording, different quoting. Test odd characters with
+  `ie3_codec.encode_text` *before* batching (`°` is fine, `『』` is not).
+- **When dialogue quotes game items, reuse the artifact wording verbatim.** The
+  11 "Coeur n°N" maxims (rec 354, re-quoted in 379/383) copy
+  `translations/item.json` entries 52–62 word for word — never re-translate a
+  string the player also sees as an item/menu.
 - **Gender:** JP is genderless. Use the JP marker; if there is none, default
   masculine and set `"gender_check": true` on that entry. Never guess silently.
 - **`RPG_SCRIPT_NO` cannot jump to arbitrary scenes.** Tried and failed — bank 31
