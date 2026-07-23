@@ -218,6 +218,8 @@ Legend: ✅ confident · ⚠️ likely, verify in-game · 🔤 romaji fallback.
 | 天空の使徒 | **Apôtres du Ciel** | 天空=ciel (cf. 星の使徒 = Apôtres de l'Étoile) | ⚠️ |
 | カードチーム / トレーディングカード | **équipe Cartes** | card-game crossover team | ⚠️ |
 | 警備兵 / 警備マシンズ | **gardes / sentinelles** | robot security team | ⚠️ |
+| 伊賀島流 | **le style Igajima** | 🔤 (extra-route ninja-school team, recs 2228–2235; 忍び = "ninja", ガマ式 = "style crapaud") | 🔤 |
+| 海神（チーム） | **le dieu des mers** | ⚠️ reasoned (extra-route sea-god team, rec 2275; bombastic "Ouooo!" voice) | ⚠️ |
 | チームＫ / チームガルシルド | **équipe K / équipe Zoolan** | Ogre-arc squads ("L'équipe Zoolan!" FR-attested) | ✅ |
 
 ### FFI national selections (国代表 uniforms)
