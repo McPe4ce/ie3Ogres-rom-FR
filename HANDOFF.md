@@ -19,51 +19,34 @@ underway** — the project is now in the content-filling phase.
 | Whole-ROM repack (edited file → new `.nds`) | ✅ **built & verified** (`repack_rom.py`) — content-lossless; edits land in the ROM, only edited files differ. |
 | `.STR` dump/reinsert tools | ✅ **built & verified** (`str_slots/str_dump/str_reinsert/str_codec.py`) — byte-exact on all 7 `.STR` files. |
 | Translation house style + skill | ✅ `ie3-translation` skill + `docs/NAME_GLOSSARY.md` (official EU names). |
-| **Translating the text** | 🔶 **in progress** — **all `.STR` files done**; `evet.pkb` **6809/15,742 (43%)** (story-critical-subset strategy, see below): `item.STR` ✅ 822/822, `unitbase.STR` ✅ 2374/2374, `command.STR` ✅ 8/8 (all repack-verified); `games`/`rpgtitle` carry no real content (residue only). Only `evet.pkb` remains. |
+| **Translating the text** | 🔶 **in progress** — **all `.STR` files done**; `evet.pkb` **8675/15,742 (55%)** (story-critical-subset strategy, see below): `item.STR` ✅ 822/822, `unitbase.STR` ✅ 2374/2374, `command.STR` ✅ 8/8 (all repack-verified); `games`/`rpgtitle` carry no real content (residue only). Only `evet.pkb` remains. |
 | Emulator test | ✅ **item.STR validated in melonDS** (2026-07-20) via a debug-room ROM — all item descriptions render, longest lines reflow fine. See `docs/EMULATOR_TEST.md`. Reusable debug ROM + cheats in `Téléchargements\IE3-Ogre-FR-test\`. |
 
-## ▶ NEXT SESSION — exact steps (evet.pkb, resume at rec 2457)
+## ▶ NEXT SESSION — exact steps (evet.pkb, resume at rec 2583)
 
 **State as of 2026-07-23 (5th session):** every `.STR` file is done.
-`evet.pkb` is **6809/15,742 JP chunks (43%)** translated (this session: the
-banter band **recs 2184–2452** — 3,247 chunks total, of which ~1,100 were
-auto-filled from corpus-duplicate JP; reinsert-verified: 6809 edits, 0
+`evet.pkb` is **8675/15,742 JP chunks (55%)** translated (this session: the
+banter band **recs 2184–2582** — 5,113 chunks total, of which ~1,900 were
+auto-filled from corpus-duplicate JP; reinsert-verified: 8675 edits, 0
 skipped, `.pkb` still exactly 2,926,480 bytes).
 Next blocks (≥8 todo chunks, recruitment + deferred bands excluded):
-**re-run the queue script — it resumes at rec 2457; the banter/late-content
-band continues** (active queue after this session: 198 recs / 4,203 chunks).
-The master artifact is `translations/evet.json` — it holds **all 39,610
-entries** (already-French ones included, for context) and accumulates across
-sessions.
+**re-run the queue script — it resumes at rec 2583; the banter/late-content
+band continues and is nearly done** (active queue after this session: only
+114 recs / 2,337 chunks). The master artifact is `translations/evet.json` —
+it holds **all 39,610 entries** (already-French ones included, for context)
+and accumulates across sessions.
 
 **Banter-pool method that pays off (keep using it):** before drafting a rec,
-build a global `src→fr` map over all translated entries and auto-fill any
-todo chunk whose JP already exists verbatim (byte-identical FR guaranteed);
-then draft only the remaining distinct strings per rec (heavy internal
-duplicates mean ~24-chunk recs often need <13 drafts). Tic renderings locked
-this session (keep consistent): ウッキー monkey=**Oukikikikii**, ウホッ
-gorilla=**Ougah** (was already), シャーッ snake=**Sssha!**, クマー
-bear=**grrr** (NOT Graooo — that's ガオォーッ, rec 2183's lion), ッチュ
-mouse=**tchou**, モ〜 cow=**meuh** (+ムシャムシャ=**Miam miam** /
-モグモグ=**Mmpf mmpf**), にゃ cat=**nya**, ぴょ=**pyo**, ですぞ
-pompous=**ma foi**, でゴザル=**pardi**, がや dialect=**fichtre**, べ/っぺ
-rural=**dame**, うふふ women=**Hihi...**, オバちゃん=**Tata**, 海神
-team=**le dieu des mers** (Ouooo!), 伊賀島流=**style Igajima**, けしからん
-scold=**Scandaleux!**, でしゅ lisp=**ch-sounds + voui** ("forche", "anch",
-"glichéé"), るーららら hummer=**Lalala...**, バカモン=**Bougre d'âne!**,
-ぎひひィッ=**Guihihi!**, っポ〜=**", po!"**, んだな〜=**trailing "~"**,
-マキュア=**Makyua** (3rd person, "Makyua adore/déteste"), katakana-robot
-recs (2379, 2429-band guard robots)=**ALL-CAPS French** (排除=ELIMINATION,
-BIP GAGAGA noises), サバイバルサッカー=**le foot de survie**, エモノ=
-**proie**, であります soldier=**affirmatif**, ザコ=**minus**, 格の違い=
-**l'écart entre nous**, イナズマイレブンに勝とうなど１００年早い=**Pour
-battre Inazuma Eleven, revenez dans 100 ans!**.
-Common banter formulas: もうけた=**Tout bénef**, 調子にのるな=**T'emballe
-pas** / **Ne te crois pas tout permis** (2183 form), 勝負はこれからだ=**Le
-match ne fait que commencer** / **Rien n'est encore joué**, そんなバカな=
-**C'est pas possible**, ＰＫ=**tirs au but**, ４０年早い=**Pour nous battre,
-revenez dans 40 ans!**, 同点か…ここからが勝負だな=**Égalité...\nTout se joue
-maintenant.**
+build a global `src→fr` map over ALL translated entries and auto-fill any
+todo chunk whose JP already exists verbatim (byte-identical FR guaranteed —
+late pools are 40–100% duplicates of earlier ones); then draft only the
+remaining distinct strings per rec. The snippet + the full **locked tic
+table and banter formulas** (~35 speaker voices: Oukikikikii, Sssha!, tchou,
+meuh, ma foi, Scandaleux!, Guihihi!, Houngaa!, Kyan, ALL-CAPS robots, foot
+de survie, limites humaines, …) now live in the **`ie3-translation` skill**
+("Banter tic table") — read it before drafting; do NOT re-invent a tic a
+prior rec already fixed. After EVERY batch: `evet_fit.py` (all fit) →
+`evet_reinsert.py` (0 skipped) → size check (exactly 2,926,480 bytes).
 
 **⚠️ Queue-script upgrade (use this):** the plain rec-number filter is not
 enough past rec 490 — recs 534–974 with ≥8 chunks are nearly all **recruitment
@@ -71,17 +54,17 @@ recs** (defer per scope). Exclude any rec whose FR chunks match
 `rejoint l'équipe|Bonne recherche|vous rejoint`, and also exclude the deferred
 `range(1500,2101)` NPC band and **rec 975** (see furigana note below). The
 2141+ recs are extra-route **match-banter pools**: heavy internal duplicates
-(fill identical JP with byte-identical FR), one distinct speaker-voice per rec
-(keep each rec's verbal tic consistent: aru / cot / pii / croa / Graooo /
-Ougah / creepy Héhéhé / English-poser "It's perfect!" etc.).
+(fill identical JP with byte-identical FR), one distinct speaker-voice per
+rec — the tic for every voice met so far is LOCKED in the `ie3-translation`
+skill's "Banter tic table"; look a tic up there before drafting.
 
-**Remaining-work map (updated end of 2026-07-23, 5th session):** 8,933 JP
-chunks left in total, of which the **active ≥8-chunk queue is 4,203 chunks /
-198 recs, ALL in the 2457–2900 range** (banter pools then late/extra
+**Remaining-work map (updated end of 2026-07-23, 5th session):** 7,067 JP
+chunks left in total, of which the **active ≥8-chunk queue is 2,337 chunks /
+114 recs, ALL in the 2583–2900 range** (last banter pools + late/extra
 content). Deferred piles for LAST: recruitment recs 2,876 chunks / 372 recs;
 deferred bands (101–151 / 165–333 / 1500–2100 / 975) 882 chunks;
 sub-8-chunk scattered recs ~970 chunks / ~415 recs. The story spine proper
-(recs ≤ 489) is **done**, and the banter band 2141–2452 is **done**.
+(recs ≤ 489) is **done**, and the banter band 2141–2582 is **done**.
 
 **⚠️ Furigana-ruby chunks (rec 975, unresolved):** some NPC/tutorial recs carry
 one big `\f`-paginated dialogue chunk + a tail of short pure-hiragana chunks
@@ -373,7 +356,7 @@ is wrong; stop and investigate rather than shipping it.
   proven from game code, and writing to them would corrupt text that currently
   renders fine. Method + full table in the skill file under "`--jp-only`
   overcounts". **With this, every genuinely-untranslated `.STR` in the ROM is done.**
-- **`evet.pkb`: 🔶 in progress — 6809/15,742** (see the "NEXT SESSION" section at
+- **`evet.pkb`: 🔶 in progress — 8675/15,742** (see the "NEXT SESSION" section at
   the top; that's the live loop). Budget-checked, unlike `.STR` — expect to
   tighten wording; `evet_fit.py` is the gate.
 - ~~**Remaining item.STR (374):**~~ ✅ done. Was: flavour gear — uniforms, spikes, gloves,

@@ -220,6 +220,7 @@ Legend: ✅ confident · ⚠️ likely, verify in-game · 🔤 romaji fallback.
 | 警備兵 / 警備マシンズ | **gardes / sentinelles** | robot security team | ⚠️ |
 | 伊賀島流 | **le style Igajima** | 🔤 (extra-route ninja-school team, recs 2228–2235; 忍び = "ninja", ガマ式 = "style crapaud") | 🔤 |
 | マキュア | **Makyua** | 🔤 (extra-route alien speaker, rec 2392 — talks in third person "Makyua adore/déteste"; no FR attestation found) | 🔤 |
+| キャン | **Kyan** | 🔤 (extra-route timid speaker, rec 2571 — self-refers in third person "Kyan a marqué!"; no FR attestation found) | 🔤 |
 | 海神（チーム） | **le dieu des mers** | ⚠️ reasoned (extra-route sea-god team, rec 2275; bombastic "Ouooo!" voice) | ⚠️ |
 | チームＫ / チームガルシルド | **équipe K / équipe Zoolan** | Ogre-arc squads ("L'équipe Zoolan!" FR-attested) | ✅ |
 

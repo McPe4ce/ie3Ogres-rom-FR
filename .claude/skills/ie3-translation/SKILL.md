@@ -138,12 +138,64 @@ currently renders correctly. Before starting any "quick cleanup" file, dump it
 - **Scene-setting cards** (`−　数ヶ月前　−` style) → dash form:
   `- Quelques mois plus tôt -` / `- Aujourd'hui -`; the shipped FR precedent is
   "— Un petit pays d'Afrique australe —" (the em-dash folds to `-`, fine).
-- **Match-banter pools (recs 2141+, extra battle routes):** each rec is one
-  team's in-match callout pool with ONE speaker voice — keep its verbal tic
-  consistent within the rec (aru / cot-cocot / pii / croa / Graooo / Ougah /
-  creepy "Hé... héhéhé..." / English-poser "It's perfect!" …), and fill the
-  heavy internal duplicates byte-identically. `*asterisks*` (e.g. `*marmonne*`)
-  encode fine in evet.
+- **Match-banter pools (recs 2141–2900, extra battle routes):** each rec is
+  one team's in-match callout pool with ONE speaker voice — keep its verbal
+  tic consistent within the rec, and fill the heavy internal duplicates
+  byte-identically. `*asterisks*` (e.g. `*marmonne*`) encode fine in evet.
+  **Workflow that pays off:** before drafting a rec, auto-fill every todo
+  chunk whose exact JP is already translated *anywhere* in `evet.json`
+  (global `src→fr` map — guarantees byte-identical duplicates and often
+  clears 40–100% of a rec), then draft only the remaining distinct strings.
+  ```python
+  done={}
+  for e in d['entries']:
+      if e['cls']=='jp' and e.get('fr'): done.setdefault(e['src'],e['fr'])
+  for e in d['entries']:
+      if e['rec'] in BATCH and e['cls']=='jp' and not e.get('fr') and e['src'] in done:
+          e['fr']=done[e['src']]
+  ```
+
+### Banter tic table (LOCKED 2026-07-23 — recs 2141–2582 use these; keep consistent)
+
+| JP tic / speaker | French rendering |
+|---|---|
+| aru / cot-cocot / pii / croa | kept as-is (2141–2183 band) |
+| ガオォーッ (lion, rec 2183) | **Graooo!** |
+| ウッキー monkey | **Oukikikikii** |
+| ウホッ gorilla | **Ougah** |
+| シャーッ snake | **Sssha!** |
+| クマー bear | **grrr** (NOT Graooo) |
+| ッチュ mouse | **tchou** |
+| モ〜 cow (+ムシャムシャ/モグモグ) | **meuh** (+ **Miam miam** / **Mmpf mmpf**) |
+| にゃ cat / ぴょ | **nya** / **pyo** |
+| ですぞ pompous / でゴザル | **ma foi** / **pardi** |
+| がや dialect / べ・っぺ rural | **fichtre** / **dame** |
+| ばい・ったい Kyushu | **té!** / **bé** (southern French) |
+| うふふ women / オバちゃん | **Hihi...** / **Tata** |
+| けしからん scold | **Scandaleux!** |
+| でしゅ lisp | ch-sounds + **voui** ("forche", "anch", "glichéé") |
+| るーららら hummer / ひゅう〜っ whistler | **Lalala...** / **Fiiiuuu!** |
+| バカモン / ザコ | **Bougre d'âne!** / **minus** |
+| ぎひひィッ / うしし prankster | **Guihihi!** / **Hinhin!** |
+| っポ〜 / んだな〜 | **", po!"** / trailing **"~"** |
+| フンガー / いえーーい / ワッショイ | **Houngaa!** / **Yéééé!** / **Oh hisse!** |
+| マキュア / キャン (3rd-person speakers) | **Makyua** / **Kyan** (glossary) |
+| katakana-robot speech (2379, 2429-band) | **ALL-CAPS French** (排除=ELIMINATION, BIP GAGAGA / BZZT noises) |
+| のう弟者 / のう兄者 | **Pas vrai, frérot!** / **Pas vrai, grand frère!** |
+| 修行 monks (ふっ！はっ！ kiai) | **Hou! Ha!**; 手合わせ=**assaut** |
+| １６分休符 (drummer rec 2570) | **quart de soupir** |
+
+**Banter formulas (reuse verbatim):** もうけた=**Tout bénef** ·
+調子にのるな=**T'emballe pas** / **Ne te crois pas tout permis** ·
+勝負はこれからだ=**Le match ne fait que commencer** / **Rien n'est encore
+joué** · そんなバカな=**C'est pas possible** · ＰＫ=**tirs au but** ·
+４０年早い=**Pour nous battre, revenez dans 40 ans!** (100年 variant: "Pour
+battre Inazuma Eleven, revenez dans 100 ans!") · 同点か…ここからが勝負だな=
+**Égalité...\nTout se joue maintenant.** · サバイバルサッカー=**le foot de
+survie** (エモノ=**proie**, であります soldier=**affirmatif**) · 格の違い=
+**l'écart entre nous** · 人の限界=**les limites humaines** · 勝つことが正義=
+**Vaincre, c'est la justice!** · 敗者に言い分など無い=**Le perdant se tait** ·
+海神=**le dieu des mers** · 伊賀島流=**le style Igajima**.
 - **`.STR` gotcha:** never use ASCII `"` double-quotes — `str_codec` maps them
   to full-width `＂` which SJIS can't encode (reinsert skips the record). Use no
   quotes, or single `'` (which round-trips to the game's `’`).
