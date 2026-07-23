@@ -154,6 +154,20 @@ Legend for **Confidence**: ✅ confident · ⚠️ likely, verify against in-gam
 | 稲妻ＫＦＣ | **l'Inazuma KFC** 🔤 | junior football club Arion tries out for (evet recs 469–471). Romanization kept | 🔤 |
 | ブラージ | **Blasi** 🔤 | Fidio's Orphée teammate/friend in the Italy flashbacks (evet recs 475–476). No FR attestation — Italian-flavoured romanization | 🔤 |
 | （ロココの）師匠 | **maître** / 弟子 = **disciple** | Rococo's mentor in the flashback (evet rec 486). **FR-attested** ("Avec le maître, j'irai jusqu'au sommet!"); 世界一 in this arc = **numéro un mondial** (FR-attested) | ✅ |
+| ゴーシュ | **Gauche** 🔤 | Little Gigant (Cotarl) striker, the "buteur originel" rival line (evet rec 436). No FR attestation, no known EU name — romanized after the standard ゴーシュ reading (Gauche the Cellist), keep constant | 🔤 |
+| マーク（一之瀬の仲間） | **Kruger** ⚠️ | US player Bobby mentions alongside Erik (evet rec 448: "avec Kruger et les autres"). EU canon Mark Kruger (Unicorn captain); rendered by SURNAME ONLY in dialogue to avoid collision with Mark (Evans) | ⚠️ |
+| ウィンド（風になれる） | **'wind'... le vent** | Little Gigant player's wordplay (evet rec 435): "je deviens 'wind'... le vent" — keep the English word + French gloss shape | ⚠️ |
+| 山オヤジ | **le Vieux de la Montagne** | the bear, Shawn's "éternel rival" (evet recs 1145/1158, Hokkaido NPC band). Coined for meaning, keep constant | ⚠️ |
+| ヤマネコスタジアム | **le stade du Lynx** 🔤 | stadium atop a waterfall (evet rec 1107). No FR attestation — follows the attested "stade du Paon" pattern | 🔤 |
+| 角馬（放送部の父） | **Chester** ⚠️ | radio-club kid whose father commentated the Asia qualifiers (evet rec 1258). EU canon Chester Horse (Jr/Sr), no ROM attestation | ⚠️ |
+| おヨネばあちゃん | **mamie Yone** 🔤 | candy-shop grandma, ex-footballer with the technique manuals (evet rec 1311) | 🔤 |
+| ピョン太 | **Pyonta** 🔤 | lost rabbit on Lioccot (evet recs 1411–1417); tic ぴょん = **pyon**. His humans: **maître** / **papi** | 🔤 |
+| ベリーズ | **les Berryz** 🔤 | idol group, Ogre premium scout (evet rec 1284); members キャプ/ピーチッチ/りしゃこ/みーや = **'Cap'/'Peachichi'/'Rishako'/'Miya'** | 🔤 |
+| 魔王（ライオコット伝承） | **le Roi des enfers** | Lioccot island legend, demon-team pool (evet recs 455/465). Matches the locked 魔界=**enfers** family (Légion des Enfers Z, habitants des enfers) | ⚠️ |
+| 真・帝国 | **la nouvelle Royal Académie** | "Shin Teikoku" (evet rec 1386 cat monologue). Royal Académie is FR-attested; 真 rendered as "nouvelle" | ⚠️ |
+| 長老（ライオコット島） | **l'ancien (de l'île)** | Lioccot lore-keeper at Central Park (evet recs 464–466) | ⚠️ |
+| ブン／アッサイ／しょうりん／うきしま／じん | **Bun / Assai / Shorin / Ukishima / Jin** 🔤 | IE2 characters quoted in premium-scout hint NPCs (evet recs 1335/1346). No EU names known — romaji, only ever appear in these hints | 🔤 |
+| Ｇハンター・ヒロ | **'G-Hunter Hiro'** 🔤 | recurring gourmet NPC (evet recs 1134–1140), name kept as-is in quotes | 🔤 |
 
 ## Teams, clubs & national selections
 

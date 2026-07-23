@@ -144,6 +144,17 @@ classifier), `derive_encoding.py`, `derive_encoding2.py`.
 Base: bytes `0x20..0x7E` are **standard ASCII**; `0x0A` is newline. The
 custom accented letters (single byte each):
 
+> **Newline nuance (verified 2026-07-23):** the ORIGINAL `.pkb` never uses
+> `0x0A` — all 24,133 original multi-line chunks (shipped FR included) write
+> the literal two-byte ASCII sequence `5C 6E` (`\n`). Our reinserted chunks
+> encode real newlines as `0x0A`, and this is **hardware-confirmed to render
+> correctly** (the 2026-07-21 slot-18 test included 3-line chunks with 0x0A
+> breaks — the engine accepts both). **Page breaks are different:** write
+> them as the literal two-char sequence `\f` (backslash + f → `5C 66`,
+> matching the original convention). A real U+000C is unencodable
+> (`encode_text` raises) and `0x0C` never occurs in the original, so its
+> behaviour is unproven — never try it.
+
 | byte | char | byte | char | byte | char |
 |------|------|------|------|------|------|
 | 0xB1 | à    | 0xBA | é    | 0xC0 | ï    |

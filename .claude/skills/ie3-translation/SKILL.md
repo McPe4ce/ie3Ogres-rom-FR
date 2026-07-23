@@ -184,6 +184,28 @@ currently renders correctly. Before starting any "quick cleanup" file, dump it
 | のう弟者 / のう兄者 | **Pas vrai, frérot!** / **Pas vrai, grand frère!** |
 | 修行 monks (ふっ！はっ！ kiai) | **Hou! Ha!**; 手合わせ=**assaut** |
 | １６分休符 (drummer rec 2570) | **quart de soupir** |
+| ふふふ creepy chuckler (2583) | **Hihihi...** (rec's own shipped FR) |
+| でやんす bruiser (2584) / ガハハ | plain boisterous + **Gahaha!** |
+| アチョーッ kung-fu (2586, cf. 2141) | **Atchaaa! Hu! Ha!** |
+| だわさ howler girls (2591) | **pour sûr** + crying **Ouiiiin!** |
+| Kansai sassy girls (2592/2594) | plain sassy FR ("Rooh", "Trop rageant") — NO dialect (cf. Rika r100 precedent) |
+| です〜 drawly girls (2593) | trailing **~** elongations |
+| ですの dainty girl (2596) | **voyons** + vouvoiement |
+| ナニワのギャル Osaka gals (2600) | **les filles d'Osaka**; okonomiyaki kept; ♪ encodes fine |
+| がっはっは big brother (2613) | **Gwahaha!** (Gahaha = 2584) |
+| よくって？ haughty lady (2614) | **Écoutez-moi bien:** + vouvoiement hautain |
+| 地球には…という言葉が alien (2638) | **"Sur Terre, on a un dicton:"** + French proverb equivalents |
+| 子ネコちゃんたち playboy (2655) | **les minettes** |
+| フフ…暑さ heat lovers (2663–2673) | **Héhé...** + chaleur/brûlant lexicon |
+| オーマイガッ American (2752) | English interjections kept (**Oh my God! / What? / OK! / Nice play!**), ヒャッホウ=**Yahouuu!** |
+| まいどあり merchant (2893) | **But! Merci bien~!** |
+| メラメラ hot-blood (2889) | **chaud bouillant** |
+| ワン dogs (1396–1407 band) | **Ouaf ouaf!** + "(...)" thoughts, whine=**Kaiiin** |
+| きょ〜ん deer (1150–1157 Nara band) | **Kyooon** + "(...)" thoughts |
+| ぴょん rabbit Pyonta (1411–1417) | trailing **pyon** |
+| どす/おこしやす Kyoto (1125–1130) | polite quaint + **voyez-vous** |
+| めんそーれ Okinawa (1101/1226/1232) | **Mensooore!** kept |
+| ふっ！はっ！ Manyuji precepts (1193–1203) | **Précepte de Manyuji n°N! ... Hou! Ha!** |
 
 **Banter formulas (reuse verbatim):** もうけた=**Tout bénef** ·
 調子にのるな=**T'emballe pas** / **Ne te crois pas tout permis** ·
@@ -195,7 +217,16 @@ battre Inazuma Eleven, revenez dans 100 ans!") · 同点か…ここからが勝
 survie** (エモノ=**proie**, であります soldier=**affirmatif**) · 格の違い=
 **l'écart entre nous** · 人の限界=**les limites humaines** · 勝つことが正義=
 **Vaincre, c'est la justice!** · 敗者に言い分など無い=**Le perdant se tait** ·
-海神=**le dieu des mers** · 伊賀島流=**le style Igajima**.
+海神=**le dieu des mers** · 伊賀島流=**le style Igajima** ·
+力を得ることはすばらしい＝**Quelle merveille, le pouvoir!!** ·
+ボールが止まって見える=**Je vois le ballon au ralenti** · ざまあみろ=**Bien
+fait!** / ざまあないぜ=**La honte!** · しつこい=**collants** (girls' pools:
+"Les collants, ça plaît pas!") · オウンゴール=**but contre mon/son camp** ·
+出直してきたら？=**Revenez quand vous serez prêts** · 勝利の女神は…ほほえむ=
+**La victoire sourit à ceux qui n'abandonnent jamais** (r2490 precedent) ·
+正念場=**le moment décisif** / **C'est maintenant que tout se joue** ·
+このまま一気に決める=**On conclut tout de suite!** · 攻撃は最大の防御=**La
+meilleure défense, c'est l'attaque!** · マモルくん (managers' pools)=**Mark**.
 - **`.STR` gotcha:** never use ASCII `"` double-quotes — `str_codec` maps them
   to full-width `＂` which SJIS can't encode (reinsert skips the record). Use no
   quotes, or single `'` (which round-trips to the game's `’`).
