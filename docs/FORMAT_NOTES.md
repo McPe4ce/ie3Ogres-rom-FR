@@ -306,3 +306,19 @@ See `docs/TOOLS.md`. **Translation status:** `item.STR` 448/822 in
 - [ ] Exact meaning of inline control codes (leading box code per sub-string;
       inline `0x04/0x10/0x14/0x18/0x1C`). Preserved verbatim regardless, but
       knowing them would help validate reinsertion in an emulator.
+- [ ] **Furigana-ruby chunks in evet slots (found 2026-07-23, rec 975).** Some
+      NPC/tutorial slots hold one big `\f`-paginated SJIS dialogue chunk
+      followed by a tail of short pure-hiragana chunks that are **ruby
+      readings** of the kanji words in the main chunk, in order of appearance
+      (rec 975: p1–p9 = じっしゅうしつ・てんすう・わる・ほしゅう・う・てん・
+      わる・ほしゅう・べんきょう ↔ 実習室/点数/悪/補習/受/点/悪/補習/勉強 in
+      p0). Hex-dump confirms the main chunk has **no inline ruby markers**
+      (kanji flow directly in SJIS), so the text↔ruby association must live in
+      the `eve.pkb` event bytecode (ties into the ID-vs-index question above).
+      Unknown whether replacing the main chunk with French (no kanji) orphans
+      the ruby cleanly or paints stray kana over the box. **Until one such rec
+      is emulator-tested, defer these recs entirely** (975 is excluded in the
+      HANDOFF queue script) and never translate the kana tails as content.
+      Contrast: rec 46/47's lone `れんしゅう` chunk was a real menu label
+      (translated "Entraînement"), not ruby — the tell for ruby is the ordered
+      correspondence with the kanji of a neighbouring big chunk.

@@ -36,7 +36,7 @@ Legend for **Confidence**: ✅ confident · ⚠️ likely, verify against in-gam
 | ライオコット島 | **Lioccot** (île de Lioccot) | matches spelling already in shipped FR ("A Lioccot…") |
 | ネオジャパン | **Neo Japan** | rival team (evet rec 145) |
 | 源田 | **Genda** 🔤 | Alius-linked character grouped with Saginuma (evet rec 145). Weak FR attestation ("Genda" ×1) — romaji |
-| 火来（校長）| **proviseur Karai** 🔤 | runs one Extra-match board (evet recs 102/149). No FR attestation — romaji |
+| 火来（校長）| **M. Firewill** | ✅ **CORRECTED 2026-07-23** (was "proviseur Karai" 🔤) — shipped FR rec 194 sends you to "M.Firewill à Raimon" for exactly the friendly-match/Extra-route content 火来校長 runs (recs 102/149/1300); EU canon = Raimon's principal Mr Firewill. The rec-149 "Karai" use was fixed |
 | 秘伝書 | **livre secret** | technique manual, in evet dialogue. Matches shipped evet "Livre secret de Kinuma" (rec 149). NB item.STR used "Manuel de technique" for the item names — in *evet* prose use **livre secret** |
 | エクストラ対戦ルート | **circuit de matchs Extra** 🔤 | the optional match-mode boards (evet recs 102/149). No FR attestation — coined |
 | 正義の鉄拳 | **le Poing de la justice** 🔤 | Mark's keeper hissatsu (evet rec 146). NOT in shipped FR — coined per house style; ⚠️ reconcile with any skills/hissatsu data file's official name |

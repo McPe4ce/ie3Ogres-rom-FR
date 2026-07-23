@@ -127,6 +127,23 @@ currently renders correctly. Before starting any "quick cleanup" file, dump it
   that evoke the squad use the team name (Les Empereurs, The Kingdom, …).
 - Recovery tiers are the item scale above. Command/skill *effect* strings
   ("成功率アップ" etc.) → "Augmente la réussite de…".
+- **System/gameplay vocab (mined 2026-07-23 — match it):**
+  熱血ポイント→**points de motivation** (FR ×180: "pts de motivation",
+  "Mark a obtenu 100 points de motivation!"), ＰＫ→**tirs au but**,
+  エクストラ対戦ルート→**circuits de matchs Extra** (FR-attested),
+  ボード→**tableau** (the Extra-route boards), 同点→**égalité**,
+  キーマン→**'joueur clé'** ⚠️ (no system-term attestation),
+  幽体離脱→**sortie hors du corps**, 魔界の住人→**les habitants des enfers**
+  (魔界=enfers, cf. glossary 魔界軍団Ｚ=Légion des Enfers Z).
+- **Scene-setting cards** (`−　数ヶ月前　−` style) → dash form:
+  `- Quelques mois plus tôt -` / `- Aujourd'hui -`; the shipped FR precedent is
+  "— Un petit pays d'Afrique australe —" (the em-dash folds to `-`, fine).
+- **Match-banter pools (recs 2141+, extra battle routes):** each rec is one
+  team's in-match callout pool with ONE speaker voice — keep its verbal tic
+  consistent within the rec (aru / cot-cocot / pii / croa / Graooo / Ougah /
+  creepy "Hé... héhéhé..." / English-poser "It's perfect!" …), and fill the
+  heavy internal duplicates byte-identically. `*asterisks*` (e.g. `*marmonne*`)
+  encode fine in evet.
 - **`.STR` gotcha:** never use ASCII `"` double-quotes — `str_codec` maps them
   to full-width `＂` which SJIS can't encode (reinsert skips the record). Use no
   quotes, or single `'` (which round-trips to the game's `’`).
@@ -181,8 +198,19 @@ wrongly on romaji fallbacks for sessions because scans only searched the romaji:
 the shipped FR actually attested **Austin (Hobbs)**=虎丸, **Thor (Stoutberg)**=飛鷹,
 **Caleb (Stonewall)**=不動, **Archer (Hawkins)**=土方, **coach Travis**=久遠,
 **Willy (Glass)**=メガネ, **Camillou**=フユッペ, **Julia**=夕香 (all corrected
-2026-07-22). Before logging any 🔤 fallback, list the character's plausible
-EU-dub names from canon and grep the FR corpus for each of them.
+2026-07-22). Two more caught 2026-07-23: 火来校長=**M. Firewill** (was
+"proviseur Karai" 🔤 — rec 194's shipped FR names him for exactly the content
+he runs) and ロニージョ=**Robingo** (bare form of the already-known Mac
+Robingo). Before logging any 🔤 fallback, list the character's plausible
+EU-dub names from canon and grep the FR corpus for each of them — and **also
+grep functional descriptions** (who the shipped FR says to talk to / where to
+go), since a role match can attest a name the romaji grep misses.
+
+**⚠️ Grep prior-session decisions before writing recurring addresses.** The
+glossary rows carry address forms (Rushe → **grand frère (Fidio)** / **tonton
+K**; island spelled **Lioccot**, not "Liocott") that are easy to re-invent
+divergently. When a rec involves a character with an existing glossary row,
+re-read the row's notes, not just the name column.
 
 ## Workflow (per format)
 

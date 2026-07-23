@@ -99,3 +99,10 @@ See `docs/FORMAT_NOTES.md` → "Open questions / TODO" for the full list
 bytes in sub-strings, unconfirmed ID-based lookup). Update that file, not
 just this skill, when any of these get resolved — `docs/FORMAT_NOTES.md` is
 the source of truth, this skill is a summary of it.
+
+One to know before editing evet slots: **furigana-ruby chunk tails**
+(discovered 2026-07-23, rec 975) — some slots pair a big `\f`-paginated
+dialogue chunk with a tail of short pure-hiragana chunks that are ruby
+readings of its kanji, associated via the event bytecode (no inline markers
+in the text). Do not edit either part of such a slot until the orphaning
+behaviour is emulator-tested; full detail in FORMAT_NOTES' TODO entry.

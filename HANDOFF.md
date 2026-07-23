@@ -4,7 +4,7 @@ Quick orientation for the next session. Full detail is in
 [`docs/FORMAT_NOTES.md`](docs/FORMAT_NOTES.md) (source of truth) and the four
 skills in `.claude/skills/`. Read [`README.md`](README.md) first.
 
-## Where we are (2026-07-22)
+## Where we are (2026-07-23)
 
 All tooling is **built & verified end-to-end** (extract → edit → reinsert →
 whole-ROM repack, byte-checked for both text formats), and **translation is
@@ -19,19 +19,48 @@ underway** — the project is now in the content-filling phase.
 | Whole-ROM repack (edited file → new `.nds`) | ✅ **built & verified** (`repack_rom.py`) — content-lossless; edits land in the ROM, only edited files differ. |
 | `.STR` dump/reinsert tools | ✅ **built & verified** (`str_slots/str_dump/str_reinsert/str_codec.py`) — byte-exact on all 7 `.STR` files. |
 | Translation house style + skill | ✅ `ie3-translation` skill + `docs/NAME_GLOSSARY.md` (official EU names). |
-| **Translating the text** | 🔶 **in progress** — **all `.STR` files done**; `evet.pkb` **2848/15,742** (story-critical-subset strategy, see below): `item.STR` ✅ 822/822, `unitbase.STR` ✅ 2374/2374, `command.STR` ✅ 8/8 (all repack-verified); `games`/`rpgtitle` carry no real content (residue only). Only `evet.pkb` remains. |
+| **Translating the text** | 🔶 **in progress** — **all `.STR` files done**; `evet.pkb` **3562/15,742** (story-critical-subset strategy, see below): `item.STR` ✅ 822/822, `unitbase.STR` ✅ 2374/2374, `command.STR` ✅ 8/8 (all repack-verified); `games`/`rpgtitle` carry no real content (residue only). Only `evet.pkb` remains. |
 | Emulator test | ✅ **item.STR validated in melonDS** (2026-07-20) via a debug-room ROM — all item descriptions render, longest lines reflow fine. See `docs/EMULATOR_TEST.md`. Reusable debug ROM + cheats in `Téléchargements\IE3-Ogre-FR-test\`. |
 
-## ▶ NEXT SESSION — exact steps (evet.pkb, resume at rec 487)
+## ▶ NEXT SESSION — exact steps (evet.pkb, resume at rec 2184)
 
-**State as of 2026-07-23 (4th session):** every `.STR` file is done. `evet.pkb`
-is **2848/15,742 JP chunks** translated (this session: recs **385, 386, 456,
-469–471, 473, 475–478, 486** — 324 chunks incl. 2 dup copies; reinsert-verified:
-2848 edits, 0 skipped, `.pkb` still exactly 2,926,480 bytes). Next story blocks
-(≥8 todo chunks, in rec order): **rec 487 (17) → 488 (25) → 489 (18) → 534 (11)
-→ then re-run the queue script**. The
+**State as of 2026-07-23 (4th session, continued):** every `.STR` file is done.
+`evet.pkb` is **3562/15,742 JP chunks** translated (this session: recs 385, 386,
+456, 469–471, 473, 475–478, 486–489, 1022, 1280, 1300, 1319, 1331, 1427, and
+the extra-route **match-banter band 2141–2183** — 1038 chunks total;
+reinsert-verified: 3562 edits, 0 skipped, `.pkb` still exactly 2,926,480 bytes).
+Next blocks (≥8 todo chunks, recruitment + deferred bands excluded):
+**rec 2184 (24) → 2185 (17) → 2186 (24) → … → 2194, 2211 — the banter band
+continues; then re-run the queue script**. The
 master artifact is `translations/evet.json` — it holds **all 39,610 entries**
 (already-French ones included, for context) and accumulates across sessions.
+
+**⚠️ Queue-script upgrade (use this):** the plain rec-number filter is not
+enough past rec 490 — recs 534–974 with ≥8 chunks are nearly all **recruitment
+recs** (defer per scope). Exclude any rec whose FR chunks match
+`rejoint l'équipe|Bonne recherche|vous rejoint`, and also exclude the deferred
+`range(1500,2101)` NPC band and **rec 975** (see furigana note below). The
+2141+ recs are extra-route **match-banter pools**: heavy internal duplicates
+(fill identical JP with byte-identical FR), one distinct speaker-voice per rec
+(keep each rec's verbal tic consistent: aru / cot / pii / croa / Graooo /
+Ougah / creepy Héhéhé / English-poser "It's perfect!" etc.).
+
+**Remaining-work map (computed 2026-07-23, upgraded filter):** 12,180 JP chunks
+left in total, of which the **active ≥8-chunk queue is 7,450 chunks / 362 recs,
+ALL in the 2184–2900 range** (banter pools then late/extra content). Deferred
+piles for LAST: recruitment recs 2,876 chunks / 372 recs; deferred bands
+(101–151 / 165–333 / 1500–2100 / 975) 882 chunks; sub-8-chunk scattered recs
+972 chunks / 415 recs. The story spine proper (recs ≤ 489) is **done**.
+
+**⚠️ Furigana-ruby chunks (rec 975, unresolved):** some NPC/tutorial recs carry
+one big `\f`-paginated dialogue chunk + a tail of short pure-hiragana chunks
+that are **ruby readings** of the kanji words in the main chunk (975: p1–p9 =
+じっしゅうしつ/てんすう/…, in order). The main chunk's raw bytes hold **no
+inline ruby markers**, so the association lives in the event bytecode. Unknown
+whether translating the main chunk orphans the ruby cleanly or paints stray
+kana — **defer such recs** until one is emulator-tested; do NOT translate the
+kana tails as content (rec 46/47's lone 'れんしゅう'→'Entraînement' was a real
+menu label, a different case).
 
 **New names this session (all in the glossary with evidence):**
 ロニージョ=**Robingo** ✅ (FR ×84; his ボーイ tic = **boy/boys** kept in English,
@@ -69,7 +98,7 @@ Story spine ≈ **480 recs / ~10,500 chunks**. Signal work: a rec is side conten
 if its FR chunks carry recruitment scaffolding, or it's a 1–2-chunk NPC line.
 Verify per rec by reading it (needed anyway).
 
-**Resume at rec 487.** Done through rec 486 (story spine; sub-8-chunk recs in
+**Resume at rec 2184.** Done through rec 2183 (story spine; sub-8-chunk recs in
 between remain deferred). Deferred: 101–102,
 114–123, 133, 137–144, the 165–286 NPC band, and the 288–333 one-liner band.
 New names this session (all in the glossary with evidence): 鬼瓦=**détective
@@ -102,17 +131,24 @@ tonnerre** ✅, 豪炎寺の父=**Docteur Blaze**, フク=**Fuku** 🔤 (gouvern
 ```bash
 cd /home/mcpeace/ie3Ogres-rom-FR/tools && source venv/bin/activate
 
-# 1. See what's next (prints the next STORY slots; skips the deferred bands —
-#    recruitment/NPC recs 101-151 gaps and the 165-286 one-liner band)
+# 1. See what's next (skips deferred bands AND recruitment recs — the 2026-07-23
+#    upgraded filter; the old rec-number-only filter wrongly surfaced 534-974)
 python3 - <<'EOF'
-import json
+import json,re
+from collections import defaultdict
 d=json.load(open('../translations/evet.json'))
-jp={}
-for e in d['entries']:
-    if e['cls']=='jp' and not e.get('fr') and e['src'].strip():
-        jp[e['rec']]=jp.get(e['rec'],0)+1
-DEFERRED=set(range(101,152))|set(range(165,287))   # side content, do LAST
-n=[r for r in sorted(jp) if r not in DEFERRED and jp[r]>=8][:12]  # <8-chunk recs also deferred
+recs=defaultdict(list)
+for e in d['entries']: recs[e['rec']].append(e)
+jp={}; recruit=set()
+for r,es in recs.items():
+    todo=sum(1 for e in es if e['cls']=='jp' and not e.get('fr') and e['src'].strip())
+    if todo: jp[r]=todo
+    frtxt=' '.join(e['src'] for e in es if e['cls'] in ('fr','ascii'))
+    if re.search(r"rejoint l'équipe|Bonne recherche|vous rejoint",frtxt): recruit.add(r)
+DEFERRED=(set(range(101,152))|set(range(165,287))|set(range(288,334))  # side content, do LAST
+          |set(range(1500,2101))                                       # NPC/tutorial band
+          |{975})                                                      # furigana-ruby rec, see note
+n=[r for r in sorted(jp) if r not in DEFERRED and r not in recruit and jp[r]>=8][:12]
 print('resume at rec',n[0]); print([(r,jp[r]) for r in n],'=',sum(jp[r] for r in n),'chunks')
 EOF
 ```
@@ -306,7 +342,7 @@ is wrong; stop and investigate rather than shipping it.
   proven from game code, and writing to them would corrupt text that currently
   renders fine. Method + full table in the skill file under "`--jp-only`
   overcounts". **With this, every genuinely-untranslated `.STR` in the ROM is done.**
-- **`evet.pkb`: 🔶 in progress — 2848/15,742** (see the "NEXT SESSION" section at
+- **`evet.pkb`: 🔶 in progress — 3562/15,742** (see the "NEXT SESSION" section at
   the top; that's the live loop). Budget-checked, unlike `.STR` — expect to
   tighten wording; `evet_fit.py` is the gate.
 - ~~**Remaining item.STR (374):**~~ ✅ done. Was: flavour gear — uniforms, spikes, gloves,
