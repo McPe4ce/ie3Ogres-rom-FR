@@ -112,7 +112,7 @@ Legend for **Confidence**: ✅ confident · ⚠️ likely, verify against in-gam
 | エドガー・バルチナス | **Edgar Partinus** | Knights of Queen (England) captain. **FR-attested ×27 as "Edgar Partinus"** — NOT "Valtinas"/"Baltinas". Mine, don't transliterate | ✅ |
 | ジ・エンパイア | **[Les Empereurs]** | Argentina's team = アルゼンチン (evet rec 113). FR brackets it "[Les Empereurs]" (capitaine ティアゴ・トーレス Thiago Torres) | ✅ |
 | テレス | **Torres** | ✅ **CORRECTED 2026-07-22** (was "Teres" 🔤) — evet rec 352 shows テレス leading Argentina ("nous, l'Argentine, on a battu Inazuma Japon"), i.e. the captain the FR corpus names **Thiago Torres** ×7 ("leur capitaine Thiago Torres"). The (113,308) "Teres" use was fixed to Torres | ✅ |
-| 財前（宗助）/ 総理 | **Zaizen** / PM **Sousuke Zaizen** | Touko's father, FFI chairman + PM who opens the tournament (evet rec 112). Surname romaji to match [[touko]]; no FR attestation | 🔤 |
+| 財前（宗助）/ 総理 | **Zaizen** / **le Premier ministre Zaizen** | Touko's father, FFI chairman + PM who opens the tournament (evet rec 112). ✅ **FR-attested ×4** ("le Premier ministre japonais Zaizen va prononcer l'ouverture") — upgraded 2026-07-23 | ✅ |
 | **Team-name brackets** | shipped FR wraps *foreign* FFI team names in `[...]` | Attested: `[Knights of Queen]` ×30, `[Les Empereurs]` ×22. Match this for foreign teams in announcer/formal contexts. **Big Waves** and **Inazuma Japon** are shipped mostly *unbracketed* — keep them plain. デザートライオン (Qatar) → **les Lions du désert**, shipped *unbracketed* (1×) | ✅ |
 | デザートライオン | **les Lions du désert** | Qatar's team = カタール (evet rec 124). See [[teams]]; FR-attested "Les lions du désert" (unbracketed) | ✅ |
 | 虎ノ屋 | **le restaurant du Tigre** | Toramaru's family's shop/restaurant (虎=tigre; evet recs 124–127). **FR-attested ×24** "Le restaurant du tigre" | ✅ |
@@ -143,6 +143,17 @@ Legend for **Confidence**: ✅ confident · ⚠️ likely, verify against in-gam
 | ラガルート | **Lagarto** 🔤 | The Kingdom (Brésil) player, the big brother from the dog scene (evet recs 375/380). No FR attestation — Portuguese-flavoured romanization, keep constant | 🔤 |
 | ウミガメスタジアム | **le stade Tortue** | demi-finale venue (evet rec 377). **FR-attested** ("route du stade Tortue"; "île de la tortue" ×78) | ✅ |
 | ヘンクタッカー | **Hentacker** | Zoolan's aide/scientist running "le programme" (evet rec 351). ✅ **FR-attested** (rec 409: "Mais appelez moi Hentacker! J'appartiens à l'équipe privée de M. Zoolan!") — corrected from the earlier "Henktacker" coinage | ✅ |
+| ロニージョ (bare) | **Robingo** | The Kingdom (Brésil) captain in dialogue (evet rec 385). Same person as [[Mac Robingo]] — FR-attested ×84, bare **Robingo** in speech. His verbal tic ボーイ(たち) = **boy/boys** kept in English (FR-attested: "Te voilà, boy...", "...J'ai une faveur à vous demander, boys") | ✅ |
+| ケイン大統領 | **le président américain Kane** 🔤 | US president at the semi-final (evet rec 385). No FR attestation — romaji. (Unrelated to Hurley **Kane** the Raimon player — context separates them) | 🔤 |
+| アラヤ・ダイスケ | **Daisuke Araya** / **coach Araya** | Cotarl's coach, Zoolan's next target (evet rec 386). **"Coach Araya"/"M. Araya" FR-attested ×13**; given name ダイスケ unattested, kept as Daisuke in full-name mentions | ✅ |
+| 強化人間 | **humain amélioré** | Zoolan's programme term (evet recs 385–386: "l'humain amélioré ultime"). Coined for meaning — keep constant | ⚠️ |
+| 松風天馬 | **Arion Sherwind** | young IE GO protagonist, bonus arc (evet recs 469–471). No ROM attestation — official EU name per naming policy. Nickname 天パー天馬 (perm tease) adapted as **'Arion Bouclette'** | ⚠️ |
+| 空野葵 | **Skie Blue** | girl Arion saves from the dog, bonus arc (evet rec 471). No ROM attestation — official EU name (IE GO) | ⚠️ |
+| 如月まこ | **Mako Kisaragi** 🔤 | coach of the Inazuma KFC junior team, bonus arc (evet recs 469–471). No attestation/EU name — romaji | 🔤 |
+| サスケ | **Sasuke** 🔤 | Arion's dog (evet recs 469/471). Romaji kept | 🔤 |
+| 稲妻ＫＦＣ | **l'Inazuma KFC** 🔤 | junior football club Arion tries out for (evet recs 469–471). Romanization kept | 🔤 |
+| ブラージ | **Blasi** 🔤 | Fidio's Orphée teammate/friend in the Italy flashbacks (evet recs 475–476). No FR attestation — Italian-flavoured romanization | 🔤 |
+| （ロココの）師匠 | **maître** / 弟子 = **disciple** | Rococo's mentor in the flashback (evet rec 486). **FR-attested** ("Avec le maître, j'irai jusqu'au sommet!"); 世界一 in this arc = **numéro un mondial** (FR-attested) | ✅ |
 
 ## Teams, clubs & national selections
 

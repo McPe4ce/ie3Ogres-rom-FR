@@ -19,20 +19,33 @@ underway** — the project is now in the content-filling phase.
 | Whole-ROM repack (edited file → new `.nds`) | ✅ **built & verified** (`repack_rom.py`) — content-lossless; edits land in the ROM, only edited files differ. |
 | `.STR` dump/reinsert tools | ✅ **built & verified** (`str_slots/str_dump/str_reinsert/str_codec.py`) — byte-exact on all 7 `.STR` files. |
 | Translation house style + skill | ✅ `ie3-translation` skill + `docs/NAME_GLOSSARY.md` (official EU names). |
-| **Translating the text** | 🔶 **in progress** — **all `.STR` files done**; `evet.pkb` **2524/15,742** (story-critical-subset strategy, see below): `item.STR` ✅ 822/822, `unitbase.STR` ✅ 2374/2374, `command.STR` ✅ 8/8 (all repack-verified); `games`/`rpgtitle` carry no real content (residue only). Only `evet.pkb` remains. |
+| **Translating the text** | 🔶 **in progress** — **all `.STR` files done**; `evet.pkb` **2848/15,742** (story-critical-subset strategy, see below): `item.STR` ✅ 822/822, `unitbase.STR` ✅ 2374/2374, `command.STR` ✅ 8/8 (all repack-verified); `games`/`rpgtitle` carry no real content (residue only). Only `evet.pkb` remains. |
 | Emulator test | ✅ **item.STR validated in melonDS** (2026-07-20) via a debug-room ROM — all item descriptions render, longest lines reflow fine. See `docs/EMULATOR_TEST.md`. Reusable debug ROM + cheats in `Téléchargements\IE3-Ogre-FR-test\`. |
 
-## ▶ NEXT SESSION — exact steps (evet.pkb, resume at rec 385)
+## ▶ NEXT SESSION — exact steps (evet.pkb, resume at rec 487)
 
-**State as of 2026-07-22 (3rd session):** every `.STR` file is done. `evet.pkb`
-is **2524/15,742 JP chunks** translated (this session: rec 287 + the whole
-**334–383 story spine** — 909 chunks; reinsert-verified: 2524 edits, 0 skipped,
-`.pkb` still exactly 2,926,480 bytes). Recs 288–333 are the 1–3-chunk one-liner
-band → deferred per the scope decision (~960 small recs / ~2,400 chunks deferred
-overall). Next story blocks (≥8 todo chunks, in rec order):
-**rec 385 (72) → 386 (25) → then re-run the queue script**. The
+**State as of 2026-07-23 (4th session):** every `.STR` file is done. `evet.pkb`
+is **2848/15,742 JP chunks** translated (this session: recs **385, 386, 456,
+469–471, 473, 475–478, 486** — 324 chunks incl. 2 dup copies; reinsert-verified:
+2848 edits, 0 skipped, `.pkb` still exactly 2,926,480 bytes). Next story blocks
+(≥8 todo chunks, in rec order): **rec 487 (17) → 488 (25) → 489 (18) → 534 (11)
+→ then re-run the queue script**. The
 master artifact is `translations/evet.json` — it holds **all 39,610 entries**
 (already-French ones included, for context) and accumulates across sessions.
+
+**New names this session (all in the glossary with evidence):**
+ロニージョ=**Robingo** ✅ (FR ×84; his ボーイ tic = **boy/boys** kept in English,
+FR-attested), 財前総理=**le Premier ministre Zaizen** ✅ (upgraded, FR ×4),
+ケイン大統領=**le président américain Kane** 🔤, アラヤ・ダイスケ=**coach
+Araya**/Daisuke ✅, 強化人間=**humain amélioré** ⚠️, and the bonus-arc IE GO cast:
+松風天馬=**Arion Sherwind** ⚠️ (EU canon; 天パー tease → "Arion Bouclette"),
+空野葵=**Skie Blue** ⚠️, 如月まこ=**Mako Kisaragi** 🔤, サスケ=**Sasuke** 🔤,
+稲妻ＫＦＣ=**l'Inazuma KFC** 🔤, ブラージ=**Blasi** 🔤 (Fidio's teammate),
+ロココの師匠=**maître**/**disciple** ✅, 世界一 (Rococo arc)=**numéro un
+mondial** ✅. Reminders honoured: Rushe says **grand frère (Fidio)** / **tonton
+K**; island is spelled **Lioccot** (FR ×75, NOT "Liocott"); scene-setting cards
+use the `- Quelques mois plus tôt -` dash style; 世宇子=Kirkwood, オルフェウス=
+**Orphée** (brackets only in announcer set-pieces).
 
 **⚠️ NAME CORRECTIONS (2026-07-22, 2nd session) — six long-standing romaji
 fallbacks were WRONG; the EU names were in the shipped FR all along** (the
@@ -56,8 +69,8 @@ Story spine ≈ **480 recs / ~10,500 chunks**. Signal work: a rec is side conten
 if its FR chunks carry recruitment scaffolding, or it's a 1–2-chunk NPC line.
 Verify per rec by reading it (needed anyway).
 
-**Resume at rec 385.** Done through rec 383 (story spine; 378/384 had <8 todo
-chunks and remain deferred). Deferred: 101–102,
+**Resume at rec 487.** Done through rec 486 (story spine; sub-8-chunk recs in
+between remain deferred). Deferred: 101–102,
 114–123, 133, 137–144, the 165–286 NPC band, and the 288–333 one-liner band.
 New names this session (all in the glossary with evidence): 鬼瓦=**détective
 Smith** ✅, ミスターＫ=**Mister K** (aligned with item 962 — never "M.K"),
@@ -293,7 +306,7 @@ is wrong; stop and investigate rather than shipping it.
   proven from game code, and writing to them would corrupt text that currently
   renders fine. Method + full table in the skill file under "`--jp-only`
   overcounts". **With this, every genuinely-untranslated `.STR` in the ROM is done.**
-- **`evet.pkb`: 🔶 in progress — 1615/15,742** (see the "NEXT SESSION" section at
+- **`evet.pkb`: 🔶 in progress — 2848/15,742** (see the "NEXT SESSION" section at
   the top; that's the live loop). Budget-checked, unlike `.STR` — expect to
   tighten wording; `evet_fit.py` is the gate.
 - ~~**Remaining item.STR (374):**~~ ✅ done. Was: flavour gear — uniforms, spikes, gloves,
