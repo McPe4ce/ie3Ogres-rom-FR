@@ -168,6 +168,11 @@ Legend for **Confidence**: ✅ confident · ⚠️ likely, verify against in-gam
 | 長老（ライオコット島） | **l'ancien (de l'île)** | Lioccot lore-keeper at Central Park (evet recs 464–466) | ⚠️ |
 | ブン／アッサイ／しょうりん／うきしま／じん | **Bun / Assai / Shorin / Ukishima / Jin** 🔤 | IE2 characters quoted in premium-scout hint NPCs (evet recs 1335/1346). No EU names known — romaji, only ever appear in these hints | 🔤 |
 | Ｇハンター・ヒロ | **'G-Hunter Hiro'** 🔤 | recurring gourmet NPC (evet recs 1134–1140), name kept as-is in quotes | 🔤 |
+| フレイムベール／バーンアウト／イグナイトスティール | **'Flame Veil' / 'Burnout' / 'Ignite Steal'** ⚠️ | three Prominence techniques quoted in the Ogre-premium hint (evet rec 1428, alongside ビッグバン=**'Big Bang'**). ビッグバン is shipped as **Big Bang** (item.json "puissance du Big Bang" — English kept, not "Grand Boum"); by that precedent the other three stay English proper nouns. No other corpus occurrence. Quoted with straight `'…'` (「」 unencodable in evet) | ⚠️ |
+| 虎ノ屋 | **le Tora-no-ya** 🔤 | fried-food eatery an NPC mentions (evet rec 1438, ミックスフライ定食 = "menu friture"). No FR attestation — romaji, keep constant | 🔤 |
+| イナズマ焼き | **Inazuma-yaki** 🔤 | Osaka street-food an NPC shows off (evet rec 1446); mayo drizzled in an Inazuma/lightning shape. Invented by 看板娘 [[Rika]]. Food name kept romaji | 🔤 |
+| メイドのエミ | **Emi (la femme de chambre)** 🔤 | maid an NPC reminisces about, now working abroad on an island (evet rec 1453). Romaji | 🔤 |
+| ウミヘビスタジアム | **le stade de l'Hydre** | reused 2026-07-24 for the ticket-forgetting dad gag (evet rec 1459); FR-attested ×45 (see the rec-334 row above) | ✅ |
 
 ## Teams, clubs & national selections
 

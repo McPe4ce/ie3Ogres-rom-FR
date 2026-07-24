@@ -206,6 +206,8 @@ currently renders correctly. Before starting any "quick cleanup" file, dump it
 | どす/おこしやす Kyoto (1125–1130) | polite quaint + **voyez-vous** |
 | めんそーれ Okinawa (1101/1226/1232) | **Mensooore!** kept |
 | ふっ！はっ！ Manyuji precepts (1193–1203) | **Précepte de Manyuji n°N! ... Hou! Ha!** |
+| katakana-glitch robots (penalty pools 2197–2210: …カンリョウ, データ通りだな, トウゼンだ, ツギは決める) | **ALL-CAPS French** (MISSION ACCOMPLIE / CONFORME AUX DONNÉES / TOUT À FAIT NORMAL) — mid-word caps for glitchy kana (シッパイ→ECHEC, スベテ→TOUT) |
+| shared penalty-shootout callouts (2195–2938 pools) | かんたんに点はやらない！=**Pas de but facile pour vous!** · フン話にならんな=**Hmpf, c'est pathétique.** · いえ〜い♪ cheerleaders=**Yeah~ ♪** · rural だ/べ farmers (2247/2256)=**dame** tic · ぜよ Tosa (2248)=**pardi** |
 
 **Banter formulas (reuse verbatim):** もうけた=**Tout bénef** ·
 調子にのるな=**T'emballe pas** / **Ne te crois pas tout permis** ·
