@@ -19,30 +19,33 @@ underway** — the project is now in the content-filling phase.
 | Whole-ROM repack (edited file → new `.nds`) | ✅ **built & verified** (`repack_rom.py`) — content-lossless; edits land in the ROM, only edited files differ. |
 | `.STR` dump/reinsert tools | ✅ **built & verified** (`str_slots/str_dump/str_reinsert/str_codec.py`) — byte-exact on all 7 `.STR` files. |
 | Translation house style + skill | ✅ `ie3-translation` skill + `docs/NAME_GLOSSARY.md` (official EU names). |
-| **Translating the text** | 🔶 **in progress** — **all `.STR` files done**; `evet.pkb` **11,993/15,742 (76%)** — the story spine, the entire ≥8-chunk banter/late-content queue (through rec 2900), AND the **entire sub-8 scattered-recs pass are now done**: `item.STR` ✅ 822/822, `unitbase.STR` ✅ 2374/2374, `command.STR` ✅ 8/8 (all repack-verified); `games`/`rpgtitle` carry no real content (residue only). Remaining evet: deferred bands, recruitment, ruby/residue (see below). |
+| **Translating the text** | 🔶 **in progress** — **all `.STR` files done**; `evet.pkb` **12,183/15,742 (77%)** — story spine, ≥8-chunk banter/late queue, the sub-8 scattered pass, AND the **entire 101–333 deferred sub-band are now done**: `item.STR` ✅ 822/822, `unitbase.STR` ✅ 2374/2374, `command.STR` ✅ 8/8 (all repack-verified). Remaining evet: the **1500–2100 deferred band** (669 chunks), recruitment (2,859), ruby/residue (see below). |
 | Emulator test | ✅ **item.STR validated in melonDS** (2026-07-20) via a debug-room ROM — all item descriptions render, longest lines reflow fine. See `docs/EMULATOR_TEST.md`. Reusable debug ROM + cheats in `Téléchargements\IE3-Ogre-FR-test\`. |
 
 ## ▶ NEXT SESSION — exact steps (evet.pkb, deferred bands next)
 
 **State as of 2026-07-24 (7th session):** every `.STR` file is done.
-`evet.pkb` is **11,993/15,742 JP chunks (76%)** translated (this session:
-+282 chunks — the **ENTIRE remaining sub-8 scattered-recs pass**: recs
-1418–1499 NPC/tutorial/travel/premium-scout tails, then the 2195–2938 sub-8
-match-banter/penalty-shootout pools, 58 recs / 186 chunks, translated by a
-distinct-string map so duplicates stayed byte-identical; reinsert-verified:
-11,993 edits, 0 skipped, `.pkb` still exactly 2,926,480 bytes). **Both the
-≥8-chunk queue AND the sub-8 scattered pile are now EMPTY.** The master
-artifact is `translations/evet.json` — it holds **all 39,610 entries**
-(already-French ones included, for context) and accumulates across sessions.
+`evet.pkb` is **12,183/15,742 JP chunks (77%)** translated (this session:
++472 chunks — the ENTIRE sub-8 scattered pass, PLUS the whole **101–333
+deferred sub-band** (FFI-draw / training-ban / delivery-quest / well-wisher /
+Knights-of-Queen-party / Argentina-match / USA-Unicorn NPC scenes);
+reinsert-verified: 12,183 edits, 0 skipped, `.pkb` still exactly 2,926,480
+bytes). The master artifact is `translations/evet.json` — it holds **all
+39,610 entries** (already-French ones included, for context) and accumulates
+across sessions.
 
-**Next phase, in order:** (1) the **deferred bands** 101–151 / 165–333 /
-1500–2100 (**861 chunks / 465 recs** — NPC/tutorial/shop flavor; watch for
+**Next phase, in order:** (1) the **1500–2100 deferred band** (**669 chunks
+/ 363 recs, START HERE at rec 1500** — NPC/tutorial/shop flavor; watch for
 more furigana-ruby recs like 975); (2) the **recruitment recs** (**2,859
 chunks / 372 recs** — heavily templated: `%s rejoint l'équipe!` scaffolding
 is already FR, so expect big dup-fill wins; draft one template rec fully,
-then map). To work the deferred bands, drop them from the queue-script
-`DEFERRED` set (keep only `{962,964,972,975,979}|{407}` and the recruitment
+then map). To work the band, drop `range(1500,2101)` from the queue-script
+`DEFERRED` set (keep `{962,964,972,975,979}|{407}` and the recruitment
 filter) and walk in rec order, reading each rec's FR context first.
+**⚠️ New deferred fragment:** rec **199 p91 `たいふう` / p92 `め`** — isolated
+2-char hiragana in an otherwise-done ceremony scene, no adjacent JP main
+chunk; treated as suspect kana fragments and left untranslated (same policy
+as the ruby recs). Skip them.
 Furigana-ruby recs 962/964/972/975/979 stay deferred until emulator-tested
 (also skip rec 407 p41 'おこな' — patch residue, never translate). NEW format
 fact (2026-07-23, in FORMAT_NOTES): original .pkb line breaks are literal
@@ -78,16 +81,15 @@ shared callouts worth reusing: かんたんに点はやらない！=**Pas de but
 vous!**, フン話にならんな=**Hmpf, c'est pathétique.**, and glitchy katakana-robot
 speakers (…カンリョウ, データ通りだな, トウゼンだ) render in **ALL-CAPS French**.
 
-**Remaining-work map (exact, end of 2026-07-24, 7th session):** **3,749 JP
-chunks left** in total; the **≥8-chunk queue AND the sub-8 scattered pile are
-both EMPTY** (story spine ≤489 done, banter/late band 2141–2900 done, sub-8
-scattered pass 1418–2938 done). Remaining piles:
-1. **deferred bands — 861 chunks / 465 recs, START HERE** (101–151 / 165–333 /
-   1500–2100: NPC/tutorial/shop flavor — walk in rec order, dup-fill first);
+**Remaining-work map (exact, end of 2026-07-24, 7th session):** **3,559 JP
+chunks left** in total; the ≥8-chunk queue, the sub-8 scattered pile, AND the
+**101–333 deferred sub-band are all EMPTY**. Remaining piles:
+1. **1500–2100 deferred band — 669 chunks / 363 recs, START HERE at rec 1500**
+   (NPC/tutorial/shop flavor — walk in rec order, dup-fill first);
 2. **recruitment recs — 2,859 chunks / 372 recs** (LAST — heavily templated,
    big dup-fill wins expected: draft one template rec fully, then map);
-3. **ruby + residue — 29 chunks** (recs 962/964/972/975/979 + rec 407 p41):
-   stay deferred/never (see furigana note).
+3. **ruby + residue — 31 chunks** (recs 962/964/972/975/979 + rec 407 p41 +
+   rec 199 p91/p92): stay deferred/never (see furigana note).
 New tics/formulas from 2583–2900 and the sub-8 pass are appended to the
 `ie3-translation` skill's banter tic table (Hihihi chuckler, Gwahaha, filles
 d'Osaka, American English interjections, heat-lovers, haughty lady
@@ -411,7 +413,7 @@ is wrong; stop and investigate rather than shipping it.
   proven from game code, and writing to them would corrupt text that currently
   renders fine. Method + full table in the skill file under "`--jp-only`
   overcounts". **With this, every genuinely-untranslated `.STR` in the ROM is done.**
-- **`evet.pkb`: 🔶 in progress — 11,993/15,742 (76%)** (see the "NEXT SESSION"
+- **`evet.pkb`: 🔶 in progress — 12,183/15,742 (77%)** (see the "NEXT SESSION"
   section at the top; that's the live loop). Budget-checked, unlike `.STR` —
   expect to tighten wording; `evet_fit.py` is the gate. NB some banter-pool
   chunks have tiny budgets (r2646 p23 was 25 bytes) — keep 1-line JP → short FR.

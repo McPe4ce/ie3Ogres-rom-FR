@@ -173,6 +173,13 @@ Legend for **Confidence**: ✅ confident · ⚠️ likely, verify against in-gam
 | イナズマ焼き | **Inazuma-yaki** 🔤 | Osaka street-food an NPC shows off (evet rec 1446); mayo drizzled in an Inazuma/lightning shape. Invented by 看板娘 [[Rika]]. Food name kept romaji | 🔤 |
 | メイドのエミ | **Emi (la femme de chambre)** 🔤 | maid an NPC reminisces about, now working abroad on an island (evet rec 1453). Romaji | 🔤 |
 | ウミヘビスタジアム | **le stade de l'Hydre** | reused 2026-07-24 for the ticket-forgetting dad gag (evet rec 1459); FR-attested ×45 (see the rec-334 row above) | ✅ |
+| 古株三兄弟 (長男/次男/三男) | **les trois frangins vétérans** (l'aîné / le cadet / le benjamin) | run the Extra-route battle desk (evet rec 102); ワシ/ぞい old-timer speech kept light; they announce themselves 長男→**L'aîné!** etc. | 🔤 |
+| 情報屋 | **l'informateur** | recurring info-broker NPC who observes people by statues (evet recs 292/293); coined for the role, no FR attestation | ⚠️ |
+| チームＫ | **l'équipe K** | 影山/Dark's team (evet rec 301); literal, keep constant | ⚠️ |
+| ジ・エンパイア | **Les Empereurs** | the Argentina FFI squad (evet rec 297); same as the announcer's "[Les Empereurs]" (rec 199, FR ×18) — do NOT romanize as "the Empire" | ✅ |
+| アキ (木野秋) | **Silvia** | given-name form of 木野=Silvia (evet rec 260); render Silvia, not "Aki" | ✅ |
+| 修練場 | **la salle d'entraînement** | the new training hall (evet rec 253); cf. 合宿所=**camp d'entraînement**, 特訓=**entraînement intensif** | ⚠️ |
+| エクスカリバー | **l'Excalibur** | Edgar Partinus's signature technique (evet rec 252); kept as the canonical IE technique name | ⚠️ |
 
 ## Teams, clubs & national selections
 
