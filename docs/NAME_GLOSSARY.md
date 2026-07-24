@@ -180,6 +180,14 @@ Legend for **Confidence**: ✅ confident · ⚠️ likely, verify against in-gam
 | アキ (木野秋) | **Silvia** | given-name form of 木野=Silvia (evet rec 260); render Silvia, not "Aki" | ✅ |
 | 修練場 | **la salle d'entraînement** | the new training hall (evet rec 253); cf. 合宿所=**camp d'entraînement**, 特訓=**entraînement intensif** | ⚠️ |
 | エクスカリバー | **l'Excalibur** | Edgar Partinus's signature technique (evet rec 252); kept as the canonical IE technique name | ⚠️ |
+| 「さいごのノート」 | **'Coeur' / 'Coeurs'** | the 11 collectible items (evet rec 1573 tutorial); shipped FR renders them **'Coeur n°N'** and the mechanic line "Si vous obtenez des Coeurs, vous pouvez les activer" — reuse verbatim, do NOT say "manuel"/"cahier". (When the *story* calls it 円堂's grandfather's notebook it's "le dernier manuel de mon grand-père" — different register, same object) | ✅ |
+| 雷門総一郎 | **Soichiro Raimon** 🔤 | football-association president, the Raimon founder the school is named for (evet rec 1546); no FR attestation for the given name — romaji | 🔤 |
+| 秘宝堂 | **le Comptoir aux trésors** | the treasure/premium shop (evet recs 1502/1517/1617); coined, keep constant | ⚠️ |
+| ごくらくマート | **le supermarché Gokuraku** 🔤 | convenience store selling travel tickets (evet rec 1521); name kept romaji | 🔤 |
+| セントラルパーク | **Central Park** | Lioccot gathering spot for fans (evet rec 1575); kept as-is, cf. l'ancien "at Central Park" | ⚠️ |
+| マードック | **Murdock** 🔤 | ex-European-league MVP, FFI World-tournament commentator that Rococo idolizes (evet rec 1599) | 🔤 |
+| バインダー | **le classeur** | the in-game recruit binder (shows where to meet / how to recruit, evet rec 1584); functional FR, no attestation | ⚠️ |
+| ループシュート | **le tir lobé** | lob-shot (evet rec 1578); matches command.STR "Lob". Diamond Dust techs (rec 1563) kept English: 'Jet Stream'/'Frozen Steel'/'Water Veil'/'Ice Block' | ⚠️ |
 
 ## Teams, clubs & national selections
 
