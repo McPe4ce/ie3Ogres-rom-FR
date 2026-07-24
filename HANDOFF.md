@@ -19,7 +19,7 @@ underway** — the project is now in the content-filling phase.
 | Whole-ROM repack (edited file → new `.nds`) | ✅ **built & verified** (`repack_rom.py`) — content-lossless; edits land in the ROM, only edited files differ. |
 | `.STR` dump/reinsert tools | ✅ **built & verified** (`str_slots/str_dump/str_reinsert/str_codec.py`) — byte-exact on all 7 `.STR` files. |
 | Translation house style + skill | ✅ `ie3-translation` skill + `docs/NAME_GLOSSARY.md` (official EU names). |
-| **Translating the text** | 🔶 **in progress** — **all `.STR` files done**; `evet.pkb` **12,325/15,742 (78%)** — story spine, ≥8-chunk banter/late queue, sub-8 scattered pass, the 101–333 deferred sub-band, AND recs **1500–1618 of the 1500–2100 band** are done: `item.STR` ✅ 822/822, `unitbase.STR` ✅ 2374/2374, `command.STR` ✅ 8/8 (all repack-verified). Remaining evet: **1500–2100 band (527 chunks, resume rec 1621)**, recruitment (2,859), ruby/residue (see below). |
+| **Translating the text** | 🔶 **in progress** — **all `.STR` files done**; `evet.pkb` **12,586/15,742 (80%)** — story spine, ≥8-chunk banter/late queue, sub-8 scattered pass, the 101–333 deferred sub-band, AND recs **1500–1836 of the 1500–2100 band** are done: `item.STR` ✅ 822/822, `unitbase.STR` ✅ 2374/2374, `command.STR` ✅ 8/8 (all repack-verified). Remaining evet: **1500–2100 band (255 chunks, resume rec 1838)**, recruitment (2,859), ruby/residue (see below). |
 | Emulator test | ✅ **item.STR validated in melonDS** (2026-07-20) via a debug-room ROM — all item descriptions render, longest lines reflow fine. See `docs/EMULATOR_TEST.md`. Reusable debug ROM + cheats in `Téléchargements\IE3-Ogre-FR-test\`. |
 
 ## ▶ NEXT SESSION — exact steps (evet.pkb, deferred bands next)
@@ -34,18 +34,23 @@ bytes). The master artifact is `translations/evet.json` — it holds **all
 39,610 entries** (already-French ones included, for context) and accumulates
 across sessions.
 
-**Next phase, in order:** (1) the **1500–2100 deferred band** (**527 chunks
-/ 283 recs left, RESUME AT REC 1621** — recs 1500–1618 done; NPC/tutorial/shop
+**Next phase, in order:** (1) the **1500–2100 deferred band** (**255 chunks
+/ 135 recs left, RESUME AT REC 1838** — recs 1500–1836 done; NPC/tutorial/shop
 flavor; watch for more furigana-ruby recs like 975); (2) the **recruitment recs** (**2,859
 chunks / 372 recs** — heavily templated: `%s rejoint l'équipe!` scaffolding
 is already FR, so expect big dup-fill wins; draft one template rec fully,
 then map). To work the band, drop `range(1500,2101)` from the queue-script
 `DEFERRED` set (keep `{962,964,972,975,979}|{407}` and the recruitment
 filter) and walk in rec order, reading each rec's FR context first.
-**⚠️ New deferred fragment:** rec **199 p91 `たいふう` / p92 `め`** — isolated
-2-char hiragana in an otherwise-done ceremony scene, no adjacent JP main
-chunk; treated as suspect kana fragments and left untranslated (same policy
-as the ruby recs). Skip them.
+**⚠️ Deferred fragments (leave untranslated, same policy as ruby recs):**
+- rec **199 p91 `たいふう` / p92 `め`** — 2-char hiragana in a done ceremony scene.
+- rec **1680** — NEW furigana-ruby rec: p5 is the Ogre-premium technique hint
+  (Grand Fire / Gran Fenrir / Tiger Storm) and **p6–p12 = `わざ/わざ/ふか/かんけい/
+  なかま/そだ/ひつよう`** are the ruby readings of p5's kanji. Deferred p5, p6–p12
+  AND p13 (the whole hint) to avoid orphaning; only p17 (independent flavor)
+  was translated. **Add 1680 to the ruby set** `{962,964,972,975,979}`.
+- rec **1705 p20 `い`** — lone stray hiragana in the forgetful-old-man rec;
+  the rest of 1705 is translated. Skip it.
 Furigana-ruby recs 962/964/972/975/979 stay deferred until emulator-tested
 (also skip rec 407 p41 'おこな' — patch residue, never translate). NEW format
 fact (2026-07-23, in FORMAT_NOTES): original .pkb line breaks are literal
@@ -84,12 +89,12 @@ speakers (…カンリョウ, データ通りだな, トウゼンだ) render in 
 **Remaining-work map (exact, end of 2026-07-24, 7th session):** **3,559 JP
 chunks left** in total; the ≥8-chunk queue, the sub-8 scattered pile, AND the
 **101–333 deferred sub-band are all EMPTY**. Remaining piles:
-1. **1500–2100 deferred band — 669 chunks / 363 recs, START HERE at rec 1500**
-   (NPC/tutorial/shop flavor — walk in rec order, dup-fill first);
+1. **1500–2100 deferred band — 255 chunks / 135 recs, RESUME AT REC 1838**
+   (recs 1500–1836 done; NPC/tutorial/shop flavor — walk in rec order, dup-fill first);
 2. **recruitment recs — 2,859 chunks / 372 recs** (LAST — heavily templated,
    big dup-fill wins expected: draft one template rec fully, then map);
-3. **ruby + residue — 31 chunks** (recs 962/964/972/975/979 + rec 407 p41 +
-   rec 199 p91/p92): stay deferred/never (see furigana note).
+3. **ruby + residue — ~40 chunks** (recs 962/964/972/975/979/**1680** + rec 407 p41 +
+   rec 199 p91/p92 + rec 1705 p20): stay deferred/never (see furigana note).
 New tics/formulas from 2583–2900 and the sub-8 pass are appended to the
 `ie3-translation` skill's banter tic table (Hihihi chuckler, Gwahaha, filles
 d'Osaka, American English interjections, heat-lovers, haughty lady
@@ -413,7 +418,7 @@ is wrong; stop and investigate rather than shipping it.
   proven from game code, and writing to them would corrupt text that currently
   renders fine. Method + full table in the skill file under "`--jp-only`
   overcounts". **With this, every genuinely-untranslated `.STR` in the ROM is done.**
-- **`evet.pkb`: 🔶 in progress — 12,325/15,742 (78%)** (see the "NEXT SESSION"
+- **`evet.pkb`: 🔶 in progress — 12,586/15,742 (80%)** (see the "NEXT SESSION"
   section at the top; that's the live loop). Budget-checked, unlike `.STR` —
   expect to tighten wording; `evet_fit.py` is the gate. NB some banter-pool
   chunks have tiny budgets (r2646 p23 was 25 bytes) — keep 1-line JP → short FR.

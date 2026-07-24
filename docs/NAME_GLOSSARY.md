@@ -188,6 +188,10 @@ Legend for **Confidence**: ✅ confident · ⚠️ likely, verify against in-gam
 | マードック | **Murdock** 🔤 | ex-European-league MVP, FFI World-tournament commentator that Rococo idolizes (evet rec 1599) | 🔤 |
 | バインダー | **le classeur** | the in-game recruit binder (shows where to meet / how to recruit, evet rec 1584); functional FR, no attestation | ⚠️ |
 | ループシュート | **le tir lobé** | lob-shot (evet rec 1578); matches command.STR "Lob". Diamond Dust techs (rec 1563) kept English: 'Jet Stream'/'Frozen Steel'/'Water Veil'/'Ice Block' | ⚠️ |
+| 砂木沼 | **Desarm** | FR-attested ("Il faut avoir Desarm et Janus dans Inazuma Eleven 2"); paired with 緑川=**Jordan** in the secret-training hint (evet rec 1705) | ✅ |
+| テレス・トルーエ | **Teres Torue** 🔤 | current Argentine player an old fan believes will get a statue someday (evet rec 1722); no FR attestation — romaji, kept distinct from **Torres** (Thiago Torres) | 🔤 |
+| ダブル / トリプル (同属性) | **'Double' / 'Triple'** | same-element position bonus in command battles (evet rec 1671); kept as the game's labels | ⚠️ |
+| アイキュー / ウンヨン (traits) | trait 「がくしゅう」=**'Apprentissage'**, 「なまける」=**'Fainéantise'** | premium-item hint (evet rec 1647): IQ (Diamond Dust) grants Apprentissage, Un-Yong (Dragons de feu) grants Fainéantise. IQ stays **IQ** (never QI); grand-fire techs at rec 1680 are ruby-deferred | ⚠️ |
 
 ## Teams, clubs & national selections
 
